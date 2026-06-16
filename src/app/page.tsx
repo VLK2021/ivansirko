@@ -1,8 +1,5 @@
+import Home from "../components/home/Home";
 
-export default function Home() {
-  return (
-    <div>
-      ivan sirko
-    </div>
-  );
+export default function HomePage() {
+    return <Home/>
 }
