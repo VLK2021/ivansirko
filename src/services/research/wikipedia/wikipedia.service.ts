@@ -5,20 +5,34 @@ import {
     WIKIPEDIA_PAGE_TITLES,
 } from "./wikipedia.config";
 
+const fetchWikipedia = async (url: string) => {
+    const response = await fetch(url, {
+        next: {
+            revalidate: 86400,
+        },
+    });
+
+    if (!response.ok) {
+        return {
+            error: true,
+            status: response.status,
+            data: null,
+        };
+    }
+
+    return {
+        error: false,
+        status: response.status,
+        data: await response.json(),
+    };
+};
+
 export const getWikipediaSummary = async (lang: AppLanguage) => {
     const title = WIKIPEDIA_PAGE_TITLES[lang];
 
     const url = `${getWikipediaRestBaseUrl(lang)}/page/summary/${encodeURIComponent(title)}`;
 
-    const response = await fetch(url, {
-        next: { revalidate: 86400 },
-    });
-
-    if (!response.ok) {
-        throw new Error(`Wikipedia summary request failed: ${response.status}`);
-    }
-
-    return response.json();
+    return fetchWikipedia(url);
 };
 
 export const getWikipediaPageDetails = async (lang: AppLanguage) => {
@@ -43,22 +57,16 @@ export const getWikipediaPageDetails = async (lang: AppLanguage) => {
 
     const url = `${getWikipediaApiBaseUrl(lang)}?${params.toString()}`;
 
-    const response = await fetch(url, {
-        next: { revalidate: 86400 },
-    });
-
-    if (!response.ok) {
-        throw new Error(`Wikipedia page details request failed: ${response.status}`);
-    }
-
-    return response.json();
+    return fetchWikipedia(url);
 };
 
 export const getWikipediaRawData = async (lang: AppLanguage) => {
-    const [summary, pageDetails] = await Promise.all([
+    const results = await Promise.allSettled([
         getWikipediaSummary(lang),
         getWikipediaPageDetails(lang),
     ]);
+
+    const [summaryResult, pageDetailsResult] = results;
 
     return {
         source: "wikipedia",
@@ -66,8 +74,28 @@ export const getWikipediaRawData = async (lang: AppLanguage) => {
         title: WIKIPEDIA_PAGE_TITLES[lang],
         fetchedAt: new Date().toISOString(),
         data: {
-            summary,
-            pageDetails,
+            summary:
+                summaryResult.status === "fulfilled"
+                    ? summaryResult.value
+                    : {
+                        error: true,
+                        status: null,
+                        data: null,
+                        message: summaryResult.reason instanceof Error
+                            ? summaryResult.reason.message
+                            : "Unknown error",
+                    },
+            pageDetails:
+                pageDetailsResult.status === "fulfilled"
+                    ? pageDetailsResult.value
+                    : {
+                        error: true,
+                        status: null,
+                        data: null,
+                        message: pageDetailsResult.reason instanceof Error
+                            ? pageDetailsResult.reason.message
+                            : "Unknown error",
+                    },
         },
     };
 };
