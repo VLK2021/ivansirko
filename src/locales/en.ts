@@ -36,10 +36,6 @@ const en = {
         },
 
         featureCards: {
-            kicker: "Main sections",
-            title: "Explore Sirko’s path",
-            actionLabel: "Open",
-
             items: {
                 biography: {
                     title: "Biography",

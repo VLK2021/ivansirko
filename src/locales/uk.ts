@@ -36,10 +36,6 @@ const uk = {
         },
 
         featureCards: {
-            kicker: "Основні розділи",
-            title: "Дослідити шлях Сірка",
-            actionLabel: "Перейти",
-
             items: {
                 biography: {
                     title: "Біографія",
