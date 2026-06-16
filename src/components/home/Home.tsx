@@ -2,6 +2,7 @@ import {HomeHero} from "./hero";
 import {HomeIntro} from "./intro";
 import {HomeFeatureCards} from "@/src/components/home/feature-cards";
 import {HomeOverviewCards} from "@/src/components/home/overview-cards";
+import {HomeMapLegends} from "@/src/components/home/map-legends";
 
 export default function Home() {
     return (
@@ -42,6 +43,7 @@ export default function Home() {
                 <HomeIntro />
                 <HomeFeatureCards />
                 <HomeOverviewCards />
+                <HomeMapLegends />
             </div>
         </main>
     );

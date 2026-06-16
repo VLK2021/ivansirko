@@ -92,6 +92,30 @@ const en = {
                 },
             },
         },
+        mapLegends: {
+            map: {
+                title: "Map of campaigns and battles",
+                action: "Explore map",
+            },
+            legends: {
+                title: "Facts and legends",
+                action: "All legends and myths",
+                items: [
+                    {
+                        title: "Historical fact",
+                        text: "Ivan Sirko led numerous campaigns against the Ottoman Empire and the Crimean Khanate.",
+                    },
+                    {
+                        title: "Story / legend",
+                        text: "Folk memory preserved Sirko as an unbreakable warrior and legendary characternyk.",
+                    },
+                    {
+                        title: "Not fully certain",
+                        text: "Some details of his life remain debated by historians.",
+                    },
+                ],
+            },
+        },
     },
 };
 
