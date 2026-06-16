@@ -34,6 +34,35 @@ const en = {
             paragraph2:
                 "His life combines real military events, political struggle, folk memory, and legends that have survived to this day.",
         },
+
+        featureCards: {
+            kicker: "Main sections",
+            title: "Explore Sirko’s path",
+            actionLabel: "Open",
+
+            items: {
+                biography: {
+                    title: "Biography",
+                    description: "Origins, life, family, and key events from Ivan Sirko’s biography.",
+                },
+                military: {
+                    title: "Military Path",
+                    description: "Campaigns, battles, military actions, and the fame of the Kosh Otaman.",
+                },
+                documents: {
+                    title: "Documents",
+                    description: "Letters, historical mentions, sources, and archival materials.",
+                },
+                legends: {
+                    title: "Legends",
+                    description: "Folk stories, myths, characternyk legends, and public memory.",
+                },
+                legacy: {
+                    title: "Legacy",
+                    description: "Sirko’s influence on history, culture, and Ukrainian remembrance.",
+                },
+            },
+        },
     },
 };
 
