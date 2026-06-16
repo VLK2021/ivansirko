@@ -5,7 +5,13 @@ import {
     WIKIPEDIA_PAGE_TITLES,
 } from "./wikipedia.config";
 
-const fetchWikipedia = async (url: string) => {
+type ResearchResponse<T> = {
+    error: boolean;
+    status: number;
+    data: T | null;
+};
+
+const fetchWikipedia = async <T>(url: string): Promise<ResearchResponse<T>> => {
     const response = await fetch(url, {
         next: {
             revalidate: 86400,
@@ -81,9 +87,10 @@ export const getWikipediaRawData = async (lang: AppLanguage) => {
                         error: true,
                         status: null,
                         data: null,
-                        message: summaryResult.reason instanceof Error
-                            ? summaryResult.reason.message
-                            : "Unknown error",
+                        message:
+                            summaryResult.reason instanceof Error
+                                ? summaryResult.reason.message
+                                : "Unknown error",
                     },
             pageDetails:
                 pageDetailsResult.status === "fulfilled"
@@ -92,9 +99,10 @@ export const getWikipediaRawData = async (lang: AppLanguage) => {
                         error: true,
                         status: null,
                         data: null,
-                        message: pageDetailsResult.reason instanceof Error
-                            ? pageDetailsResult.reason.message
-                            : "Unknown error",
+                        message:
+                            pageDetailsResult.reason instanceof Error
+                                ? pageDetailsResult.reason.message
+                                : "Unknown error",
                     },
         },
     };

@@ -1,0 +1,2 @@
+export const EIU_SIRKO_URL =
+    "https://resource.history.org.ua/cgi-bin/eiu/history.exe?C21COM=S&I21DBN=EIu&P21DBN=ELIB&S21CNR=20&S21COLORTERMS=0&S21FMT=eiu_all&S21P01=0&S21P02=0&S21P03=TRN%3D&S21REF=10&S21STN=1&S21STR=Sirko_I&Z21ID=";

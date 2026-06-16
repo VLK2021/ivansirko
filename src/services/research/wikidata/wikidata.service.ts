@@ -3,7 +3,43 @@ import { WIKIDATA_API_URL, WIKIDATA_SEARCH_QUERIES } from "./wikidata.config";
 
 const SIRKO_ENTITY_ID = "Q734876";
 
-const fetchWikidata = async (params: URLSearchParams) => {
+type WikidataValue =
+    | string
+    | number
+    | boolean
+    | null
+    | Record<string, unknown>;
+
+type WikidataClaim = {
+    mainsnak?: {
+        datavalue?: {
+            value?: WikidataValue;
+        };
+    };
+};
+
+type WikidataEntity = {
+    labels?: Record<string, { value?: string }>;
+    descriptions?: Record<string, { value?: string }>;
+    aliases?: Record<string, { value?: string }[]>;
+    claims?: Record<string, WikidataClaim[]>;
+    sitelinks?: Record<string, unknown>;
+};
+
+type WikidataResponse = {
+    entities?: Record<string, WikidataEntity>;
+    search?: { id?: string }[];
+};
+
+type ResearchResponse<T> = {
+    error: boolean;
+    status: number;
+    data: T | null;
+};
+
+const fetchWikidata = async (
+    params: URLSearchParams,
+): Promise<ResearchResponse<WikidataResponse>> => {
     const response = await fetch(`${WIKIDATA_API_URL}?${params.toString()}`, {
         next: {
             revalidate: 86400,
@@ -57,8 +93,7 @@ export const getWikidataEntityById = async (id: string, lang: AppLanguage) => {
 export const getWikidataRawData = async (lang: AppLanguage) => {
     const searchResponse = await searchWikidataEntity(lang);
 
-    const searchData = searchResponse.data;
-    const firstResult = searchData?.search?.[0];
+    const firstResult = searchResponse.data?.search?.[0];
     const entityId = firstResult?.id ?? SIRKO_ENTITY_ID;
 
     const entityResponse = await getWikidataEntityById(entityId, lang);
@@ -76,22 +111,21 @@ export const getWikidataRawData = async (lang: AppLanguage) => {
     };
 };
 
-const getClaimValue = (claims: Record<string, any>, property: string) => {
+const getClaimValue = (
+    claims: Record<string, WikidataClaim[]>,
+    property: string,
+): WikidataValue[] => {
     return (
-        claims?.[property]
-            ?.map((claim: any) => {
-                return claim?.mainsnak?.datavalue?.value ?? null;
-            })
-            .filter(Boolean) ?? []
+        claims[property]
+            ?.map((claim) => claim.mainsnak?.datavalue?.value ?? null)
+            .filter((value): value is WikidataValue => value !== null) ?? []
     );
 };
 
 export const getWikidataDebugData = async (lang: AppLanguage) => {
     const entityResponse = await getWikidataEntityById(SIRKO_ENTITY_ID, lang);
 
-    const entity =
-        entityResponse.data?.entities?.[SIRKO_ENTITY_ID] ?? null;
-
+    const entity = entityResponse.data?.entities?.[SIRKO_ENTITY_ID] ?? null;
     const claims = entity?.claims ?? {};
 
     return {
@@ -113,8 +147,14 @@ export const getWikidataDebugData = async (lang: AppLanguage) => {
                 en: entity?.descriptions?.en?.value ?? null,
             },
             aliases: {
-                uk: entity?.aliases?.uk?.map((item: any) => item.value) ?? [],
-                en: entity?.aliases?.en?.map((item: any) => item.value) ?? [],
+                uk:
+                    entity?.aliases?.uk
+                        ?.map((item) => item.value)
+                        .filter((value): value is string => Boolean(value)) ?? [],
+                en:
+                    entity?.aliases?.en
+                        ?.map((item) => item.value)
+                        .filter((value): value is string => Boolean(value)) ?? [],
             },
             commonsCategory: getClaimValue(claims, "P373"),
             birthDate: getClaimValue(claims, "P569"),
