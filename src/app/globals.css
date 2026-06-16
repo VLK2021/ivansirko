@@ -88,6 +88,7 @@ textarea {
 
 .sirko-heading {
     font-family: var(--font-display);
+    letter-spacing: 0.06em;
 }
 
 .sirko-wood {
