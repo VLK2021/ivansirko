@@ -27,14 +27,12 @@ const en = {
                 documents: "Documents",
             },
         },
-
         intro: {
             paragraph1:
                 "Ivan Sirko is one of the most distinctive figures of the Ukrainian Cossack era, a legendary Kosh Otaman of the Zaporizhian Sich and a seventeenth-century military leader.",
             paragraph2:
                 "His life combines real military events, political struggle, folk memory, and legends that have survived to this day.",
         },
-
         featureCards: {
             items: {
                 biography: {
@@ -56,6 +54,41 @@ const en = {
                 legacy: {
                     title: "Legacy",
                     description: "Sirko’s influence on history, culture, and Ukrainian remembrance.",
+                },
+            },
+        },
+        overviewCards: {
+            timeline: {
+                title: "Timeline: key events",
+                action: "Full timeline",
+                events: {
+                    birth: "Birth of Ivan Sirko",
+                    firstMentions: "First mentions of Sirko",
+                    otaman: "Kosh Otaman of the Zaporizhian Sich",
+                    campaigns: "Most active campaigns and battles",
+                    death: "Death of Sirko",
+                },
+            },
+            military: {
+                battles: {
+                    title: "Battles",
+                    subtitle: "Known battles and clashes",
+                    items: [
+                        "Battle of Konotop",
+                        "Battle of Chyhyryn",
+                        "Battle on the Pidpilna River",
+                    ],
+                    action: "All battles",
+                },
+                campaigns: {
+                    title: "Campaigns",
+                    subtitle: "Campaigns in different directions",
+                    items: [
+                        "Crimean campaigns",
+                        "Danube campaigns",
+                        "Azov campaigns",
+                    ],
+                    action: "All campaigns",
                 },
             },
         },

@@ -1,6 +1,7 @@
 import {HomeHero} from "./hero";
 import {HomeIntro} from "./intro";
 import {HomeFeatureCards} from "@/src/components/home/feature-cards";
+import {HomeOverviewCards} from "@/src/components/home/overview-cards";
 
 export default function Home() {
     return (
@@ -40,6 +41,7 @@ export default function Home() {
                 <HomeHero />
                 <HomeIntro />
                 <HomeFeatureCards />
+                <HomeOverviewCards />
             </div>
         </main>
     );
