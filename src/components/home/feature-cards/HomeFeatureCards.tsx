@@ -39,8 +39,8 @@ export const HomeFeatureCards = () => {
                             transition={{duration: 0.45, ease: "easeOut"}}
                         >
                             <FeatureCard
-                                type={card.id}
                                 href={card.href}
+                                icon={card.icon}
                                 title={content.title}
                                 description={content.description}
                             />
