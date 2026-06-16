@@ -6,13 +6,19 @@ type FeatureCardIconProps = {
 
 export const FeatureCardIcon = ({src}: FeatureCardIconProps) => {
     return (
-        <div className="relative mb-4 h-20 w-20 sm:h-24 sm:w-24">
+        <div className="relative mb-5 h-24 w-24 sm:h-28 sm:w-28 lg:h-[120px] lg:w-[120px]">
             <Image
                 src={src}
                 alt=""
                 fill
-                sizes="96px"
-                className="object-contain drop-shadow-[0_10px_20px_rgba(55,24,7,0.35)]"
+                sizes="120px"
+                className="
+                    object-contain
+                    transition-all
+                    duration-300
+                    group-hover:scale-105
+                    drop-shadow-[0_12px_24px_rgba(55,24,7,0.42)]
+                "
             />
         </div>
     );
