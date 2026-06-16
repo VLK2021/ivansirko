@@ -20,21 +20,21 @@ export const FEATURE_CARDS: FeatureCardConfig[] = [
     {
         id: "military",
         href: "/military",
-        icon: "/images/sirko/icons/otaman.png",
+        icon: "/images/sirko/icons/military.png",
     },
     {
         id: "documents",
         href: "/documents",
-        icon: "/images/sirko/icons/otaman.png",
+        icon: "/images/sirko/icons/doc1.png",
     },
     {
         id: "legends",
         href: "/legends",
-        icon: "/images/sirko/icons/otaman.png",
+        icon: "/images/sirko/icons/legends1.png",
     },
     {
         id: "legacy",
         href: "/legacy",
-        icon: "/images/sirko/icons/otaman.png",
+        icon: "/images/sirko/icons/gerbcard.png",
     },
 ];
