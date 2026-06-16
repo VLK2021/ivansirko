@@ -25,6 +25,7 @@
     --sirko-gold-soft: #e4c16a;
     --sirko-gold-pale: #f3dda0;
 
+    --font-body: Georgia, "Times New Roman", Times, serif;
     --font-display: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -42,6 +43,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     color: var(--sirko-ink);
+    font-family: var(--font-body);
     background:
             radial-gradient(circle at 18% 10%, rgba(255, 246, 205, 0.72), transparent 28%),
             radial-gradient(circle at 82% 18%, rgba(148, 82, 29, 0.22), transparent 30%),
@@ -93,6 +95,8 @@ textarea {
             linear-gradient(90deg, rgba(255, 221, 132, 0.055) 1px, transparent 1px),
             linear-gradient(180deg, rgba(255, 221, 132, 0.08), transparent 44%),
             radial-gradient(circle at 18% 0%, rgba(164, 93, 35, 0.34), transparent 32%),
-            linear-gradient(180deg, var(--sirko-wood-800) 0%, var(--sirko-wood-950) 100%);
+            linear-gradient(180deg, #4a210d 0%, #2a1006 48%, #120603 100%);
     background-size: 42px 100%, 100% 100%, 100% 100%, 100% 100%;
+    border-bottom: 1px solid rgba(228, 193, 106, 0.38);
+    box-shadow: 0 10px 34px rgba(24, 8, 2, 0.28);
 }
