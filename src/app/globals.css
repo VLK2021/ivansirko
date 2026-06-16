@@ -1,1 +1,344 @@
 @import "tailwindcss";
+
+:root {
+    --sirko-wood-950: #160904;
+    --sirko-wood-900: #241006;
+    --sirko-wood-850: #321707;
+    --sirko-wood-800: #43200d;
+    --sirko-wood-700: #5a2c12;
+
+    --sirko-parchment-50: #fff7dc;
+    --sirko-parchment-100: #f8e7b8;
+    --sirko-parchment-200: #e8c987;
+    --sirko-parchment-300: #d2a85d;
+    --sirko-parchment-400: #a96f2d;
+
+    --sirko-ink: #241106;
+    --sirko-ink-soft: #6d4b2d;
+    --sirko-ink-muted: #8a6843;
+
+    --sirko-bronze: #8a4f1f;
+    --sirko-bronze-dark: #5a2b10;
+    --sirko-bronze-soft: #b7732f;
+
+    --sirko-gold: #c49336;
+    --sirko-gold-soft: #e4c16a;
+    --sirko-gold-pale: #f3dda0;
+
+    --sirko-border: rgba(77, 37, 12, 0.48);
+    --sirko-border-soft: rgba(113, 65, 25, 0.28);
+    --sirko-border-gold: rgba(196, 147, 54, 0.52);
+
+    --sirko-shadow-soft: 0 18px 50px rgba(38, 16, 5, 0.22);
+    --sirko-shadow-deep: 0 28px 80px rgba(27, 10, 3, 0.42);
+    --sirko-shadow-gold: 0 12px 30px rgba(123, 69, 20, 0.26);
+
+    --font-display: Georgia, "Times New Roman", serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    color: var(--sirko-ink);
+    background:
+            radial-gradient(circle at 18% 10%, rgba(255, 246, 205, 0.75), transparent 28%),
+            radial-gradient(circle at 82% 18%, rgba(148, 82, 29, 0.22), transparent 30%),
+            radial-gradient(circle at 50% 100%, rgba(70, 31, 9, 0.24), transparent 36%),
+            linear-gradient(180deg, #f4dea6 0%, #e2bd73 52%, #a86931 100%);
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -3;
+    pointer-events: none;
+    background:
+            linear-gradient(90deg, rgba(255, 231, 170, 0.05) 1px, transparent 1px),
+            linear-gradient(rgba(255, 231, 170, 0.04) 1px, transparent 1px);
+    background-size: 36px 36px;
+    opacity: 0.45;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background:
+            radial-gradient(circle at 12% 24%, rgba(34, 13, 3, 0.22), transparent 2px),
+            radial-gradient(circle at 28% 72%, rgba(91, 43, 13, 0.18), transparent 2px),
+            radial-gradient(circle at 64% 34%, rgba(34, 13, 3, 0.16), transparent 1.5px),
+            radial-gradient(circle at 86% 78%, rgba(91, 43, 13, 0.2), transparent 2.5px);
+    background-size: 120px 120px;
+    opacity: 0.55;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+select,
+input,
+textarea {
+    font: inherit;
+}
+
+::selection {
+    background: var(--sirko-bronze);
+    color: var(--sirko-gold-pale);
+}
+
+/* Typography */
+
+.sirko-heading {
+    font-family: var(--font-display);
+    letter-spacing: 0.055em;
+}
+
+.sirko-kicker {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--sirko-bronze);
+}
+
+/* Main page material */
+
+.sirko-page {
+    min-height: 100vh;
+    background:
+            radial-gradient(circle at 18% 10%, rgba(255, 239, 181, 0.24), transparent 26%),
+            radial-gradient(circle at 80% 16%, rgba(31, 12, 4, 0.22), transparent 30%),
+            linear-gradient(180deg, rgba(255, 214, 128, 0.08), rgba(22, 9, 4, 0.24));
+}
+
+.sirko-parchment {
+    position: relative;
+    border: 1px solid var(--sirko-border);
+    background:
+            radial-gradient(circle at 14% 18%, rgba(91, 43, 13, 0.16), transparent 2px),
+            radial-gradient(circle at 76% 24%, rgba(120, 67, 23, 0.13), transparent 3px),
+            radial-gradient(circle at 42% 78%, rgba(61, 28, 8, 0.12), transparent 2px),
+            radial-gradient(circle at 90% 82%, rgba(95, 47, 15, 0.12), transparent 2px),
+            linear-gradient(135deg, #fff2c9 0%, #efd294 42%, #c99148 100%);
+    box-shadow:
+            var(--sirko-shadow-deep),
+            inset 0 0 0 8px rgba(95, 47, 15, 0.07),
+            inset 0 0 80px rgba(68, 29, 8, 0.12);
+}
+
+.sirko-parchment::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    pointer-events: none;
+    border: 1px solid rgba(87, 42, 14, 0.34);
+}
+
+.sirko-parchment::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+            radial-gradient(circle at 20% 30%, rgba(69, 30, 8, 0.13), transparent 18%),
+            radial-gradient(circle at 80% 70%, rgba(69, 30, 8, 0.12), transparent 22%),
+            linear-gradient(90deg, rgba(255, 246, 210, 0.2), transparent 22%, transparent 78%, rgba(57, 24, 6, 0.1));
+    mix-blend-mode: multiply;
+    opacity: 0.52;
+}
+
+/* Dark wood / header material */
+
+.sirko-wood {
+    background:
+            linear-gradient(90deg, rgba(255, 221, 132, 0.04) 1px, transparent 1px),
+            linear-gradient(180deg, rgba(255, 221, 132, 0.06), transparent 42%),
+            radial-gradient(circle at 20% 0%, rgba(164, 93, 35, 0.3), transparent 32%),
+            linear-gradient(180deg, var(--sirko-wood-800) 0%, var(--sirko-wood-950) 100%);
+    background-size: 42px 100%, 100% 100%, 100% 100%, 100% 100%;
+    border-bottom: 1px solid rgba(196, 147, 54, 0.38);
+    box-shadow: 0 12px 38px rgba(17, 7, 2, 0.38);
+}
+
+.sirko-wood-panel {
+    border: 1px solid rgba(196, 147, 54, 0.36);
+    background:
+            radial-gradient(circle at 20% 18%, rgba(196, 147, 54, 0.14), transparent 28%),
+            linear-gradient(135deg, rgba(85, 40, 13, 0.98), rgba(25, 10, 3, 0.98));
+    box-shadow:
+            0 24px 60px rgba(24, 9, 3, 0.42),
+            inset 0 1px 0 rgba(255, 224, 150, 0.12);
+    color: var(--sirko-gold-pale);
+}
+
+/* Frames */
+
+.sirko-frame {
+    position: relative;
+    border: 1px solid var(--sirko-border);
+}
+
+.sirko-frame::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    pointer-events: none;
+    border: 1px solid var(--sirko-border-soft);
+}
+
+.sirko-corner {
+    position: relative;
+}
+
+.sirko-corner::before,
+.sirko-corner::after {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    pointer-events: none;
+    opacity: 0.72;
+}
+
+.sirko-corner::before {
+    left: 12px;
+    top: 12px;
+    border-left: 2px solid rgba(138, 79, 31, 0.55);
+    border-top: 2px solid rgba(138, 79, 31, 0.55);
+}
+
+.sirko-corner::after {
+    right: 12px;
+    bottom: 12px;
+    border-right: 2px solid rgba(138, 79, 31, 0.55);
+    border-bottom: 2px solid rgba(138, 79, 31, 0.55);
+}
+
+/* Buttons */
+
+.sirko-button {
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 28px;
+    border: 1px solid rgba(61, 29, 9, 0.75);
+    background:
+            linear-gradient(180deg, rgba(184, 112, 42, 1) 0%, rgba(103, 47, 16, 1) 100%);
+    color: #ffedbd;
+    box-shadow:
+            inset 0 1px 0 rgba(255, 229, 160, 0.3),
+            inset 0 -1px 0 rgba(38, 15, 4, 0.45),
+            0 12px 24px rgba(55, 25, 8, 0.3);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition:
+            transform 180ms ease,
+            box-shadow 180ms ease,
+            filter 180ms ease;
+}
+
+.sirko-button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.06);
+    box-shadow:
+            inset 0 1px 0 rgba(255, 229, 160, 0.38),
+            inset 0 -1px 0 rgba(38, 15, 4, 0.5),
+            0 16px 30px rgba(55, 25, 8, 0.38);
+}
+
+.sirko-button-light {
+    background:
+            linear-gradient(180deg, #f8e6bd 0%, #d4aa61 100%);
+    color: var(--sirko-ink);
+}
+
+/* Cards */
+
+.sirko-card {
+    position: relative;
+    border: 1px solid rgba(92, 45, 15, 0.36);
+    background:
+            radial-gradient(circle at 20% 20%, rgba(93, 48, 17, 0.12), transparent 2px),
+            linear-gradient(145deg, rgba(255, 242, 201, 0.82), rgba(211, 166, 90, 0.5));
+    box-shadow:
+            0 14px 36px rgba(55, 24, 7, 0.18),
+            inset 0 0 0 1px rgba(255, 244, 210, 0.22);
+}
+
+.sirko-card::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    pointer-events: none;
+    border: 1px solid rgba(120, 67, 23, 0.18);
+}
+
+/* Dividers */
+
+.sirko-divider {
+    height: 1px;
+    background:
+            linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(96, 49, 18, 0.35),
+                    rgba(196, 147, 54, 0.9),
+                    rgba(96, 49, 18, 0.35),
+                    transparent
+            );
+}
+
+.sirko-divider-dark {
+    height: 1px;
+    background:
+            linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(228, 193, 106, 0.16),
+                    rgba(228, 193, 106, 0.56),
+                    rgba(228, 193, 106, 0.16),
+                    transparent
+            );
+}
+
+/* Map placeholder material */
+
+.sirko-map-surface {
+    background:
+            radial-gradient(circle at 18% 30%, rgba(70, 112, 91, 0.26), transparent 18%),
+            radial-gradient(circle at 78% 70%, rgba(61, 112, 124, 0.24), transparent 24%),
+            linear-gradient(135deg, #e5c78a, #b88342);
+}
+
+/* Utility */
+
+.sirko-text-light {
+    color: var(--sirko-gold-pale);
+}
+
+.sirko-text-muted {
+    color: var(--sirko-ink-soft);
+}
+
+.sirko-text-gold {
+    color: var(--sirko-gold-soft);
+}
