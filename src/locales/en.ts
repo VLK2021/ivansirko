@@ -30,6 +30,9 @@ const en = {
                 documents: "Documents",
             },
         },
+        intro: {
+            text: "Ivan Sirko is one of the most distinctive figures of the Ukrainian Cossack era. His life combines real military events, political struggle, folk memory, and legends that have survived to this day.",
+        },
     },
 };
 
