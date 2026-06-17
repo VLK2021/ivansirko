@@ -49,7 +49,7 @@ export default function Home() {
                 <HomeMapLegends />
                 <HomeGalleryPreview />
                 <HomeLegacyPreview />
-                <HomeFinalCta />
+                {/*<HomeFinalCta />*/}
             </div>
         </main>
     );

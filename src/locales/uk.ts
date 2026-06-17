@@ -159,6 +159,24 @@ const uk = {
             ],
         },
     },
+    footer: {
+        projectTitle: "Історичний проєкт Івана Сірка",
+        description:
+            "Інтерактивний історичний сайт про життя, військовий шлях, походи, легенди та спадщину кошового отамана Івана Сірка.",
+        navigationTitle: "Розділи",
+        developerTitle: "Розробка",
+        developedBy: "Розробив",
+        developerName: "Костюк Володимир",
+        year: "2026",
+        telegram: "Telegram",
+        rights: "Усі права захищені.",
+        links: {
+            biography: "Біографія",
+            battles: "Битви",
+            campaigns: "Походи",
+            gallery: "Галерея",
+        },
+    },
 };
 
 export default uk;

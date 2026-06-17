@@ -159,6 +159,24 @@ const en = {
             ],
         },
     },
+    footer: {
+        projectTitle: "Ivan Sirko Historical Project",
+        description:
+            "Interactive historical website about the life, military path, campaigns, legends and legacy of Ivan Sirko.",
+        navigationTitle: "Sections",
+        developerTitle: "Development",
+        developedBy: "Developed by",
+        developerName: "Volodymyr Kostiuk",
+        year: "2026",
+        telegram: "Telegram",
+        rights: "All rights reserved.",
+        links: {
+            biography: "Biography",
+            battles: "Battles",
+            campaigns: "Campaigns",
+            gallery: "Gallery",
+        },
+    },
 };
 
 export default en;
