@@ -9,23 +9,32 @@ export const HomeLegacyPreview = () => {
     const {locale} = useLanguage();
 
     return (
-        <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden">
+        <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--sirko-parchment-300)]">
             <div className="relative h-[390px] w-full overflow-hidden md:h-[440px] lg:h-[500px]">
-                <Image
-                    src="/images/sirko/legacy/legacy-background.png"
-                    alt=""
-                    fill
-                    sizes="100vw"
-                    className="object-fill object-center"
-                    priority={false}
-                />
+                <div
+                    className="absolute inset-0"
+                    style={{
+                        WebkitMaskImage:
+                            "linear-gradient(to bottom, transparent 0%, black 13%, black 92%, transparent 100%)",
+                        maskImage:
+                            "linear-gradient(to bottom, transparent 0%, black 13%, black 92%, transparent 100%)",
+                    }}
+                >
+                    <Image
+                        src="/images/sirko/legacy/legacy-background.png"
+                        alt=""
+                        fill
+                        sizes="100vw"
+                        className="object-fill object-center"
+                        priority={false}
+                    />
+                </div>
 
                 <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_50%,rgba(212,169,96,0.12)_82%,rgba(212,169,96,0.24)_100%)]" />
 
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[rgba(212,169,96,0.24)] via-[rgba(212,169,96,0.08)] to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[var(--sirko-parchment-300)] via-[rgba(212,169,96,0.22)] to-transparent" />
+
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-[rgba(212,169,96,0.24)] via-[rgba(212,169,96,0.08)] to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[rgba(212,169,96,0.18)] via-[rgba(212,169,96,0.06)] to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[rgba(212,169,96,0.18)] via-[rgba(212,169,96,0.06)] to-transparent" />
 
                 <div className="absolute inset-0 z-10 mx-auto flex max-w-[1800px] items-center justify-center gap-10 px-6 md:px-12 lg:px-20">
                     <motion.div
