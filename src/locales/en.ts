@@ -137,35 +137,14 @@ const en = {
                 "His name lives on in Ukrainian history, in monuments, songs, and the memory of descendants.",
             ],
         },
-        finalCta: {
-            title: "Begin your journey into the world of Ivan Sirko",
-            subtitle: "Discover the life, battles, campaigns and legacy of the legendary Cossack otaman.",
-            links: [
-                {
-                    title: "Biography",
-                    subtitle: "Life and path",
-                    href: "/biography",
-                },
-                {
-                    title: "Battles",
-                    subtitle: "Military path",
-                    href: "/military/battles",
-                },
-                {
-                    title: "Campaigns",
-                    subtitle: "Routes and victories",
-                    href: "/military/campaigns",
-                },
-            ],
-        },
     },
     footer: {
         projectTitle: "Ivan Sirko Historical Project",
         description:
             "Interactive historical website about the life, military path, campaigns, legends and legacy of Ivan Sirko.",
-        navigationTitle: "Sections",
-        developerTitle: "Development",
-        developedBy: "Developed by",
+        navigationTitle: "Site sections",
+        developerTitle: "Project development",
+        developedBy: "Website developed by",
         developerName: "Volodymyr Kostiuk",
         year: "2026",
         telegram: "Telegram",

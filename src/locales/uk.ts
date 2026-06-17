@@ -137,35 +137,14 @@ const uk = {
                 "Його імʼя живе в історії України, у памʼятниках, у піснях і в серцях нащадків.",
             ],
         },
-        finalCta: {
-            title: "Почніть свій шлях у світі Івана Сірка",
-            subtitle: "Відкрийте життя, битви, походи та спадщину легендарного кошового отамана.",
-            links: [
-                {
-                    title: "Біографія",
-                    subtitle: "Життя та шлях",
-                    href: "/biography",
-                },
-                {
-                    title: "Битви",
-                    subtitle: "Військовий шлях",
-                    href: "/military/battles",
-                },
-                {
-                    title: "Походи",
-                    subtitle: "Маршрути та перемоги",
-                    href: "/military/campaigns",
-                },
-            ],
-        },
     },
     footer: {
         projectTitle: "Історичний проєкт Івана Сірка",
         description:
             "Інтерактивний історичний сайт про життя, військовий шлях, походи, легенди та спадщину кошового отамана Івана Сірка.",
-        navigationTitle: "Розділи",
-        developerTitle: "Розробка",
-        developedBy: "Розробив",
+        navigationTitle: "Розділи сайту",
+        developerTitle: "Розробка проєкту",
+        developedBy: "Сайт розробив",
         developerName: "Костюк Володимир",
         year: "2026",
         telegram: "Telegram",
