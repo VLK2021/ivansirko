@@ -118,7 +118,6 @@ const en = {
         },
         galleryPreview: {
             kicker: "Gallery",
-            title: "Images of the era",
             action: "View gallery",
             items: {
                 portrait: "Portrait of Ivan Sirko",

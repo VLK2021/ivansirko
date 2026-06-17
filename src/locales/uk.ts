@@ -118,7 +118,6 @@ const uk = {
         },
         galleryPreview: {
             kicker: "Галерея",
-            title: "Образи епохи",
             action: "Дивитися галерею",
             items: {
                 portrait: "Портрет Івана Сірка",
