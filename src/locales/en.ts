@@ -129,6 +129,14 @@ const en = {
                 legacy: "Memory of Sirko",
             },
         },
+        legacyPreview: {
+            title: "Legacy",
+            paragraphs: [
+                "Ivan Sirko left behind not only victories on the battlefield, but also an unbreakable spirit of freedom.",
+                "He became a symbol of the struggle for liberty, honor, and Cossack courage.",
+                "His name lives on in Ukrainian history, in monuments, songs, and the memory of descendants.",
+            ],
+        },
     },
 };
 
