@@ -24,7 +24,7 @@ export const GallerySlide = ({src, title, onClick}: GallerySlideProps) => {
                     alt={title}
                     fill
                     sizes="(max-width: 768px) 92vw, (max-width: 1280px) 30vw, 18vw"
-                    className="object-cover object-center sepia-[0.18] transition duration-700 group-hover:scale-110"
+                    className="object-contain object-center sepia-[0.18] transition duration-700 group-hover:scale-105"
                 />
 
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,transparent_42%,rgba(42,17,5,0.26)_100%)]" />
