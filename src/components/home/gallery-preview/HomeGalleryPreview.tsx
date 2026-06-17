@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import {useEffect, useMemo, useState} from "react";
-import {motion} from "framer-motion";
 
 import {ParchmentCard} from "@/src/common/parchment-card";
 import {useLanguage} from "@/src/context";
@@ -12,33 +11,81 @@ import {GalleryPreviewModal} from "./GalleryPreviewModal";
 import {GallerySlide} from "./GallerySlide";
 
 const AUTO_SLIDE_DELAY = 3500;
+const SLIDE_TRANSITION_MS = 520;
+
+const getVisibleCount = () => {
+    if (typeof window === "undefined") return 5;
+    if (window.innerWidth >= 1280) return 5;
+    if (window.innerWidth >= 768) return 3;
+    return 1;
+};
 
 export const HomeGalleryPreview = () => {
     const {locale} = useLanguage();
     const images = useMemo(() => GALLERY_PREVIEW_IMAGES, []);
 
     const [activeIndex, setActiveIndex] = useState(0);
+    const [visibleCount, setVisibleCount] = useState(5);
+    const [withTransition, setWithTransition] = useState(true);
     const [openedImageIndex, setOpenedImageIndex] = useState<number | null>(null);
 
+    const loopedImages = useMemo(() => [...images, ...images], [images]);
+
     const goNext = () => {
-        setActiveIndex((current) => (current + 1) % images.length);
+        setWithTransition(true);
+        setActiveIndex((current) => current + 1);
     };
 
     const goPrev = () => {
-        setActiveIndex((current) =>
-            current === 0 ? images.length - 1 : current - 1
-        );
+        setWithTransition(true);
+
+        if (activeIndex === 0) {
+            setWithTransition(false);
+            setActiveIndex(images.length);
+
+            window.setTimeout(() => {
+                setWithTransition(true);
+                setActiveIndex(images.length - 1);
+            }, 20);
+
+            return;
+        }
+
+        setActiveIndex((current) => current - 1);
     };
 
     useEffect(() => {
-        const timer = window.setInterval(goNext, AUTO_SLIDE_DELAY);
-        return () => window.clearInterval(timer);
-    }, [images.length]);
+        const handleResize = () => {
+            setVisibleCount(getVisibleCount());
+        };
 
-    const visibleImages = Array.from(
-        {length: 5},
-        (_, index) => images[(activeIndex + index) % images.length]
-    );
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
+        const timer = window.setInterval(goNext, AUTO_SLIDE_DELAY);
+
+        return () => window.clearInterval(timer);
+    }, [activeIndex, images.length]);
+
+    useEffect(() => {
+        if (activeIndex < images.length) return;
+
+        const resetTimer = window.setTimeout(() => {
+            setWithTransition(false);
+            setActiveIndex(0);
+
+            window.setTimeout(() => {
+                setWithTransition(true);
+            }, 20);
+        }, SLIDE_TRANSITION_MS);
+
+        return () => window.clearTimeout(resetTimer);
+    }, [activeIndex, images.length]);
 
     const openedImage =
         openedImageIndex === null
@@ -78,39 +125,41 @@ export const HomeGalleryPreview = () => {
                     </button>
                 </div>
 
-                <motion.div
-                    key={activeIndex}
-                    initial={{opacity: 0, x: 18}}
-                    animate={{opacity: 1, x: 0}}
-                    transition={{duration: 0.4, ease: "easeOut"}}
-                    className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-5"
-                >
-                    {visibleImages.map((image, index) => {
-                        const realIndex = images.findIndex(
-                            (item) => item.id === image.id
-                        );
+                <div className="overflow-hidden">
+                    <div
+                        className="flex"
+                        style={{
+                            transform: `translateX(-${activeIndex * (100 / visibleCount)}%)`,
+                            transition: withTransition
+                                ? `transform ${SLIDE_TRANSITION_MS}ms ease-out`
+                                : "none",
+                        }}
+                    >
+                        {loopedImages.map((image, index) => {
+                            const realIndex = index % images.length;
 
-                        return (
-                            <div
-                                key={`${image.id}-${activeIndex}`}
-                                className={`
-                                    ${index > 0 ? "hidden md:block" : ""}
-                                    ${index > 2 ? "md:hidden xl:block" : ""}
-                                `}
-                            >
-                                <GallerySlide
-                                    src={image.src}
-                                    title={
-                                        locale.home.galleryPreview.items[
-                                            image.titleKey
-                                            ]
-                                    }
-                                    onClick={() => setOpenedImageIndex(realIndex)}
-                                />
-                            </div>
-                        );
-                    })}
-                </motion.div>
+                            return (
+                                <div
+                                    key={`${image.id}-${index}`}
+                                    className="shrink-0 px-2"
+                                    style={{
+                                        flexBasis: `${100 / visibleCount}%`,
+                                    }}
+                                >
+                                    <GallerySlide
+                                        src={image.src}
+                                        title={
+                                            locale.home.galleryPreview.items[
+                                                image.titleKey
+                                                ]
+                                        }
+                                        onClick={() => setOpenedImageIndex(realIndex)}
+                                    />
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
 
                 <div className="mt-6 flex justify-center">
                     <Link

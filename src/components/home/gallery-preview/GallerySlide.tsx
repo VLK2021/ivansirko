@@ -16,7 +16,7 @@ export const GallerySlide = ({src, title, onClick}: GallerySlideProps) => {
             whileHover={{scale: 1.025}}
             whileTap={{scale: 0.98}}
             onClick={onClick}
-            className="group mx-auto block w-full max-w-[420px] text-center md:max-w-none"
+            className="group mx-auto block w-full text-center md:max-w-none"
         >
             <div className="relative aspect-[4/3] w-full overflow-hidden border border-[rgba(91,43,14,0.55)] bg-[rgba(70,31,9,0.14)] shadow-[0_10px_20px_rgba(45,18,5,0.18)] md:h-[150px] md:aspect-auto xl:h-[145px]">
                 <Image
