@@ -3,6 +3,7 @@ import {HomeIntro} from "./intro";
 import {HomeFeatureCards} from "@/src/components/home/feature-cards";
 import {HomeOverviewCards} from "@/src/components/home/overview-cards";
 import {HomeMapLegends} from "@/src/components/home/map-legends";
+import {HomeGalleryPreview} from "@/src/components/home/gallery-preview";
 
 export default function Home() {
     return (
@@ -44,6 +45,7 @@ export default function Home() {
                 <HomeFeatureCards />
                 <HomeOverviewCards />
                 <HomeMapLegends />
+                <HomeGalleryPreview />
             </div>
         </main>
     );
