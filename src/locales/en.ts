@@ -159,35 +159,80 @@ const en = {
 
     biography: {
         kicker: "Biography",
-        title: "The life of Ivan Sirko",
+        title: "The Life of Ivan Sirko",
         description:
-            "A complete biography of the Cossack otaman: origin, formation, military glory, final years and historical memory.",
+            "A detailed biography of Ivan Sirko: origin, family, Cossack path, otamanship, conflicts, exile, final years and historical memory.",
         navigationTitle: "Biography sections",
         sections: [
             {
-                id: "origin",
-                title: "Origin and early years",
-                text: "This section will describe Ivan Sirko’s origin, early years, the historical context of the 17th century and the environment in which the future otaman was formed.",
+                id: "early-years",
+                title: "Origin and Early Years",
+                text: "This section will describe Ivan Sirko’s origin, birth, early years and the disputed information preserved about this period.",
             },
             {
-                id: "formation",
-                title: "Formation as a warrior",
-                text: "This section will describe Sirko’s development as a warrior, his early military experience, connection with the Cossack world and growing authority.",
+                id: "family",
+                title: "Family",
+                text: "This section will describe Ivan Sirko’s family, personal life, family environment and the importance of family in shaping his personality.",
             },
             {
-                id: "otaman",
-                title: "Kosh Otaman",
-                text: "This section will cover Sirko’s role as Kosh Otaman, his political influence, military decisions and importance for the Zaporizhian Sich.",
+                id: "cossack-path",
+                title: "Beginning of the Cossack Path",
+                text: "This section will describe Sirko’s first steps in the Cossack world, his early military experience and gradual entry into the historical events of the 17th century.",
             },
             {
-                id: "late-years",
-                title: "Final years",
-                text: "This section will describe the final period of Ivan Sirko’s life, his last campaigns, death and burial place.",
+                id: "kalnyk-colonel",
+                title: "Kalnyk Colonel",
+                text: "This section will describe the period when Ivan Sirko was Kalnyk colonel, his role among the Cossack officers and the importance of this stage in his biography.",
             },
             {
-                id: "memory",
-                title: "Memory of Sirko",
-                text: "This section will explain how Ivan Sirko’s image survived in history, folk memory, legends, monuments and modern culture.",
+                id: "first-election",
+                title: "First Election as Kosh Otaman",
+                text: "This section will describe Ivan Sirko’s first election as kosh otaman, the circumstances of that election and the beginning of his great authority among the Zaporozhians.",
+            },
+            {
+                id: "zaporozhian-leader",
+                title: "Leader of the Zaporozhians",
+                text: "This section will describe Sirko as one of the most authoritative leaders of the Zaporozhians, his influence, repeated elections and role in Cossack society.",
+            },
+            {
+                id: "hetmans",
+                title: "Sirko and the Hetmans",
+                text: "This section will describe Ivan Sirko’s relations with the hetmans, political disagreements, alliances, conflicts and his position during the Ruin period.",
+            },
+            {
+                id: "uprising-1668",
+                title: "The Uprising of 1668",
+                text: "This section will separately describe the events of 1668, Ivan Sirko’s participation, the essence of the uprising and its significance in the otaman’s biography.",
+            },
+            {
+                id: "military-tactics",
+                title: "Sirko’s Military Tactics",
+                text: "This section will briefly explain Sirko’s military style, tactical features and reasons for his success. A detailed description of battles and campaigns will be placed in the separate military path section.",
+            },
+            {
+                id: "exile-return",
+                title: "Exile and Return",
+                text: "This section will describe Ivan Sirko’s arrest, exile, the reasons for this decision and his return to active Cossack life.",
+            },
+            {
+                id: "last-years",
+                title: "Final Years",
+                text: "This section will describe the final period of Ivan Sirko’s life, his condition, activity and the end of his life path.",
+            },
+            {
+                id: "death-burial",
+                title: "Death and Burial",
+                text: "This section will describe Ivan Sirko’s death, burial place, the later fate of his grave and related historical information.",
+            },
+            {
+                id: "historical-memory",
+                title: "Historical Memory",
+                text: "This section will describe how Ivan Sirko’s figure was preserved in history, culture, folk memory and modern perception.",
+            },
+            {
+                id: "interesting-facts",
+                title: "Interesting Facts",
+                text: "This section will collect short interesting facts about Ivan Sirko that should not be placed inside the main chronological biography sections.",
             },
         ],
     },
