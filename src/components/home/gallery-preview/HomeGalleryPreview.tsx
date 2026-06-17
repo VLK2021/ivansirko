@@ -12,7 +12,6 @@ import {GalleryPreviewModal} from "./GalleryPreviewModal";
 import {GallerySlide} from "./GallerySlide";
 
 const AUTO_SLIDE_DELAY = 3500;
-const VISIBLE_COUNT = 5;
 
 export const HomeGalleryPreview = () => {
     const {locale} = useLanguage();
@@ -36,7 +35,7 @@ export const HomeGalleryPreview = () => {
         return () => window.clearInterval(timer);
     }, [images.length]);
 
-    const visibleImages = Array.from({length: VISIBLE_COUNT}, (_, index) => {
+    const visibleImages = Array.from({length: 5}, (_, index) => {
         return images[(activeIndex + index) % images.length];
     });
 
@@ -58,7 +57,7 @@ export const HomeGalleryPreview = () => {
                     <button
                         type="button"
                         onClick={goPrev}
-                        className="mr-5 hidden h-9 w-9 items-center justify-center border border-[rgba(91,43,14,0.52)] bg-[rgba(255,232,170,0.12)] font-serif text-2xl text-[var(--sirko-ink)] transition hover:bg-[rgba(255,232,170,0.28)] md:flex"
+                        className="mr-5 flex h-9 w-9 items-center justify-center border border-[rgba(91,43,14,0.52)] bg-[rgba(255,232,170,0.12)] font-serif text-2xl text-[var(--sirko-ink)] transition hover:bg-[rgba(255,232,170,0.28)]"
                     >
                         ‹
                     </button>
@@ -70,7 +69,7 @@ export const HomeGalleryPreview = () => {
                     <button
                         type="button"
                         onClick={goNext}
-                        className="ml-5 hidden h-9 w-9 items-center justify-center border border-[rgba(91,43,14,0.52)] bg-[rgba(255,232,170,0.12)] font-serif text-2xl text-[var(--sirko-ink)] transition hover:bg-[rgba(255,232,170,0.28)] md:flex"
+                        className="ml-5 flex h-9 w-9 items-center justify-center border border-[rgba(91,43,14,0.52)] bg-[rgba(255,232,170,0.12)] font-serif text-2xl text-[var(--sirko-ink)] transition hover:bg-[rgba(255,232,170,0.28)]"
                     >
                         ›
                     </button>
@@ -81,18 +80,25 @@ export const HomeGalleryPreview = () => {
                     initial={{opacity: 0, x: 22}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 0.45, ease: "easeOut"}}
-                    className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
+                    className="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-5"
                 >
-                    {visibleImages.map((image) => {
+                    {visibleImages.map((image, index) => {
                         const realIndex = images.findIndex((item) => item.id === image.id);
 
                         return (
-                            <GallerySlide
+                            <div
                                 key={`${image.id}-${activeIndex}`}
-                                src={image.src}
-                                title={locale.home.galleryPreview.items[image.titleKey]}
-                                onClick={() => setOpenedImageIndex(realIndex)}
-                            />
+                                className={`
+                                    ${index > 0 ? "hidden md:block" : ""}
+                                    ${index > 2 ? "md:hidden xl:block" : ""}
+                                `}
+                            >
+                                <GallerySlide
+                                    src={image.src}
+                                    title={locale.home.galleryPreview.items[image.titleKey]}
+                                    onClick={() => setOpenedImageIndex(realIndex)}
+                                />
+                            </div>
                         );
                     })}
                 </motion.div>
