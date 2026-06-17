@@ -156,6 +156,41 @@ const en = {
             gallery: "Gallery",
         },
     },
+
+    biography: {
+        kicker: "Biography",
+        title: "The life of Ivan Sirko",
+        description:
+            "A complete biography of the Cossack otaman: origin, formation, military glory, final years and historical memory.",
+        navigationTitle: "Biography sections",
+        sections: [
+            {
+                id: "origin",
+                title: "Origin and early years",
+                text: "This section will describe Ivan Sirko’s origin, early years, the historical context of the 17th century and the environment in which the future otaman was formed.",
+            },
+            {
+                id: "formation",
+                title: "Formation as a warrior",
+                text: "This section will describe Sirko’s development as a warrior, his early military experience, connection with the Cossack world and growing authority.",
+            },
+            {
+                id: "otaman",
+                title: "Kosh Otaman",
+                text: "This section will cover Sirko’s role as Kosh Otaman, his political influence, military decisions and importance for the Zaporizhian Sich.",
+            },
+            {
+                id: "late-years",
+                title: "Final years",
+                text: "This section will describe the final period of Ivan Sirko’s life, his last campaigns, death and burial place.",
+            },
+            {
+                id: "memory",
+                title: "Memory of Sirko",
+                text: "This section will explain how Ivan Sirko’s image survived in history, folk memory, legends, monuments and modern culture.",
+            },
+        ],
+    },
 };
 
 export default en;
