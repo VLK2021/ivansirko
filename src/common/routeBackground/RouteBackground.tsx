@@ -10,7 +10,7 @@ export const RouteBackground = ({children}: RouteBackgroundProps) => {
         <section className="relative min-h-screen overflow-hidden">
             <div className="pointer-events-none fixed inset-0 -z-20">
                 <Image
-                    src="/images/sirko/legacy/legacy-bg.png"
+                    src="/images/sirko/legacy/legacy-background.png"
                     alt=""
                     fill
                     priority
