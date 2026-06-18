@@ -2,9 +2,9 @@ import {EarlyYearsSectionEn} from "./EarlyYearsSection.en";
 import {EarlyYearsSectionUk} from "./EarlyYearsSection.uk";
 
 type EarlyYearsSectionProps = {
-    isEnglish: boolean;
+    currentLang: "uk" | "en";
 };
 
-export const EarlyYearsSection = ({isEnglish}: EarlyYearsSectionProps) => {
-    return isEnglish ? <EarlyYearsSectionEn /> : <EarlyYearsSectionUk />;
+export const EarlyYearsSection = ({currentLang}: EarlyYearsSectionProps) => {
+    return currentLang === "en" ? <EarlyYearsSectionEn /> : <EarlyYearsSectionUk />;
 };

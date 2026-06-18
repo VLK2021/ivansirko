@@ -3,13 +3,13 @@
 import {EarlyYearsSection} from "./sections/earlyYears";
 
 type BiographyContentProps = {
-    isEnglish: boolean;
+    currentLang: "uk" | "en";
 };
 
-export const BiographyContent = ({isEnglish}: BiographyContentProps) => {
+export const BiographyContent = ({currentLang}: BiographyContentProps) => {
     return (
         <div className="mt-14 max-w-[980px] space-y-8">
-            <EarlyYearsSection isEnglish={isEnglish} />
+            <EarlyYearsSection currentLang={currentLang} />
         </div>
     );
 };

@@ -8,7 +8,7 @@ export const EarlyYearsSectionEn = () => {
             title="Origin and Early Years"
         >
             <p>
-                English version will be added after the Ukrainian version is
+                The English version will be added after the Ukrainian version is
                 finalized.
             </p>
         </HistoricalSection>

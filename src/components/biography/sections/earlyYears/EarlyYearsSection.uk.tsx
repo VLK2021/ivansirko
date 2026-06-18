@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import {HistoricalImage} from "@/src/common/historicalImage";
 import {HistoricalSection} from "@/src/common/historicalSection";
 
 export const EarlyYearsSectionUk = () => {
@@ -14,55 +13,36 @@ export const EarlyYearsSectionUk = () => {
                     Іван Сірко належить до тих постатей української історії, чиє
                     доросле життя відоме значно краще, ніж дитинство та юність.
                     У народній памʼяті й багатьох пізніших біографіях роком його
-                    народження найчастіше подають <strong>1605 рік</strong>, хоча
-                    ранній період життя отамана залишається не до кінця
+                    народження найчастіше подають <strong>1605 рік</strong>,
+                    хоча ранній період життя отамана залишається не до кінця
                     документованим.
                 </p>
 
-                <figure className="mx-auto max-w-[720px]">
-                    <div className="border border-[rgba(91,43,14,0.42)] bg-[rgba(238,199,122,0.22)] p-3 shadow-[0_18px_34px_rgba(55,24,7,0.16)]">
-                        <Image
-                            src="/images/sirko/biography/early-years/podillia-map.jpg"
-                            alt="Карта Східного Поділля XVII століття"
-                            width={1100}
-                            height={620}
-                            className="h-auto w-full object-cover"
-                        />
-                    </div>
-
-                    <figcaption className="mt-3 text-center font-serif text-sm italic leading-6 text-[var(--sirko-ink-soft)]">
-                        Орієнтовна історична мапа Східного Поділля — краю, з яким
-                        повʼязують походження Івана Сірка.
-                    </figcaption>
-                </figure>
+                <HistoricalImage
+                    src="/images/sirko/biography/early-years/podillia-map.png"
+                    alt="Карта Східного Поділля XVII століття"
+                    width={1100}
+                    height={620}
+                    caption="Орієнтовна історична мапа Східного Поділля — краю, з яким повʼязують походження Івана Сірка."
+                    className="mx-auto max-w-[720px]"
+                />
 
                 <p>
                     Найпереконливішою версією сьогодні виглядає походження Сірка
                     зі <strong>Східного Поділля</strong>. Саме з цим регіоном
                     повʼязують його раннє середовище, а серед можливих місць
                     народження найчастіше називають <strong>Мурафу</strong> на
-                    Вінниччині. Версія про Мерефу важлива для біографії Сірка,
-                    але вона більше стосується пізнішого періоду його життя та
-                    перебування родини на Слобожанщині.
+                    Вінниччині.
                 </p>
 
                 <div className="grid gap-7 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-                    <figure>
-                        <div className="border border-[rgba(91,43,14,0.38)] bg-[rgba(238,199,122,0.2)] p-3 shadow-[0_14px_28px_rgba(55,24,7,0.14)]">
-                            <Image
-                                src="/images/sirko/biography/early-years/murafa-landscape.png"
-                                alt="Історичний краєвид Мурафи"
-                                width={760}
-                                height={540}
-                                className="h-auto w-full object-cover"
-                            />
-                        </div>
-
-                        <figcaption className="mt-3 font-serif text-sm italic leading-6 text-[var(--sirko-ink-soft)]">
-                            Мурафа — одна з найважливіших версій місця походження
-                            Івана Сірка.
-                        </figcaption>
-                    </figure>
+                    <HistoricalImage
+                        src="/images/sirko/biography/early-years/murafa-landscape.png"
+                        alt="Історичний краєвид Мурафи"
+                        width={760}
+                        height={540}
+                        caption="Мурафа — одна з найважливіших версій місця походження Івана Сірка."
+                    />
 
                     <p>
                         Про родину Сірка в ранній період відомо небагато, але
@@ -77,10 +57,8 @@ export const EarlyYearsSectionUk = () => {
                 <p>
                     Молоді роки майбутнього кошового отамана, найімовірніше,
                     минали в середовищі, де військова справа, прикордонна
-                    небезпека, козацькі звичаї та боротьба за волю були не
-                    абстрактними поняттями, а частиною щоденного життя. Саме цей
-                    світ поступово сформував людину, яка пізніше стане одним із
-                    найавторитетніших провідників запорожців.
+                    небезпека, козацькі звичаї та боротьба за волю були частиною
+                    щоденного життя.
                 </p>
 
                 <div className="grid gap-7 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
@@ -94,22 +72,13 @@ export const EarlyYearsSectionUk = () => {
                         військовий досвід.
                     </p>
 
-                    <figure>
-                        <div className="border border-[rgba(91,43,14,0.38)] bg-[rgba(238,199,122,0.2)] p-3 shadow-[0_14px_28px_rgba(55,24,7,0.14)]">
-                            <Image
-                                src="/images/sirko/biography/early-years/young-cossack.png"
-                                alt="Молодий козак XVII століття"
-                                width={760}
-                                height={540}
-                                className="h-auto w-full object-cover"
-                            />
-                        </div>
-
-                        <figcaption className="mt-3 font-serif text-sm italic leading-6 text-[var(--sirko-ink-soft)]">
-                            Узагальнений образ молодого козака XVII століття —
-                            середовища, у якому формувався Сірко.
-                        </figcaption>
-                    </figure>
+                    <HistoricalImage
+                        src="/images/sirko/biography/early-years/young-cossack.png"
+                        alt="Молодий козак XVII століття"
+                        width={760}
+                        height={540}
+                        caption="Узагальнений образ молодого козака XVII століття — середовища, у якому формувався Сірко."
+                    />
                 </div>
             </div>
         </HistoricalSection>

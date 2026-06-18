@@ -7,9 +7,20 @@ import {BiographyAside} from "./BiographyAside";
 import {BiographyContent} from "./BiographyContent";
 import {BiographyHero} from "./BiographyHero";
 
+const getCurrentLang = () => {
+    if (typeof document === "undefined") return "uk";
+
+    const langCookie = document.cookie
+        .split("; ")
+        .find((cookie) => cookie.startsWith("lang="))
+        ?.split("=")[1];
+
+    return langCookie === "en" ? "en" : "uk";
+};
+
 export const BiographyPage = () => {
     const {locale} = useLanguage();
-    const isEnglish = locale.biography.kicker === "Biography";
+    const currentLang = getCurrentLang();
 
     return (
         <RouteBackground>
@@ -27,7 +38,7 @@ export const BiographyPage = () => {
                             description={locale.biography.description}
                         />
 
-                        <BiographyContent isEnglish={isEnglish} />
+                        <BiographyContent currentLang={currentLang} />
                     </div>
                 </div>
             </section>
