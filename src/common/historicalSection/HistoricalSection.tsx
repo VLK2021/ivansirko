@@ -20,8 +20,7 @@ export const HistoricalSection = ({
         <motion.article
             id={id}
             initial={{opacity: 0, y: 24}}
-            whileInView={{opacity: 1, y: 0}}
-            viewport={{once: true, amount: 0.2}}
+            animate={{opacity: 1, y: 0}}
             transition={{duration: 0.55, ease: "easeOut"}}
             className="scroll-mt-32 border border-[rgba(91,43,14,0.32)] bg-[rgba(255,239,198,0.18)] p-6 shadow-[0_18px_36px_rgba(55,24,7,0.12)] backdrop-blur-sm sm:p-8"
         >
