@@ -19,11 +19,13 @@ export const EarlyYearsSectionUk = () => {
                 </p>
 
                 <HistoricalImage
-                    src="/images/sirko/biography/early-years/podillia-map.png"
+                    src="/images/sirko/biography/early-years/podillia-map.jpg"
                     alt="Карта Східного Поділля XVII століття"
                     width={1100}
                     height={620}
                     caption="Орієнтовна історична мапа Східного Поділля — краю, з яким повʼязують походження Івана Сірка."
+                    closeLabel="Закрити"
+                    downloadLabel="Завантажити"
                     className="mx-auto max-w-[720px]"
                 />
 
@@ -37,11 +39,13 @@ export const EarlyYearsSectionUk = () => {
 
                 <div className="grid gap-7 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
                     <HistoricalImage
-                        src="/images/sirko/biography/early-years/murafa-landscape.png"
+                        src="/images/sirko/biography/early-years/murafa-landscape.jpg"
                         alt="Історичний краєвид Мурафи"
                         width={760}
                         height={540}
                         caption="Мурафа — одна з найважливіших версій місця походження Івана Сірка."
+                        closeLabel="Закрити"
+                        downloadLabel="Завантажити"
                     />
 
                     <p>
@@ -73,11 +77,13 @@ export const EarlyYearsSectionUk = () => {
                     </p>
 
                     <HistoricalImage
-                        src="/images/sirko/biography/early-years/young-cossack.png"
+                        src="/images/sirko/biography/early-years/young-cossack.jpg"
                         alt="Молодий козак XVII століття"
                         width={760}
                         height={540}
                         caption="Узагальнений образ молодого козака XVII століття — середовища, у якому формувався Сірко."
+                        closeLabel="Закрити"
+                        downloadLabel="Завантажити"
                     />
                 </div>
             </div>
