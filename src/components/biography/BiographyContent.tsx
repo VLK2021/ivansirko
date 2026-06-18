@@ -2,8 +2,10 @@
 
 import {EarlyYearsSection} from "./sections/earlyYears";
 
+type SupportedLang = "uk" | "en";
+
 type BiographyContentProps = {
-    currentLang: "uk" | "en";
+    currentLang: SupportedLang;
 };
 
 export const BiographyContent = ({currentLang}: BiographyContentProps) => {

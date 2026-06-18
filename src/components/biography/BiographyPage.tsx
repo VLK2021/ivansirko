@@ -7,20 +7,28 @@ import {BiographyAside} from "./BiographyAside";
 import {BiographyContent} from "./BiographyContent";
 import {BiographyHero} from "./BiographyHero";
 
-const getCurrentLang = () => {
-    if (typeof document === "undefined") return "uk";
+type SupportedLang = "uk" | "en";
 
-    const langCookie = document.cookie
-        .split("; ")
-        .find((cookie) => cookie.startsWith("lang="))
-        ?.split("=")[1];
+const getContextLanguage = (context: unknown): SupportedLang => {
+    if (!context || typeof context !== "object") {
+        return "uk";
+    }
 
-    return langCookie === "en" ? "en" : "uk";
+    const value = context as Record<string, unknown>;
+
+    const possibleLang =
+        value.lang ??
+        value.language ??
+        value.currentLang ??
+        value.currentLanguage;
+
+    return possibleLang === "en" ? "en" : "uk";
 };
 
 export const BiographyPage = () => {
-    const {locale} = useLanguage();
-    const currentLang = getCurrentLang();
+    const languageContext = useLanguage();
+    const {locale} = languageContext;
+    const currentLang = getContextLanguage(languageContext);
 
     return (
         <RouteBackground>
