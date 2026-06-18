@@ -9,6 +9,7 @@ import {BiographyHero} from "./BiographyHero";
 
 export const BiographyPage = () => {
     const {locale} = useLanguage();
+    const isEnglish = locale.biography.kicker === "Biography";
 
     return (
         <RouteBackground>
@@ -26,7 +27,7 @@ export const BiographyPage = () => {
                             description={locale.biography.description}
                         />
 
-                        <BiographyContent sections={locale.biography.sections} />
+                        <BiographyContent isEnglish={isEnglish} />
                     </div>
                 </div>
             </section>
