@@ -297,17 +297,6 @@ export const FamilySectionUk = () => {
                     намагається повернути їм власні імена.
                 </p>
 
-                <HistoricalImage
-                    src="/images/sirko/biography/family/family-tragedy.png"
-                    alt="Трагічні події в родині Сірків"
-                    width={1100}
-                    height={620}
-                    caption="Художня реконструкція родинної трагедії Сірків — мотиву втрати, що супроводжує памʼять про родину отамана."
-                    closeLabel="Закрити"
-                    downloadLabel="Завантажити"
-                    className="mx-auto max-w-[760px]"
-                />
-
                 <p>
                     Памʼять про родину Сірка не завершилася XVII століттям.
                     Серед його відомих нащадків називають акторку
