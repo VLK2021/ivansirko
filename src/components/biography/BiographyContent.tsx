@@ -11,6 +11,7 @@ import {
 import {HetmansSection} from "@/src/components/biography/sections/hetmans";
 import {Uprising1668Section} from "@/src/components/biography/sections/uprising1668";
 import {MilitaryTacticsSection} from "@/src/components/biography/sections/militaryTactics";
+import {ExileAndReturnSection} from "@/src/components/biography/sections/exileAndReturn";
 
 type SupportedLang = "uk" | "en";
 
@@ -30,6 +31,7 @@ export const BiographyContent = ({currentLang}: BiographyContentProps) => {
             <HetmansSection currentLang={currentLang}/>
             <Uprising1668Section currentLang={currentLang}/>
             <MilitaryTacticsSection currentLang={currentLang}/>
+            <ExileAndReturnSection currentLang={currentLang}/>
         </div>
     );
 };
