@@ -4,6 +4,7 @@ import {EarlyYearsSection} from "./sections/earlyYears";
 import {FamilySection} from "@/src/components/biography/sections/family";
 import {CossackPathSection} from "@/src/components/biography/sections/cossackPath";
 import {KalnykColonelSection} from "@/src/components/biography/sections/kalnykColonel";
+import {FirstKoshElectionSection} from "@/src/components/biography/sections/firstKoshElection";
 
 type SupportedLang = "uk" | "en";
 
@@ -18,6 +19,7 @@ export const BiographyContent = ({currentLang}: BiographyContentProps) => {
             <FamilySection currentLang={currentLang} />
             <CossackPathSection currentLang={currentLang} />
             <KalnykColonelSection currentLang={currentLang} />
+            <FirstKoshElectionSection currentLang={currentLang}/>
         </div>
     );
 };
