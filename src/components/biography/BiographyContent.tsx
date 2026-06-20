@@ -8,6 +8,7 @@ import {FirstKoshElectionSection} from "@/src/components/biography/sections/firs
 import {
     LeaderOfZaporizhiansSection,
 } from "@/src/components/biography/sections/leaderOfZaporizhians";
+import {HetmansSection} from "@/src/components/biography/sections/hetmans";
 
 type SupportedLang = "uk" | "en";
 
@@ -24,6 +25,7 @@ export const BiographyContent = ({currentLang}: BiographyContentProps) => {
             <KalnykColonelSection currentLang={currentLang} />
             <FirstKoshElectionSection currentLang={currentLang}/>
             <LeaderOfZaporizhiansSection currentLang={currentLang}/>
+            <HetmansSection currentLang={currentLang}/>
         </div>
     );
 };
