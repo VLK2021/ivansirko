@@ -9,6 +9,7 @@ import {
     LeaderOfZaporizhiansSection,
 } from "@/src/components/biography/sections/leaderOfZaporizhians";
 import {HetmansSection} from "@/src/components/biography/sections/hetmans";
+import {Uprising1668Section} from "@/src/components/biography/sections/uprising1668";
 
 type SupportedLang = "uk" | "en";
 
@@ -26,6 +27,7 @@ export const BiographyContent = ({currentLang}: BiographyContentProps) => {
             <FirstKoshElectionSection currentLang={currentLang}/>
             <LeaderOfZaporizhiansSection currentLang={currentLang}/>
             <HetmansSection currentLang={currentLang}/>
+            <Uprising1668Section currentLang={currentLang}/>
         </div>
     );
 };
