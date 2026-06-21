@@ -13,6 +13,9 @@ const normalizeKey = (value: string | null): string => {
             .replace(/\.[a-z0-9]+$/i, "")
             .replace(/thumb\/[a-f0-9]\/[a-f0-9]{2}\//g, "")
             .replace(/\/\d+px-[^/]+$/g, "")
+            .replace(/\(\d+\)/g, "")
+            .replace(/image\s*detail\s*\d+/gi, "")
+            .replace(/detail\s*\d+/gi, "")
             .replace(/repin/g, "рєпін")
             .replace(/sirko/g, "сірко")
             .replace(/ivan/g, "іван")
@@ -37,6 +40,7 @@ const createDuplicateKeys = (item: GalleryItem): string[] => {
         imageKey,
         sourceKey,
         [titleKey, authorKey, yearKey].filter(Boolean).join("-"),
+        titleKey,
     ].filter(Boolean);
 };
 
@@ -48,9 +52,8 @@ export const deduplicateGalleryItems = (
 
     for (const item of items) {
         const keys = createDuplicateKeys(item);
-        const isDuplicate = keys.some((key) => usedKeys.has(key));
 
-        if (isDuplicate) {
+        if (keys.some((key) => usedKeys.has(key))) {
             continue;
         }
 

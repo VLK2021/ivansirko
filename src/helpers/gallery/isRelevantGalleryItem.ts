@@ -18,6 +18,9 @@ export const isRelevantGalleryItem = (item: GalleryItem): boolean => {
             item.location,
             item.source,
             item.category,
+            item.sourceUrl,
+            item.imageUrl,
+            item.thumbnailUrl,
             ...item.tags,
         ]
             .filter(Boolean)
