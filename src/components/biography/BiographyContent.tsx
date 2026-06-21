@@ -13,6 +13,7 @@ import {Uprising1668Section} from "@/src/components/biography/sections/uprising1
 import {MilitaryTacticsSection} from "@/src/components/biography/sections/militaryTactics";
 import {ExileAndReturnSection} from "@/src/components/biography/sections/exileAndReturn";
 import {FinalYearsSection} from "@/src/components/biography/sections/finalYears/FinalYearsSection";
+import {DeathAndBurialSection} from "@/src/components/biography/sections/deathAndBurial";
 
 type SupportedLang = "uk" | "en";
 
@@ -34,6 +35,7 @@ export const BiographyContent = ({currentLang}: BiographyContentProps) => {
             <MilitaryTacticsSection currentLang={currentLang}/>
             <ExileAndReturnSection currentLang={currentLang}/>
             <FinalYearsSection currentLang={currentLang}/>
+            <DeathAndBurialSection currentLang={currentLang}/>
         </div>
     );
 };
