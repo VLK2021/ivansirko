@@ -14,6 +14,7 @@ import {MilitaryTacticsSection} from "@/src/components/biography/sections/milita
 import {ExileAndReturnSection} from "@/src/components/biography/sections/exileAndReturn";
 import {FinalYearsSection} from "@/src/components/biography/sections/finalYears/FinalYearsSection";
 import {DeathAndBurialSection} from "@/src/components/biography/sections/deathAndBurial";
+import {HistoricalMemorySection} from "@/src/components/biography/sections/historicalMemory";
 
 type SupportedLang = "uk" | "en";
 
@@ -36,6 +37,7 @@ export const BiographyContent = ({currentLang}: BiographyContentProps) => {
             <ExileAndReturnSection currentLang={currentLang}/>
             <FinalYearsSection currentLang={currentLang}/>
             <DeathAndBurialSection currentLang={currentLang}/>
+            <HistoricalMemorySection currentLang={currentLang}/>
         </div>
     );
 };
