@@ -1,4 +1,4 @@
-export type GallerySourceName = "wikimedia" | "met" | "cleveland" | "artic";
+export type GallerySourceName = "wikimedia";
 
 export type GallerySourceStatus = "fulfilled" | "rejected";
 
@@ -7,12 +7,11 @@ export type GalleryItemCategory =
     | "painting"
     | "monument"
     | "burial"
-    | "museum"
     | "artifact"
     | "illustration"
     | "other";
 
-export type GallerySort = "title" | "year" | "source" | "category";
+export type GallerySort = "title" | "year" | "category";
 
 export interface GalleryRawItem {
     source: GallerySourceName;

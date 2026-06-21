@@ -16,7 +16,6 @@ const GALLERY_CATEGORIES: GalleryItemCategory[] = [
     "painting",
     "monument",
     "burial",
-    "museum",
     "artifact",
     "illustration",
     "other",
@@ -25,7 +24,6 @@ const GALLERY_CATEGORIES: GalleryItemCategory[] = [
 const GALLERY_SORT_OPTIONS: GallerySort[] = [
     "title",
     "year",
-    "source",
     "category",
 ];
 

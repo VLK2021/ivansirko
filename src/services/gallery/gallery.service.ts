@@ -11,19 +11,10 @@ import {
     GalleryResponse,
     GallerySort,
     GallerySourceName,
-    GallerySourceService,
 } from "@/src/types/gallery";
 
-import {getArticGalleryItems} from "./articGallery.service";
-import {getClevelandGalleryItems} from "./clevelandGallery.service";
-import {getMetGalleryItems} from "./metGallery.service";
 import {getWikimediaGalleryItems} from "./wikimediaGallery.service";
 import {paginateItems} from "@/src/helpers/pagination";
-
-type GallerySourceConfig = {
-    source: GallerySourceName;
-    service: GallerySourceService;
-};
 
 type GetGalleryItemsParams = {
     page?: number;
@@ -34,43 +25,7 @@ type GetGalleryItemsParams = {
     sort?: GallerySort;
 };
 
-const gallerySources: GallerySourceConfig[] = [
-    {
-        source: "wikimedia",
-        service: getWikimediaGalleryItems,
-    },
-    {
-        source: "met",
-        service: getMetGalleryItems,
-    },
-    {
-        source: "cleveland",
-        service: getClevelandGalleryItems,
-    },
-    {
-        source: "artic",
-        service: getArticGalleryItems,
-    },
-];
-
-export const gallerySourceNames = gallerySources.map(({source}) => source);
-
-const getErrorMessage = (error: unknown): string => {
-    return error instanceof Error ? error.message : "Unknown error";
-};
-
-const createRejectedSourceResult = (
-    source: GallerySourceName,
-    error: unknown
-): GalleryRawSourceResult => {
-    return {
-        source,
-        status: "rejected",
-        total: 0,
-        items: [],
-        error: getErrorMessage(error),
-    };
-};
+export const gallerySourceNames: GallerySourceName[] = ["wikimedia"];
 
 const toPublicGalleryItem = (item: GalleryItem): GalleryPublicItem => {
     return {
@@ -88,39 +43,20 @@ const toPublicGalleryItem = (item: GalleryItem): GalleryPublicItem => {
 };
 
 export const getRawGallerySources = async (): Promise<GalleryRawSourceResult[]> => {
-    const results = await Promise.allSettled(
-        gallerySources.map(({service}) => service())
-    );
-
-    return results.map((result, index) => {
-        const source = gallerySources[index].source;
-
-        if (result.status === "fulfilled") {
-            return result.value;
-        }
-
-        return createRejectedSourceResult(source, result.reason);
-    });
-};
-
-export const getRawGallerySourceByName = async (
-    sourceName: GallerySourceName
-): Promise<GalleryRawSourceResult> => {
-    const sourceConfig = gallerySources.find(({source}) => {
-        return source === sourceName;
-    });
-
-    if (!sourceConfig) {
-        return createRejectedSourceResult(
-            sourceName,
-            `Unknown gallery source: ${sourceName}`
-        );
-    }
-
     try {
-        return await sourceConfig.service();
+        const wikimedia = await getWikimediaGalleryItems();
+
+        return [wikimedia];
     } catch (error) {
-        return createRejectedSourceResult(sourceName, error);
+        return [
+            {
+                source: "wikimedia",
+                status: "rejected",
+                total: 0,
+                items: [],
+                error: error instanceof Error ? error.message : "Unknown error",
+            },
+        ];
     }
 };
 

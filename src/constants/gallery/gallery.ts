@@ -13,13 +13,6 @@ export const WIKIMEDIA_GALLERY_QUERIES = [
     '"Ivan Sirko grave"',
 ];
 
-export const MUSEUM_GALLERY_QUERIES = [
-    "Ivan Sirko",
-    "Sirko",
-    "Zaporozhian Cossacks Repin",
-    "Reply of the Zaporozhian Cossacks",
-];
-
 export const GALLERY_POSITIVE_KEYWORDS = [
     "ivan sirko",
     "іван сірко",
@@ -36,21 +29,15 @@ export const GALLERY_POSITIVE_KEYWORDS = [
     "запорож",
     "reply of the zaporozhian cossacks",
     "the zaporozhye cossacks",
+    "grave",
+    "могила",
+    "monument",
+    "памятник",
+    "пам'ятник",
+    "bust of ivan sirko",
 ];
 
 export const GALLERY_BLOCKED_KEYWORDS = [
-    "alligator",
-    "ballet",
-    "beggar",
-    "burger of calais",
-    "portrait of ross",
-    "anne thackeray",
-    "bust of a woman",
-    "woman",
-    "girl",
-    "boy named",
-    "american",
-    "french",
     "festival",
     "фестиваль",
     "donetsk",
@@ -62,15 +49,7 @@ export const GALLERY_BLOCKED_KEYWORDS = [
     "drone",
     "military brigade",
     "image detail",
-    "detail 1",
-    "detail 2",
-    "detail 3",
-    "detail 4",
-    "detail 5",
-    "detail 6",
-    "detail 7",
-    "detail 8",
-    "detail 9",
+    "detail",
     "map",
     "карта",
     "stamp",
