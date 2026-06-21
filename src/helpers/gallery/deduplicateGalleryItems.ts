@@ -1,29 +1,62 @@
 import {GalleryItem} from "@/src/types/gallery";
 
-const normalizeDuplicateKey = (value: string): string => {
-    return value
-        .toLowerCase()
-        .replace(/file:/g, "")
-        .replace(/файл:/g, "")
-        .replace(/\.[a-z0-9]+$/i, "")
-        .replace(/[^a-z0-9а-яіїєґ]+/gi, "")
-        .trim();
+const normalizeKey = (value: string | null): string => {
+    if (!value) {
+        return "";
+    }
+
+    try {
+        return decodeURIComponent(value)
+            .toLowerCase()
+            .replace(/^file:/g, "")
+            .replace(/^файл:/g, "")
+            .replace(/\.[a-z0-9]+$/i, "")
+            .replace(/thumb\/[a-f0-9]\/[a-f0-9]{2}\//g, "")
+            .replace(/\/\d+px-[^/]+$/g, "")
+            .replace(/repin/g, "рєпін")
+            .replace(/sirko/g, "сірко")
+            .replace(/ivan/g, "іван")
+            .replace(/[^a-z0-9а-яіїєґ]+/gi, "")
+            .trim();
+    } catch {
+        return value
+            .toLowerCase()
+            .replace(/[^a-z0-9а-яіїєґ]+/gi, "")
+            .trim();
+    }
+};
+
+const createDuplicateKeys = (item: GalleryItem): string[] => {
+    const imageKey = normalizeKey(item.imageUrl);
+    const titleKey = normalizeKey(item.title);
+    const sourceKey = normalizeKey(item.sourceItemId);
+    const authorKey = normalizeKey(item.author);
+    const yearKey = normalizeKey(item.year);
+
+    return [
+        imageKey,
+        sourceKey,
+        [titleKey, authorKey, yearKey].filter(Boolean).join("-"),
+    ].filter(Boolean);
 };
 
 export const deduplicateGalleryItems = (
     items: GalleryItem[]
 ): GalleryItem[] => {
-    const uniqueItems = new Map<string, GalleryItem>();
+    const usedKeys = new Set<string>();
+    const result: GalleryItem[] = [];
 
     for (const item of items) {
-        const imageKey = normalizeDuplicateKey(item.imageUrl);
-        const titleKey = normalizeDuplicateKey(item.title);
-        const key = imageKey || titleKey || item.id;
+        const keys = createDuplicateKeys(item);
+        const isDuplicate = keys.some((key) => usedKeys.has(key));
 
-        if (!uniqueItems.has(key)) {
-            uniqueItems.set(key, item);
+        if (isDuplicate) {
+            continue;
         }
+
+        keys.forEach((key) => usedKeys.add(key));
+        result.push(item);
     }
 
-    return Array.from(uniqueItems.values());
+    return result;
 };
