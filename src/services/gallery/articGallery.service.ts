@@ -24,7 +24,7 @@ const fetchJson = async <T>(url: string): Promise<T> => {
 const fetchArticQuery = async (query: string): Promise<GalleryRawItem[]> => {
     const params = new URLSearchParams({
         q: query,
-        limit: "100",
+        limit: "50",
         fields: "id,title,image_id,artist_display,date_display,thumbnail,api_link",
     });
 

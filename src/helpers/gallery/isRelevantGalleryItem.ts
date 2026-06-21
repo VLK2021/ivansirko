@@ -1,6 +1,6 @@
 import {
-    GALLERY_ALLOWED_KEYWORDS,
     GALLERY_BLOCKED_KEYWORDS,
+    GALLERY_POSITIVE_KEYWORDS,
 } from "@/src/constants/gallery";
 import {GalleryItem} from "@/src/types/gallery";
 
@@ -35,7 +35,7 @@ export const isRelevantGalleryItem = (item: GalleryItem): boolean => {
         return false;
     }
 
-    return GALLERY_ALLOWED_KEYWORDS.some((keyword) => {
+    return GALLERY_POSITIVE_KEYWORDS.some((keyword) => {
         return text.includes(normalizeText(keyword));
     });
 };

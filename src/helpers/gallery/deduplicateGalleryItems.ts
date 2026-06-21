@@ -19,6 +19,10 @@ const normalizeKey = (value: string | null): string => {
             .replace(/repin/g, "рєпін")
             .replace(/sirko/g, "сірко")
             .replace(/ivan/g, "іван")
+            .replace(/zaporozhian/g, "запорож")
+            .replace(/zaporizhian/g, "запорож")
+            .replace(/cossacks/g, "козаки")
+            .replace(/cossack/g, "козак")
             .replace(/[^a-z0-9а-яіїєґ]+/gi, "")
             .trim();
     } catch {
@@ -39,8 +43,8 @@ const createDuplicateKeys = (item: GalleryItem): string[] => {
     return [
         imageKey,
         sourceKey,
-        [titleKey, authorKey, yearKey].filter(Boolean).join("-"),
         titleKey,
+        [titleKey, authorKey, yearKey].filter(Boolean).join("-"),
     ].filter(Boolean);
 };
 

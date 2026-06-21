@@ -2,7 +2,6 @@ import {normalizeArticGalleryItem} from "@/src/helpers/gallery/normalizeArticGal
 import {normalizeClevelandGalleryItem} from "@/src/helpers/gallery/normalizeClevelandGalleryItem";
 import {normalizeMetGalleryItem} from "@/src/helpers/gallery/normalizeMetGalleryItem";
 import {normalizeWikimediaGalleryItem} from "@/src/helpers/gallery/normalizeWikimediaGalleryItem";
-import {normalizeWikipediaGalleryItem} from "@/src/helpers/gallery/normalizeWikipediaGalleryItem";
 import {GalleryItem, GalleryRawItem} from "@/src/types/gallery";
 
 export const normalizeGalleryItems = (
@@ -24,13 +23,6 @@ export const normalizeGalleryItems = (
 
             if (item.source === "artic") {
                 return normalizeArticGalleryItem(item);
-            }
-
-            if (
-                item.source === "wikipedia-uk" ||
-                item.source === "wikipedia-en"
-            ) {
-                return normalizeWikipediaGalleryItem(item);
             }
 
             return null;
