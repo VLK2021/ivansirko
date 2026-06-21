@@ -20,6 +20,17 @@ type WikimediaImageInfo = {
     extmetadata?: Record<string, {value?: string}>;
 };
 
+const truncateText = (
+    value: string | null,
+    maxLength: number
+): string | null => {
+    if (!value) {
+        return null;
+    }
+
+    return value.length > maxLength ? `${value.slice(0, maxLength).trim()}...` : value;
+};
+
 export const normalizeWikimediaGalleryItem = (
     item: GalleryRawItem
 ): GalleryItem | null => {
@@ -41,20 +52,26 @@ export const normalizeWikimediaGalleryItem = (
 
     const metadata = imageInfo.extmetadata ?? {};
 
-    const description =
+    const description = truncateText(
         stripHtml(metadata.ImageDescription?.value) ??
         stripHtml(metadata.ObjectName?.value) ??
-        null;
+        null,
+        300
+    );
 
-    const author =
+    const author = truncateText(
         stripHtml(metadata.Artist?.value) ??
         stripHtml(metadata.Credit?.value) ??
-        null;
+        null,
+        120
+    );
 
-    const license =
+    const license = truncateText(
         stripHtml(metadata.LicenseShortName?.value) ??
         stripHtml(metadata.UsageTerms?.value) ??
-        null;
+        null,
+        80
+    );
 
     const year = extractYear(
         metadata.DateTimeOriginal?.value,
@@ -63,34 +80,27 @@ export const normalizeWikimediaGalleryItem = (
         title
     );
 
-    const sourceItemId =
-        String(getNumberValue(item.raw, "pageid") ?? title);
+    const sourceItemId = String(getNumberValue(item.raw, "pageid") ?? title);
 
     return {
         id: createStableId(item.source, sourceItemId, title),
         source: item.source,
         sourceItemId,
         query: item.query,
-
-        title,
+        title: truncateText(title, 140) ?? title,
         description,
         category: detectGalleryCategory(title, description, item.query),
-
         imageUrl: imageInfo.url,
         thumbnailUrl: imageInfo.thumburl,
-
         sourceUrl: imageInfo.descriptionurl ?? null,
         author,
         license,
         year,
         location: null,
-
         width: imageInfo.width ?? null,
         height: imageInfo.height ?? null,
         mime: imageInfo.mime ?? null,
-
-        isPublicDomain:
-            license?.toLowerCase().includes("public domain") ?? false,
+        isPublicDomain: license?.toLowerCase().includes("public domain") ?? false,
         tags: [item.source, item.query],
     };
 };
