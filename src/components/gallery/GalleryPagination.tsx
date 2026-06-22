@@ -16,25 +16,19 @@ const createPaginationItems = (
     currentPage: number,
     totalPages: number
 ): PaginationItem[] => {
-    if (totalPages <= 7) {
+    if (totalPages <= 3) {
         return Array.from({length: totalPages}, (_, index) => index + 1);
     }
 
-    const items: PaginationItem[] = [1];
-    const left = Math.max(2, currentPage - 1);
-    const right = Math.min(totalPages - 1, currentPage + 1);
-
-    if (left > 2) items.push("ellipsis");
-
-    for (let page = left; page <= right; page += 1) {
-        items.push(page);
+    if (currentPage <= 2) {
+        return [1, 2, "ellipsis", totalPages];
     }
 
-    if (right < totalPages - 1) items.push("ellipsis");
+    if (currentPage >= totalPages - 1) {
+        return [1, "ellipsis", totalPages - 1, totalPages];
+    }
 
-    items.push(totalPages);
-
-    return items;
+    return [1, "ellipsis", currentPage, "ellipsis", totalPages];
 };
 
 export const GalleryPagination = ({
@@ -52,13 +46,13 @@ export const GalleryPagination = ({
         "flex h-9 min-w-9 items-center justify-center border px-3 text-xs font-black uppercase tracking-[0.1em] transition-colors duration-300";
 
     const normal =
-        "border-[#d8b16a] bg-[#94551f] text-[#160903] hover:bg-[#d8b16a]";
+        "border-[#d8b16a] bg-[#94551f] text-[#160903] hover:bg-[#d8b16a] hover:text-[#160903]";
 
     const active =
-        "border-[#160903] bg-[#160903] text-[#f7d78a] shadow-[0_0_0_2px_rgba(216,177,106,0.8)]";
+        "border-[#d8b16a] bg-[#d8b16a] text-[#160903] shadow-[0_0_0_3px_rgba(22,9,3,0.65)]";
 
     const disabled =
-        "pointer-events-none border-[#9b6a2c]/35 bg-[#94551f]/25 text-[#3a1808]/40";
+        "pointer-events-none border-[#d8b16a]/35 bg-[#94551f]/35 text-[#160903]/40";
 
     return (
         <nav className="mt-16 flex flex-col items-center gap-4">
@@ -69,6 +63,7 @@ export const GalleryPagination = ({
             <div className="flex flex-wrap items-center justify-center gap-2">
                 <Link
                     href={createGalleryPageHref(currentPage - 1)}
+                    aria-disabled={!hasPrevPage}
                     className={`${base} ${hasPrevPage ? normal : disabled}`}
                 >
                     ←
@@ -86,14 +81,14 @@ export const GalleryPagination = ({
                         );
                     }
 
+                    const isActive = item === currentPage;
+
                     return (
                         <Link
                             key={item}
                             href={createGalleryPageHref(item)}
-                            aria-current={item === currentPage ? "page" : undefined}
-                            className={`${base} ${
-                                item === currentPage ? active : normal
-                            }`}
+                            aria-current={isActive ? "page" : undefined}
+                            className={`${base} ${isActive ? active : normal}`}
                         >
                             {item}
                         </Link>
@@ -102,6 +97,7 @@ export const GalleryPagination = ({
 
                 <Link
                     href={createGalleryPageHref(currentPage + 1)}
+                    aria-disabled={!hasNextPage}
                     className={`${base} ${hasNextPage ? normal : disabled}`}
                 >
                     →
