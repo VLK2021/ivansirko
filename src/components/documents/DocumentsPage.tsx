@@ -1,0 +1,77 @@
+import {DOCUMENTS_ITEMS_PER_PAGE} from "@/src/constants/documents";
+import {CommonPagination} from "@/src/common/pagination";
+import {RouteBackground} from "@/src/common/routeBackground";
+import en from "@/src/locales/en";
+import uk from "@/src/locales/uk";
+import {DocumentsGrid} from "./DocumentsGrid";
+import {DocumentItem, DocumentsLanguage} from "@/src/types/documents/documents";
+
+type DocumentsPageProps = {
+    currentLang: DocumentsLanguage;
+    page?: number;
+    items: DocumentItem[];
+};
+
+export const DocumentsPage = ({
+                                  currentLang,
+                                  page = 1,
+                                  items,
+                              }: DocumentsPageProps) => {
+    const locale = currentLang === "en" ? en : uk;
+
+    const sortedItems = [...items].sort((a, b) => a.order - b.order);
+
+    const totalPages = Math.max(
+        1,
+        Math.ceil(sortedItems.length / DOCUMENTS_ITEMS_PER_PAGE)
+    );
+
+    const currentPage = Math.min(Math.max(page, 1), totalPages);
+    const startIndex = (currentPage - 1) * DOCUMENTS_ITEMS_PER_PAGE;
+
+    const pageItems = sortedItems.slice(
+        startIndex,
+        startIndex + DOCUMENTS_ITEMS_PER_PAGE
+    );
+
+    return (
+        <RouteBackground>
+            <section className="relative z-10 mx-auto max-w-[1440px] px-4 pb-20 pt-10 sm:px-6 lg:px-10">
+                <div className="mb-10 max-w-4xl">
+                    <p className="mb-4 text-xs font-semibold uppercase tracking-[0.38em] text-[#6f3f13]">
+                        {locale.documents.eyebrow}
+                    </p>
+
+                    <h1 className="text-4xl font-semibold tracking-tight text-[#2a1205] sm:text-5xl lg:text-6xl">
+                        {locale.documents.title}
+                    </h1>
+
+                    <p className="mt-5 max-w-3xl text-base leading-8 text-[#5f3815] sm:text-lg">
+                        {locale.documents.description}
+                    </p>
+
+                    <p className="mt-4 text-sm text-[#6f3f13]">
+                        {locale.documents.found}:{" "}
+                        <span className="font-semibold text-[#2a1205]">
+                            {sortedItems.length}
+                        </span>
+                    </p>
+                </div>
+
+                <DocumentsGrid
+                    items={pageItems}
+                    detailsLabel={locale.documents.details}
+                    downloadLabel={locale.documents.download}
+                    closeLabel={locale.documents.close}
+                />
+
+                <CommonPagination
+                    currentPage={currentPage}
+                    totalPages={totalPages}
+                    label={locale.documents.page}
+                    basePath="/documents"
+                />
+            </section>
+        </RouteBackground>
+    );
+};

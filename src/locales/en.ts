@@ -13,7 +13,6 @@ const en = {
             legacy: "Legacy",
         },
     },
-
     home: {
         hero: {
             kicker: "Kosh Otaman of the Zaporizhian Sich",
@@ -156,7 +155,6 @@ const en = {
             gallery: "Gallery",
         },
     },
-
     biography: {
         kicker: "Biography",
         title: "The Life of Ivan Sirko",
@@ -236,12 +234,22 @@ const en = {
             },
         ],
     },
-
     gallery: {
         eyebrow: "Gallery",
         title: "Ivan Sirko Gallery",
         description:
             "A curated collection of visual materials connected with Ivan Sirko, the Cossack era, and historical memory.",
+        found: "In collection",
+        page: "Page",
+        details: "Details",
+        download: "Download",
+        close: "Close",
+    },
+    documents: {
+        eyebrow: "Documents",
+        title: "Documents about Ivan Sirko",
+        description:
+            "A curated collection of scans, images, and documentary visual materials connected with Ivan Sirko, the Zaporizhian Sich, and historical memory.",
         found: "In collection",
         page: "Page",
         details: "Details",
