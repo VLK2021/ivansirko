@@ -236,6 +236,18 @@ const en = {
             },
         ],
     },
+
+    gallery: {
+        eyebrow: "Gallery",
+        title: "Ivan Sirko Gallery",
+        description:
+            "A curated collection of visual materials connected with Ivan Sirko, the Cossack era, and historical memory.",
+        found: "In collection",
+        page: "Page",
+        details: "Details",
+        download: "Download",
+        close: "Close",
+    },
 };
 
 export default en;
