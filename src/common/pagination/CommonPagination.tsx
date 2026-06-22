@@ -1,15 +1,16 @@
 import Link from "next/link";
 
-type GalleryPaginationProps = {
+type CommonPaginationProps = {
     currentPage: number;
     totalPages: number;
     label: string;
+    basePath: string;
 };
 
 type PaginationItem = number | "ellipsis";
 
-const createGalleryPageHref = (page: number): string => {
-    return page <= 1 ? "/gallery" : `/gallery?page=${page}`;
+const createPageHref = (basePath: string, page: number): string => {
+    return page <= 1 ? basePath : `${basePath}?page=${page}`;
 };
 
 const createPaginationItems = (
@@ -31,11 +32,12 @@ const createPaginationItems = (
     return [1, "ellipsis", currentPage, "ellipsis", totalPages];
 };
 
-export const GalleryPagination = ({
-                                      currentPage,
-                                      totalPages,
-                                      label,
-                                  }: GalleryPaginationProps) => {
+export const CommonPagination = ({
+                                     currentPage,
+                                     totalPages,
+                                     label,
+                                     basePath,
+                                 }: CommonPaginationProps) => {
     if (totalPages <= 1) return null;
 
     const paginationItems = createPaginationItems(currentPage, totalPages);
@@ -62,7 +64,7 @@ export const GalleryPagination = ({
 
             <div className="flex flex-wrap items-center justify-center gap-2">
                 <Link
-                    href={createGalleryPageHref(currentPage - 1)}
+                    href={createPageHref(basePath, currentPage - 1)}
                     aria-disabled={!hasPrevPage}
                     className={`${base} ${hasPrevPage ? normal : disabled}`}
                 >
@@ -86,7 +88,7 @@ export const GalleryPagination = ({
                     return (
                         <Link
                             key={item}
-                            href={createGalleryPageHref(item)}
+                            href={createPageHref(basePath, item)}
                             aria-current={isActive ? "page" : undefined}
                             className={`${base} ${isActive ? active : normal}`}
                         >
@@ -96,7 +98,7 @@ export const GalleryPagination = ({
                 })}
 
                 <Link
-                    href={createGalleryPageHref(currentPage + 1)}
+                    href={createPageHref(basePath, currentPage + 1)}
                     aria-disabled={!hasNextPage}
                     className={`${base} ${hasNextPage ? normal : disabled}`}
                 >

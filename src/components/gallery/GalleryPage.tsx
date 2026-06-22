@@ -4,7 +4,7 @@ import uk from "@/src/locales/uk";
 import {RouteBackground} from "@/src/common/routeBackground";
 import {GalleryItem, GalleryLanguage} from "@/src/types/gallery";
 import {GalleryGrid} from "./GalleryGrid";
-import {GalleryPagination} from "./GalleryPagination";
+import {CommonPagination} from "@/src/common/pagination";
 
 type GalleryPageProps = {
     currentLang: GalleryLanguage;
@@ -65,10 +65,11 @@ export const GalleryPage = ({
                     closeLabel={locale.gallery.close}
                 />
 
-                <GalleryPagination
+                <CommonPagination
                     currentPage={currentPage}
                     totalPages={totalPages}
                     label={locale.gallery.page}
+                    basePath="/gallery"
                 />
             </section>
         </RouteBackground>
