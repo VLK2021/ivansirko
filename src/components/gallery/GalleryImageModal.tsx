@@ -45,12 +45,12 @@ export const GalleryImageModal = ({
                 aria-label={closeLabel}
             />
 
-            <div className="relative z-10 flex h-[80vh] w-[80vw] max-w-[1320px] flex-col border border-[#6d4b25] bg-[#160903] shadow-[0_30px_100px_rgba(0,0,0,0.75)]">
-                <div className="flex min-h-0 flex-1 items-center justify-center bg-black">
+            <div className="relative z-10 flex h-[82vh] w-[82vw] max-w-[1320px] flex-col border border-[#6d4b25] bg-[#160903] shadow-[0_30px_100px_rgba(0,0,0,0.75)]">
+                <div className="flex min-h-0 flex-1 items-center justify-center bg-black p-4">
                     <img
                         src={item.image}
                         alt={item.id}
-                        className="h-full w-full object-fill"
+                        className="max-h-full max-w-full object-contain"
                     />
                 </div>
 
@@ -58,7 +58,7 @@ export const GalleryImageModal = ({
                     <a
                         href={item.image}
                         download
-                        className="border border-[#d8b16a] bg-[#94551f] px-10 py-4 text-sm font-black uppercase tracking-[0.22em] text-[#160903] transition hover:bg-[#d8b16a]"
+                        className="border border-[#d8b16a] bg-[#94551f] px-8 py-3 text-xs font-black uppercase tracking-[0.18em] text-[#160903] transition hover:bg-[#d8b16a]"
                     >
                         ↓ {downloadLabel}
                     </a>
@@ -66,7 +66,7 @@ export const GalleryImageModal = ({
                     <button
                         type="button"
                         onClick={onClose}
-                        className="border border-[#d8b16a] bg-transparent px-10 py-4 text-sm font-black uppercase tracking-[0.22em] text-[#f7d78a] transition hover:bg-[#94551f] hover:text-[#160903]"
+                        className="border border-[#d8b16a] bg-transparent px-8 py-3 text-xs font-black uppercase tracking-[0.18em] text-[#f7d78a] transition hover:bg-[#94551f] hover:text-[#160903]"
                     >
                         × {closeLabel}
                     </button>
