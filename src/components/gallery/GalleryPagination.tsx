@@ -21,16 +21,21 @@ const createPaginationItems = (
     }
 
     const items: PaginationItem[] = [1];
+
     const left = Math.max(2, currentPage - 1);
     const right = Math.min(totalPages - 1, currentPage + 1);
 
-    if (left > 2) items.push("ellipsis");
+    if (left > 2) {
+        items.push("ellipsis");
+    }
 
     for (let page = left; page <= right; page += 1) {
         items.push(page);
     }
 
-    if (right < totalPages - 1) items.push("ellipsis");
+    if (right < totalPages - 1) {
+        items.push("ellipsis");
+    }
 
     items.push(totalPages);
 
@@ -42,35 +47,38 @@ export const GalleryPagination = ({
                                       totalPages,
                                       label,
                                   }: GalleryPaginationProps) => {
-    if (totalPages <= 1) return null;
+    if (totalPages <= 1) {
+        return null;
+    }
 
     const paginationItems = createPaginationItems(currentPage, totalPages);
     const hasPrevPage = currentPage > 1;
     const hasNextPage = currentPage < totalPages;
 
-    const baseClass =
-        "flex h-11 min-w-11 items-center justify-center border px-4 text-sm font-black transition-all duration-300";
+    const baseButtonClass =
+        "flex h-9 min-w-9 items-center justify-center border border-[#d8b16a] px-3 text-xs font-black uppercase tracking-[0.12em] transition-colors duration-300";
 
-    const activeClass =
-        "border-[#2a1205] bg-[#2a1205] text-[#f7d78a] shadow-[0_0_0_3px_rgba(247,215,138,0.7)]";
+    const normalButtonClass =
+        "bg-[#94551f] text-[#160903] hover:bg-[#d8b16a]";
 
-    const inactiveClass =
-        "border-[#2a1205] bg-[#f7d78a] text-[#2a1205] shadow-[0_8px_24px_rgba(58,24,8,0.22)] hover:bg-[#ffffff] hover:text-[#2a1205] hover:shadow-[0_0_0_3px_rgba(42,18,5,0.35)]";
+    const activeButtonClass =
+        "bg-[#f7d78a] text-[#160903] shadow-[0_0_0_2px_rgba(22,9,3,0.45)]";
 
-    const disabledClass =
-        "pointer-events-none border-[#8b5a24]/25 bg-[#f7d78a]/25 text-[#8b5a24]/40";
+    const disabledButtonClass =
+        "pointer-events-none bg-[#94551f]/35 text-[#160903]/35 opacity-60";
 
     return (
-        <nav className="mt-16 flex flex-col items-center gap-5">
-            <p className="text-sm font-black text-[#2a1205]">
+        <nav className="mt-16 flex flex-col items-center gap-4">
+            <p className="text-sm font-bold text-[#2a1205]">
                 {label} {currentPage} / {totalPages}
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-2">
                 <Link
                     href={createGalleryPageHref(currentPage - 1)}
-                    className={`${baseClass} ${
-                        hasPrevPage ? inactiveClass : disabledClass
+                    aria-disabled={!hasPrevPage}
+                    className={`${baseButtonClass} ${
+                        hasPrevPage ? normalButtonClass : disabledButtonClass
                     }`}
                 >
                     ←
@@ -81,7 +89,7 @@ export const GalleryPagination = ({
                         return (
                             <span
                                 key={`ellipsis-${index}`}
-                                className="flex h-11 min-w-11 items-center justify-center text-sm font-black text-[#2a1205]"
+                                className="flex h-9 min-w-9 items-center justify-center text-xs font-black text-[#2a1205]"
                             >
                                 ...
                             </span>
@@ -95,8 +103,8 @@ export const GalleryPagination = ({
                             key={item}
                             href={createGalleryPageHref(item)}
                             aria-current={isActive ? "page" : undefined}
-                            className={`${baseClass} ${
-                                isActive ? activeClass : inactiveClass
+                            className={`${baseButtonClass} ${
+                                isActive ? activeButtonClass : normalButtonClass
                             }`}
                         >
                             {item}
@@ -106,8 +114,9 @@ export const GalleryPagination = ({
 
                 <Link
                     href={createGalleryPageHref(currentPage + 1)}
-                    className={`${baseClass} ${
-                        hasNextPage ? inactiveClass : disabledClass
+                    aria-disabled={!hasNextPage}
+                    className={`${baseButtonClass} ${
+                        hasNextPage ? normalButtonClass : disabledButtonClass
                     }`}
                 >
                     →
