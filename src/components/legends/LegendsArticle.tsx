@@ -37,7 +37,7 @@ export const LegendsArticle = ({
                     <img
                         src={item.image}
                         alt={title}
-                        className="max-h-[460px] w-full object-cover"
+                        className="block h-auto w-full"
                     />
                 </div>
             )}
