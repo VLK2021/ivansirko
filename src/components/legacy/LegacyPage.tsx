@@ -17,23 +17,29 @@ export const LegacyPage = ({currentLang}: LegacyPageProps) => {
 
     return (
         <RouteBackground>
-            <section className="relative z-10 mx-auto max-w-[1440px] px-4 pb-20 pt-10 sm:px-6 lg:px-10">
-                <LegacyHero
-                    eyebrow={locale.legacy.eyebrow}
-                    title={locale.legacy.title}
-                    description={locale.legacy.description}
-                />
+            <section className="relative z-10 overflow-hidden px-4 pb-24 pt-10 sm:px-6 lg:px-10">
+                <div className="mx-auto max-w-[1440px]">
+                    <LegacyHero
+                        eyebrow={locale.legacy.eyebrow}
+                        title={locale.legacy.title}
+                        description={locale.legacy.description}
+                    />
 
-                <LegacyQuote quote={locale.legacy.quote} />
+                    <LegacyQuote quote={locale.legacy.quote} />
 
-                <div className="space-y-10">
-                    {items.map((item) => (
-                        <LegacySection
-                            key={item.id}
-                            item={item}
-                            currentLang={currentLang}
-                        />
-                    ))}
+                    <div className="relative mx-auto mt-24 max-w-6xl">
+                        <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-transparent via-[#94551f] to-transparent lg:block" />
+
+                        <div className="space-y-24">
+                            {items.map((item) => (
+                                <LegacySection
+                                    key={item.id}
+                                    item={item}
+                                    currentLang={currentLang}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </section>
         </RouteBackground>

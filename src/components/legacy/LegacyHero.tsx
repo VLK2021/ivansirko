@@ -1,3 +1,8 @@
+"use client";
+
+import {motion, useScroll, useTransform} from "framer-motion";
+import {useRef} from "react";
+
 type LegacyHeroProps = {
     eyebrow: string;
     title: string;
@@ -9,27 +14,63 @@ export const LegacyHero = ({
                                title,
                                description,
                            }: LegacyHeroProps) => {
+    const ref = useRef<HTMLElement>(null);
+
+    const {scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["start start", "end start"],
+    });
+
+    const imageScale = useTransform(scrollYProgress, [0, 1], [1, 1.18]);
+    const contentY = useTransform(scrollYProgress, [0, 1], [0, 140]);
+    const opacity = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
+
     return (
-        <div className="relative mb-20 overflow-hidden border border-[#9b6a2c]/60 bg-[#2a1205]/10 px-5 py-16 shadow-[0_30px_120px_rgba(58,24,8,0.22)] sm:px-10 lg:px-16 lg:py-24">
-            <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#d8b16a]/30 blur-3xl" />
-            <div className="absolute -bottom-28 -right-24 h-80 w-80 rounded-full bg-[#94551f]/35 blur-3xl" />
-            <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.22),transparent_35%,rgba(148,85,31,0.18))]" />
+        <section
+            ref={ref}
+            className="relative mb-24 min-h-screen overflow-hidden border-b border-[#9b6a2c]/50 bg-[#120701]"
+        >
+            <motion.div
+                style={{scale: imageScale}}
+                className="absolute inset-0 bg-[url('/images/legacy/legacy-hero.jpg')] bg-cover bg-center"
+            />
 
-            <div className="relative z-10 mx-auto max-w-5xl text-center">
-                <p className="mb-6 inline-flex border border-[#d8b16a] bg-[#94551f] px-5 py-2 text-[11px] font-black uppercase tracking-[0.34em] text-[#160903] shadow-[0_12px_35px_rgba(58,24,8,0.25)]">
-                    {eyebrow}
-                </p>
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,7,1,0.95),rgba(18,7,1,0.62)_42%,rgba(18,7,1,0.2))]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_35%,rgba(216,177,106,0.26),transparent_34%)]" />
 
-                <h1 className="text-5xl font-semibold tracking-tight text-[#2a1205] sm:text-6xl lg:text-7xl">
-                    {title}
-                </h1>
+            <motion.div
+                style={{y: contentY, opacity}}
+                className="relative z-10 flex min-h-screen items-center px-5 py-28 sm:px-8 lg:px-16"
+            >
+                <div className="max-w-6xl">
+                    <motion.p
+                        initial={{opacity: 0, y: 24}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.7}}
+                        className="mb-8 inline-flex border border-[#d8b16a] bg-[#94551f] px-5 py-2 text-[11px] font-black uppercase tracking-[0.36em] text-[#160903]"
+                    >
+                        {eyebrow}
+                    </motion.p>
 
-                <div className="mx-auto mt-8 h-px max-w-2xl bg-gradient-to-r from-transparent via-[#94551f] to-transparent" />
+                    <motion.h1
+                        initial={{opacity: 0, y: 44}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.9, delay: 0.1}}
+                        className="max-w-5xl text-6xl font-semibold leading-[0.86] tracking-[-0.06em] text-[#f7d78a] sm:text-8xl lg:text-[150px]"
+                    >
+                        {title}
+                    </motion.h1>
 
-                <p className="mx-auto mt-8 max-w-3xl text-lg leading-9 text-[#4b260b] sm:text-xl">
-                    {description}
-                </p>
-            </div>
-        </div>
+                    <motion.p
+                        initial={{opacity: 0, y: 36}}
+                        animate={{opacity: 1, y: 0}}
+                        transition={{duration: 0.9, delay: 0.22}}
+                        className="mt-9 max-w-3xl text-lg leading-9 text-[#ead39a] sm:text-xl"
+                    >
+                        {description}
+                    </motion.p>
+                </div>
+            </motion.div>
+        </section>
     );
 };

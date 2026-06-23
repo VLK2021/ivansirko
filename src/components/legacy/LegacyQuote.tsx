@@ -1,18 +1,25 @@
+"use client";
+
+import {motion} from "framer-motion";
+
 type LegacyQuoteProps = {
     quote: string;
 };
 
 export const LegacyQuote = ({quote}: LegacyQuoteProps) => {
     return (
-        <div className="relative mb-20 overflow-hidden border border-[#9b6a2c]/70 bg-[#160903] px-6 py-12 shadow-[0_35px_120px_rgba(22,9,3,0.38)] sm:px-10 lg:px-16">
-            <div className="absolute left-0 top-0 h-full w-1 bg-[#d8b16a]" />
-            <div className="absolute right-10 top-8 text-[160px] font-serif leading-none text-[#d8b16a]/10">
-                ”
-            </div>
+        <motion.section
+            initial={{opacity: 0, y: 60}}
+            whileInView={{opacity: 1, y: 0}}
+            viewport={{once: true, amount: 0.35}}
+            transition={{duration: 0.9}}
+            className="relative mx-auto mb-24 max-w-7xl overflow-hidden px-4 py-20"
+        >
+            <div className="absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-[#94551f]/60 to-transparent" />
 
-            <p className="relative z-10 mx-auto max-w-5xl text-center text-2xl font-semibold leading-10 text-[#f7d78a] sm:text-3xl sm:leading-[3.4rem]">
-                {quote}
+            <p className="relative z-10 mx-auto max-w-5xl text-center text-3xl font-semibold leading-[1.35] tracking-tight text-[#2a1205] sm:text-5xl">
+                “{quote}”
             </p>
-        </div>
+        </motion.section>
     );
 };
