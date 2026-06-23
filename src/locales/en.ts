@@ -256,6 +256,12 @@ const en = {
         download: "Download",
         close: "Close",
     },
+    legends: {
+        eyebrow: "Legends",
+        title: "Legends about Ivan Sirko",
+        description:
+            "Folk tales, legends and historical stories associated with Ivan Sirko.",
+    }
 };
 
 export default en;
