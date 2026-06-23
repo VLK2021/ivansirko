@@ -263,6 +263,14 @@ const en = {
             "Folk tales, legends, and historical stories connected with Ivan Sirko, his military fame, and the memory of the Zaporizhian Sich.",
         asideTitle: "Legend list",
     },
+    legacy: {
+        eyebrow: "Legacy",
+        title: "Ivan Sirko's Legacy",
+        description:
+            "The memory of Ivan Sirko lives in history, culture, folk tradition, monuments, and modern Ukrainian identity.",
+        quote:
+            "Sirko's legacy is not only the memory of a warrior, but also an image of Cossack freedom, strength of character, and responsibility to one's land.",
+    },
 };
 
 export default en;
