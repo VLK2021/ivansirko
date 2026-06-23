@@ -419,4 +419,219 @@ export const LEGENDS_ITEMS: LegendItem[] = [
 
         image: "/images/legends/sirko-protector.jpg",
     },
+    {
+        id: "sirko-last-campaign",
+        order: 11,
+        slug: "sirko-last-campaign",
+
+        titleUk: "Легенда про останній похід Сірка",
+        titleEn: "The Legend of Sirko's Last Campaign",
+
+        summaryUk:
+            "Народні перекази стверджують, що навіть у свої останні роки Іван Сірко залишався готовим вести козаків у бій.",
+        summaryEn:
+            "Folk traditions claim that even in his final years, Ivan Sirko remained ready to lead the Cossacks into battle.",
+
+        contentUk: [
+            "Серед запорозьких козаків довго існувала легенда про останній похід Івана Сірка. У ній розповідалося, що навіть у похилому віці отаман не втратив сили духу та бажання боронити рідний край.",
+            "За переказом, одного разу до Січі дійшла звістка про нову небезпеку. Ворожі загони знову з'явилися поблизу козацьких земель, і багато хто очікував чергового великого походу.",
+            "Тоді побратими почали просити Сірка залишитися в безпеці. Вони нагадували йому про роки, проведені в битвах, про численні походи та перемоги. Проте отаман відповів, що не може стояти осторонь, коли його земля потребує захисту.",
+            "Легенда говорить, що перед виступом Сірко довго дивився на степ. Він мовчав, ніби намагався запам'ятати кожен пагорб, кожну балку та кожен подих вітру. Козаки помітили, що цього разу їхній ватажок був особливо задумливим.",
+            "Коли військо рушило в похід, отаман їхав попереду, як робив це багато років поспіль. Побратими говорили, що сам його вигляд додавав людям впевненості та сили.",
+            "Під час переходу через степ Сірко нібито сказав найближчим товаришам, що кожен воїн має свій останній похід і що справжня слава полягає не в перемогах, а у вірності своєму обов'язку.",
+            "У легенді не описується велика битва чи гучна перемога. Навпаки, головною подією стає сам шлях. Старий отаман ніби прощається зі своїм життям, зі степом і з козацьким товариством.",
+            "Після повернення походу Сірко, за переказом, ще довго сидів біля вогнища разом із побратимами. Він слухав розмови козаків і майже не говорив сам. Багато хто пізніше згадував цей вечір як особливий.",
+            "Згодом народ почав вважати саме цей похід останнім у житті легендарного отамана. І хоча історичні подробиці відрізняються від легенди, сам образ назавжди закріпився в народній пам'яті.",
+            "Для українського фольклору ця історія символізує відданість своєму покликанню. Навіть наприкінці життя Сірко залишається воїном, який ставить обов'язок вище за власний спокій.",
+            "Саме тому легенда про останній похід збереглася протягом століть. Вона нагадує про силу характеру, яка не згасає з роками, та про людей, що залишаються вірними своїм переконанням до останнього дня.",
+        ],
+
+        contentEn: [
+            "Among the Zaporozhian Cossacks, there long existed a legend about Ivan Sirko's final campaign. It tells of how, even in old age, the otaman never lost his spirit or his desire to defend his homeland.",
+            "According to the tale, news once reached the Sich that enemy forces had appeared near Cossack lands again. Many expected another military expedition.",
+            "Sirko's comrades urged him to remain behind and rest. They reminded him of the many years he had spent in battle and of the victories he had already won. Yet the otaman replied that he could not remain idle while his land needed protection.",
+            "The legend says that before setting out, Sirko spent a long time looking across the steppe. He stood silently, as though trying to remember every hill, valley, and breath of wind. The Cossacks noticed that their leader seemed unusually thoughtful.",
+            "When the army departed, Sirko rode at its head, just as he had done for many years. His very presence inspired confidence and courage among the warriors.",
+            "During the journey, Sirko supposedly told his closest companions that every warrior has a final campaign and that true glory lies not in victory itself but in faithfulness to one's duty.",
+            "The legend does not focus on a great battle or a famous triumph. Instead, the journey itself becomes the central event. The aging otaman appears to be saying farewell to life, the steppe, and the brotherhood of the Cossacks.",
+            "After returning from the expedition, Sirko allegedly spent a long evening sitting beside a campfire with his comrades. He listened to their conversations and spoke very little. Many later remembered that evening as something special.",
+            "Over time, people came to regard this campaign as the last one in the life of the legendary otaman. Although historical details differ from the tale, the image remained deeply rooted in popular memory.",
+            "For Ukrainian folklore, the story symbolizes devotion to one's calling. Even near the end of life, Sirko remains a warrior who places duty above personal comfort.",
+            "That is why the legend of the last campaign survived through the centuries. It reminds us of a strength of character that does not fade with age and of people who remain true to their convictions until their final day.",
+        ],
+
+        image: "/images/legends/sirko-last-campaign.jpg",
+    },
+    {
+        id: "sirko-black-rider",
+        order: 12,
+        slug: "sirko-black-rider",
+
+        titleUk: "Легенда про чорного вершника",
+        titleEn: "The Legend of the Black Rider",
+
+        summaryUk:
+            "У народних переказах розповідали про загадкового вершника, який з'являвся в степу перед великою небезпекою і якого пов'язували з Іваном Сірком.",
+        summaryEn:
+            "Folk tales tell of a mysterious rider who appeared in the steppe before great danger and whom people associated with Ivan Sirko.",
+
+        contentUk: [
+            "Після смерті Івана Сірка серед мешканців запорозьких земель почала поширюватися дивна легенда про чорного вершника. Розповідали, що іноді в степу з'являвся самотній козак на темному коні, якого ніхто не міг наздогнати або добре роздивитися.",
+            "Найчастіше його бачили перед важливими подіями. Одні говорили, що вершник з'являвся напередодні ворожих набігів. Інші стверджували, що він попереджав про небезпеку для козацьких поселень або торгових шляхів.",
+            "За легендою, одного разу група чумаків поверталася додому через степ. Уже сутеніло, коли вони помітили на пагорбі вершника. Він мовчки сидів на коні й дивився вдалину.",
+            "Коли чумаки спробували підійти ближче, вершник повернув коня та рушив у бік балки. Зацікавлені люди вирішили поїхати за ним, але невдовзі втратили його з поля зору.",
+            "Наступного ранку вони дізналися, що дорога, якою збиралися їхати спочатку, була перекрита нападниками. Завдяки затримці їм вдалося уникнути небезпеки. Відтоді чумаки були переконані, що бачили самого Сірка.",
+            "Інший переказ говорить про козаків, які заблукали під час сильної бурі. Коли надія майже зникла, попереду з'явився вершник на чорному коні. Він не говорив ні слова, але впевнено рухався вперед. Козаки поїхали за ним і незабаром знайшли правильний шлях.",
+            "Щойно вони вибралися з небезпечного місця, вершник безслідно зник. Ніхто не зміг пояснити, куди він подівся. Саме після таких історій легенда почала швидко поширюватися по всьому Запорожжю.",
+            "У народній уяві чорний вершник став символом захисту та попередження. Він не втручався безпосередньо в людські справи, але допомагав тим, хто опинявся на межі небезпеки.",
+            "Згодом багато людей почали вважати, що це дух Івана Сірка продовжує охороняти степові дороги. Його образ поєднався з давніми уявленнями про воїнів-захисників, які навіть після смерті не залишають свій край.",
+            "Історики, звичайно, не мають доказів існування такого вершника. Проте сама легенда цікава тим, що демонструє величезну повагу до постаті Сірка. Для народу він залишався захисником навіть після завершення земного життя.",
+            "Сьогодні легенда про чорного вершника є однією з найатмосферніших історій, пов'язаних з ім'ям Івана Сірка. Вона поєднує історичну пам'ять, народну фантазію та романтику безкраїх українських степів.",
+        ],
+
+        contentEn: [
+            "After Ivan Sirko's death, a mysterious legend began to spread across the lands of Zaporizhia. People spoke of a lone rider on a dark horse who appeared in the steppe and whom nobody could catch or clearly identify.",
+            "The rider was most often seen before important events. Some claimed he appeared before enemy raids, while others believed he warned of danger threatening Cossack settlements and trade routes.",
+            "According to one story, a group of merchants was returning home across the steppe at dusk when they noticed a rider standing silently on a hill, looking into the distance.",
+            "When they attempted to approach him, the rider turned his horse and moved toward a nearby ravine. Curious, the travelers followed, but soon lost sight of him.",
+            "The following morning they learned that the road they had originally intended to take had been occupied by attackers. Because of the delay, they escaped danger. From that moment they were convinced they had seen Sirko himself.",
+            "Another tale tells of Cossacks who became lost during a violent storm. Just as hope began to fade, a rider on a black horse appeared ahead of them. He said nothing, but confidently moved forward. The Cossacks followed and soon found the correct path.",
+            "Once they reached safety, the rider vanished without a trace. No one could explain where he had gone. Stories like this helped spread the legend throughout Zaporizhia.",
+            "In popular imagination, the black rider became a symbol of protection and warning. He did not interfere directly in human affairs, but guided those who found themselves in danger.",
+            "Over time, many people came to believe that the rider was the spirit of Ivan Sirko continuing to watch over the roads of the steppe. His image merged with older traditions of warrior guardians who protect their homeland even after death.",
+            "Historians, of course, have no evidence that such a rider ever existed. Yet the legend demonstrates the immense respect people held for Sirko. In their minds, he remained a protector long after his earthly life had ended.",
+            "Today the legend of the Black Rider remains one of the most atmospheric stories associated with Ivan Sirko. It combines historical memory, folk imagination, and the romance of the endless Ukrainian steppe.",
+        ],
+
+        image: "/images/legends/sirko-black-rider.jpg",
+    },
+    {
+        id: "sirko-grave",
+        order: 13,
+        slug: "sirko-grave",
+
+        titleUk: "Легенда про могилу Івана Сірка",
+        titleEn: "The Legend of Ivan Sirko's Grave",
+
+        summaryUk:
+            "Навколо могили Івана Сірка протягом століть виникло чимало народних переказів, які перетворили місце поховання отамана на символ пам'яті та сили.",
+        summaryEn:
+            "Over the centuries, many folk tales arose around Ivan Sirko's grave, turning his burial place into a symbol of memory and strength.",
+
+        contentUk: [
+            "Після смерті Івана Сірка його поховали біля Чортомлицької Січі. Для козаків це було не просто місце спочинку відомого отамана, а справжня святиня, пов'язана з пам'яттю про одну з найвидатніших постатей Запорожжя.",
+            "Минали роки, змінювалися покоління, але люди продовжували приходити до могили Сірка. Козаки, чумаки, мандрівники та звичайні селяни зупинялися біля поховання, щоб згадати легендарного ватажка та попросити в нього підтримки.",
+            "За народним переказом, могила Сірка нібито мала особливу силу. Говорили, що людина, яка приходить сюди з чистими намірами та щирим серцем, отримує мужність для подолання життєвих труднощів.",
+            "Одна легенда розповідає про молодого козака, який боявся першого великого походу. Перед відправленням він прийшов до могили отамана і довго сидів поруч у мовчанні. Після цього страх нібито зник, а сам козак повернувся додому з честю та славою.",
+            "Інша історія говорить про старого мандрівника, який заблукав у степу. Втомлений і виснажений, він випадково натрапив на могилу Сірка. Провівши ніч біля поховання, чоловік наступного дня легко знайшов правильний шлях і благополучно дістався додому.",
+            "З роками виникла також легенда про те, що вночі біля могили іноді можна побачити самотню постать козака. Він стоїть мовчки, дивиться на степ і зникає до світанку. Люди вірили, що це дух самого Сірка продовжує охороняти свою землю.",
+            "Деякі перекази стверджували, що під час великої небезпеки над могилою з'являється дивне світло. Воно нібито попереджає людей про майбутні випробування або нагадує про необхідність єдності перед загрозою.",
+            "Особливого значення могила Сірка набула в часи, коли Запорозька Січ уже перестала існувати. Для багатьох українців вона стала одним із небагатьох матеріальних нагадувань про козацьку добу та її героїв.",
+            "Історики не знаходять підтверджень надприродним подіям, які описують легенди. Проте сам факт того, що народ протягом століть зберігав пам'ять про це місце, свідчить про величезний авторитет Сірка серед українців.",
+            "У символічному сенсі могила отамана стала місцем зустрічі історії та народної пам'яті. Тут реальна постать видатного полководця поєдналася з легендами, які народилися навколо його імені.",
+            "Саме тому легенда про могилу Івана Сірка залишається живою й сьогодні. Вона нагадує, що пам'ять про великих людей може пережити століття та продовжувати надихати нові покоління.",
+        ],
+
+        contentEn: [
+            "After Ivan Sirko's death, he was buried near the Chortomlyk Sich. For the Cossacks, this was not merely the resting place of a famous otaman, but a sacred site connected to one of the greatest figures in Zaporizhian history.",
+            "Years passed and generations changed, yet people continued to visit Sirko's grave. Cossacks, merchants, travelers, and ordinary villagers stopped there to remember the legendary leader and seek inspiration from his example.",
+            "According to folk tradition, Sirko's grave possessed a special power. People believed that anyone who came with sincere intentions and a pure heart would gain courage to overcome life's difficulties.",
+            "One legend tells of a young Cossack who feared his first major campaign. Before departing, he visited Sirko's grave and sat beside it in silence. Afterward, his fear disappeared, and he later returned home with honor and glory.",
+            "Another story speaks of an elderly traveler who became lost in the steppe. Exhausted and hopeless, he came upon Sirko's grave. After spending the night there, he easily found the correct road the next morning and safely returned home.",
+            "Over time, people began telling stories that a lone Cossack figure could sometimes be seen near the grave at night. The figure would stand silently, gazing across the steppe before disappearing at dawn. Many believed it was Sirko's spirit continuing to guard the land.",
+            "Some tales claimed that during times of great danger, a strange light appeared above the grave. It supposedly warned people of coming hardships or reminded them of the need for unity in difficult times.",
+            "Sirko's grave became especially important after the fall of the Zaporizhian Sich. For many Ukrainians, it remained one of the few tangible reminders of the Cossack era and its heroes.",
+            "Historians have found no evidence for the supernatural events described in these legends. Nevertheless, the fact that people preserved the memory of the site for centuries demonstrates the immense respect Sirko commanded.",
+            "Symbolically, the grave became a meeting point between history and folklore. Here, the real figure of a remarkable commander merged with the legends that grew around his name.",
+            "That is why the legend of Ivan Sirko's grave remains alive today. It reminds us that the memory of great people can survive for centuries and continue inspiring future generations.",
+        ],
+
+        image: "/images/legends/sirko-grave.jpg",
+    },
+    {
+        id: "sirko-cossack-souls",
+        order: 14,
+        slug: "sirko-cossack-souls",
+
+        titleUk: "Легенда про козацькі душі",
+        titleEn: "The Legend of the Cossack Souls",
+
+        summaryUk:
+            "Народні перекази розповідають, що загиблі козаки продовжували охороняти рідну землю разом із своїм отаманом навіть після смерті.",
+        summaryEn:
+            "Folk tales tell that fallen Cossacks continued to guard their homeland alongside their otaman even after death.",
+
+        contentUk: [
+            "Серед старовинних запорозьких легенд особливе місце займають розповіді про козацькі душі. У цих переказах говорилося, що воїни, які загинули в боротьбі за свою землю, не залишали її назавжди.",
+            "Народ вірив, що душі полеглих козаків продовжують блукати степами, охороняючи переправи, шляхи та місця колишніх січей. Вони не завдавали шкоди людям, а навпаки — допомагали тим, хто опинявся в небезпеці.",
+            "За легендою, одного разу невеликий козацький загін повертався з далекого походу. Несподівано над степом знявся густий туман, і воїни втратили орієнтир. Ніхто не знав, у який бік рухатися далі.",
+            "Коли вже почало сутеніти, козаки побачили вдалині декілька постатей. Незнайомці мовчки рухалися попереду, ніби показуючи шлях. Загін рушив слідом і невдовзі вийшов до знайомої дороги.",
+            "Щойно небезпека минула, загадкові постаті безслідно зникли. Старі козаки одразу сказали, що це були душі побратимів, які колись загинули в цих краях.",
+            "Інший переказ говорить про те, що під час великої бурі над степом іноді можна почути віддалений тупіт коней та брязкіт шабель. Люди вірили, що так нагадують про себе давні козацькі воїни.",
+            "Особливе місце в цих легендах займав Іван Сірко. Народна уява часто зображала його ватажком цього невидимого війська. Саме він нібито збирав душі козаків і продовжував охороняти запорозькі землі.",
+            "У багатьох селах старі люди розповідали, що в ніч перед великою небезпекою над степом можна побачити тіні вершників. Вони з'являються ненадовго, а потім розчиняються в темряві.",
+            "Такі історії виникали не через страх, а через бажання вірити, що подвиги предків не були забуті. Народ прагнув бачити своїх героїв поруч навіть тоді, коли їх уже давно не було серед живих.",
+            "Історичних підтверджень подібним подіям немає. Проте сама легенда відображає глибоку повагу до козацтва та пам'ять про тих, хто віддав життя за свою землю.",
+            "Саме тому легенда про козацькі душі збереглася до наших днів. Вона нагадує про зв'язок поколінь і про те, що пам'ять про героїв живе доти, доки про них пам'ятає народ.",
+        ],
+
+        contentEn: [
+            "Among the old legends of Zaporizhia, stories about the souls of Cossacks occupy a special place. These tales claimed that warriors who died defending their homeland never truly left it behind.",
+            "People believed that the souls of fallen Cossacks continued to wander across the steppes, guarding river crossings, roads, and the sites of former Sich fortresses. They were not feared as harmful spirits but respected as protectors.",
+            "According to one legend, a small Cossack detachment was returning from a distant campaign when a thick fog covered the steppe. The warriors lost their way and could no longer determine the correct direction.",
+            "As darkness approached, they noticed several figures moving ahead of them. The strangers remained silent but seemed to guide the Cossacks forward. Following them, the detachment soon found a familiar road.",
+            "The moment safety was reached, the mysterious figures disappeared without a trace. Older Cossacks immediately declared that they had been the souls of fallen comrades.",
+            "Another tale claims that during violent storms people could sometimes hear distant hoofbeats and the clatter of sabers across the steppe. These sounds were believed to come from the spirits of ancient warriors.",
+            "Ivan Sirko held a special place in such stories. Popular imagination often portrayed him as the leader of this invisible host, gathering the souls of Cossacks and continuing to defend the lands of Zaporizhia.",
+            "In many villages, elders said that before times of great danger, shadowy riders could be seen crossing the horizon at night. They appeared only briefly before fading into darkness.",
+            "Such stories were not born from fear, but from a desire to believe that the sacrifices of ancestors had not been forgotten. People wanted to feel that their heroes remained close to them.",
+            "There is no historical evidence supporting these events. Nevertheless, the legend reflects a deep respect for the Cossacks and for those who gave their lives for their homeland.",
+            "That is why the legend of the Cossack souls survives today. It reminds us of the connection between generations and of the enduring power of memory.",
+        ],
+
+        image: "/images/legends/sirko-cossack-souls.jpg",
+    },
+    {
+        id: "sirko-magic-cross",
+        order: 15,
+        slug: "sirko-magic-cross",
+
+        titleUk: "Легенда про чарівний хрест Сірка",
+        titleEn: "The Legend of Sirko's Sacred Cross",
+
+        summaryUk:
+            "Народні перекази розповідають про особливий хрест Івана Сірка, який нібито супроводжував його в походах і приносив козакам удачу.",
+        summaryEn:
+            "Folk tales tell of a special cross carried by Ivan Sirko, believed to accompany him on campaigns and bring fortune to the Cossacks.",
+
+        contentUk: [
+            "Серед численних переказів про Івана Сірка існує легенда про особливий хрест, який нібито належав кошовому отаману. За словами старих оповідачів, цей хрест був для нього не просто релігійним символом, а знаком віри, сили духу та захисту.",
+            "Розповідали, що хрест супроводжував Сірка в багатьох походах. Перед важливими битвами отаман часто залишався на самоті, тримаючи його в руках і розмірковуючи над майбутніми подіями. Козаки вірили, що саме в такі моменти він знаходив правильні рішення.",
+            "За легендою, одного разу запорожці опинилися в надзвичайно складному становищі. Ворог мав чисельну перевагу, а надія на перемогу здавалася примарною. У таборі почали ширитися тривога та невпевненість.",
+            "Тоді Сірко зібрав козаків і звернувся до них із промовою. Він нагадав побратимам про їхню віру, про обов'язок перед рідною землею та про те, що найбільша сила людини знаходиться не в зброї, а в її серці.",
+            "Після цього отаман підняв хрест над головою. Народний переказ стверджує, що саме цей момент став переломним. Козаки відчули впевненість у своїх силах і вирушили в бій із новою рішучістю.",
+            "Наступного дня запорожці здобули перемогу. Відтоді серед козаків почали говорити, що хрест приносить удачу та допомагає війську долати труднощі.",
+            "Згодом легенда почала обростати новими подробицями. Дехто розповідав, що хрест нібито світився перед небезпечними подіями. Інші стверджували, що він допомагав отаманові знаходити правильний шлях у найскладніших ситуаціях.",
+            "Особливо цікавою була історія про те, що після смерті Сірка місце перебування хреста стало невідомим. Через це виникли численні здогадки та перекази. Одні вважали, що реліквія була похована разом із отаманом. Інші вірили, що її сховали козаки, аби вона не потрапила до чужих рук.",
+            "З роками хрест перетворився на символ не стільки містичної сили, скільки духовної стійкості. Для народу він уособлював віру, яка допомагає людині не втрачати надію навіть у найважчі часи.",
+            "Історичних доказів існування саме такого хреста немає. Проте сама легенда добре відображає те, наскільки важливими були віра та духовні цінності в житті запорозьких козаків.",
+            "Саме тому легенда про чарівний хрест Сірка пережила багато поколінь. Вона нагадує про те, що справжня сила часто народжується не з могутності чи багатства, а з переконань, які людина носить у своєму серці.",
+        ],
+
+        contentEn: [
+            "Among the many tales about Ivan Sirko is a legend concerning a special cross said to have belonged to the famous otaman. According to storytellers, the cross was more than a religious object—it was a symbol of faith, strength, and protection.",
+            "People claimed that the cross accompanied Sirko on many military campaigns. Before important battles, he would often spend time alone holding it while reflecting on the challenges ahead. The Cossacks believed that these moments helped him find the right decisions.",
+            "According to the legend, the Zaporozhian Cossacks once found themselves in an extremely difficult situation. The enemy greatly outnumbered them, and hopes of victory seemed very small. Anxiety began to spread through the camp.",
+            "Sirko gathered his warriors and addressed them. He reminded them of their faith, their duty to their homeland, and the belief that true strength comes not from weapons but from the human spirit.",
+            "The otaman then raised the cross above his head. Folk tradition claims that this moment changed everything. The Cossacks regained confidence and entered battle with renewed determination.",
+            "The following day they achieved victory. Afterward, many began to say that the cross brought good fortune and helped the army overcome hardships.",
+            "As time passed, additional details were added to the story. Some claimed the cross glowed before moments of great danger. Others believed it guided Sirko toward wise decisions during difficult circumstances.",
+            "One of the most fascinating parts of the legend concerns the fate of the cross after Sirko's death. Its whereabouts supposedly became unknown. Some believed it was buried with him, while others thought loyal Cossacks hid it to keep it from falling into foreign hands.",
+            "Over the years, the cross came to symbolize not mystical power, but spiritual endurance. For many people it represented the faith that helps individuals remain strong even in the darkest times.",
+            "There is no historical evidence proving the existence of such a cross. Nevertheless, the legend reflects the important role that faith and spiritual values played in the lives of the Cossacks.",
+            "For this reason, the legend of Sirko's sacred cross survived through generations. It reminds us that true strength often comes not from power or wealth, but from the convictions carried within one's heart.",
+        ],
+
+        image: "/images/legends/sirko-magic-cross.jpg",
+    },
 ];
