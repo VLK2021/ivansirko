@@ -33,11 +33,18 @@ export const LegendsArticle = ({
             </div>
 
             {item.image && (
-                <div className="mb-7 border border-[#9b6a2c]/55 bg-[#d9b56f] p-[6px]">
+                <div className="mb-6 md:float-right md:ml-6 md:mb-4">
                     <img
                         src={item.image}
                         alt={title}
-                        className="block h-auto w-full"
+                        className="
+                w-full
+                md:w-[320px]
+                border
+                border-[#9b6a2c]/55
+                bg-[#d9b56f]
+                p-[4px]
+            "
                     />
                 </div>
             )}
