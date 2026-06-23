@@ -9,11 +9,7 @@ type LegacyHeroProps = {
     description: string;
 };
 
-export const LegacyHero = ({
-                               eyebrow,
-                               title,
-                               description,
-                           }: LegacyHeroProps) => {
+export const LegacyHero = ({eyebrow, title, description}: LegacyHeroProps) => {
     const ref = useRef<HTMLElement>(null);
 
     const {scrollYProgress} = useScroll({
@@ -28,19 +24,28 @@ export const LegacyHero = ({
     return (
         <section
             ref={ref}
-            className="relative mb-24 min-h-screen overflow-hidden border-b border-[#9b6a2c]/50 bg-[#120701]"
+            className="relative mb-24 overflow-hidden border-b border-[#9b6a2c]/50 bg-[#120701] lg:min-h-screen"
         >
             <motion.div
                 style={{scale: imageScale}}
-                className="absolute inset-0 bg-[url('/images/legacy/legacy-hero.jpg')] bg-cover bg-center"
+                className="absolute inset-0 hidden bg-[url('/images/legacy/legacy-hero.jpg')] bg-cover bg-center lg:block"
             />
+
+            <div className="relative z-0 block lg:hidden">
+                <img
+                    src="/images/legacy/legacy-hero.jpg"
+                    alt=""
+                    className="h-auto w-full"
+                />
+                <div className="absolute inset-0 bg-[#120701]/55" />
+            </div>
 
             <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(18,7,1,0.95),rgba(18,7,1,0.62)_42%,rgba(18,7,1,0.2))]" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_35%,rgba(216,177,106,0.26),transparent_34%)]" />
 
             <motion.div
                 style={{y: contentY, opacity}}
-                className="relative z-10 flex min-h-screen items-center px-5 py-28 sm:px-8 lg:px-16"
+                className="relative z-10 flex min-h-[70vh] items-center px-5 py-20 sm:px-8 lg:min-h-screen lg:px-16 lg:py-28"
             >
                 <div className="max-w-6xl">
                     <motion.p
@@ -56,7 +61,7 @@ export const LegacyHero = ({
                         initial={{opacity: 0, y: 44}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.9, delay: 0.1}}
-                        className="max-w-5xl text-6xl font-semibold leading-[0.86] tracking-[-0.06em] text-[#f7d78a] sm:text-8xl lg:text-[150px]"
+                        className="max-w-5xl text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#f7d78a] sm:text-7xl lg:text-[150px] lg:leading-[0.86]"
                     >
                         {title}
                     </motion.h1>
@@ -65,7 +70,7 @@ export const LegacyHero = ({
                         initial={{opacity: 0, y: 36}}
                         animate={{opacity: 1, y: 0}}
                         transition={{duration: 0.9, delay: 0.22}}
-                        className="mt-9 max-w-3xl text-lg leading-9 text-[#ead39a] sm:text-xl"
+                        className="mt-8 max-w-3xl text-base leading-8 text-[#ead39a] sm:text-xl sm:leading-9"
                     >
                         {description}
                     </motion.p>

@@ -12,10 +12,7 @@ type LegacySectionProps = {
     currentLang: LegacyLanguage;
 };
 
-export const LegacySection = ({
-                                  item,
-                                  currentLang,
-                              }: LegacySectionProps) => {
+export const LegacySection = ({item, currentLang}: LegacySectionProps) => {
     const ref = useRef<HTMLElement>(null);
 
     const {scrollYProgress} = useScroll({
@@ -37,11 +34,11 @@ export const LegacySection = ({
     return (
         <section
             ref={ref}
-            className="relative min-h-screen overflow-hidden border-y border-[#9b6a2c]/35"
+            className="relative overflow-hidden border-y border-[#9b6a2c]/35 bg-[#120701] lg:min-h-screen"
         >
             <motion.div
                 style={{y: imageY, scale: imageScale}}
-                className="absolute inset-0"
+                className="absolute inset-0 hidden lg:block"
             >
                 <img
                     src={item.image}
@@ -49,6 +46,15 @@ export const LegacySection = ({
                     className="h-full w-full object-cover"
                 />
             </motion.div>
+
+            <div className="relative block lg:hidden">
+                <img
+                    src={item.image}
+                    alt={title}
+                    className="h-auto w-full"
+                />
+                <div className="absolute inset-0 bg-[#120701]/35" />
+            </div>
 
             <div
                 className={`absolute inset-0 ${
@@ -68,8 +74,8 @@ export const LegacySection = ({
             </motion.div>
 
             <div
-                className={`relative z-10 flex min-h-screen items-center px-5 py-24 sm:px-8 lg:px-16 ${
-                    isReversed ? "justify-end" : "justify-start"
+                className={`relative z-10 flex items-center px-5 py-10 sm:px-8 lg:min-h-screen lg:px-16 lg:py-24 ${
+                    isReversed ? "lg:justify-end" : "lg:justify-start"
                 }`}
             >
                 <motion.article
@@ -78,7 +84,7 @@ export const LegacySection = ({
                     whileInView={{opacity: 1, x: 0}}
                     viewport={{once: true, amount: 0.28}}
                     transition={{duration: 0.9}}
-                    className="relative max-w-2xl border border-[#d8b16a]/45 bg-[#120701]/78 p-6 shadow-[0_35px_130px_rgba(0,0,0,0.55)] backdrop-blur-md sm:p-9 lg:p-11"
+                    className="relative max-w-2xl border border-[#d8b16a]/45 bg-[#120701]/82 p-5 shadow-[0_35px_130px_rgba(0,0,0,0.55)] backdrop-blur-md sm:p-8 lg:p-11"
                 >
                     <div className="absolute -left-3 -top-3 h-20 w-20 border-l border-t border-[#d8b16a]/70" />
                     <div className="absolute -bottom-3 -right-3 h-20 w-20 border-b border-r border-[#d8b16a]/70" />
