@@ -260,8 +260,9 @@ const en = {
         eyebrow: "Legends",
         title: "Legends about Ivan Sirko",
         description:
-            "Folk tales, legends and historical stories associated with Ivan Sirko.",
-    }
+            "Folk tales, legends, and historical stories connected with Ivan Sirko, his military fame, and the memory of the Zaporizhian Sich.",
+        asideTitle: "Legend list",
+    },
 };
 
 export default en;
