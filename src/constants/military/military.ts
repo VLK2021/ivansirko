@@ -2666,140 +2666,717 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
         ],
     },
     {
-        id: "zaporizhian-defense",
-        slug: "zaporizhian-defense",
+        id: "zaporizhzhia",
+        slug: "zaporizhzhia",
         order: 6,
         direction: "zaporizhia",
-        titleUk: "Оборона Запорожжя",
-        titleEn: "Defense of Zaporizhia",
+
+        titleUk: "Запорожжя",
+        titleEn: "Zaporizhia",
+
         shortTitleUk: "Запорожжя",
         shortTitleEn: "Zaporizhia",
-        periodUk: "1660–1670-ті роки",
-        periodEn: "1660s–1670s",
+
+        periodUk: "1675",
+        periodEn: "1675",
+
         summaryUk:
-            "Оборонні дії, контрудари, захист Січі та боротьба за безпеку запорозьких земель.",
+            "Кампанія 1675 року — один із найвідоміших кримських походів Івана Сірка, пов’язаний із переходом через Сиваш, ударами по Гезлеву, Карасубазару й Бахчисараю, розгромом ханських сил та визволенням бранців.",
+
         summaryEn:
-            "Defensive actions, counterstrikes, protection of the Sich, and the struggle for the security of Zaporizhian lands.",
+            "The 1675 campaign is one of Ivan Sirko's best-known Crimean campaigns, connected with the crossing of Syvash, strikes against Gezlev, Karasubazar and Bakhchysarai, the defeat of the khan's forces, and the liberation of captives.",
+
         contentUk: [
-            "Сірко відомий не лише як організатор наступальних походів, а й як оборонець Запорожжя.",
-            "Цей напрямок об'єднує події, де головною метою було зупинити ворога, захистити Січ або перехопити нападників до того, як вони досягнуть козацьких земель.",
+            "У 1675 році Сірко організував великий похід на Кримське ханство.",
+            "Похід відбувся після татарсько-турецьких загроз Запорожжю та став відповіддю на небезпеку з боку Криму.",
+            "За даними Вікіпедії, Кримський похід 1675 року датують 23–29 вересня 1675 року.",
+            "У джерелах згадується перехід через Сиваш, удари по Гезлеву, Карасубазару й Бахчисараю, втеча хана в гори та визволення великої кількості невільників.",
         ],
+
         contentEn: [
-            "Sirko is known not only as an organizer of offensive campaigns, but also as a defender of Zaporizhia.",
-            "This direction brings together events whose main goal was to stop the enemy, protect the Sich, or intercept raiders before they reached Cossack lands.",
+            "In 1675, Sirko organized a major campaign against the Crimean Khanate.",
+            "The campaign followed Tatar-Ottoman threats to Zaporizhia and became a response to the danger from Crimea.",
+            "According to Wikipedia, the Crimean campaign of 1675 is dated September 23–29, 1675.",
+            "Sources mention the crossing of Syvash, strikes against Gezlev, Karasubazar and Bakhchysarai, the khan's flight into the mountains, and the liberation of many captives.",
         ],
-        image: "/images/military/zaporizhian-defense.jpg",
+
+        image: "/images/military/zaporizhzhia.webp",
+
         events: [
             {
-                id: "defense-against-tatar-raids",
-                slug: "defense-against-tatar-raids",
+                id: "crimean-campaign-preparation-1675",
+                slug: "crimean-campaign-preparation-1675",
                 order: 1,
-                year: "1660–1670-ті",
-                dateEn: "1660s–1670s",
-                type: "defense",
+                year: "1675",
+                dateUk: "липень — вересень 1675 року",
+                dateEn: "July — September 1675",
+
+                type: "campaign",
                 direction: "zaporizhia",
                 importance: "major",
                 resultType: "strategic-success",
                 confidence: "medium",
-                titleUk: "Оборона від татарських набігів",
-                titleEn: "Defense against Tatar Raids",
-                locationUk: "Запорозькі землі, степові шляхи",
-                locationEn: "Zaporizhian lands, steppe routes",
-                opponentsUk: ["Кримські татари", "ногайські загони"],
-                opponentsEn: ["Crimean Tatars", "Nogai detachments"],
-                resultUk:
-                    "Стримування набігів і захист запорозького простору.",
-                resultEn:
-                    "Containment of raids and defense of the Zaporizhian space.",
-                summaryUk:
-                    "Боротьба Сірка з татарськими набігами була постійною складовою його військового шляху.",
-                summaryEn:
-                    "Sirko's struggle against Tatar raids was a constant part of his military path.",
-                contentUk: [
-                    "Не всі військові дії Сірка можна звести до окремих битв із точною датою.",
-                    "Велика частина його ролі як кошового отамана полягала у швидкій відповіді на загрози, перехопленні ворога та захисті запорозьких земель від набігів.",
-                ],
-                contentEn: [
-                    "Not all of Sirko's military actions can be reduced to separate battles with exact dates.",
-                    "A large part of his role as Kish Otaman consisted of rapid response to threats, interception of enemy forces, and defense of Zaporizhian lands against raids.",
-                ],
-                hasDetailPage: false,
-                image: "/images/military/defense-against-tatar-raids.jpg",
-                sources: [SOURCES.sirkoOttomanTatar, SOURCES.yavornytskyi],
-            },
-            {
-                id: "defense-of-the-sich",
-                slug: "defense-of-the-sich",
-                order: 2,
-                year: "1660–1670-ті",
-                dateEn: "1660s–1670s",
-                type: "defense",
-                direction: "zaporizhia",
-                importance: "major",
-                resultType: "strategic-success",
-                confidence: "medium",
-                titleUk: "Захист Запорозької Січі",
-                titleEn: "Defense of the Zaporizhian Sich",
+
+                titleUk: "Підготовка великого кримського походу",
+                titleEn: "Preparation of the Great Crimean Campaign",
+
                 locationUk: "Запорозька Січ",
                 locationEn: "Zaporizhian Sich",
-                opponentsUk: ["Кримське ханство", "Османські союзники"],
-                opponentsEn: ["Crimean Khanate", "Ottoman allies"],
+
+                opponentsUk: [
+                    "Кримське ханство",
+                    "Османська імперія",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                    "Ottoman Empire",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Фрол Мінаєв",
+                    "Касбулат Черкаський",
+                    "Мазан-батир",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Frol Minaev",
+                    "Kasbulat Cherkassky",
+                    "Mazan Batyr",
+                ],
+
+                forcesUk:
+                    "Вікіпедія подає для союзних сил 20 000 запорожців, 1 500–2 500 донців, 300 московських ратних людей, 546–800 калмиків і 1 000 черкесів; ці цифри варто подавати як дані конкретного джерела.",
+                forcesEn:
+                    "Wikipedia gives the allied strength as 20,000 Zaporozhians, 1,500–2,500 Don Cossacks, 300 Muscovite troops, 546–800 Kalmyks, and 1,000 Circassians; these figures should be presented as source data.",
+
+                lossesUk:
+                    "На етапі підготовки втрати не застосовуються.",
+                lossesEn:
+                    "Losses are not applicable at the preparation stage.",
+
                 resultUk:
-                    "Збереження військового центру запорожців.",
+                    "Було зібрано велике союзне військо для походу проти Кримського ханства.",
                 resultEn:
-                    "Preservation of the military center of the Zaporozhians.",
+                    "A large allied force was assembled for a campaign against the Crimean Khanate.",
+
                 summaryUk:
-                    "Сірко як кошовий отаман був відповідальний за безпеку Січі та її військового простору.",
+                    "У 1675 році Сірко підготував великий похід на Крим, у якому разом із запорожцями діяли донці, калмики, черкеси й московські ратні люди.",
+
                 summaryEn:
-                    "As Kish Otaman, Sirko was responsible for the security of the Sich and its military space.",
-                contentUk: [
-                    "Оборона Січі була не лише воєнним завданням, а й питанням існування запорозького устрою.",
-                    "Саме тому дії Сірка треба розглядати не тільки як серію походів, а як системну боротьбу за безпеку й автономію Запорожжя.",
+                    "In 1675, Sirko prepared a major campaign against Crimea, in which Don Cossacks, Kalmyks, Circassians, and Muscovite troops acted together with the Zaporozhians.",
+
+                courseUk: [
+                    "За джерельним викладом, Сірко повернувся на Запорозьку Січ і організував похід як відповідь на кримсько-османську загрозу.",
+                    "Похід був підтриманий усім військом.",
+                    "У складі союзних сил джерела називають запорожців, донських козаків, калмиків, черкесів і московських ратних людей.",
+                    "Після підготовки військо рушило в напрямку Криму.",
                 ],
-                contentEn: [
-                    "The defense of the Sich was not only a military task, but also a question of the existence of the Zaporizhian order.",
-                    "For this reason, Sirko's actions should be viewed not only as a series of campaigns, but as a systematic struggle for the security and autonomy of Zaporizhia.",
+
+                courseEn: [
+                    "According to the source account, Sirko returned to the Zaporizhian Sich and organized the campaign as a response to the Crimean-Ottoman threat.",
+                    "The campaign was supported by the whole host.",
+                    "Sources name Zaporozhians, Don Cossacks, Kalmyks, Circassians, and Muscovite troops among the allied forces.",
+                    "After preparation, the army moved toward Crimea.",
                 ],
+
+                significanceUk: [
+                    "Це старт найвідомішої пізньої кримської кампанії Сірка.",
+                    "Подія показує, що Сірко діяв не лише із запорожцями, а й із союзниками.",
+                    "У масиві її варто тримати як окремий event, бо вона пояснює масштаб походу 1675 року.",
+                ],
+
+                significanceEn: [
+                    "This is the beginning of Sirko's best-known late Crimean campaign.",
+                    "The event shows that Sirko acted not only with Zaporozhians, but also with allies.",
+                    "It should remain a separate event in the dataset because it explains the scale of the 1675 campaign.",
+                ],
+
+                historicalNoteUk:
+                    "Чисельність військ подана за Вікіпедією і має бути відображена як джерельна оцінка, а не як абсолютно безспірний факт.",
+
+                historicalNoteEn:
+                    "The troop numbers are taken from Wikipedia and should be presented as a source estimate, not as an absolutely undisputed fact.",
+
                 hasDetailPage: false,
-                image: "/images/military/defense-of-the-sich.jpg",
-                sources: [SOURCES.yavornytskyi],
+                image: "/images/military/events/crimean-campaign-preparation-1675.webp",
+
+                sources: [
+                    "Вікіпедія: Кримський похід (1675)",
+                    "Кримський похід Івана Сірка через Сиваш",
+                ],
             },
             {
-                id: "counterstrikes-from-zaporizhia",
-                slug: "counterstrikes-from-zaporizhia",
-                order: 3,
-                year: "1660–1670-ті",
-                dateEn: "1660s–1670s",
+                id: "syvash-crossing-1675",
+                slug: "syvash-crossing-1675",
+                order: 2,
+                year: "1675",
+                dateUk: "вересень 1675 року",
+                dateEn: "September 1675",
+
                 type: "raid",
                 direction: "zaporizhia",
-                importance: "medium",
+                importance: "major",
                 resultType: "strategic-success",
-                confidence: "medium",
-                titleUk: "Контрудари із Запорожжя",
-                titleEn: "Counterstrikes from Zaporizhia",
-                locationUk: "Запорожжя, південний степ",
-                locationEn: "Zaporizhia, southern steppe",
-                opponentsUk: ["Татарські й турецькі сили"],
-                opponentsEn: ["Tatar and Turkish forces"],
+                confidence: "high",
+
+                titleUk: "Перехід через Сиваш",
+                titleEn: "Crossing of Syvash",
+
+                locationUk: "Сиваш, Кримський півострів",
+                locationEn: "Syvash, Crimean Peninsula",
+
+                opponentsUk: [
+                    "Кримське ханство",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "Ті самі союзні сили, що брали участь у Кримському поході 1675 року; точний склад групи, яка переходила через Сиваш, окремо не поданий.",
+                forcesEn:
+                    "The same allied forces that took part in the Crimean campaign of 1675; the exact composition of the group that crossed Syvash is not separately given.",
+
+                lossesUk:
+                    "Втрати під час самого переходу в джерелах не деталізовані.",
+                lossesEn:
+                    "Losses during the crossing itself are not detailed in the sources.",
+
                 resultUk:
-                    "Перенесення бойових дій на територію противника.",
+                    "Козаки обійшли Перекоп і несподівано увійшли до Криму через Сиваш.",
                 resultEn:
-                    "Transfer of combat actions into enemy territory.",
+                    "The Cossacks bypassed Perekop and unexpectedly entered Crimea through Syvash.",
+
                 summaryUk:
-                    "Запорожжя було не лише оборонним центром, а й базою для наступальних рейдів Сірка.",
+                    "Перехід через Сиваш дозволив Сірку обійти Перекопські укріплення й несподівано з’явитися в Криму.",
+
                 summaryEn:
-                    "Zaporizhia was not only a defensive center, but also a base for Sirko's offensive raids.",
-                contentUk: [
-                    "Сірко часто діяв за логікою активної оборони: не чекати нападу, а завдавати удару першим.",
-                    "Саме тому оборона Запорожжя нерозривно пов'язана з рейдами, переслідуваннями й ударами по ворожих таборах.",
+                    "The crossing of Syvash allowed Sirko to bypass the Perekop fortifications and unexpectedly appear in Crimea.",
+
+                courseUk: [
+                    "Перекоп був головним укріпленим входом до Криму.",
+                    "Сірко обрав нестандартний шлях через Сиваш, що дозволило уникнути прямого удару по головній оборонній лінії.",
+                    "Несподіваний перехід дав козакам тактичну перевагу.",
+                    "Після цього військо змогло діяти вглиб Кримського ханства.",
                 ],
-                contentEn: [
-                    "Sirko often acted according to the logic of active defense: not waiting for an attack, but striking first.",
-                    "That is why the defense of Zaporizhia is inseparably connected with raids, pursuit actions, and strikes against enemy camps.",
+
+                courseEn: [
+                    "Perekop was the main fortified entrance to Crimea.",
+                    "Sirko chose an unusual route through Syvash, avoiding a direct strike against the main defensive line.",
+                    "The unexpected crossing gave the Cossacks a tactical advantage.",
+                    "After this, the army was able to operate deep inside the Crimean Khanate.",
                 ],
+
+                significanceUk: [
+                    "Це ключовий маневр у поході 1675 року.",
+                    "Перехід через Сиваш пояснює, чому кримські сили були застигнуті зненацька.",
+                    "Подія добре показує характер тактики Сірка: раптовість, обхід і удар у тил.",
+                ],
+
+                significanceEn: [
+                    "This was the key maneuver of the 1675 campaign.",
+                    "The crossing through Syvash explains why Crimean forces were caught off guard.",
+                    "The event clearly shows Sirko's tactical style: surprise, bypassing, and striking from the rear.",
+                ],
+
+                historicalNoteUk:
+                    "Подія підтверджується описами Кримського походу 1675 року, але джерела не дають технічних деталей самого переходу.",
+                historicalNoteEn:
+                    "The event is confirmed by descriptions of the 1675 Crimean campaign, but sources do not provide technical details of the crossing itself.",
+
                 hasDetailPage: false,
-                image: "/images/military/counterstrikes-from-zaporizhia.jpg",
-                sources: [SOURCES.sirkoOttomanTatar, SOURCES.yavornytskyi],
+                image: "/images/military/events/syvash-crossing-1675.webp",
+
+                sources: [
+                    "Вікіпедія: Кримський похід (1675)",
+                    "Кримський похід Івана Сірка через Сиваш",
+                ],
+            },
+            {
+                id: "gezlev-karasubazar-raid-1675",
+                slug: "gezlev-karasubazar-raid-1675",
+                order: 3,
+                year: "1675",
+                dateUk: "вересень 1675 року",
+                dateEn: "September 1675",
+
+                type: "raid",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Удари по Гезлеву й Карасубазару",
+                titleEn: "Strikes against Gezlev and Karasubazar",
+
+                locationUk: "Гезлев, Карасубазар, Крим",
+                locationEn: "Gezlev, Karasubazar, Crimea",
+
+                opponentsUk: [
+                    "Кримське ханство",
+                    "кримськотатарські сили",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                    "Crimean Tatar forces",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "Точна чисельність загонів, які діяли саме біля Гезлева й Карасубазара, не подана.",
+                forcesEn:
+                    "The exact strength of the detachments acting near Gezlev and Karasubazar is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
+
+                resultUk:
+                    "Козаки атакували важливі кримські міста й татарські поселення.",
+                resultEn:
+                    "The Cossacks attacked important Crimean towns and Tatar settlements.",
+
+                summaryUk:
+                    "Після переходу через Сиваш козацькі сили діяли вглиб Криму, зокрема в напрямку Гезлева й Карасубазара.",
+
+                summaryEn:
+                    "After crossing Syvash, the Cossack forces operated deep inside Crimea, including in the direction of Gezlev and Karasubazar.",
+
+                courseUk: [
+                    "Після несподіваного входу до Криму козацьке військо почало рейдові дії.",
+                    "У джерелах згадуються удари по Гезлеву, тобто сучасній Євпаторії.",
+                    "Також згадується Карасубазар як один із важливих пунктів походу.",
+                    "Козаки завдали шкоди кримськотатарським поселенням і центрам ханства.",
+                ],
+
+                courseEn: [
+                    "After the unexpected entry into Crimea, the Cossack army began raiding actions.",
+                    "Sources mention strikes against Gezlev, modern Yevpatoria.",
+                    "Karasubazar is also mentioned as one of the important points of the campaign.",
+                    "The Cossacks inflicted damage on Crimean Tatar settlements and centers of the khanate.",
+                ],
+
+                significanceUk: [
+                    "Гезлев і Карасубазар були важливими кримськими пунктами.",
+                    "Удар по них показав, що похід не обмежився прикордонним рейдом.",
+                    "Подія демонструє глибину проникнення Сірка в Крим.",
+                ],
+
+                significanceEn: [
+                    "Gezlev and Karasubazar were important Crimean points.",
+                    "The strike against them showed that the campaign was not limited to a border raid.",
+                    "The event demonstrates the depth of Sirko's penetration into Crimea.",
+                ],
+
+                historicalNoteUk:
+                    "Подія є частиною опису Кримського походу 1675 року; точний перебіг окремих боїв біля цих міст у коротких джерелах не поданий.",
+                historicalNoteEn:
+                    "The event is part of the description of the 1675 Crimean campaign; the exact course of separate battles near these towns is not given in short sources.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/gezlev-karasubazar-raid-1675.webp",
+
+                sources: [
+                    "Вікіпедія: Кримський похід (1675)",
+                    "Походи Івана Сірка",
+                ],
+            },
+            {
+                id: "bakhchysarai-campaign-1675",
+                slug: "bakhchysarai-campaign-1675",
+                order: 4,
+                year: "1675",
+                dateUk: "вересень 1675 року",
+                dateEn: "September 1675",
+
+                type: "campaign",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Похід на Бахчисарай",
+                titleEn: "Campaign against Bakhchysarai",
+
+                locationUk: "Бахчисарай, Крим",
+                locationEn: "Bakhchysarai, Crimea",
+
+                opponentsUk: [
+                    "Кримське ханство",
+                    "війська Селіма I Ґерая",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                    "forces of Selim I Giray",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Селім I Ґерай",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Selim I Giray",
+                ],
+
+                forcesUk:
+                    "Для всього Кримського походу джерела подають великі союзні сили; окрема чисельність саме під Бахчисараєм подається в різних викладах по-різному.",
+                forcesEn:
+                    "For the whole Crimean campaign, sources give large allied forces; the exact strength specifically near Bakhchysarai varies between accounts.",
+
+                lossesUk:
+                    "Вікіпедія подає для всієї кампанії значні втрати ханських сил; точні втрати саме під Бахчисараєм треба подавати обережно.",
+                lossesEn:
+                    "Wikipedia gives heavy losses for the khan's forces in the whole campaign; exact losses specifically near Bakhchysarai should be presented cautiously.",
+
+                resultUk:
+                    "Козаки дійшли до столиці ханства; хан Селім I Ґерай, за джерельним викладом, утік у гори.",
+                resultEn:
+                    "The Cossacks reached the khanate's capital; Khan Selim I Giray reportedly fled into the mountains.",
+
+                summaryUk:
+                    "Похід на Бахчисарай став центральним епізодом кампанії 1675 року, бо козаки загрожували самій столиці Кримського ханства.",
+
+                summaryEn:
+                    "The campaign against Bakhchysarai became the central episode of the 1675 campaign because the Cossacks threatened the very capital of the Crimean Khanate.",
+
+                courseUk: [
+                    "Після ударів по кримських містах козацькі сили рушили до Бахчисарая.",
+                    "Бахчисарай був політичним центром Кримського ханства.",
+                    "За джерельним викладом, хан Селім I Ґерай не зміг організувати успішну оборону й утік у гори.",
+                    "Козаки завдали удару по столиці ханства й продовжили рейдові дії.",
+                ],
+
+                courseEn: [
+                    "After strikes against Crimean towns, the Cossack forces moved toward Bakhchysarai.",
+                    "Bakhchysarai was the political center of the Crimean Khanate.",
+                    "According to the source account, Khan Selim I Giray failed to organize successful defense and fled into the mountains.",
+                    "The Cossacks struck the khanate's capital and continued raiding actions.",
+                ],
+
+                significanceUk: [
+                    "Бахчисарай був символічним і політичним центром ханської влади.",
+                    "Досягнення столиці Криму мало величезний психологічний ефект.",
+                    "Це один із найвідоміших епізодів усієї військової біографії Сірка.",
+                ],
+
+                significanceEn: [
+                    "Bakhchysarai was the symbolic and political center of khanate power.",
+                    "Reaching the Crimean capital had a huge psychological effect.",
+                    "This is one of the best-known episodes of Sirko's entire military biography.",
+                ],
+
+                historicalNoteUk:
+                    "Подія згадується у Вікіпедії та популярних викладах, але сторінка про похід на Бахчисарай має неперевірений статус, тому деталі треба подавати обережно.",
+                historicalNoteEn:
+                    "The event is mentioned in Wikipedia and popular accounts, but the article on the Bakhchysarai campaign is marked as unchecked, so details should be presented cautiously.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/bakhchysarai-campaign-1675.webp",
+
+                sources: [
+                    "Вікіпедія: Кримський похід (1675)",
+                    "Вікіпедія: Похід на Бахчисарай",
+                ],
+            },
+            {
+                id: "liberation-of-captives-1675",
+                slug: "liberation-of-captives-1675",
+                order: 5,
+                year: "1675",
+                dateUk: "вересень 1675 року",
+                dateEn: "September 1675",
+
+                type: "raid",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Визволення невільників",
+                titleEn: "Liberation of Captives",
+
+                locationUk: "Крим",
+                locationEn: "Crimea",
+
+                opponentsUk: [
+                    "Кримське ханство",
+                    "татарські сили",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                    "Tatar forces",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "У межах загального війська Кримського походу 1675 року.",
+                forcesEn:
+                    "Within the general army of the 1675 Crimean campaign.",
+
+                lossesUk:
+                    "Точні втрати в цьому епізоді не подані.",
+                lossesEn:
+                    "Exact losses in this episode are not given.",
+
+                resultUk:
+                    "Було визволено велику кількість невільників; джерела називають українців, росіян і поляків.",
+                resultEn:
+                    "A large number of captives were liberated; sources mention Ukrainians, Russians, and Poles.",
+
+                summaryUk:
+                    "Одним із головних результатів походу 1675 року стало визволення багатьох християнських бранців із Криму.",
+
+                summaryEn:
+                    "One of the main results of the 1675 campaign was the liberation of many Christian captives from Crimea.",
+
+                courseUk: [
+                    "Під час рейдів по Криму козаки знаходили й визволяли бранців.",
+                    "У джерелах згадуються українці, росіяни й поляки серед визволених.",
+                    "Визволення невільників було одним із ключових мотивів запорозьких походів проти Кримського ханства.",
+                    "Частину визволених було виведено з Криму разом із козацьким військом.",
+                ],
+
+                courseEn: [
+                    "During the raids across Crimea, the Cossacks found and liberated captives.",
+                    "Sources mention Ukrainians, Russians, and Poles among the liberated people.",
+                    "The liberation of captives was one of the key motives of Zaporozhian campaigns against the Crimean Khanate.",
+                    "Some of the liberated people were taken out of Crimea together with the Cossack army.",
+                ],
+
+                significanceUk: [
+                    "Визволення бранців було одним із головних моральних і військових результатів походу.",
+                    "Цей сюжет став важливою частиною пам’яті про Сірка.",
+                    "Подія пояснює, чому кримські походи мали не лише військовий, а й соціальний сенс.",
+                ],
+
+                significanceEn: [
+                    "The liberation of captives was one of the main moral and military results of the campaign.",
+                    "This episode became an important part of the memory of Sirko.",
+                    "The event explains why Crimean campaigns had not only military but also social meaning.",
+                ],
+
+                historicalNoteUk:
+                    "Кількість визволених у різних викладах може відрізнятися, тому в UI краще не подавати одну цифру як остаточну, якщо вона не підтверджена конкретним джерелом.",
+                historicalNoteEn:
+                    "The number of liberated captives may differ between accounts, so the UI should not present one figure as final unless tied to a specific source.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/liberation-of-captives-1675.webp",
+
+                sources: [
+                    "Вікіпедія: Кримський похід (1675)",
+                    "Вікіпедія: Похід на Бахчисарай",
+                ],
+            },
+            {
+                id: "returning-captives-episode-1675",
+                slug: "returning-captives-episode-1675",
+                order: 6,
+                year: "1675",
+                dateUk: "після виходу з Криму, 1675 рік",
+                dateEn: "after leaving Crimea, 1675",
+
+                type: "political-military",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "medium",
+
+                titleUk: "Епізод із бранцями, які захотіли повернутися до Криму",
+                titleEn: "Episode with Captives Who Wanted to Return to Crimea",
+
+                locationUk: "шлях із Криму на Запорожжя",
+                locationEn: "route from Crimea to Zaporizhia",
+
+                opponentsUk: [],
+                opponentsEn: [],
+
+                commandersUk: [
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "Не застосовується: це епізод після основних бойових дій.",
+                forcesEn:
+                    "Not applicable: this was an episode after the main combat actions.",
+
+                lossesUk:
+                    "У літописній традиції цей епізод має трагічний характер; точні дані треба подавати лише з прив’язкою до джерела.",
+                lossesEn:
+                    "In the chronicle tradition, this episode has a tragic character; exact data should be presented only with source attribution.",
+
+                resultUk:
+                    "Частина визволених людей, за літописною традицією, вирішила повернутися до Криму, бо вже мала там родини або майно.",
+                resultEn:
+                    "According to the chronicle tradition, some liberated people decided to return to Crimea because they already had families or property there.",
+
+                summaryUk:
+                    "Відомий літописний епізод походу 1675 року пов’язаний із частиною звільнених невільників, які не захотіли йти на Україну.",
+
+                summaryEn:
+                    "A well-known chronicle episode of the 1675 campaign concerns some liberated captives who did not want to go to Ukraine.",
+
+                courseUk: [
+                    "Після визволення бранців частина людей рушила разом із козаками.",
+                    "За літописною традицією, частина звільнених захотіла повернутися назад до Криму.",
+                    "Причиною називали те, що за роки неволі вони вже мали там родини або майно.",
+                    "Цей епізод часто згадується в описах походу 1675 року як складна й трагічна частина історії.",
+                ],
+
+                courseEn: [
+                    "After the liberation of captives, some people moved together with the Cossacks.",
+                    "According to the chronicle tradition, some of the liberated people wanted to return to Crimea.",
+                    "The reason given was that during years of captivity they had already acquired families or property there.",
+                    "This episode is often mentioned in descriptions of the 1675 campaign as a complex and tragic part of the story.",
+                ],
+
+                significanceUk: [
+                    "Епізод показує людський вимір козацьких походів.",
+                    "Він пояснює, що визволення з неволі не завжди було простим поверненням додому.",
+                    "Це важлива частина історичної пам’яті про похід Сірка 1675 року.",
+                ],
+
+                significanceEn: [
+                    "The episode shows the human dimension of Cossack campaigns.",
+                    "It explains that liberation from captivity was not always a simple return home.",
+                    "It is an important part of historical memory about Sirko's 1675 campaign.",
+                ],
+
+                historicalNoteUk:
+                    "Цей сюжет походить із літописної традиції, зокрема з опису Самійла Величка, тому його треба подавати саме як літописний епізод, а не як повністю перевірену статистичну подію.",
+                historicalNoteEn:
+                    "This story comes from the chronicle tradition, especially the account of Samiilo Velychko, so it should be presented as a chronicle episode, not as a fully verified statistical event.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/returning-captives-episode-1675.webp",
+
+                sources: [
+                    "Вікіпедія: Кримський похід (1675)",
+                    "Літописна традиція Самійла Величка",
+                ],
+            },
+            {
+                id: "tiahyn-campaign-november-1675",
+                slug: "tiahyn-campaign-november-1675",
+                order: 7,
+                year: "1675",
+                dateUk: "листопад 1675 року",
+                dateEn: "November 1675",
+
+                type: "campaign",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Похід на Тягинь",
+                titleEn: "Campaign against Tiahyn",
+
+                locationUk: "Тягинь, Білгородщина, Волощина",
+                locationEn: "Tiahyn, Bilhorod region, Wallachia",
+
+                opponentsUk: [
+                    "турецькі сили",
+                    "татарські орди",
+                ],
+                opponentsEn: [
+                    "Turkish forces",
+                    "Tatar hordes",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "За популярним викладом: 10 000 козаків і кілька сотень союзників-калмиків.",
+                forcesEn:
+                    "According to a popular account: 10,000 Cossacks and several hundred allied Kalmyks.",
+
+                lossesUk:
+                    "Точні втрати не подані; джерело говорить про поразку турецьких і татарських орд, полонених і трофеї.",
+                lossesEn:
+                    "Exact losses are not given; the source mentions the defeat of Turkish and Tatar hordes, prisoners, and trophies.",
+
+                resultUk:
+                    "Козаки спалили фортецю Тягинь, завдали поразки турецьким і татарським силам, захопили полонених і трофеї.",
+                resultEn:
+                    "The Cossacks burned the fortress of Tiahyn, defeated Turkish and Tatar forces, and captured prisoners and trophies.",
+
+                summaryUk:
+                    "У листопаді 1675 року Сірко здійснив похід на Крим, Білгородщину й Волощину, під час якого було спалено фортецю Тягинь.",
+
+                summaryEn:
+                    "In November 1675, Sirko carried out a campaign toward Crimea, the Bilhorod region, and Wallachia, during which the fortress of Tiahyn was burned.",
+
+                courseUk: [
+                    "Після великого кримського походу Сірко продовжив активні дії на південно-західному напрямку.",
+                    "У джерельному викладі згадується похід на Крим, Білгородщину й Волощину.",
+                    "У поході, за популярним викладом, брали участь 10 тисяч козаків і кілька сотень союзників-калмиків.",
+                    "Козаки завдали поразки турецьким і татарським ордам.",
+                    "Фортецю Тягинь було спалено, також згадуються полонені й трофеї.",
+                ],
+
+                courseEn: [
+                    "After the great Crimean campaign, Sirko continued active operations in the southwestern direction.",
+                    "The source account mentions a campaign toward Crimea, the Bilhorod region, and Wallachia.",
+                    "According to a popular account, 10,000 Cossacks and several hundred allied Kalmyks took part.",
+                    "The Cossacks defeated Turkish and Tatar hordes.",
+                    "The fortress of Tiahyn was burned, and prisoners and trophies are also mentioned.",
+                ],
+
+                significanceUk: [
+                    "Похід показує, що кампанія 1675 року не обмежилася самим Кримом.",
+                    "Тягинь був важливим пунктом османсько-татарського прикордоння.",
+                    "Подія доповнює великий кримський похід і показує широту дій Сірка в 1675 році.",
+                ],
+
+                significanceEn: [
+                    "The campaign shows that the 1675 operations were not limited to Crimea itself.",
+                    "Tiahyn was an important point of the Ottoman-Tatar frontier.",
+                    "The event complements the great Crimean campaign and shows the breadth of Sirko's actions in 1675.",
+                ],
+
+                historicalNoteUk:
+                    "Цифри щодо 10 тисяч козаків і калмицьких союзників подаються в популярному історичному викладі; для академічного тексту їх варто маркувати як джерельні, а не безумовно остаточні.",
+                historicalNoteEn:
+                    "The figures of 10,000 Cossacks and Kalmyk allies are given in a popular historical account; for academic text they should be marked as source-based, not absolutely final.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/tiahyn-campaign-november-1675.webp",
+
+                sources: [
+                    "Походи Івана Сірка",
+                    "Укрінформ: Іван Сірко. У руках Пуруші",
+                ],
             },
         ],
     },
