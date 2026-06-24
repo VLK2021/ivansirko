@@ -32,26 +32,53 @@ export type MilitaryEvent = {
     id: string;
     slug?: string;
     order: number;
+
     year: string;
     dateUk?: string;
     dateEn?: string;
+
     type: MilitaryEntityType;
     direction: MilitaryDirection;
     importance: MilitaryImportance;
     resultType: MilitaryResult;
-    confidence: MilitaryConfidence;
+    confidence?: MilitaryConfidence;
+
     titleUk: string;
     titleEn: string;
+
     locationUk?: string;
     locationEn?: string;
+
     opponentsUk?: string[];
     opponentsEn?: string[];
+
+    commandersUk?: string[];
+    commandersEn?: string[];
+
+    forcesUk?: string;
+    forcesEn?: string;
+
+    lossesUk?: string;
+    lossesEn?: string;
+
     resultUk?: string;
     resultEn?: string;
+
     summaryUk: string;
     summaryEn: string;
-    contentUk: string[];
-    contentEn: string[];
+
+    contentUk?: string[];
+    contentEn?: string[];
+
+    courseUk?: string[];
+    courseEn?: string[];
+
+    significanceUk?: string[];
+    significanceEn?: string[];
+
+    historicalNoteUk?: string;
+    historicalNoteEn?: string;
+
     hasDetailPage: boolean;
     image?: string;
     sources?: string[];
@@ -62,16 +89,23 @@ export type MilitaryCampaign = {
     slug: string;
     order: number;
     direction: MilitaryDirection;
+
     titleUk: string;
     titleEn: string;
+
     shortTitleUk: string;
     shortTitleEn: string;
+
     periodUk: string;
     periodEn: string;
+
     summaryUk: string;
     summaryEn: string;
+
     contentUk: string[];
     contentEn: string[];
+
     image?: string;
+
     events: MilitaryEvent[];
 };

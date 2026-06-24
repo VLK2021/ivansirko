@@ -11,10 +11,23 @@ type EventDetailsProps = {
 export const EventDetails = ({event, currentLang}: EventDetailsProps) => {
     const title = currentLang === "en" ? event.titleEn : event.titleUk;
     const summary = currentLang === "en" ? event.summaryEn : event.summaryUk;
-    const content = currentLang === "en" ? event.contentEn : event.contentUk;
     const location = currentLang === "en" ? event.locationEn : event.locationUk;
     const result = currentLang === "en" ? event.resultEn : event.resultUk;
     const opponents = currentLang === "en" ? event.opponentsEn : event.opponentsUk;
+    const commanders = currentLang === "en" ? event.commandersEn : event.commandersUk;
+    const forces = currentLang === "en" ? event.forcesEn : event.forcesUk;
+    const losses = currentLang === "en" ? event.lossesEn : event.lossesUk;
+    const note = currentLang === "en" ? event.historicalNoteEn : event.historicalNoteUk;
+
+    const course =
+        currentLang === "en"
+            ? event.courseEn ?? event.contentEn ?? []
+            : event.courseUk ?? event.contentUk ?? [];
+
+    const significance =
+        currentLang === "en"
+            ? event.significanceEn ?? []
+            : event.significanceUk ?? [];
 
     return (
         <motion.article
@@ -28,7 +41,7 @@ export const EventDetails = ({event, currentLang}: EventDetailsProps) => {
 
             <div className="relative z-10">
                 <p className="mb-4 text-[11px] font-black uppercase tracking-[0.28em] text-[#6f3f13]">
-                    {event.year} / {event.type}
+                    {event.dateUk ?? event.year} / {event.type}
                 </p>
 
                 <h2 className="text-3xl font-semibold tracking-tight text-[#2a1205] sm:text-5xl">
@@ -39,19 +52,48 @@ export const EventDetails = ({event, currentLang}: EventDetailsProps) => {
                     {summary}
                 </p>
 
-                <div className="mt-7 grid gap-4 md:grid-cols-3">
+                <div className="mt-7 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                     {location && <MetaItem label={currentLang === "en" ? "Location" : "Місце"} value={location} />}
                     {result && <MetaItem label={currentLang === "en" ? "Result" : "Результат"} value={result} />}
-                    {opponents?.length ? (
-                        <MetaItem label={currentLang === "en" ? "Opponents" : "Противники"} value={opponents.join(", ")} />
-                    ) : null}
+                    {opponents?.length ? <MetaItem label={currentLang === "en" ? "Opponents" : "Противники"} value={opponents.join(", ")} /> : null}
+                    {commanders?.length ? <MetaItem label={currentLang === "en" ? "Commanders" : "Командири"} value={commanders.join(", ")} /> : null}
+                    {forces && <MetaItem label={currentLang === "en" ? "Forces" : "Сили"} value={forces} />}
+                    {losses && <MetaItem label={currentLang === "en" ? "Losses" : "Втрати"} value={losses} />}
                 </div>
 
-                <div className="mt-8 space-y-5 text-base leading-8 text-[#3a1808]">
-                    {content.map((paragraph) => (
-                        <p key={paragraph}>{paragraph}</p>
-                    ))}
-                </div>
+                {course.length > 0 && (
+                    <div className="mt-8">
+                        <h3 className="text-xl font-semibold text-[#2a1205]">
+                            {currentLang === "en" ? "Course of events" : "Перебіг події"}
+                        </h3>
+
+                        <div className="mt-4 space-y-5 text-base leading-8 text-[#3a1808]">
+                            {course.map((paragraph) => (
+                                <p key={paragraph}>{paragraph}</p>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {significance.length > 0 && (
+                    <div className="mt-8">
+                        <h3 className="text-xl font-semibold text-[#2a1205]">
+                            {currentLang === "en" ? "Significance" : "Значення"}
+                        </h3>
+
+                        <ul className="mt-4 space-y-3 text-base leading-8 text-[#3a1808]">
+                            {significance.map((item) => (
+                                <li key={item}>— {item}</li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
+                {note && (
+                    <p className="mt-8 border border-[#9b6a2c]/45 bg-[#f3d98f]/45 p-4 text-sm leading-7 text-[#3a1808]">
+                        {note}
+                    </p>
+                )}
             </div>
         </motion.article>
     );
@@ -62,6 +104,7 @@ const MetaItem = ({label, value}: {label: string; value: string}) => (
         <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#6f3f13]">
             {label}
         </p>
+
         <p className="mt-2 text-sm font-semibold leading-6 text-[#2a1205]">
             {value}
         </p>
