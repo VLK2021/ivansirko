@@ -28,21 +28,26 @@ export const CampaignWorkspace = ({
             initial={{opacity: 0, y: 24}}
             animate={{opacity: 1, y: 0}}
             transition={{duration: 0.45}}
-            className="min-w-0"
+            className="relative min-w-0"
         >
-            <CampaignOverview campaign={campaign} currentLang={currentLang} />
+            <EventTimeline
+                events={events}
+                activeEventId={activeEvent?.id ?? ""}
+                currentLang={currentLang}
+                onEventChange={onEventChange}
+            />
 
-            <div className="mt-8 xl:pl-[270px]">
-                <EventTimeline
-                    events={events}
-                    activeEventId={activeEvent?.id ?? ""}
-                    currentLang={currentLang}
-                    onEventChange={onEventChange}
-                />
+            <div className="xl:pl-[280px]">
+                <CampaignOverview campaign={campaign} currentLang={currentLang} />
 
-                {activeEvent && (
-                    <EventDetails event={activeEvent} currentLang={currentLang} />
-                )}
+                <div className="mt-8">
+                    {activeEvent && (
+                        <EventDetails
+                            event={activeEvent}
+                            currentLang={currentLang}
+                        />
+                    )}
+                </div>
             </div>
         </motion.div>
     );
