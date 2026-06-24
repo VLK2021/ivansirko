@@ -24,21 +24,23 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
         periodEn: "1653–1659",
 
         summaryUk:
-            "Період першої документальної появи Івана Сірка та його входження у військово-політичне життя Запорожжя.",
+            "Період першої документальної появи Івана Сірка та його ранньої військової активності проти Виговського, татарських сил, ногайських улусів і союзників Кримського ханства.",
 
         summaryEn:
-            "The period of Ivan Sirko's first documentary appearance and his entry into the military-political life of Zaporizhia.",
+            "The period of Ivan Sirko's first documentary appearance and early military activity against Vyhovsky, Tatar forces, Nogai uluses, and allies of the Crimean Khanate.",
 
         contentUk: [
-            "Ім’я Івана Сірка вперше документально згадується під 1653 роком.",
-            "Активну роль у політичному й військовому житті України він почав відігравати з другої половини 1650-х років.",
-            "У 1657–1659 роках Сірко перебував в опозиції до Івана Виговського та його курсу на зближення з Річчю Посполитою і Кримським ханством.",
+            "Ім’я Івана Сірка вперше згадується в документах під 1653 роком.",
+            "У другій половині 1650-х років Сірко вже діяв як помітна військово-політична постать козацької України.",
+            "У 1657–1659 роках він виступав проти курсу Івана Виговського на зближення з Річчю Посполитою та Кримським ханством.",
+            "Найконкретніші військові епізоди цього періоду припадають на 1659 рік: похід на Аккерман, удар по ногайських улусах біля Самарників, розгром загону полковника Тимоша та дії на Бузькому напрямку.",
         ],
 
         contentEn: [
-            "Ivan Sirko's name is first documented under the year 1653.",
-            "He began to play an active role in the political and military life of Ukraine in the second half of the 1650s.",
-            "In 1657–1659, Sirko opposed Ivan Vyhovsky and his policy of rapprochement with the Polish-Lithuanian Commonwealth and the Crimean Khanate.",
+            "Ivan Sirko's name is first mentioned in documents under the year 1653.",
+            "In the second half of the 1650s, Sirko was already acting as a notable military-political figure in Cossack Ukraine.",
+            "In 1657–1659, he opposed Ivan Vyhovsky's policy of rapprochement with the Polish-Lithuanian Commonwealth and the Crimean Khanate.",
+            "The most specific military episodes of this period belong to 1659: the campaign toward Akkerman, the strike against Nogai uluses near Samarnyky, the defeat of Colonel Tymosh's detachment, and actions in the Buh direction.",
         ],
 
         image: "/images/military/early-years.webp",
@@ -48,19 +50,18 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 id: "first-documentary-mention-1653",
                 slug: "first-documentary-mention-1653",
                 order: 1,
-
                 year: "1653",
                 dateUk: "1653 рік",
                 dateEn: "1653",
 
                 type: "political-military",
                 direction: "early-years",
-                importance: "major",
+                importance: "medium",
                 resultType: "political-result",
                 confidence: "high",
 
-                titleUk: "Перша документальна згадка про Сірка",
-                titleEn: "First Documentary Mention of Sirko",
+                titleUk: "Перша документальна згадка про Івана Сірка",
+                titleEn: "First Documentary Mention of Ivan Sirko",
 
                 locationUk: "Козацька Україна",
                 locationEn: "Cossack Ukraine",
@@ -71,48 +72,50 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 commandersUk: ["Іван Сірко"],
                 commandersEn: ["Ivan Sirko"],
 
-                forcesUk: "Не застосовується",
-                forcesEn: "Not applicable",
+                forcesUk: "Не застосовується.",
+                forcesEn: "Not applicable.",
 
-                lossesUk: "Не застосовується",
-                lossesEn: "Not applicable",
+                lossesUk: "Не застосовується.",
+                lossesEn: "Not applicable.",
 
                 resultUk:
-                    "Ім’я Сірка з’являється в документальному полі середини XVII століття.",
+                    "Ім’я Сірка вперше з’являється в документальних джерелах.",
                 resultEn:
-                    "Sirko's name appears in the documentary record of the mid-seventeenth century.",
+                    "Sirko's name first appears in documentary sources.",
 
                 summaryUk:
-                    "1653 рік є першою відомою документальною згадкою про Івана Сірка.",
+                    "Це не бойова подія, але вона є початковою точкою документально простежуваної біографії Сірка.",
 
                 summaryEn:
-                    "1653 is the first known documentary mention of Ivan Sirko.",
+                    "This is not a combat event, but it is the starting point of Sirko's documentable biography.",
 
                 courseUk: [
-                    "Ця подія не є битвою або походом, але вона важлива для військового розділу як початок документально простежуваної біографії Сірка.",
-                    "До цього періоду відомості про його життя залишаються непевними й часто спираються на пізніші перекази.",
+                    "До 1653 року відомості про Сірка залишаються непевними й значною мірою спираються на пізніші перекази.",
+                    "Документальна згадка 1653 року дозволяє відділити перевірену частину біографії від легендарної традиції.",
+                    "У військовому роуті ця подія виконує роль стартової точки, від якої починається подальший реєстр його походів.",
                 ],
 
                 courseEn: [
-                    "This event is not a battle or campaign, but it is important for the military section as the beginning of Sirko's documentable biography.",
-                    "Before this period, information about his life remains uncertain and often relies on later traditions.",
+                    "Before 1653, information about Sirko remains uncertain and largely depends on later traditions.",
+                    "The documentary mention of 1653 makes it possible to separate the verified part of his biography from legendary tradition.",
+                    "In the military route, this event serves as the starting point for the later register of his campaigns.",
                 ],
 
                 significanceUk: [
                     "Фіксує найранішу документальну точку біографії Сірка.",
-                    "Допомагає відділити перевірені дані від пізніших легендарних нашарувань.",
+                    "Не є битвою, але важлива для хронології військового шляху.",
                 ],
 
                 significanceEn: [
                     "Marks the earliest documentary point in Sirko's biography.",
-                    "Helps separate verified information from later legendary layers.",
+                    "It is not a battle, but it is important for the chronology of his military path.",
                 ],
 
                 historicalNoteUk:
-                    "Це не бойова подія, але вона залишена в розділі як початкова точка військово-політичної кар’єри.",
+                    "Подія залишена в масиві не як битва, а як початкова документальна точка військово-політичної кар’єри.",
 
                 historicalNoteEn:
-                    "This is not a combat event, but it is included as the starting point of Sirko's military-political career.",
+                    "The event is included not as a battle, but as the first documentary point of Sirko's military-political career.",
 
                 hasDetailPage: false,
                 image: "/images/military/events/first-documentary-mention-1653.webp",
@@ -122,94 +125,209 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 ],
             },
             {
-                id: "opposition-to-vyhovsky-1657-1659",
-                slug: "opposition-to-vyhovsky-1657-1659",
+                id: "akerman-nogai-campaign-1659",
+                slug: "akerman-nogai-campaign-1659",
                 order: 2,
+                year: "1659",
+                dateUk: "друга половина літа 1659 року; згадка посланців — 28 серпня 1659 року",
+                dateEn: "second half of the summer of 1659; envoys' report — August 28, 1659",
 
-                year: "1657–1659",
-                dateUk: "1657–1659 роки",
-                dateEn: "1657–1659",
-
-                type: "political-military",
+                type: "campaign",
                 direction: "early-years",
                 importance: "major",
-                resultType: "political-result",
+                resultType: "strategic-success",
                 confidence: "high",
 
-                titleUk: "Опозиція до курсу Івана Виговського",
-                titleEn: "Opposition to Ivan Vyhovsky's Policy",
+                titleUk: "Похід на Аккерман і ногайські улуси",
+                titleEn: "Campaign toward Akkerman and the Nogai Uluses",
 
-                locationUk: "Запорожжя, українські землі",
-                locationEn: "Zaporizhia, Ukrainian lands",
+                locationUk:
+                    "Аккерманський напрямок, ногайські улуси біля Самарників",
+                locationEn:
+                    "Akkerman direction, Nogai uluses near Samarnyky",
 
-                opponentsUk: ["політичний курс Івана Виговського"],
-                opponentsEn: ["Ivan Vyhovsky's political course"],
+                opponentsUk: [
+                    "ногайські татари",
+                    "сили, пов’язані з Кримським ханством",
+                    "політичні союзники Івана Виговського",
+                ],
+
+                opponentsEn: [
+                    "Nogai Tatars",
+                    "forces connected with the Crimean Khanate",
+                    "political allies of Ivan Vyhovsky",
+                ],
 
                 commandersUk: ["Іван Сірко"],
                 commandersEn: ["Ivan Sirko"],
 
                 forcesUk:
-                    "Точна чисельність прихильників Сірка в цей період не встановлена.",
+                    "Точна чисельність війська Сірка в джерелах не подається.",
                 forcesEn:
-                    "The exact number of Sirko's supporters in this period is not established.",
+                    "The exact strength of Sirko's force is not given in the sources.",
 
-                lossesUk: "Не застосовується",
-                lossesEn: "Not applicable",
+                lossesUk:
+                    "Джерело повідомляє про знищення багатьох людей у ногайських улусах, визволення литовських невільників, захоплення двох мурз і частини кримського ясиру; точні цифри втрат не подані.",
+                lossesEn:
+                    "The source reports many people killed in the Nogai uluses, the liberation of Lithuanian captives, the capture of two murzas and part of the Crimean yasyr; exact losses are not given.",
 
                 resultUk:
-                    "Сірко виступав проти зближення з Річчю Посполитою та Кримським ханством.",
+                    "Похід завадив Виговському розвинути успіх після Конотопської битви разом із татарськими ордами.",
+
                 resultEn:
-                    "Sirko opposed rapprochement with the Polish-Lithuanian Commonwealth and the Crimean Khanate.",
+                    "The campaign prevented Vyhovsky from developing his success after the Battle of Konotop together with the Tatar hordes.",
 
                 summaryUk:
-                    "У 1657–1659 роках Сірко активно виступав проти політики Івана Виговського.",
+                    "У другій половині літа 1659 року Сірко здійснив похід на Аккерман і ногайські улуси, вдаривши по союзниках Кримського ханства.",
 
                 summaryEn:
-                    "In 1657–1659, Sirko actively opposed Ivan Vyhovsky's policy.",
+                    "In the second half of the summer of 1659, Sirko conducted a campaign toward Akkerman and the Nogai uluses, striking forces allied with the Crimean Khanate.",
 
                 courseUk: [
-                    "Після смерті Богдана Хмельницького українські землі увійшли в період політичної нестабільності.",
-                    "Іван Виговський орієнтувався на складні союзи з Річчю Посполитою та Кримським ханством.",
-                    "Сірко виступав проти такого курсу, що стало одним із перших помітних проявів його військово-політичної позиції.",
+                    "Похід відбувався на тлі конфлікту між Сірком і політичним курсом Івана Виговського.",
+                    "Сірко виступав проти союзу Виговського з Річчю Посполитою та Кримським ханством.",
+                    "За повідомленням посланців Івана Безпалого, Сірко з запорожцями ходив війною під Аккерман і до ногайських улусів, які кочували поблизу Самарників.",
+                    "Під час походу було визволено литовських невільників, захоплено двох мурз і частину кримського ясиру.",
+                    "Після удару по улусах Сірко рушив у напрямку Києва на допомогу боярину Шереметєву.",
                 ],
 
                 courseEn: [
-                    "After Bohdan Khmelnytsky's death, Ukrainian lands entered a period of political instability.",
-                    "Ivan Vyhovsky pursued complex alliances with the Polish-Lithuanian Commonwealth and the Crimean Khanate.",
-                    "Sirko opposed this course, which became one of the first visible expressions of his military-political stance.",
+                    "The campaign took place against the background of conflict between Sirko and Ivan Vyhovsky's political course.",
+                    "Sirko opposed Vyhovsky's alliance with the Polish-Lithuanian Commonwealth and the Crimean Khanate.",
+                    "According to the envoys of Ivan Bezpaly, Sirko and the Zaporozhians campaigned toward Akkerman and the Nogai uluses near Samarnyky.",
+                    "During the campaign, Lithuanian captives were freed, two murzas were captured, and part of the Crimean yasyr was taken.",
+                    "After the strike against the uluses, Sirko moved toward Kyiv to assist boyar Sheremetev.",
                 ],
 
                 significanceUk: [
-                    "Показує Сірка не лише як воїна, а як самостійну політичну фігуру.",
-                    "Пояснює його подальший зв’язок із Запорожжям і антикримським напрямком.",
+                    "Це одна з перших конкретно описаних військових дій Сірка.",
+                    "Подія мала прямий вплив на розвиток Конотопської кампанії 1659 року.",
+                    "Похід показує ранню антикримську спрямованість військової діяльності Сірка.",
                 ],
 
                 significanceEn: [
-                    "Shows Sirko not only as a warrior but as an independent political figure.",
-                    "Explains his later connection with Zaporizhia and the anti-Crimean direction.",
+                    "This is one of the first specifically described military actions of Sirko.",
+                    "The event directly influenced the development of the 1659 Konotop campaign.",
+                    "The campaign shows the early anti-Crimean direction of Sirko's military activity.",
                 ],
 
                 historicalNoteUk:
-                    "Це військово-політична подія, а не окрема битва; точна реконструкція бойових дій у межах цього сюжету потребує окремої джерельної перевірки.",
+                    "Подія достатньо конкретна для основного military timeline, але точна чисельність війська й втрати сторін у джерелі не подані.",
 
                 historicalNoteEn:
-                    "This is a military-political event, not a separate battle; exact reconstruction of combat actions within this episode requires separate source verification.",
+                    "The event is specific enough for the main military timeline, but exact troop strength and losses are not given in the source.",
 
                 hasDetailPage: false,
-                image: "/images/military/events/opposition-to-vyhovsky-1657-1659.webp",
+                image: "/images/military/events/akerman-nogai-campaign-1659.webp",
 
                 sources: [
                     "Енциклопедія історії України: Сірко Іван",
+                    "Дніпропетровський національний історичний музей: Іван Сірко — походи в Крим та Волоську землю",
                 ],
             },
             {
-                id: "akerman-campaign-late-1650s",
-                slug: "akerman-campaign-late-1650s",
+                id: "tymosh-detachment-defeat-1659",
+                slug: "tymosh-detachment-defeat-1659",
                 order: 3,
+                year: "1659",
+                dateUk: "після походу на Аккерман і ногайські улуси, 1659 рік",
+                dateEn: "after the Akkerman and Nogai campaign, 1659",
 
-                year: "1657–1659",
-                dateUk: "друга половина 1650-х років",
-                dateEn: "second half of the 1650s",
+                type: "battle",
+                direction: "early-years",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Розгром загону полковника Тимоша",
+                titleEn: "Defeat of Colonel Tymosh's Detachment",
+
+                locationUk:
+                    "точна локалізація в доступному викладі не подана; напрямок руху Сірка — до Києва",
+                locationEn:
+                    "exact location is not given in the available account; Sirko was moving toward Kyiv",
+
+                opponentsUk: [
+                    "полковник Тиміш",
+                    "військо Івана Виговського",
+                ],
+
+                opponentsEn: [
+                    "Colonel Tymosh",
+                    "Ivan Vyhovsky's force",
+                ],
+
+                commandersUk: ["Іван Сірко", "полковник Тиміш"],
+                commandersEn: ["Ivan Sirko", "Colonel Tymosh"],
+
+                forcesUk:
+                    "Точна чисельність загону Сірка і війська Тимоша не подана.",
+                forcesEn:
+                    "The exact strength of Sirko's detachment and Tymosh's force is not given.",
+
+                lossesUk:
+                    "Джерело повідомляє про повну поразку війська Тимоша; сам Тиміш, за викладом, утік лише з двома супутниками. Точні цифри втрат не подані.",
+                lossesEn:
+                    "The source reports a complete defeat of Tymosh's force; Tymosh himself reportedly escaped with only two companions. Exact losses are not given.",
+
+                resultUk:
+                    "Сірко розбив загін, який Виговський вислав, щоб не допустити його до Києва.",
+
+                resultEn:
+                    "Sirko defeated the detachment sent by Vyhovsky to prevent him from reaching Kyiv.",
+
+                summaryUk:
+                    "Після походу на Аккерман і ногайські улуси Виговський вислав проти Сірка полковника Тимоша, але Сірко несподівано атакував і розгромив його військо.",
+
+                summaryEn:
+                    "After the Akkerman and Nogai campaign, Vyhovsky sent Colonel Tymosh against Sirko, but Sirko unexpectedly attacked and defeated his force.",
+
+                courseUk: [
+                    "Після удару по ногайських улусах Сірко рушив до Києва на допомогу Шереметєву.",
+                    "Іван Виговський вислав навперейми полковника Тимоша з військом, щоб не допустити Сірка до Києва.",
+                    "Сірко, дізнавшись про це, несподівано напав на Тимоша.",
+                    "У результаті військо Тимоша було розбите, а сам Тиміш, за джерельним викладом, ледве втік до Виговського.",
+                ],
+
+                courseEn: [
+                    "After striking the Nogai uluses, Sirko moved toward Kyiv to assist Sheremetev.",
+                    "Ivan Vyhovsky sent Colonel Tymosh with a force to intercept Sirko and prevent him from reaching Kyiv.",
+                    "Sirko, learning of this, unexpectedly attacked Tymosh.",
+                    "As a result, Tymosh's force was defeated, and Tymosh himself reportedly barely escaped back to Vyhovsky.",
+                ],
+
+                significanceUk: [
+                    "Це вже не загальний політичний контекст, а конкретний бойовий епізод 1659 року.",
+                    "Подія показує Сірка як самостійного військового лідера, здатного діяти швидко й раптово.",
+                    "Розгром загону Тимоша послаблював можливості Виговського контролювати ситуацію після Конотопської кампанії.",
+                ],
+
+                significanceEn: [
+                    "This is not general political context, but a specific combat episode of 1659.",
+                    "The event shows Sirko as an independent military leader capable of rapid and unexpected action.",
+                    "The defeat of Tymosh's detachment weakened Vyhovsky's ability to control the situation after the Konotop campaign.",
+                ],
+
+                historicalNoteUk:
+                    "Подія відома за викладом Яворницького/музейного матеріалу; точні географічні координати, чисельність і втрати потребують додаткової джерельної перевірки.",
+
+                historicalNoteEn:
+                    "The event is known from the Yavornytsky/museum account; exact location, troop strength, and losses require additional source verification.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/tymosh-detachment-defeat-1659.webp",
+
+                sources: [
+                    "Дніпропетровський національний історичний музей: Іван Сірко — походи в Крим та Волоську землю",
+                ],
+            },
+            {
+                id: "bug-campaign-1659",
+                slug: "bug-campaign-1659",
+                order: 4,
+                year: "1659",
+                dateUk: "1659 рік",
+                dateEn: "1659",
 
                 type: "campaign",
                 direction: "early-years",
@@ -217,68 +335,185 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 resultType: "strategic-success",
                 confidence: "medium",
 
-                titleUk: "Похід на Аккерманський напрямок",
-                titleEn: "Campaign toward Akkerman",
+                titleUk: "Похід на Буг і татарські улуси",
+                titleEn: "Campaign toward the Buh and Tatar Uluses",
 
-                locationUk: "Аккерманський напрямок",
-                locationEn: "Akkerman direction",
+                locationUk:
+                    "Буг, район навпроти Умані, острів Андріївський у гирлі Бугу",
+                locationEn:
+                    "Buh River, area opposite Uman, Andriivskyi Island at the mouth of the Buh",
 
-                opponentsUk: ["сили, пов’язані з Кримським ханством та османським прикордонням"],
-                opponentsEn: ["forces connected with the Crimean Khanate and Ottoman frontier"],
+                opponentsUk: [
+                    "татарські улуси",
+                    "сили, пов’язані з Виговським",
+                ],
+
+                opponentsEn: [
+                    "Tatar uluses",
+                    "forces connected with Vyhovsky",
+                ],
 
                 commandersUk: ["Іван Сірко"],
                 commandersEn: ["Ivan Sirko"],
 
-                forcesUk: "Точна чисельність невідома.",
-                forcesEn: "Exact strength is unknown.",
+                forcesUk:
+                    "У джерелі згадується “велике військо”, але точна чисельність не подана.",
+                forcesEn:
+                    "The source mentions a “large force,” but exact numbers are not given.",
 
-                lossesUk: "Точні втрати невідомі.",
-                lossesEn: "Exact losses are unknown.",
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
 
                 resultUk:
-                    "Сірко організував похід на Аккерманський напрямок у контексті боротьби проти курсу Виговського.",
+                    "Сірко діяв на Бузькому напрямку проти татарських улусів і сил, які вважалися ворожими московському царю та наказному гетьману.",
+
                 resultEn:
-                    "Sirko organized a campaign toward Akkerman in the context of opposition to Vyhovsky's policy.",
+                    "Sirko operated in the Buh direction against Tatar uluses and forces considered hostile to the Muscovite tsar and the acting hetman.",
 
                 summaryUk:
-                    "Похід на Аккерман згадується як один із ранніх військових виступів Сірка другої половини 1650-х років.",
+                    "У 1659 році Сірко з військом рухався човнами вгору по Бугу, висадився навпроти Умані, розгромив татарські улуси й потім став на острові Андріївському.",
 
                 summaryEn:
-                    "The campaign toward Akkerman is mentioned as one of Sirko's early military actions of the second half of the 1650s.",
+                    "In 1659, Sirko moved with his force by boats up the Buh, landed opposite Uman, defeated Tatar uluses, and then stationed himself on Andriivskyi Island.",
 
                 courseUk: [
-                    "У джерелах похід на Аккерман подається як елемент боротьби Сірка проти політичного курсу Івана Виговського.",
-                    "Аккерманський напрямок мав значення через близькість до османсько-татарського прикордоння.",
-                    "Докладна реконструкція маршруту, чисельності війська та втрат у доступних коротких довідках не подається.",
+                    "За повідомленням Безпалого, Сірко з великим військом на човнах піднявся з Запорожжя вгору по Бугу.",
+                    "Навпроти Умані козаки вийшли на суходіл.",
+                    "Після висадки Сірко завдав удару по татарських улусах.",
+                    "Потім військо знову сіло на човни, спустилося до гирла Бугу й розташувалося на острові Андріївському.",
+                    "Звідти Сірко підтримував зв’язки з наказним гетьманом Сомком і продовжував дії проти татар.",
                 ],
 
                 courseEn: [
-                    "Sources present the campaign toward Akkerman as part of Sirko's struggle against Ivan Vyhovsky's political course.",
-                    "The Akkerman direction mattered because of its proximity to the Ottoman-Tatar frontier.",
-                    "Detailed reconstruction of the route, troop strength, and losses is not provided in short reference sources.",
+                    "According to Bezpaly's report, Sirko moved with a large force by boats from Zaporizhia up the Buh River.",
+                    "Opposite Uman, the Cossacks landed.",
+                    "After landing, Sirko struck the Tatar uluses.",
+                    "The force then returned to the boats, descended to the mouth of the Buh, and positioned itself on Andriivskyi Island.",
+                    "From there, Sirko maintained contact with acting Hetman Somko and continued actions against the Tatars.",
                 ],
 
                 significanceUk: [
-                    "Один із ранніх підтверджених напрямків військової активності Сірка.",
-                    "Показує зв’язок його політичної позиції з конкретними військовими діями.",
+                    "Подія показує мобільність Сірка: рух човнами, висадка, удар і повернення до водного маршруту.",
+                    "Бузький напрямок доповнює Аккермансько-ногайський цикл 1659 року.",
+                    "Це конкретний військовий епізод, але без точних чисел і втрат.",
                 ],
 
                 significanceEn: [
-                    "One of the early confirmed directions of Sirko's military activity.",
-                    "Shows the connection between his political stance and concrete military actions.",
+                    "The event shows Sirko's mobility: movement by boats, landing, strike, and return to the water route.",
+                    "The Buh direction complements the Akkerman-Nogai cycle of 1659.",
+                    "It is a specific military episode, but without exact numbers and losses.",
                 ],
 
                 historicalNoteUk:
-                    "Подія має середній рівень деталізації: напрямок підтверджується, але точні бойові подробиці потребують додаткової перевірки.",
+                    "Подія має конкретний маршрут у джерельному викладі, але не має точної реконструкції бою, чисельності війська та втрат.",
 
                 historicalNoteEn:
-                    "The event has a medium level of detail: the direction is confirmed, but exact combat details require additional verification.",
+                    "The event has a specific route in the source account, but no exact reconstruction of the battle, troop strength, or losses.",
 
                 hasDetailPage: false,
-                image: "/images/military/events/akerman-campaign-late-1650s.webp",
+                image: "/images/military/events/bug-campaign-1659.webp",
+
+                sources: [
+                    "Дніпропетровський національний історичний музей: Іван Сірко — походи в Крим та Волоську землю",
+                ],
+            },
+            {
+                id: "pereiaslav-council-1659",
+                slug: "pereiaslav-council-1659",
+                order: 5,
+                year: "1659",
+                dateUk: "9–10 жовтня 1659 року",
+                dateEn: "October 9–10, 1659",
+
+                type: "political-military",
+                direction: "early-years",
+                importance: "medium",
+                resultType: "political-result",
+                confidence: "high",
+
+                titleUk: "Участь у Переяславській раді",
+                titleEn: "Participation in the Pereiaslav Council",
+
+                locationUk: "Переяслав",
+                locationEn: "Pereiaslav",
+
+                opponentsUk: [],
+                opponentsEn: [],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Юрій Хмельницький",
+                    "Олексій Трубецькой",
+                    "Іван Безпалий",
+                ],
+
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Yurii Khmelnytsky",
+                    "Aleksey Trubetskoy",
+                    "Ivan Bezpaly",
+                ],
+
+                forcesUk:
+                    "Не застосовується: це військово-політична рада, а не битва.",
+                forcesEn:
+                    "Not applicable: this was a military-political council, not a battle.",
+
+                lossesUk: "Не застосовується.",
+                lossesEn: "Not applicable.",
+
+                resultUk:
+                    "Сірко прибув на раду як кальницький полковник і підтримав обрання Юрія Хмельницького.",
+
+                resultEn:
+                    "Sirko arrived at the council as Kalnyk colonel and supported the election of Yurii Khmelnytsky.",
+
+                summaryUk:
+                    "Восени 1659 року Сірко підтримував Юрія Хмельницького в боротьбі за гетьманську булаву й брав участь у Переяславській раді.",
+
+                summaryEn:
+                    "In the autumn of 1659, Sirko supported Yurii Khmelnytsky in the struggle for the hetman's mace and took part in the Pereiaslav Council.",
+
+                courseUk: [
+                    "Після військових дій літа 1659 року Сірко перейшов до участі у вирішенні питання гетьманської влади.",
+                    "9–10 жовтня 1659 року він був присутній на Переяславській раді.",
+                    "У джерелі Сірко названий кальницьким полковником.",
+                    "Юрія Хмельницького було проголошено гетьманом Лівобережної України під протекцією московського царя.",
+                ],
+
+                courseEn: [
+                    "After the military actions of the summer of 1659, Sirko moved into participation in the question of hetman authority.",
+                    "On October 9–10, 1659, he was present at the Pereiaslav Council.",
+                    "The source names Sirko as Kalnyk colonel.",
+                    "Yurii Khmelnytsky was proclaimed hetman of Left-Bank Ukraine under the protection of the Muscovite tsar.",
+                ],
+
+                significanceUk: [
+                    "Подія пояснює військово-політичний статус Сірка наприкінці 1659 року.",
+                    "Показує, що після бойових дій він уже діяв як полковник і учасник загальноукраїнської політики.",
+                    "Не є битвою, але важлива для розуміння переходу Сірка до наступного етапу військової кар’єри.",
+                ],
+
+                significanceEn: [
+                    "The event explains Sirko's military-political status at the end of 1659.",
+                    "It shows that after military actions he already acted as a colonel and participant in all-Ukrainian politics.",
+                    "It is not a battle, but it is important for understanding Sirko's transition to the next stage of his military career.",
+                ],
+
+                historicalNoteUk:
+                    "Це не бойовий event, але він напряму пов’язаний із військовим статусом Сірка після кампаній 1659 року.",
+
+                historicalNoteEn:
+                    "This is not a combat event, but it is directly connected with Sirko's military status after the campaigns of 1659.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/pereiaslav-council-1659.webp",
 
                 sources: [
                     "Енциклопедія історії України: Сірко Іван",
+                    "Дніпропетровський національний історичний музей: Іван Сірко — походи в Крим та Волоську землю",
                 ],
             },
         ],
@@ -295,25 +530,25 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
         shortTitleUk: "Крим",
         shortTitleEn: "Crimea",
 
-        periodUk: "1660–1668",
-        periodEn: "1660–1668",
+        periodUk: "1660–1663",
+        periodEn: "1660–1663",
 
         summaryUk:
-            "Походи Івана Сірка проти Кримського ханства, татарських улусів і турецько-татарських укріплень на південному напрямку.",
+            "Період активних походів Сірка проти Кримського ханства, татарських загонів і турецько-татарських укріплень на виході з Дніпра до Чорного моря.",
 
         summaryEn:
-            "Ivan Sirko's campaigns against the Crimean Khanate, Tatar settlements, and Ottoman-Tatar strongholds in the southern direction.",
+            "A period of Sirko's active campaigns against the Crimean Khanate, Tatar detachments, and Ottoman-Tatar fortifications at the Dnipro exit to the Black Sea.",
 
         contentUk: [
-            "Кримський напрямок став одним із головних у військовій діяльності Сірка.",
-            "У цих походах він діяв не лише оборонно, а й переносив бойові дії на територію противника.",
-            "Джерела часто не дають повної реконструкції боїв, але дозволяють визначити головні напрямки, учасників і результати походів.",
+            "На початку 1660-х років Сірко діяв переважно на південному напрямку: Очаків, Аслан-Кермен, Перекоп, Чорноморське узбережжя.",
+            "Ці походи поєднували удари по фортецях, степові рейди, морські операції на чайках і визволення християнських полонених.",
+            "Для частини подій джерела дають точніші деталі, для частини — лише загальний перебіг без повної реконструкції бою.",
         ],
 
         contentEn: [
-            "The Crimean direction became one of the main areas of Sirko's military activity.",
-            "In these campaigns, he acted not only defensively but also carried military action into enemy territory.",
-            "Sources often do not provide full battle reconstructions, but they allow us to identify the main directions, participants, and results of the campaigns.",
+            "In the early 1660s, Sirko acted mainly in the southern direction: Ochakiv, Aslam-Kermen, Perekop, and the Black Sea coast.",
+            "These campaigns combined strikes against fortresses, steppe raids, naval operations in chaikas, and the liberation of Christian captives.",
+            "For some events, sources provide more precise details; for others, only the general course is known without full battle reconstruction.",
         ],
 
         image: "/images/military/crimean-direction.webp",
@@ -323,7 +558,6 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 id: "ochakiv-aslam-kermen-1660",
                 slug: "ochakiv-aslam-kermen-1660",
                 order: 1,
-
                 year: "1660",
                 dateUk: "1660 рік",
                 dateEn: "1660",
@@ -340,80 +574,260 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 locationUk: "Очаків, Аслан-Кермен, гирло Дніпра",
                 locationEn: "Ochakiv, Aslam-Kermen, Dnipro estuary",
 
-                opponentsUk: ["Османські гарнізони", "турецько-татарські сили"],
-                opponentsEn: ["Ottoman garrisons", "Ottoman-Tatar forces"],
+                opponentsUk: ["турецькі гарнізони", "османські сили"],
+                opponentsEn: ["Turkish garrisons", "Ottoman forces"],
 
                 commandersUk: ["Іван Сірко"],
                 commandersEn: ["Ivan Sirko"],
 
                 forcesUk:
-                    "У популярних викладах згадується близько 5000 козаків; академічне підтвердження цієї цифри потребує перевірки.",
+                    "У популярному викладі згадується близько 5000 козаків; точність цієї цифри потребує перевірки за академічними джерелами.",
                 forcesEn:
-                    "Popular accounts mention about 5,000 Cossacks; academic confirmation of this number requires verification.",
+                    "A popular account mentions about 5,000 Cossacks; the accuracy of this figure requires verification in academic sources.",
 
-                lossesUk: "Точні втрати сторін невідомі.",
-                lossesEn: "Exact losses are unknown.",
+                lossesUk:
+                    "Точні втрати сторін не подані.",
+                lossesEn:
+                    "Exact losses of the sides are not given.",
 
                 resultUk:
-                    "Козаки завдали удару по Очакову та Аслан-Кермену, які контролювали вихід із Дніпра до Чорного моря.",
+                    "Козаки атакували Очаків і Аслан-Кермен, зруйнувавши або тяжко пошкодивши турецькі укріплення.",
                 resultEn:
-                    "The Cossacks struck Ochakiv and Aslam-Kermen, which controlled the exit from the Dnipro to the Black Sea.",
+                    "The Cossacks attacked Ochakiv and Aslam-Kermen, destroying or heavily damaging the Ottoman fortifications.",
 
                 summaryUk:
-                    "У 1660 році Сірко здійснив похід проти турецьких укріплень біля гирла Дніпра.",
+                    "У 1660 році Сірко виступив проти турецьких укріплень, які контролювали вихід із Дніпра до Чорного моря.",
 
                 summaryEn:
-                    "In 1660, Sirko conducted a campaign against Ottoman fortifications near the Dnipro estuary.",
+                    "In 1660, Sirko moved against Ottoman fortifications that controlled the Dnipro exit to the Black Sea.",
 
                 courseUk: [
-                    "За популярним викладом, турки намагалися перекрити козакам вихід у Чорне море біля гирла Дніпра.",
-                    "Сірко зібрав козацьке військо й організував удар по Очакову та Аслан-Кермену.",
-                    "Частина козаків діяла з боку суші, частина — з боку лиману на чайках.",
-                    "Похід завершився руйнуванням або значним пошкодженням укріплень.",
+                    "За джерельним викладом, турки намагалися перекрити козакам вихід у море в гирлі Дніпра, закидаючи прохід великим камінням.",
+                    "Сірко зібрав козацьке військо й розділив його для удару з різних напрямків.",
+                    "Частина козаків діяла на чайках з боку лиману, інша частина атакувала з суші.",
+                    "У результаті козаки вдарили по Очакову й Аслан-Кермену, які були важливими пунктами османського контролю над південним напрямком.",
+                    "Після цього султан був змушений знову посилати флот до Очакова для чергування в лимані.",
                 ],
 
                 courseEn: [
-                    "According to popular accounts, Ottoman forces attempted to block Cossack access to the Black Sea near the Dnipro estuary.",
-                    "Sirko gathered a Cossack force and organized a strike against Ochakiv and Aslam-Kermen.",
-                    "Part of the Cossacks acted from land, while another part moved from the estuary in chaikas.",
-                    "The campaign ended with the destruction or serious damage of the fortifications.",
+                    "According to the account, the Turks attempted to block Cossack access to the sea at the Dnipro estuary by filling the passage with large stones.",
+                    "Sirko gathered a Cossack force and divided it for a strike from different directions.",
+                    "Part of the Cossacks acted in chaikas from the estuary, while another part attacked from land.",
+                    "As a result, the Cossacks struck Ochakiv and Aslam-Kermen, important Ottoman control points in the southern direction.",
+                    "After this, the sultan had to send a fleet to Ochakiv again to maintain patrols in the estuary.",
                 ],
 
                 significanceUk: [
-                    "Похід показав, що Сірко міг діяти проти укріплених пунктів, а не лише проти степових загонів.",
-                    "Очаків і Аслан-Кермен були важливими вузлами контролю над південним напрямком.",
-                    "Подія має конкретну локалізацію, але чисельність війська та втрати потребують обережного подання.",
+                    "Похід показав здатність Сірка атакувати укріплені пункти, а не лише вести степові рейди.",
+                    "Очаків і Аслан-Кермен контролювали важливий вихід із Дніпра до Чорного моря.",
+                    "Подія відкриває серію активних дій Сірка проти турецько-татарської системи укріплень на півдні.",
                 ],
 
                 significanceEn: [
-                    "The campaign showed that Sirko could act against fortified points, not only against steppe detachments.",
-                    "Ochakiv and Aslam-Kermen were important control points in the southern direction.",
-                    "The event has a specific location, but troop numbers and losses must be presented cautiously.",
+                    "The campaign showed Sirko's ability to attack fortified points, not only conduct steppe raids.",
+                    "Ochakiv and Aslam-Kermen controlled an important exit from the Dnipro to the Black Sea.",
+                    "The event opens a series of Sirko's active operations against the Ottoman-Tatar fortification system in the south.",
                 ],
 
                 historicalNoteUk:
-                    "Деталі походу відомі переважно з популярних історичних викладів; чисельність війська не варто подавати як остаточно встановлений факт.",
+                    "Джерело подає загальний перебіг і приблизну чисельність козаків, але не дає точних втрат і повної реконструкції бою.",
 
                 historicalNoteEn:
-                    "Details of the campaign are known mainly from popular historical accounts; troop numbers should not be presented as firmly established fact.",
+                    "The source gives the general course and approximate Cossack strength, but does not provide exact losses or a full battle reconstruction.",
 
                 hasDetailPage: false,
                 image: "/images/military/events/ochakiv-aslam-kermen-1660.webp",
 
                 sources: [
-                    "Матеріали про похід Сірка на Очаків і Аслан-Кермен",
-                    "Популярні історичні виклади про боротьбу Сірка з турецько-татарськими силами",
+                    "Опис походу Сірка на Очаків і Аслан-Кермен",
+                    "Матеріали про боротьбу Сірка з турецько-татарськими силами",
                 ],
             },
+            {
+                id: "samara-ambush-1660",
+                slug: "samara-ambush-1660",
+                order: 2,
+                year: "1660",
+                dateUk: "кінець 1660 року",
+                dateEn: "late 1660",
 
+                type: "battle",
+                direction: "crimea",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Засідка біля гирла Самари",
+                titleEn: "Ambush near the Mouth of the Samara",
+
+                locationUk: "район гирла Самари, територія сучасного Дніпра",
+                locationEn: "area of the Samara mouth, territory of modern Dnipro",
+
+                opponentsUk: ["татарський загін"],
+                opponentsEn: ["Tatar detachment"],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна чисельність козацького й татарського загонів не подана.",
+                forcesEn:
+                    "The exact strength of the Cossack and Tatar detachments is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані; згадується перехоплення ординців, обтяжених здобиччю та ясиром.",
+                lossesEn:
+                    "Exact losses are not given; the account mentions the interception of Horde forces burdened with loot and captives.",
+
+                resultUk:
+                    "Сірко перехопив ординців, які поверталися з походу на Правобережжя.",
+                resultEn:
+                    "Sirko intercepted Horde forces returning from a raid on the Right Bank.",
+
+                summaryUk:
+                    "Наприкінці 1660 року Сірко влаштував засідку на татарський загін біля гирла Самари, коли той повертався з походу з великою здобиччю та ясиром.",
+
+                summaryEn:
+                    "In late 1660, Sirko ambushed a Tatar detachment near the mouth of the Samara as it returned from a raid with large booty and captives.",
+
+                courseUk: [
+                    "Татарський загін повертався з успішного походу на Правобережжя.",
+                    "Ординці були обтяжені здобиччю та ясиром, що ускладнювало швидкий рух.",
+                    "Вони намагалися перейти Дніпро в районі гирла Самари.",
+                    "Саме там на них чекала козацька засідка Сірка.",
+                    "Доступний виклад не дає детального опису бою, але сам епізод подається як успішне перехоплення татарського загону.",
+                ],
+
+                courseEn: [
+                    "The Tatar detachment was returning from a successful raid on the Right Bank.",
+                    "The Horde forces were burdened with loot and captives, which slowed their movement.",
+                    "They attempted to cross the Dnipro near the mouth of the Samara.",
+                    "There they were met by Sirko's Cossack ambush.",
+                    "The available account does not provide a detailed battle reconstruction, but presents the episode as a successful interception of the Tatar detachment.",
+                ],
+
+                significanceUk: [
+                    "Подія показує Сірка як майстра засідки й перехоплення противника на переправах.",
+                    "Це не похід на далеку фортецю, а локальна бойова операція на важливому дніпровському напрямку.",
+                    "Епізод добре пояснює тактику Сірка: бити ворога тоді, коли той обтяжений здобиччю й менш рухливий.",
+                ],
+
+                significanceEn: [
+                    "The event shows Sirko as a master of ambush and interception at crossings.",
+                    "This was not a campaign against a distant fortress, but a local combat operation in an important Dnipro area.",
+                    "The episode explains Sirko's tactics well: strike the enemy when it is burdened with loot and less mobile.",
+                ],
+
+                historicalNoteUk:
+                    "Подія має конкретну локалізацію й загальний перебіг, але без точних цифр щодо чисельності, втрат і складу татарського загону.",
+
+                historicalNoteEn:
+                    "The event has a specific location and general course, but lacks exact figures on strength, losses, and composition of the Tatar detachment.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/samara-ambush-1660.webp",
+
+                sources: [
+                    "Дніпровська міська бібліотека: матеріал про Івана Сірка",
+                ],
+            },
+            {
+                id: "danube-sea-campaign-1663",
+                slug: "danube-sea-campaign-1663",
+                order: 3,
+                year: "1663",
+                dateUk: "літо 1663 року",
+                dateEn: "summer 1663",
+
+                type: "campaign",
+                direction: "crimea",
+                importance: "major",
+                resultType: "unclear",
+                confidence: "medium",
+
+                titleUk: "Морський похід до Дунаю і триденна битва під Очаковом",
+                titleEn: "Naval Campaign to the Danube and Three-Day Battle near Ochakiv",
+
+                locationUk: "Чорне море, Дунайський напрямок, Очаків",
+                locationEn: "Black Sea, Danube direction, Ochakiv",
+
+                opponentsUk: ["турецький флот", "османські прибережні сили"],
+                opponentsEn: ["Turkish fleet", "Ottoman coastal forces"],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Козацька флотилія була укріплена гарматами; точна кількість чайок і козаків не подана.",
+                forcesEn:
+                    "The Cossack flotilla was strengthened with cannons; the exact number of chaikas and Cossacks is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані; джерело зазначає, що у триденній битві жодна сторона не здобула перемоги.",
+                lossesEn:
+                    "Exact losses are not given; the source states that neither side won the three-day battle.",
+
+                resultUk:
+                    "Козаки здійснили морський похід до Дунаю, але під Очаковом зіткнулися з турецьким флотом у триденній битві без вирішальної перемоги.",
+                resultEn:
+                    "The Cossacks conducted a naval campaign to the Danube, but near Ochakiv encountered the Turkish fleet in a three-day battle without decisive victory.",
+
+                summaryUk:
+                    "Улітку 1663 року Сірко здійснив морський похід на чайках до Дунаю, а на зворотному шляху під Очаковом вступив у триденну битву з турецьким флотом.",
+
+                summaryEn:
+                    "In the summer of 1663, Sirko conducted a naval campaign in chaikas toward the Danube and, on the return route near Ochakiv, fought a three-day battle with the Turkish fleet.",
+
+                courseUk: [
+                    "Після подій 1660 року турецький флот чергував у лимані біля Очакова, контролюючи козацький вихід до моря.",
+                    "Сірко зміцнив козацьку флотилію гарматами.",
+                    "Улітку 1663 року він вирушив у морський похід і дістався до Дунаю.",
+                    "Під час походу козаки вдарили по прибережних містах.",
+                    "На зворотному шляху під Очаковом козацька флотилія зустріла турецький флот.",
+                    "Битва тривала три доби, але джерело прямо зазначає, що жодна сторона не здобула перемоги.",
+                ],
+
+                courseEn: [
+                    "After the events of 1660, the Turkish fleet patrolled the estuary near Ochakiv, controlling Cossack access to the sea.",
+                    "Sirko strengthened the Cossack flotilla with cannons.",
+                    "In the summer of 1663, he launched a naval campaign and reached the Danube.",
+                    "During the campaign, the Cossacks struck coastal towns.",
+                    "On the return route near Ochakiv, the Cossack flotilla encountered the Turkish fleet.",
+                    "The battle lasted three days, but the source directly states that neither side gained victory.",
+                ],
+
+                significanceUk: [
+                    "Це важливий морський епізод у військовій діяльності Сірка.",
+                    "Подія показує, що Сірко діяв не лише в степу, а й на чорноморському напрямку.",
+                    "Триденна битва під Очаковом не була перемогою Сірка, тому її треба чесно подавати як невирішене зіткнення.",
+                ],
+
+                significanceEn: [
+                    "This is an important naval episode in Sirko's military activity.",
+                    "The event shows that Sirko acted not only in the steppe, but also in the Black Sea direction.",
+                    "The three-day battle near Ochakiv was not Sirko's victory, so it should be honestly presented as an undecided clash.",
+                ],
+
+                historicalNoteUk:
+                    "Подія має добру сюжетну конкретику, але не має точних даних про чисельність флотилії, втрати й склад турецького флоту.",
+
+                historicalNoteEn:
+                    "The event has good narrative specificity, but lacks exact data on the flotilla's strength, losses, and the composition of the Turkish fleet.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/danube-sea-campaign-1663.webp",
+
+                sources: [
+                    "Очаківський історичний матеріал про Івана Сірка",
+                ],
+            },
             {
                 id: "perekop-campaigns-1663",
                 slug: "perekop-campaigns-1663",
-                order: 2,
-
+                order: 4,
                 year: "1663",
-                dateUk: "1663 рік",
-                dateEn: "1663",
+                dateUk: "осінь 1663 року",
+                dateEn: "autumn 1663",
 
                 type: "campaign",
                 direction: "crimea",
@@ -421,81 +835,85 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 resultType: "strategic-success",
                 confidence: "medium",
 
-                titleUk: "Походи на Перекоп",
-                titleEn: "Campaigns against Perekop",
+                titleUk: "Походи на Перекопські укріплення",
+                titleEn: "Campaigns against the Perekop Fortifications",
 
-                locationUk: "Перекопський напрямок",
-                locationEn: "Perekop direction",
+                locationUk: "Перекоп, кримський перешийок",
+                locationEn: "Perekop, Crimean Isthmus",
 
-                opponentsUk: ["Кримське ханство"],
-                opponentsEn: ["Crimean Khanate"],
+                opponentsUk: ["Кримське ханство", "татарські сили"],
+                opponentsEn: ["Crimean Khanate", "Tatar forces"],
 
                 commandersUk: ["Іван Сірко", "Григорій Косагов"],
                 commandersEn: ["Ivan Sirko", "Grigory Kosagov"],
 
-                forcesUk: "Точна чисельність війська невідома.",
-                forcesEn: "Exact troop strength is unknown.",
+                forcesUk:
+                    "У джерельному викладі зазначаються загони Косагова, донські козаки, калмики та запорожці Сірка; точна загальна чисельність не подана.",
+                forcesEn:
+                    "The account mentions Kosagov's detachments, Don Cossacks, Kalmyks, and Sirko's Zaporozhians; exact total strength is not given.",
 
-                lossesUk: "Точні втрати невідомі.",
-                lossesEn: "Exact losses are unknown.",
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
 
                 resultUk:
-                    "Козацькі дії на Перекопському напрямку ускладнювали вихід кримських сил із півострова.",
+                    "Походи відволікали кримських татар від підтримки великого походу польського короля Яна II Казимира.",
                 resultEn:
-                    "Cossack actions in the Perekop direction complicated the movement of Crimean forces from the peninsula.",
+                    "The campaigns diverted Crimean Tatars from supporting the major campaign of Polish king Jan II Casimir.",
 
                 summaryUk:
-                    "У 1663 році Сірко разом із Григорієм Косаговим діяв проти Перекопських укріплень.",
+                    "У 1663 році Сірко разом із Григорієм Косаговим діяв проти Перекопу, стратегічних воріт Криму.",
 
                 summaryEn:
-                    "In 1663, Sirko and Grigory Kosagov acted against the Perekop fortifications.",
+                    "In 1663, Sirko together with Grigory Kosagov acted against Perekop, the strategic gateway to Crimea.",
 
                 courseUk: [
-                    "Перекоп був ключовим пунктом між материковим степом і Кримом.",
-                    "Сірко діяв на цьому напрямку разом із Григорієм Косаговим.",
-                    "Метою походів було стримати кримські сили та не допустити їхнього вільного виходу на українські землі.",
-                    "Докладна реконструкція перебігу боїв у доступних коротких джерелах не подається.",
+                    "На тлі русько-польської війни кримські татари підтримували польського короля Яна II Казимира.",
+                    "Щоб відволікти татарські сили від підтримки польського наступу, Косагов із союзними силами здійснив рейд до Дністра.",
+                    "Після цього сили Косагова з’єдналися із запорожцями Сірка й несподівано підійшли до Перекопу.",
+                    "Косагов командував кіннотою, а Сірко взяв на себе командування піхотою.",
+                    "Подія була частиною ширшої кампанії 1663 року, спрямованої на стримування Кримського ханства.",
                 ],
 
                 courseEn: [
-                    "Perekop was a key point between the mainland steppe and Crimea.",
-                    "Sirko acted in this direction together with Grigory Kosagov.",
-                    "The purpose of the campaigns was to restrain Crimean forces and prevent their free movement into Ukrainian lands.",
-                    "A detailed reconstruction of the fighting is not provided in short available sources.",
+                    "During the Russo-Polish War, the Crimean Tatars supported Polish king Jan II Casimir.",
+                    "To divert Tatar forces from supporting the Polish offensive, Kosagov with allied forces raided toward the Dniester.",
+                    "After that, Kosagov's forces joined Sirko's Zaporozhians and unexpectedly approached Perekop.",
+                    "Kosagov commanded the cavalry, while Sirko took command of the infantry.",
+                    "The event was part of the broader 1663 campaign aimed at restraining the Crimean Khanate.",
                 ],
 
                 significanceUk: [
-                    "Перекоп був стратегічними воротами Криму.",
-                    "Дії на цьому напрямку мали не лише тактичне, а й стратегічне значення.",
-                    "Цю подію варто подавати як кампанію, а не як одну точно реконструйовану битву.",
+                    "Перекоп був ключовим проходом до Криму.",
+                    "Операція мала стратегічне значення, бо відволікала кримські сили від участі у війні на боці Польщі.",
+                    "Подія показує взаємодію Сірка з союзними військовими силами, зокрема з Косаговим, донцями й калмиками.",
                 ],
 
                 significanceEn: [
-                    "Perekop was the strategic gateway to Crimea.",
-                    "Actions in this direction had not only tactical but also strategic importance.",
-                    "This event should be presented as a campaign, not as one precisely reconstructed battle.",
+                    "Perekop was the key passage into Crimea.",
+                    "The operation had strategic significance because it diverted Crimean forces from participating in the war on Poland's side.",
+                    "The event shows Sirko's cooperation with allied military forces, including Kosagov, Don Cossacks, and Kalmyks.",
                 ],
 
                 historicalNoteUk:
-                    "Подія має підтверджений напрямок і учасників, але без надійних даних про чисельність, втрати та точний перебіг боїв.",
+                    "Це не одна ізольована битва, а серія походів і рейдових дій проти Перекопського напрямку восени 1663 року.",
 
                 historicalNoteEn:
-                    "The event has a confirmed direction and participants, but lacks reliable data on troop strength, losses, and exact course of fighting.",
+                    "This was not one isolated battle, but a series of campaigns and raiding actions against the Perekop direction in autumn 1663.",
 
                 hasDetailPage: false,
                 image: "/images/military/events/perekop-campaigns-1663.webp",
 
                 sources: [
-                    "Матеріали про походи Сірка на Перекоп",
-                    "Історичні довідки про військову діяльність Івана Сірка",
+                    "Вікіпедія: Походи на Перекоп 1663",
+                    "Матеріали про кампанію 1663 року",
                 ],
             },
-
             {
                 id: "perekop-raid-december-1663",
                 slug: "perekop-raid-december-1663",
-                order: 3,
-
+                order: 5,
                 year: "1663",
                 dateUk: "6 грудня 1663 року",
                 dateEn: "December 6, 1663",
@@ -504,7 +922,7 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 direction: "crimea",
                 importance: "major",
                 resultType: "victory",
-                confidence: "medium",
+                confidence: "high",
 
                 titleUk: "Рейд на Перекоп",
                 titleEn: "Raid on Perekop",
@@ -512,7 +930,7 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 locationUk: "Перекоп, узбережжя Чорного моря",
                 locationEn: "Perekop, Black Sea coast",
 
-                opponentsUk: ["Кримські татари"],
+                opponentsUk: ["кримські татари"],
                 opponentsEn: ["Crimean Tatars"],
 
                 commandersUk: ["Іван Сірко", "Григорій Косагов"],
@@ -521,70 +939,932 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 forcesUk:
                     "За музейним викладом: 90 козаків, 30 донців і 60 калмиків.",
                 forcesEn:
-                    "According to a museum account: 90 Cossacks, 30 Don Cossacks, and 60 Kalmyks.",
+                    "According to the museum account: 90 Cossacks, 30 Don Cossacks, and 60 Kalmyks.",
 
-                lossesUk: "Точні втрати невідомі.",
-                lossesEn: "Exact losses are unknown.",
+                lossesUk:
+                    "Точні втрати не подані; згадується спалення татарських сіл і визволення християнських полонених.",
+                lossesEn:
+                    "Exact losses are not given; the burning of Tatar villages and liberation of Christian captives are mentioned.",
 
                 resultUk:
-                    "Здійснено швидкий рейд на кримському напрямку, зруйновано частину татарських поселень і визволено християнських полонених.",
+                    "Сірко здійснив швидкий рейд на Перекопський напрямок, палив татарські села й визволяв християнських полонених.",
                 resultEn:
-                    "A rapid raid was carried out in the Crimean direction; part of the Tatar settlements were destroyed and Christian captives were liberated.",
+                    "Sirko conducted a rapid raid in the Perekop direction, burned Tatar villages, and liberated Christian captives.",
 
                 summaryUk:
-                    "6 грудня 1663 року Сірко з невеликим змішаним загоном здійснив рейд на Перекоп.",
+                    "6 грудня 1663 року Сірко з невеликим змішаним загоном вирушив на Перекоп і дійшов до берегів Чорного моря.",
 
                 summaryEn:
-                    "On December 6, 1663, Sirko led a small mixed detachment in a raid on Perekop.",
+                    "On December 6, 1663, Sirko led a small mixed detachment toward Perekop and reached the Black Sea coast.",
 
                 courseUk: [
-                    "Загін Сірка складався з козаків, донців і калмиків.",
-                    "Військо рушило на Перекопський напрямок і дійшло до узбережжя Чорного моря.",
-                    "Під час рейду було завдано удару по татарських поселеннях.",
+                    "Сірко разом із Косаговим узяв невеликий загін: 90 козаків, 30 донців і 60 калмиків.",
+                    "Загін вирушив на Перекопський напрямок.",
+                    "Козаки успішно дійшли до берегів Чорного моря.",
+                    "Під час рейду вони палили татарські села.",
                     "Окремо згадується визволення християнських полонених.",
                 ],
 
                 courseEn: [
-                    "Sirko's detachment consisted of Cossacks, Don Cossacks, and Kalmyks.",
-                    "The force moved toward Perekop and reached the Black Sea coast.",
-                    "During the raid, Tatar settlements were attacked.",
-                    "The liberation of Christian captives is also mentioned.",
+                    "Sirko together with Kosagov took a small detachment: 90 Cossacks, 30 Don Cossacks, and 60 Kalmyks.",
+                    "The detachment moved toward Perekop.",
+                    "The Cossacks successfully reached the Black Sea coast.",
+                    "During the raid, they burned Tatar villages.",
+                    "The liberation of Christian captives is specifically mentioned.",
                 ],
 
                 significanceUk: [
-                    "Рейд демонструє типову для Сірка тактику: мала мобільна група, швидкість і раптовість.",
-                    "Подія має точну дату, що робить її однією з найконкретніших у ранньому кримському циклі.",
-                    "Чисельність загону подається з обережністю, бо вона залежить від конкретного викладу.",
+                    "Це одна з найконкретніших подій раннього кримського циклу Сірка.",
+                    "Подія має точну дату й конкретну чисельність загону в музейному викладі.",
+                    "Рейд добре показує тактику Сірка: мала група, швидкий рух, удар по тилових поселеннях, визволення полонених.",
                 ],
 
                 significanceEn: [
-                    "The raid demonstrates Sirko's typical tactics: a small mobile group, speed, and surprise.",
-                    "The event has an exact date, making it one of the most specific in the early Crimean cycle.",
-                    "The force strength is presented cautiously because it depends on a particular account.",
+                    "This is one of the most specific events of Sirko's early Crimean cycle.",
+                    "The event has an exact date and specific detachment strength in the museum account.",
+                    "The raid clearly shows Sirko's tactics: a small group, rapid movement, a strike against rear settlements, and liberation of captives.",
                 ],
 
                 historicalNoteUk:
-                    "Цифри щодо складу загону подані за музейним викладом і потребують звірки з академічними працями.",
+                    "Чисельність загону подана за музейним викладом; втрати сторін не деталізовані.",
 
                 historicalNoteEn:
-                    "Figures for the detachment are taken from a museum account and require checking against academic works.",
+                    "The detachment strength is taken from the museum account; losses of the sides are not detailed.",
 
                 hasDetailPage: false,
                 image: "/images/military/events/perekop-raid-december-1663.webp",
 
                 sources: [
-                    "Дніпровський історичний музей: матеріали про походи Івана Сірка",
+                    "Дніпропетровський національний історичний музей: Іван Сірко — походи в Крим та Волоську землю",
                 ],
             },
+        ],
+    },
+    {
+        id: "right-bank-uprising",
+        slug: "right-bank-uprising",
+        order: 3,
+        direction: "ruina",
 
+        titleUk: "Правобережне повстання",
+        titleEn: "Right-Bank Uprising",
+
+        shortTitleUk: "Правобережжя",
+        shortTitleEn: "Right Bank",
+
+        periodUk: "1664–1665",
+        periodEn: "1664–1665",
+
+        summaryUk:
+            "Період участі Івана Сірка у Правобережному повстанні проти влади Павла Тетері, польських сил і татарської підтримки Речі Посполитої.",
+
+        summaryEn:
+            "The period of Ivan Sirko's participation in the Right-Bank uprising against Pavlo Teteria's authority, Polish forces, and Tatar support for the Polish-Lithuanian Commonwealth.",
+
+        contentUk: [
+            "Правобережне повстання 1664–1665 років почалося в умовах війни Московії з Річчю Посполитою та боротьби за владу в козацькій Україні.",
+            "Сірко виступив на Правобережжя з запорожцями в першій половині лютого 1664 року.",
+            "Повстання швидко охопило значну частину Брацлавщини й Київщини, а чисельність його учасників, за даними ЕІУ, зросла приблизно до 20 тисяч осіб.",
+            "Цей блок важливий тим, що показує Сірка не лише як противника татар і турків, а й як активного учасника внутрішньої війни доби Руїни.",
+        ],
+
+        contentEn: [
+            "The Right-Bank uprising of 1664–1665 began in the context of the Muscovite-Polish war and the struggle for power in Cossack Ukraine.",
+            "Sirko marched to the Right Bank with the Zaporozhians in the first half of February 1664.",
+            "The uprising quickly covered much of Bratslavshchyna and Kyivshchyna, and according to the Encyclopedia of Ukrainian History, the number of participants rose to about 20,000.",
+            "This block is important because it shows Sirko not only as an enemy of the Tatars and Ottomans, but also as an active participant in the internal war of the Ruin period.",
+        ],
+
+        image: "/images/military/right-bank-uprising.webp",
+
+        events: [
             {
-                id: "crimean-campaigns-1668",
-                slug: "crimean-campaigns-1668",
-                order: 4,
+                id: "bratslav-campaign-february-1664",
+                slug: "bratslav-campaign-february-1664",
+                order: 1,
+                year: "1664",
+                dateUk: "перша половина лютого 1664 року",
+                dateEn: "first half of February 1664",
 
+                type: "campaign",
+                direction: "ruina",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "high",
+
+                titleUk: "Похід Сірка на Брацлавщину",
+                titleEn: "Sirko's Campaign to Bratslavshchyna",
+
+                locationUk: "Брацлавщина, Правобережна Україна",
+                locationEn: "Bratslavshchyna, Right-Bank Ukraine",
+
+                opponentsUk: [
+                    "прибічники Павла Тетері",
+                    "сили Речі Посполитої",
+                ],
+                opponentsEn: [
+                    "supporters of Pavlo Teteria",
+                    "forces of the Polish-Lithuanian Commonwealth",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Дмитро Сулима",
+                    "Семен Височан",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Dmytro Sulyma",
+                    "Semen Vysochan",
+                ],
+
+                forcesUk:
+                    "Точна чисельність війська Сірка на початку походу не подана; згодом кількість учасників повстання зросла приблизно до 20 тисяч осіб.",
+                forcesEn:
+                    "The exact strength of Sirko's force at the beginning of the campaign is not given; later the number of uprising participants rose to about 20,000.",
+
+                lossesUk:
+                    "Точні втрати на початковому етапі походу не подані.",
+                lossesEn:
+                    "Exact losses at the initial stage of the campaign are not given.",
+
+                resultUk:
+                    "Похід Сірка став початком широкого Правобережного повстання.",
+                resultEn:
+                    "Sirko's campaign became the beginning of a broad Right-Bank uprising.",
+
+                summaryUk:
+                    "У першій половині лютого 1664 року Сірко з запорожцями вирушив на Брацлавщину, де його підтримали місцеві козацькі сили.",
+
+                summaryEn:
+                    "In the first half of February 1664, Sirko and the Zaporozhians marched to Bratslavshchyna, where local Cossack forces supported him.",
+
+                courseUk: [
+                    "Похід Сірка на Брацлавщину став початком Правобережного повстання 1664–1665 років.",
+                    "На місці його підтримали торговицький сотник Дмитро Сулима та полковник Семен Височан.",
+                    "Повстання швидко розширилося за межі початкового району.",
+                    "За короткий час воно охопило значні території Брацлавщини та Київщини.",
+                ],
+
+                courseEn: [
+                    "Sirko's campaign to Bratslavshchyna became the beginning of the Right-Bank uprising of 1664–1665.",
+                    "He was supported locally by Dmytro Sulyma, sotnyk of Torgovytsia, and Colonel Semen Vysochan.",
+                    "The uprising quickly expanded beyond its initial area.",
+                    "Within a short time, it covered significant territories of Bratslavshchyna and Kyivshchyna.",
+                ],
+
+                significanceUk: [
+                    "Це одна з головних військово-політичних подій Сірка доби Руїни.",
+                    "Похід показує його здатність не лише вести рейди, а й запускати масштабний повстанський рух.",
+                    "Подія має чітку дату, регіон і політичний контекст.",
+                ],
+
+                significanceEn: [
+                    "This is one of Sirko's main military-political events of the Ruin period.",
+                    "The campaign shows his ability not only to conduct raids, but also to initiate a large uprising movement.",
+                    "The event has a clear date, region, and political context.",
+                ],
+
+                historicalNoteUk:
+                    "Це не одна битва, а старт кампанії і повстанського руху на Правобережжі.",
+
+                historicalNoteEn:
+                    "This was not a single battle, but the beginning of a campaign and uprising movement on the Right Bank.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/bratslav-campaign-february-1664.webp",
+
+                sources: [
+                    "Енциклопедія історії України: Правобережне повстання 1664–1665",
+                ],
+            },
+            {
+                id: "uprising-expansion-bila-tserkva-1664",
+                slug: "uprising-expansion-bila-tserkva-1664",
+                order: 2,
+                year: "1664",
+                dateUk: "лютий — березень 1664 року",
+                dateEn: "February — March 1664",
+
+                type: "campaign",
+                direction: "ruina",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "high",
+
+                titleUk: "Розгортання повстання до Білої Церкви",
+                titleEn: "Expansion of the Uprising toward Bila Tserkva",
+
+                locationUk: "Брацлавщина, Київщина, Білоцерківський напрямок",
+                locationEn: "Bratslavshchyna, Kyivshchyna, Bila Tserkva direction",
+
+                opponentsUk: [
+                    "Павло Тетеря",
+                    "коронні війська Речі Посполитої",
+                    "кримські татарські орди",
+                ],
+                opponentsEn: [
+                    "Pavlo Teteria",
+                    "Crown forces of the Polish-Lithuanian Commonwealth",
+                    "Crimean Tatar hordes",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Дмитро Сулима",
+                    "Семен Височан",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Dmytro Sulyma",
+                    "Semen Vysochan",
+                ],
+
+                forcesUk:
+                    "За ЕІУ, кількість учасників повстання зросла приблизно до 20 тисяч осіб.",
+                forcesEn:
+                    "According to the Encyclopedia of Ukrainian History, the number of uprising participants rose to about 20,000.",
+
+                lossesUk:
+                    "Точні втрати на цьому етапі не подані.",
+                lossesEn:
+                    "Exact losses at this stage are not given.",
+
+                resultUk:
+                    "Повстанці наблизилися до Білоцерківської фортеці, найпотужнішого укріплення Правобережжя.",
+                resultEn:
+                    "The insurgents approached the Bila Tserkva fortress, the strongest fortification on the Right Bank.",
+
+                summaryUk:
+                    "Після початку виступу повстання швидко поширилося й наблизилося до Білої Церкви.",
+
+                summaryEn:
+                    "After the uprising began, it spread rapidly and approached Bila Tserkva.",
+
+                courseUk: [
+                    "Після походу Сірка на Брацлавщину повстання охопило значні території.",
+                    "До руху долучалися місцеві сили Брацлавщини та Київщини.",
+                    "Кількість учасників, за даними ЕІУ, зросла приблизно до 20 тисяч.",
+                    "Повстанці підійшли до Білоцерківської фортеці, яка була найпотужнішою на Правобережжі.",
+                    "Для придушення руху Тетері й коронним силам знадобилася підтримка татарських орд.",
+                ],
+
+                courseEn: [
+                    "After Sirko's campaign to Bratslavshchyna, the uprising covered significant territories.",
+                    "Local forces of Bratslavshchyna and Kyivshchyna joined the movement.",
+                    "According to the Encyclopedia of Ukrainian History, the number of participants grew to about 20,000.",
+                    "The insurgents approached the Bila Tserkva fortress, the strongest on the Right Bank.",
+                    "To suppress the movement, Teteria and Crown forces needed the support of Tatar hordes.",
+                ],
+
+                significanceUk: [
+                    "Подія показує масштаб повстання, яке почалося з походу Сірка.",
+                    "Білоцерківський напрямок мав стратегічне значення для контролю Правобережжя.",
+                    "Це один із найбільших епізодів військово-політичної активності Сірка в 1664 році.",
+                ],
+
+                significanceEn: [
+                    "The event shows the scale of the uprising that began with Sirko's campaign.",
+                    "The Bila Tserkva direction had strategic importance for control of the Right Bank.",
+                    "This is one of the largest episodes of Sirko's military-political activity in 1664.",
+                ],
+
+                historicalNoteUk:
+                    "Подію варто подавати як етап повстанської кампанії, а не як окрему точно реконструйовану битву.",
+
+                historicalNoteEn:
+                    "The event should be presented as a stage of the uprising campaign, not as a precisely reconstructed separate battle.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/uprising-expansion-bila-tserkva-1664.webp",
+
+                sources: [
+                    "Енциклопедія історії України: Правобережне повстання 1664–1665",
+                ],
+            },
+            {
+                id: "uman-letter-march-1664",
+                slug: "uman-letter-march-1664",
+                order: 3,
+                year: "1664",
+                dateUk: "13 березня 1664 року",
+                dateEn: "March 13, 1664",
+
+                type: "political-military",
+                direction: "ruina",
+                importance: "medium",
+                resultType: "political-result",
+                confidence: "high",
+
+                titleUk: "Лист Сірка з Умані про оборону міст",
+                titleEn: "Sirko's Letter from Uman about the Defense of Towns",
+
+                locationUk: "Умань",
+                locationEn: "Uman",
+
+                opponentsUk: [
+                    "противники повстанців на Правобережжі",
+                    "польсько-татарські сили",
+                ],
+                opponentsEn: [
+                    "opponents of the insurgents on the Right Bank",
+                    "Polish-Tatar forces",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Не подано; джерело фіксує лист і потребу оборони міст, а не чисельність війська.",
+                forcesEn:
+                    "Not given; the source records the letter and the need to defend towns, not troop strength.",
+
+                lossesUk:
+                    "Не застосовується.",
+                lossesEn:
+                    "Not applicable.",
+
+                resultUk:
+                    "Сірко просив надіслати ратних людей для оборони Брацлава, Умані, Кальника та інших міст.",
+                resultEn:
+                    "Sirko requested military men to defend Bratslav, Uman, Kalnyk, and other towns.",
+
+                summaryUk:
+                    "13 березня 1664 року Сірко з Умані писав про необхідність оборони правобережних міст від ворога.",
+
+                summaryEn:
+                    "On March 13, 1664, Sirko wrote from Uman about the need to defend Right-Bank towns from the enemy.",
+
+                courseUk: [
+                    "Лист був написаний з Умані в розпал подій Правобережного повстання.",
+                    "Сірко повідомляв про потребу посилення оборони міст.",
+                    "Окремо згадувалися Брацлав, Умань, Кальник та інші подібні міста.",
+                    "Цей документ показує, що Сірко діяв не лише рейдами, а й займався організацією оборони території.",
+                ],
+
+                courseEn: [
+                    "The letter was written from Uman during the events of the Right-Bank uprising.",
+                    "Sirko reported the need to strengthen the defense of towns.",
+                    "Bratslav, Uman, Kalnyk, and other similar towns were specifically mentioned.",
+                    "This document shows that Sirko acted not only through raids, but also through organizing territorial defense.",
+                ],
+
+                significanceUk: [
+                    "Подія має точну дату й документальне підтвердження.",
+                    "Показує Сірка як організатора оборони, а не лише польового командира.",
+                    "Добре пояснює військовий стан Правобережжя у березні 1664 року.",
+                ],
+
+                significanceEn: [
+                    "The event has an exact date and documentary confirmation.",
+                    "It shows Sirko as an organizer of defense, not only a field commander.",
+                    "It helps explain the military situation on the Right Bank in March 1664.",
+                ],
+
+                historicalNoteUk:
+                    "Це документальна військово-політична подія, а не битва, але вона прямо пов’язана з кампанією 1664 року.",
+
+                historicalNoteEn:
+                    "This is a documentary military-political event, not a battle, but it is directly connected with the 1664 campaign.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/uman-letter-march-1664.webp",
+
+                sources: [
+                    "Дніпропетровський національний історичний музей: матеріали до монографії Д. Яворницького про Івана Сірка",
+                ],
+            },
+            {
+                id: "fighting-teteria-czarniecki-1664",
+                slug: "fighting-teteria-czarniecki-1664",
+                order: 4,
+                year: "1664",
+                dateUk: "1664 рік",
+                dateEn: "1664",
+
+                type: "battle",
+                direction: "ruina",
+                importance: "major",
+                resultType: "unclear",
+                confidence: "medium",
+
+                titleUk: "Бої з прибічниками Тетері та військами Чарнецького",
+                titleEn: "Fighting against Teteria's Supporters and Czarniecki's Forces",
+
+                locationUk: "Правобережна Україна",
+                locationEn: "Right-Bank Ukraine",
+
+                opponentsUk: [
+                    "прибічники Павла Тетері",
+                    "польські війська Стефана Чарнецького",
+                ],
+                opponentsEn: [
+                    "supporters of Pavlo Teteria",
+                    "Polish troops of Stefan Czarniecki",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Павло Тетеря",
+                    "Стефан Чарнецький",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Pavlo Teteria",
+                    "Stefan Czarniecki",
+                ],
+
+                forcesUk:
+                    "Точна чисельність сил у конкретних боях не подана.",
+                forcesEn:
+                    "Exact troop strength in the specific clashes is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
+
+                resultUk:
+                    "Сірко воював проти прибічників Тетері та вступав у бої з польськими військами Чарнецького; загальний підсумок кампанії для повстанців був несприятливим.",
+                resultEn:
+                    "Sirko fought against Teteria's supporters and clashed with Polish troops under Czarniecki; the overall outcome of the campaign was unfavorable for the insurgents.",
+
+                summaryUk:
+                    "У 1664 році Сірко діяв на Правобережжі проти сил Павла Тетері та польських військ Стефана Чарнецького.",
+
+                summaryEn:
+                    "In 1664, Sirko operated on the Right Bank against Pavlo Teteria's forces and Stefan Czarniecki's Polish troops.",
+
+                courseUk: [
+                    "Павло Тетеря спирався на підтримку Речі Посполитої та татарських сил.",
+                    "Сірко очолював запорожців і повстанські сили, які виступали проти Тетері.",
+                    "У ході кампанії Сірку доводилося воювати не лише з прибічниками Тетері, а й з польськими військами під проводом Стефана Чарнецького.",
+                    "Джерела не дають єдиної детальної реконструкції кожного бою, тому цей event подається як група бойових зіткнень у межах Правобережного повстання.",
+                ],
+
+                courseEn: [
+                    "Pavlo Teteria relied on the support of the Polish-Lithuanian Commonwealth and Tatar forces.",
+                    "Sirko led the Zaporozhians and insurgent forces opposing Teteria.",
+                    "During the campaign, Sirko had to fight not only Teteria's supporters, but also Polish troops led by Stefan Czarniecki.",
+                    "Sources do not provide one detailed reconstruction of every clash, so this event is presented as a group of combat actions within the Right-Bank uprising.",
+                ],
+
+                significanceUk: [
+                    "Подія показує Сірка у війні не проти татар чи турків, а в складному внутрішньому конфлікті Руїни.",
+                    "Чарнецький був одним із найвідоміших польських воєначальників того часу.",
+                    "Цей блок важливий для пояснення, чому Правобережне повстання стало великим військово-політичним конфліктом.",
+                ],
+
+                significanceEn: [
+                    "The event shows Sirko in a war not against Tatars or Ottomans, but in the complex internal conflict of the Ruin.",
+                    "Czarniecki was one of the most prominent Polish commanders of the time.",
+                    "This block is important for explaining why the Right-Bank uprising became a major military-political conflict.",
+                ],
+
+                historicalNoteUk:
+                    "Подія має підтверджений загальний факт бойової участі Сірка, але без точного опису кожної окремої сутички.",
+
+                historicalNoteEn:
+                    "The event has a confirmed general fact of Sirko's combat involvement, but without an exact description of each separate clash.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/fighting-teteria-czarniecki-1664.webp",
+
+                sources: [
+                    "Дніпровська міська бібліотека: Іван Сірко — легендарний кошовий Запорозької Січі",
+                    "Енциклопедія історії України: Правобережне повстання 1664–1665",
+                ],
+            },
+            {
+                id: "stavyshche-uprising-context-1664-1665",
+                slug: "stavyshche-uprising-context-1664-1665",
+                order: 5,
+                year: "1664–1665",
+                dateUk: "липень — жовтень 1664 року; січень 1665 року",
+                dateEn: "July — October 1664; January 1665",
+
+                type: "siege",
+                direction: "ruina",
+                importance: "medium",
+                resultType: "defeat",
+                confidence: "medium",
+
+                titleUk: "Бої під Ставищами в контексті повстання",
+                titleEn: "Fighting near Stavyshche in the Context of the Uprising",
+
+                locationUk: "Ставище, Правобережна Україна",
+                locationEn: "Stavyshche, Right-Bank Ukraine",
+
+                opponentsUk: [
+                    "Річ Посполита",
+                    "Кримське ханство",
+                ],
+                opponentsEn: [
+                    "Polish-Lithuanian Commonwealth",
+                    "Crimean Khanate",
+                ],
+
+                commandersUk: [
+                    "Стефан Чарнецький",
+                    "полковник Дячко",
+                    "полковник Булганін",
+                ],
+                commandersEn: [
+                    "Stefan Czarniecki",
+                    "Colonel Diachko",
+                    "Colonel Bulganin",
+                ],
+
+                forcesUk:
+                    "У доступній довідці по битві конкретна чисельність сторін у цьому уривку не подана.",
+                forcesEn:
+                    "The available summary of the battle does not provide exact strength figures in this excerpt.",
+
+                lossesUk:
+                    "Точні втрати в цьому масиві не подані; результатом стала перемога польсько-литовських і кримських сил.",
+                lossesEn:
+                    "Exact losses are not given in this dataset; the result was a victory for Polish-Lithuanian and Crimean forces.",
+
+                resultUk:
+                    "Перемога Речі Посполитої, Литви та Кримського ханства над повстанськими силами.",
+                resultEn:
+                    "Victory of the Polish-Lithuanian Commonwealth, Lithuania, and the Crimean Khanate over the insurgent forces.",
+
+                summaryUk:
+                    "Бої під Ставищами були одним із важливих епізодів Правобережного повстання 1664–1665 років, хоча пряме командування Сірка саме в цій битві потребує обережного подання.",
+
+                summaryEn:
+                    "The fighting near Stavyshche was one of the important episodes of the Right-Bank uprising of 1664–1665, although Sirko's direct command in this particular battle must be presented cautiously.",
+
+                courseUk: [
+                    "Ставище стало одним із центрів опору під час Правобережного повстання.",
+                    "Бої тривали в кілька етапів: у липні — жовтні 1664 року та знову в січні 1665 року.",
+                    "Проти повстанців діяли сили Речі Посполитої та Кримського ханства.",
+                    "У доступних довідках командувачами з боку противника названо Стефана Чарнецького, а з боку повстанців — полковників Дячка й Булганіна.",
+                    "Подія включена до цієї кампанії як важливий епізод повстання, але не подається як особисто очолювана Сірком битва.",
+                ],
+
+                courseEn: [
+                    "Stavyshche became one of the centers of resistance during the Right-Bank uprising.",
+                    "The fighting took place in several stages: July — October 1664 and again in January 1665.",
+                    "The insurgents faced forces of the Polish-Lithuanian Commonwealth and the Crimean Khanate.",
+                    "Available summaries name Stefan Czarniecki on the opposing side, and Colonels Diachko and Bulganin among the insurgent commanders.",
+                    "The event is included in this campaign as an important episode of the uprising, but not presented as a battle personally commanded by Sirko.",
+                ],
+
+                significanceUk: [
+                    "Подія показує масштаб і драматизм Правобережного повстання.",
+                    "Вона пояснює, чому кампанія 1664–1665 років завершилася важко для повстанців.",
+                    "У масиві її треба тримати з приміткою про обережну атрибуцію ролі Сірка.",
+                ],
+
+                significanceEn: [
+                    "The event shows the scale and drama of the Right-Bank uprising.",
+                    "It explains why the 1664–1665 campaign ended badly for the insurgents.",
+                    "In the dataset it should be kept with a note about cautious attribution of Sirko's role.",
+                ],
+
+                historicalNoteUk:
+                    "Це подія контексту Правобережного повстання. Вона не повинна подаватися як особиста перемога Сірка або як битва, де він точно командував.",
+
+                historicalNoteEn:
+                    "This is an event in the context of the Right-Bank uprising. It should not be presented as Sirko's personal victory or as a battle he certainly commanded.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/stavyshche-uprising-context-1664-1665.webp",
+
+                sources: [
+                    "Вікіпедія: Битва під Ставищами",
+                    "Енциклопедія історії України: Правобережне повстання 1664–1665",
+                ],
+            },
+        ],
+    },
+    {
+        id: "sloboda-crimean-campaigns",
+        slug: "sloboda-crimean-campaigns",
+        order: 4,
+        direction: "ruina",
+
+        titleUk: "Слобожанщина і Крим",
+        titleEn: "Sloboda Ukraine and Crimea",
+
+        shortTitleUk: "1668",
+        shortTitleEn: "1668",
+
+        periodUk: "1668",
+        periodEn: "1668",
+
+        summaryUk:
+            "Кампанія 1668 року поєднує участь Сірка у виступах проти царських воєвод на Слобожанщині та його подальші походи проти Кримського ханства.",
+
+        summaryEn:
+            "The 1668 campaign combines Sirko's participation in uprisings against Muscovite voivodes in Sloboda Ukraine and his later campaigns against the Crimean Khanate.",
+
+        contentUk: [
+            "У 1668 році Сірко на певний час залишив Січ і з’явився на Слобожанщині.",
+            "Там його обрали полковником Зміївського полку, а місцеве населення й козаки виступили проти царських воєвод.",
+            "Після невдачі під Харковом Сірко повернувся на Запорожжя й продовжив боротьбу проти татарських сил.",
+            "У цьому ж році джерела згадують кілька походів Сірка до Криму, зокрема похід у напрямку Кафи, Ширимбеївських улусів і Бахчисарая.",
+        ],
+
+        contentEn: [
+            "In 1668, Sirko temporarily left the Sich and appeared in Sloboda Ukraine.",
+            "There he was elected colonel of the Zmiiv regiment, while local people and Cossacks rose against Muscovite voivodes.",
+            "After failure near Kharkiv, Sirko returned to Zaporizhia and continued the struggle against Tatar forces.",
+            "In the same year, sources mention several Sirko campaigns into Crimea, including actions toward Kaffa, the Shyrymbei uluses, and Bakhchysarai.",
+        ],
+
+        image: "/images/military/sloboda-crimean-campaigns.webp",
+
+        events: [
+            {
+                id: "zmiiv-regiment-uprising-1668",
+                slug: "zmiiv-regiment-uprising-1668",
+                order: 1,
                 year: "1668",
-                dateUk: "жовтень — листопад 1668 року",
-                dateEn: "October — November 1668",
+                dateUk: "початок 1668 року",
+                dateEn: "early 1668",
+
+                type: "political-military",
+                direction: "ruina",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "medium",
+
+                titleUk: "Сірко на Слобожанщині",
+                titleEn: "Sirko in Sloboda Ukraine",
+
+                locationUk: "Слобожанщина, Зміївський полк",
+                locationEn: "Sloboda Ukraine, Zmiiv regiment",
+
+                opponentsUk: [
+                    "царські воєводи",
+                    "московські залоги",
+                ],
+                opponentsEn: [
+                    "Muscovite voivodes",
+                    "Muscovite garrisons",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна чисельність сил Сірка на Слобожанщині не подана.",
+                forcesEn:
+                    "The exact strength of Sirko's forces in Sloboda Ukraine is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
+
+                resultUk:
+                    "Сірко очолив виступи проти царських воєвод у регіоні, але повстання не стало тривалим успішним рухом.",
+                resultEn:
+                    "Sirko led actions against Muscovite voivodes in the region, but the uprising did not become a lasting successful movement.",
+
+                summaryUk:
+                    "У 1668 році Сірко з’явився на Слобожанщині, де його обрали полковником Зміївського полку.",
+
+                summaryEn:
+                    "In 1668, Sirko appeared in Sloboda Ukraine, where he was elected colonel of the Zmiiv regiment.",
+
+                courseUk: [
+                    "Сірко на певний час залишив Січ і прибув на Слобожанщину.",
+                    "Там його обрали полковником Зміївського полку.",
+                    "У регіоні виступили мешканці Красного Кута, робітники Торських соляних заводів і козаки Зміївського полку.",
+                    "Виступ був спрямований проти гніту царських воєвод.",
+                ],
+
+                courseEn: [
+                    "Sirko temporarily left the Sich and arrived in Sloboda Ukraine.",
+                    "There he was elected colonel of the Zmiiv regiment.",
+                    "The people of Krasnyi Kut, workers of the Tor salt works, and Cossacks of the Zmiiv regiment rose in the region.",
+                    "The uprising was directed against the oppression of Muscovite voivodes.",
+                ],
+
+                significanceUk: [
+                    "Подія показує Сірка не лише як запорозького кошового, а і як лідера ширшого антимосковського виступу.",
+                    "Зміївський епізод пов’язує військову біографію Сірка зі Слобожанщиною.",
+                    "Це військово-політична подія, а не окрема битва.",
+                ],
+
+                significanceEn: [
+                    "The event shows Sirko not only as a Zaporizhian leader but also as the leader of a broader anti-Muscovite uprising.",
+                    "The Zmiiv episode connects Sirko's military biography with Sloboda Ukraine.",
+                    "This is a military-political event, not a separate battle.",
+                ],
+
+                historicalNoteUk:
+                    "Подія має загальний опис у джерелах, але без точної чисельності війська та втрат.",
+
+                historicalNoteEn:
+                    "The event has a general description in sources, but no exact troop strength or losses.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/zmiiv-regiment-uprising-1668.webp",
+
+                sources: [
+                    "Енциклопедія історії України: Повстання лівобережне 1668",
+                    "Біографічні матеріали про Івана Сірка",
+                ],
+            },
+            {
+                id: "kharkiv-failure-1668",
+                slug: "kharkiv-failure-1668",
+                order: 2,
+                year: "1668",
+                dateUk: "1668 рік",
+                dateEn: "1668",
+
+                type: "siege",
+                direction: "ruina",
+                importance: "major",
+                resultType: "defeat",
+                confidence: "high",
+
+                titleUk: "Невдала спроба здобути Харків",
+                titleEn: "Failed Attempt to Take Kharkiv",
+
+                locationUk: "Харків, Слобожанщина",
+                locationEn: "Kharkiv, Sloboda Ukraine",
+
+                opponentsUk: [
+                    "царська залога Харкова",
+                    "московські ратні люди",
+                ],
+                opponentsEn: [
+                    "Muscovite garrison of Kharkiv",
+                    "Muscovite troops",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна чисельність повстанців не подана.",
+                forcesEn:
+                    "The exact number of insurgents is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані; джерело фіксує невдачу Сірка під Харковом.",
+                lossesEn:
+                    "Exact losses are not given; the source records Sirko's failure near Kharkiv.",
+
+                resultUk:
+                    "Сірко не зміг здобути Харків; після цього повстання на Слобожанщині пішло на спад.",
+                resultEn:
+                    "Sirko failed to take Kharkiv; after that, the uprising in Sloboda Ukraine declined.",
+
+                summaryUk:
+                    "Спроба Сірка здобути Харків завершилася невдачею й стала переломним моментом слобожанського виступу.",
+
+                summaryEn:
+                    "Sirko's attempt to take Kharkiv failed and became a turning point of the Sloboda uprising.",
+
+                courseUk: [
+                    "Повстанський рух на Слобожанщині розгортався проти царських воєвод.",
+                    "Сірко спробував поширити виступ на Харків.",
+                    "Харківська залога виявилася достатньо сильною, щоб втримати місто.",
+                    "Після невдачі під Харковом повстання на Слобожанщині почало спадати.",
+                ],
+
+                courseEn: [
+                    "The uprising in Sloboda Ukraine developed against Muscovite voivodes.",
+                    "Sirko tried to extend the movement to Kharkiv.",
+                    "The Kharkiv garrison proved strong enough to hold the town.",
+                    "After the failure near Kharkiv, the uprising in Sloboda Ukraine began to decline.",
+                ],
+
+                significanceUk: [
+                    "Це важливий епізод, бо тут Сірко зазнав політично-військової невдачі.",
+                    "Подія пояснює, чому він повернувся до запорозького й кримського напрямку.",
+                    "У роуті її треба подавати чесно як поразку або невдачу, а не як перемогу.",
+                ],
+
+                significanceEn: [
+                    "This is important because Sirko suffered a military-political failure here.",
+                    "The event explains why he returned to the Zaporizhian and Crimean direction.",
+                    "In the route, it should be presented honestly as a defeat or failure, not as a victory.",
+                ],
+
+                historicalNoteUk:
+                    "ЕІУ прямо фіксує, що Сірко не зміг здобути Харків; точні деталі бою не подані.",
+
+                historicalNoteEn:
+                    "The Encyclopedia of Ukrainian History directly records that Sirko failed to take Kharkiv; exact battle details are not given.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/kharkiv-failure-1668.webp",
+
+                sources: [
+                    "Енциклопедія історії України: Повстання лівобережне 1668",
+                ],
+            },
+            {
+                id: "crimean-raid-october-1668",
+                slug: "crimean-raid-october-1668",
+                order: 3,
+                year: "1668",
+                dateUk: "жовтень 1668 року",
+                dateEn: "October 1668",
+
+                type: "raid",
+                direction: "crimea",
+                importance: "major",
+                resultType: "victory",
+                confidence: "high",
+
+                titleUk: "Похід на Крим із Іваном Жданом-Рогом",
+                titleEn: "Campaign into Crimea with Ivan Zhdan-Rih",
+
+                locationUk: "Крим, Арбаутук, Кафа, Ширимбеївські улуси",
+                locationEn: "Crimea, Arbautuk, Kaffa, Shyrymbei uluses",
+
+                opponentsUk: [
+                    "Кримське ханство",
+                    "татарські улуси",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                    "Tatar uluses",
+                ],
+
+                commandersUk: ["Іван Сірко", "Іван Ждан-Ріг"],
+                commandersEn: ["Ivan Sirko", "Ivan Zhdan-Rih"],
+
+                forcesUk:
+                    "Точна чисельність загонів Сірка і Ждана-Рога не подана.",
+                forcesEn:
+                    "The exact strength of Sirko's and Zhdan-Rih's detachments is not given.",
+
+                lossesUk:
+                    "Джерело згадує, що було побито багато татар і визволено близько двох тисяч руських бранців; точні втрати татар не подані.",
+                lossesEn:
+                    "The source mentions that many Tatars were killed and about two thousand Ruthenian captives were freed; exact Tatar losses are not given.",
+
+                resultUk:
+                    "Козаки спустошили кілька татарських поселень і визволили близько 2000 бранців.",
+                resultEn:
+                    "The Cossacks devastated several Tatar settlements and liberated about 2,000 captives.",
+
+                summaryUk:
+                    "У жовтні 1668 року Сірко разом із кошовим Іваном Жданом-Рогом здійснив похід у Крим двома загонами.",
+
+                summaryEn:
+                    "In October 1668, Sirko together with Kish Otaman Ivan Zhdan-Rih conducted a campaign into Crimea in two detachments.",
+
+                courseUk: [
+                    "Сірко й Іван Ждан-Ріг вирішили діяти проти Криму двома окремими загонами.",
+                    "Ждан-Ріг рушив до Арбаутука.",
+                    "Сірко зайшов від Кафи, тобто Феодосії, на Ширимбеївські улуси.",
+                    "У ході походу козаки спустошили кілька татарських сіл.",
+                    "Було визволено близько двох тисяч руських бранців.",
+                ],
+
+                courseEn: [
+                    "Sirko and Ivan Zhdan-Rih decided to act against Crimea in two separate detachments.",
+                    "Zhdan-Rih moved toward Arbautuk.",
+                    "Sirko advanced from Kaffa, that is Feodosia, toward the Shyrymbei uluses.",
+                    "During the campaign, the Cossacks devastated several Tatar villages.",
+                    "About two thousand Ruthenian captives were liberated.",
+                ],
+
+                significanceUk: [
+                    "Це одна з найконкретніше описаних кримських операцій Сірка 1668 року.",
+                    "Подія має чітку географію: Арбаутук, Кафа, Ширимбеївські улуси.",
+                    "Визволення бранців було одним із головних мотивів таких походів.",
+                ],
+
+                significanceEn: [
+                    "This is one of the most specifically described Crimean operations of Sirko in 1668.",
+                    "The event has clear geography: Arbautuk, Kaffa, and the Shyrymbei uluses.",
+                    "The liberation of captives was one of the main motives of such campaigns.",
+                ],
+
+                historicalNoteUk:
+                    "Джерело подає конкретний напрямок і результат, але не дає точної чисельності військ і втрат.",
+
+                historicalNoteEn:
+                    "The source gives a specific direction and result, but does not provide exact troop strength or losses.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/crimean-raid-october-1668.webp",
+
+                sources: [
+                    "Дніпропетровський національний історичний музей: Іван Сірко — походи в Крим та Волоську землю",
+                    "Вікіпедія: Іван Ждан-Ріг",
+                ],
+            },
+            {
+                id: "third-crimean-campaign-1668",
+                slug: "third-crimean-campaign-1668",
+                order: 4,
+                year: "1668",
+                dateUk: "1668 рік, третій похід на Крим",
+                dateEn: "1668, third campaign into Crimea",
 
                 type: "campaign",
                 direction: "crimea",
@@ -592,537 +1872,181 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
                 resultType: "victory",
                 confidence: "medium",
 
-                titleUk: "Похід у Крим 1668 року",
-                titleEn: "Crimean Campaign of 1668",
+                titleUk: "Третій кримський похід 1668 року",
+                titleEn: "Third Crimean Campaign of 1668",
 
-                locationUk: "Крим, напрямок Кафи та Бахчисарая",
-                locationEn: "Crimea, direction of Kaffa and Bakhchysarai",
+                locationUk: "Кримський напрямок",
+                locationEn: "Crimean direction",
 
-                opponentsUk: ["Кримське ханство"],
-                opponentsEn: ["Crimean Khanate"],
+                opponentsUk: [
+                    "Кримське ханство",
+                    "ординці",
+                ],
+                opponentsEn: [
+                    "Crimean Khanate",
+                    "Horde warriors",
+                ],
 
-                commandersUk: ["Іван Сірко", "Іван Ждан-Ріг"],
-                commandersEn: ["Ivan Sirko", "Ivan Zhdan-Rih"],
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
 
-                forcesUk: "Точна чисельність війська невідома.",
-                forcesEn: "Exact troop strength is unknown.",
+                forcesUk:
+                    "Точна чисельність війська Сірка не подана.",
+                forcesEn:
+                    "The exact strength of Sirko's force is not given.",
 
                 lossesUk:
-                    "У джерельних переказах згадуються значні втрати татар і визволення близько 2000 полонених; цифри потребують обережного подання.",
+                    "У популярних викладах згадується знищення до 3000 ординців і захоплення близько 500 у полон; ці цифри потребують обережного подання.",
                 lossesEn:
-                    "Source accounts mention significant Tatar losses and the liberation of about 2,000 captives; the figures should be presented cautiously.",
+                    "Popular accounts mention up to 3,000 Horde warriors killed and about 500 captured; these figures should be presented cautiously.",
 
                 resultUk:
-                    "Козаки завдали ударів по татарських улусах, визволили полонених і загрожували центрам ханства.",
+                    "Похід завершився значним розгромом ординських сил за джерельним переказом.",
                 resultEn:
-                    "The Cossacks struck Tatar settlements, liberated captives, and threatened centers of the khanate.",
+                    "The campaign ended with a significant defeat of Horde forces according to the source tradition.",
 
                 summaryUk:
-                    "У 1668 році Сірко разом з Іваном Жданом-Рогом здійснив похід у Крим двома напрямками.",
+                    "Джерела згадують, що під час третього кримського походу 1668 року Сірко завдав великих втрат ординцям.",
 
                 summaryEn:
-                    "In 1668, Sirko and Ivan Zhdan-Rih conducted a campaign into Crimea in two directions.",
+                    "Sources mention that during the third Crimean campaign of 1668, Sirko inflicted heavy losses on Horde forces.",
 
                 courseUk: [
-                    "Кошовий Іван Ждан-Ріг і Сірко вирішили діяти двома загонами.",
-                    "Ждан-Ріг рушив до Арбаутука.",
-                    "Сірко зайшов від Кафи на Ширимбеївські улуси.",
-                    "Під час походу було спустошено кілька татарських поселень і звільнено значну кількість руських бранців.",
+                    "Після повернення на Запорожжя Сірко продовжив антитатарські походи.",
+                    "Протягом 1668 року джерела згадують чотири походи на Крим.",
+                    "Під час третього походу, за популярним викладом, було знищено до трьох тисяч ординців.",
+                    "Близько п’ятисот ворогів, за тим самим викладом, було взято в полон.",
+                    "Точна локалізація й докладний перебіг бою в коротких джерелах не подані.",
                 ],
 
                 courseEn: [
-                    "Kish Otaman Ivan Zhdan-Rih and Sirko decided to act in two detachments.",
-                    "Zhdan-Rih moved toward Arbautuk.",
-                    "Sirko advanced from Kaffa toward the Shyrymbei uluses.",
-                    "During the campaign, several Tatar settlements were devastated and many Ruthenian captives were liberated.",
+                    "After returning to Zaporizhia, Sirko continued anti-Tatar campaigns.",
+                    "Sources mention four campaigns into Crimea during 1668.",
+                    "During the third campaign, according to popular accounts, up to three thousand Horde warriors were killed.",
+                    "About five hundred enemies were reportedly taken prisoner.",
+                    "The exact location and detailed course of the fighting are not provided in short sources.",
                 ],
 
                 significanceUk: [
-                    "Похід показав здатність запорожців діяти вглиб Криму.",
-                    "Визволення полонених було одним із ключових мотивів таких походів.",
-                    "Дії біля Кафи та напрямок на Бахчисарай мали сильний психологічний ефект.",
+                    "Подія показує інтенсивність антитатарської кампанії Сірка 1668 року.",
+                    "Цифри втрат роблять її важливою, але їх треба подавати як джерельний переказ, а не абсолютно встановлений факт.",
+                    "Окрему single page робити не варто без кращого джерела.",
                 ],
 
                 significanceEn: [
-                    "The campaign showed the Zaporozhians' ability to operate deep inside Crimea.",
-                    "The liberation of captives was one of the key motives of such campaigns.",
-                    "Actions near Kaffa and toward Bakhchysarai had a strong psychological effect.",
+                    "The event shows the intensity of Sirko's anti-Tatar campaign in 1668.",
+                    "The casualty figures make it important, but they should be presented as a source tradition, not as an absolutely established fact.",
+                    "A separate single page should not be made without a better source.",
                 ],
 
                 historicalNoteUk:
-                    "Подія має конкретні географічні орієнтири, але чисельність війська та втрати сторін у доступних джерелах подаються неповно.",
+                    "Цифри 3000 убитих і 500 полонених зустрічаються в популярних викладах; для академічного подання їх треба маркувати як неповністю перевірені.",
 
                 historicalNoteEn:
-                    "The event has specific geographical markers, but troop strength and losses are incompletely presented in available sources.",
+                    "The figures of 3,000 killed and 500 captured appear in popular accounts; for academic presentation they should be marked as not fully verified.",
 
                 hasDetailPage: false,
-                image: "/images/military/events/crimean-campaigns-1668.webp",
+                image: "/images/military/events/third-crimean-campaign-1668.webp",
 
                 sources: [
-                    "Дніпровський історичний музей: Іван Сірко — походи в Крим та Волоську землю",
-                    "Енциклопедія історії України: Сірко Іван",
+                    "Популярні історичні виклади про походи Сірка 1668 року",
+                    "Матеріали про боротьбу Івана Сірка з турецько-татарськими силами",
                 ],
             },
-        ],
-    },
-    {
-        id: "steppe-direction",
-        slug: "steppe-direction",
-        order: 3,
-        direction: "steppe",
-
-        titleUk: "Степовий напрямок",
-        titleEn: "Steppe Direction",
-
-        shortTitleUk: "Степ",
-        shortTitleEn: "Steppe",
-
-        periodUk: "1669–1674",
-        periodEn: "1669–1674",
-
-        summaryUk:
-            "Період найактивніших рейдів Сірка проти ногайських і кримських орд, коли його ім'я стало відомим далеко за межами Запорожжя.",
-
-        summaryEn:
-            "The period of Sirko's most active raids against Nogai and Crimean forces, when his name became known far beyond Zaporizhia.",
-
-        contentUk: [
-            "На початку 1670-х років Сірко регулярно здійснював походи в степ і на кримський напрямок.",
-            "Саме в цей період сформувалася його репутація непередбачуваного й надзвичайно мобільного полководця."
-        ],
-
-        contentEn: [],
-
-        image: "/images/military/steppe-direction.webp",
-
-        events: [
             {
-                id: "ochakiv-campaign-1670",
-                slug: "ochakiv-campaign-1670",
-
-                order: 1,
-
-                year: "1670",
-                dateUk: "1670 рік",
-                dateEn: "1670",
+                id: "bakhchysarai-campaign-1668",
+                slug: "bakhchysarai-campaign-1668",
+                order: 5,
+                year: "1668",
+                dateUk: "1668 рік, четвертий похід на Крим",
+                dateEn: "1668, fourth campaign into Crimea",
 
                 type: "campaign",
-                direction: "steppe",
-
+                direction: "crimea",
                 importance: "major",
-
-                resultType: "victory",
-
+                resultType: "strategic-success",
                 confidence: "medium",
 
-                titleUk:
-                    "Похід на Очаківський напрямок",
+                titleUk: "Похід до Бахчисарая",
+                titleEn: "Campaign toward Bakhchysarai",
 
-                titleEn:
-                    "Campaign toward Ochakiv",
-
-                locationUk:
-                    "Очаківський напрямок",
-
-                locationEn:
-                    "Ochakiv direction",
+                locationUk: "Бахчисарай, Крим",
+                locationEn: "Bakhchysarai, Crimea",
 
                 opponentsUk: [
-                    "Османська імперія",
-                    "Кримське ханство"
+                    "Кримське ханство",
+                    "кримськотатарські сили",
                 ],
-
                 opponentsEn: [
-                    "Ottoman Empire",
-                    "Crimean Khanate"
+                    "Crimean Khanate",
+                    "Crimean Tatar forces",
                 ],
 
-                commandersUk: [
-                    "Іван Сірко"
-                ],
-
-                commandersEn: [
-                    "Ivan Sirko"
-                ],
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
 
                 forcesUk:
-                    "Точна чисельність невідома",
-
+                    "У популярних викладах згадуються запорожці, донські козаки та калмики; точна чисельність не подана.",
                 forcesEn:
-                    "Unknown",
+                    "Popular accounts mention Zaporozhians, Don Cossacks, and Kalmyks; exact strength is not given.",
 
                 lossesUk:
-                    "Невідомо",
-
+                    "Точні втрати не подані.",
                 lossesEn:
-                    "Unknown",
+                    "Exact losses are not given.",
 
                 resultUk:
-                    "Успішний рейд на турецько-татарські позиції",
-
+                    "Запорожці з союзниками дійшли до Бахчисарая й створили загрозу ханській столиці.",
                 resultEn:
-                    "Successful raid",
+                    "The Zaporozhians and their allies reached Bakhchysarai and threatened the khan's capital.",
 
                 summaryUk:
-                    "Сірко продовжив тиск на османсько-татарські укріплення біля чорноморського узбережжя.",
+                    "Під час четвертого кримського походу 1668 року Сірко з союзниками дійшов до Бахчисарая.",
 
                 summaryEn:
-                    "",
+                    "During the fourth Crimean campaign of 1668, Sirko and his allies reached Bakhchysarai.",
 
                 courseUk: [
-                    "Козацькі загони діяли швидкими мобільними групами.",
-                    "Основною метою було руйнування логістики противника.",
-                    "Походи змушували татарські сили відволікати значні ресурси на оборону."
+                    "Після кількох кримських походів 1668 року Сірко здійснив ще один удар углиб Криму.",
+                    "У популярних викладах зазначається, що разом із запорожцями діяли донські козаки й калмики.",
+                    "Військо дійшло до Бахчисарая, столиці Кримського ханства.",
+                    "Сам факт наближення до ханської столиці мав сильний психологічний ефект.",
+                    "Докладної реконструкції штурму або бою біля Бахчисарая короткі джерела не подають.",
                 ],
 
-                courseEn: [],
+                courseEn: [
+                    "After several Crimean campaigns in 1668, Sirko carried out another strike deep into Crimea.",
+                    "Popular accounts state that Don Cossacks and Kalmyks acted together with the Zaporozhians.",
+                    "The force reached Bakhchysarai, the capital of the Crimean Khanate.",
+                    "The very approach to the khan's capital had a strong psychological effect.",
+                    "Short sources do not provide a detailed reconstruction of an assault or battle near Bakhchysarai.",
+                ],
 
                 significanceUk: [
-                    "Посилення контролю над південним напрямком.",
-                    "Підтвердження репутації Сірка як майстра рейдової війни."
+                    "Бахчисарай був центром влади Кримського ханства.",
+                    "Похід показав, що Сірко міг не лише обороняти Запорожжя, а й загрожувати серцю ханства.",
+                    "Це одна з найсимволічніших подій кримського циклу 1668 року.",
                 ],
 
-                significanceEn: [],
-
-                hasDetailPage: true,
-
-                image:
-                    "/images/military/events/ochakiv-campaign-1670.webp"
-            },
-
-            {
-                id: "islam-kermen-1673",
-                slug: "islam-kermen-1673",
-
-                order: 2,
-
-                year: "1673",
-                dateUk: "1673 рік",
-                dateEn: "1673",
-
-                type: "siege",
-
-                direction: "steppe",
-
-                importance: "major",
-
-                resultType: "victory",
-
-                confidence: "high",
-
-                titleUk:
-                    "Здобуття Іслам-Кермена",
-
-                titleEn:
-                    "Capture of Islam-Kermen",
-
-                locationUk:
-                    "Іслам-Кермен",
-
-                locationEn:
-                    "Islam-Kermen",
-
-                opponentsUk: [
-                    "Османський гарнізон"
+                significanceEn: [
+                    "Bakhchysarai was the center of power of the Crimean Khanate.",
+                    "The campaign showed that Sirko could not only defend Zaporizhia, but also threaten the heart of the khanate.",
+                    "This is one of the most symbolic events of the 1668 Crimean cycle.",
                 ],
-
-                opponentsEn: [
-                    "Ottoman garrison"
-                ],
-
-                commandersUk: [
-                    "Іван Сірко"
-                ],
-
-                commandersEn: [
-                    "Ivan Sirko"
-                ],
-
-                forcesUk:
-                    "Точна чисельність потребує уточнення за академічними джерелами",
-
-                forcesEn:
-                    "Requires verification",
-
-                lossesUk:
-                    "Точні дані невідомі",
-
-                lossesEn:
-                    "Unknown",
-
-                resultUk:
-                    "Фортеця захоплена козаками",
-
-                resultEn:
-                    "Fortress captured",
-
-                summaryUk:
-                    "Одна з найвідоміших перемог Сірка над османськими силами.",
-
-                summaryEn:
-                    "",
-
-                courseUk: [
-                    "Іслам-Кермен був важливим турецьким укріпленням на Дніпрі.",
-                    "Після штурму фортеця була взята козаками.",
-                    "Перемога суттєво послабила позиції Османської імперії на цьому напрямку."
-                ],
-
-                courseEn: [],
-
-                significanceUk: [
-                    "Одна з найзначніших перемог Сірка.",
-                    "Посилення контролю над дніпровським напрямком.",
-                    "Ключова подія для окремої single page."
-                ],
-
-                significanceEn: [],
 
                 historicalNoteUk:
-                    "Ця подія добре документована в історичних працях і має високий рівень достовірності.",
+                    "Подія має сильне символічне значення, але джерела не дають повної реконструкції бою чи точних втрат.",
 
                 historicalNoteEn:
-                    "",
+                    "The event has strong symbolic significance, but sources do not provide a full battle reconstruction or exact losses.",
 
-                hasDetailPage: true,
-
-                image:
-                    "/images/military/events/islam-kermen-1673.webp",
+                hasDetailPage: false,
+                image: "/images/military/events/bakhchysarai-campaign-1668.webp",
 
                 sources: [
-                    "Енциклопедія історії України",
-                    "Яворницький"
-                ]
-            },
-
-            {
-                id: "crimean-raid-1674",
-                slug: "crimean-raid-1674",
-
-                order: 3,
-
-                year: "1674",
-                dateUk: "1674 рік",
-                dateEn: "1674",
-
-                type: "raid",
-
-                direction: "steppe",
-
-                importance: "major",
-
-                resultType: "victory",
-
-                confidence: "medium",
-
-                titleUk:
-                    "Великий рейд у Крим",
-
-                titleEn:
-                    "Major Raid into Crimea",
-
-                locationUk:
-                    "Кримський півострів",
-
-                locationEn:
-                    "Crimean Peninsula",
-
-                opponentsUk: [
-                    "Кримське ханство"
+                    "Популярні історичні виклади про чотири походи Сірка на Крим 1668 року",
+                    "Енциклопедія історії України: Сірко Іван",
                 ],
-
-                opponentsEn: [
-                    "Crimean Khanate"
-                ],
-
-                commandersUk: [
-                    "Іван Сірко"
-                ],
-
-                commandersEn: [
-                    "Ivan Sirko"
-                ],
-
-                forcesUk:
-                    "Невідомо",
-
-                forcesEn:
-                    "Unknown",
-
-                lossesUk:
-                    "Невідомо",
-
-                lossesEn:
-                    "Unknown",
-
-                resultUk:
-                    "Успішний рейд із визволенням полонених",
-
-                resultEn:
-                    "Successful raid",
-
-                summaryUk:
-                    "Сірко здійснив черговий глибокий рейд на територію ханства.",
-
-                summaryEn:
-                    "",
-
-                courseUk: [
-                    "Козацькі сили проникли вглиб території ханства.",
-                    "Було завдано ударів по населених пунктах та військових об'єктах.",
-                    "За традицією таких походів частину невільників вдалося визволити."
-                ],
-
-                courseEn: [],
-
-                significanceUk: [
-                    "Підтримання постійного тиску на Кримське ханство.",
-                    "Демонстрація високої мобільності запорозьких сил."
-                ],
-
-                significanceEn: [],
-
-                hasDetailPage: true,
-
-                image:
-                    "/images/military/events/crimean-raid-1674.webp"
-            }
-        ]
-    },
-    {
-        id: "ruina-events",
-        slug: "ruina-events",
-        order: 4,
-        direction: "ruina",
-        titleUk: "Доба Руїни",
-        titleEn: "The Ruin",
-        shortTitleUk: "Руїна",
-        shortTitleEn: "Ruin",
-        periodUk: "1657–1670-ті роки",
-        periodEn: "1657–1670s",
-        summaryUk:
-            "Військово-політичні події Руїни, у яких Сірко діяв між гетьманськими угрупованнями, Московією, Річчю Посполитою, Дорошенком та запорозьким середовищем.",
-        summaryEn:
-            "Military-political events of the Ruin, where Sirko acted between Hetman factions, Muscovy, the Polish-Lithuanian Commonwealth, Doroshenko, and the Zaporizhian environment.",
-        contentUk: [
-            "Доба Руїни була для Сірка не лише періодом боїв, а й періодом складних політичних рішень.",
-            "Його військові дії часто були пов'язані з боротьбою між різними центрами влади та спробами зберегти автономію Запорожжя.",
-        ],
-        contentEn: [
-            "For Sirko, the Ruin was not only a period of battles, but also a period of difficult political decisions.",
-            "His military actions were often connected with the struggle between different centers of power and attempts to preserve Zaporizhian autonomy.",
-        ],
-        image: "/images/military/ruina-events.jpg",
-        events: [
-            {
-                id: "varenytsia-uprising-1664-1665",
-                slug: "varenytsia-uprising-1664-1665",
-                order: 1,
-                year: "1664–1665",
-                type: "political-military",
-                direction: "ruina",
-                importance: "major",
-                resultType: "political-result",
-                confidence: "high",
-                titleUk: "Участь у повстанні Варениці",
-                titleEn: "Participation in Varenytsia's Uprising",
-                locationUk: "Правобережна Україна",
-                locationEn: "Right-Bank Ukraine",
-                opponentsUk: ["Сили Речі Посполитої", "союзні їм угруповання"],
-                opponentsEn: ["Polish-Lithuanian forces", "allied factions"],
-                resultUk:
-                    "Сірко діяв у контексті антипольського руху на Правобережжі.",
-                resultEn:
-                    "Sirko acted in the context of an anti-Polish movement on the Right Bank.",
-                summaryUk:
-                    "У 1664–1665 роках Сірко був пов'язаний із повстанням Варениці на Правобережній Україні.",
-                summaryEn:
-                    "In 1664–1665, Sirko was connected with Varenytsia's uprising in Right-Bank Ukraine.",
-                contentUk: [
-                    "Ця подія належить до складного військово-політичного контексту Руїни.",
-                    "Для Сірка вона важлива тим, що показує його участь не лише в антиосманських і антитатарських походах, а й у внутрішній боротьбі за напрям розвитку козацької України.",
-                ],
-                contentEn: [
-                    "This event belongs to the complex military-political context of the Ruin.",
-                    "For Sirko, it is important because it shows his participation not only in anti-Ottoman and anti-Tatar campaigns, but also in the internal struggle over the future direction of Cossack Ukraine.",
-                ],
-                hasDetailPage: true,
-                image: "/images/military/varenytsia-uprising-1664-1665.jpg",
-                sources: [SOURCES.encyclopedia],
-            },
-            {
-                id: "conflict-charnecki",
-                slug: "conflict-charnecki",
-                order: 2,
-                year: "1660-ті",
-                dateEn: "1660s",
-                type: "political-military",
-                direction: "ruina",
-                importance: "medium",
-                resultType: "unclear",
-                confidence: "medium",
-                titleUk: "Зіткнення із Чарнецьким",
-                titleEn: "Clash with Czarniecki",
-                locationUk: "Правобережна Україна",
-                locationEn: "Right-Bank Ukraine",
-                opponentsUk: ["Стефан Чарнецький", "польські сили"],
-                opponentsEn: ["Stefan Czarniecki", "Polish forces"],
-                resultUk:
-                    "Епізод військово-політичної боротьби доби Руїни.",
-                resultEn:
-                    "An episode of military-political struggle during the Ruin.",
-                summaryUk:
-                    "У переліках військових дій Сірка згадується зіткнення із Чарнецьким.",
-                summaryEn:
-                    "Lists of Sirko's military actions mention a clash with Czarniecki.",
-                contentUk: [
-                    "Ця подія потребує подальшого уточнення за джерелами, бо часто подається коротким пунктом без докладної реконструкції.",
-                    "У межах загального роуту її варто показувати як частину політично-військового контексту Руїни, а не як повністю окрему задокументовану битву.",
-                ],
-                contentEn: [
-                    "This event requires further clarification through sources, because it is often presented as a short item without detailed reconstruction.",
-                    "Within the general route, it should be shown as part of the military-political context of the Ruin rather than as a fully reconstructed separate battle.",
-                ],
-                hasDetailPage: false,
-                image: "/images/military/conflict-charnecki.jpg",
-                sources: [SOURCES.museumDnipro],
-            },
-            {
-                id: "doroshenko-conflict",
-                slug: "doroshenko-conflict",
-                order: 3,
-                year: "1660–1670-ті",
-                dateEn: "1660s–1670s",
-                type: "political-military",
-                direction: "ruina",
-                importance: "major",
-                resultType: "political-result",
-                confidence: "medium",
-                titleUk: "Боротьба і союзи з Дорошенком",
-                titleEn: "Conflict and Alliances with Doroshenko",
-                locationUk: "Правобережжя, Запорожжя",
-                locationEn: "Right Bank, Zaporizhia",
-                opponentsUk: ["Петро Дорошенко", "його союзники", "змінні політичні сили"],
-                opponentsEn: ["Petro Doroshenko", "his allies", "shifting political forces"],
-                resultUk:
-                    "Складні військово-політичні відносини, що змінювалися залежно від обставин.",
-                resultEn:
-                    "Complex military-political relations that shifted depending on circumstances.",
-                summaryUk:
-                    "Відносини Сірка з Дорошенком не були простими: у джерелах згадуються і боротьба, і періоди взаємодії.",
-                summaryEn:
-                    "Sirko's relations with Doroshenko were complex: sources mention both conflict and periods of interaction.",
-                contentUk: [
-                    "Дорошенко був однією з ключових фігур доби Руїни, а Сірко діяв у політичному просторі, де союзи могли швидко змінюватися.",
-                    "Тому цю тему краще подавати не як одну битву, а як окремий військово-політичний напрям.",
-                ],
-                contentEn: [
-                    "Doroshenko was one of the key figures of the Ruin, while Sirko acted in a political space where alliances could change rapidly.",
-                    "Therefore, this subject is better presented not as one battle, but as a separate military-political direction.",
-                ],
-                hasDetailPage: true,
-                image: "/images/military/doroshenko-conflict.jpg",
-                sources: [SOURCES.museumDnipro],
             },
         ],
     },
@@ -1131,214 +2055,613 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
         slug: "ottoman-wars",
         order: 5,
         direction: "ottoman",
-        titleUk: "Османські війни",
-        titleEn: "Ottoman Wars",
+
+        titleUk: "Османи",
+        titleEn: "Ottomans",
+
         shortTitleUk: "Османи",
         shortTitleEn: "Ottomans",
-        periodUk: "1660–1670-ті роки",
-        periodEn: "1660s–1670s",
+
+        periodUk: "1673–1679",
+        periodEn: "1673–1679",
+
         summaryUk:
-            "Походи Сірка проти османських фортець, прикордонних укріплень і союзних сил Османської імперії.",
+            "Блок походів і бойових дій Івана Сірка проти османських фортець, турецьких гарнізонів, татарських союзників Османської імперії та комунікацій ворога на Дніпрі й Чорноморському напрямку.",
+
         summaryEn:
-            "Sirko's campaigns against Ottoman fortresses, border strongholds, and allied forces of the Ottoman Empire.",
+            "A block of Ivan Sirko's campaigns and military actions against Ottoman fortresses, Turkish garrisons, Tatar allies of the Ottoman Empire, and enemy communications on the Dnipro and Black Sea routes.",
+
         contentUk: [
-            "Османський напрямок був одним із центральних у військовій діяльності Івана Сірка.",
-            "До цього блоку належать походи на Очаків, Іслам-Кермен, Кизикермен, Тягиню, Кам'янецький напрямок та інші укріплені пункти, пов'язані з османською військовою системою на півдні.",
+            "Після повернення із заслання Сірко знову став одним із головних організаторів боротьби Запорожжя проти турецько-татарської загрози.",
+            "У 1670-х роках його дії були спрямовані проти Очакова, Іслам-Кермена, Кизикермена, Тавані, а також проти постачання османських і татарських сил під час Чигиринських походів.",
+            "У цих подіях Сірко діяв як рейдовий командир: бив по фортецях, комунікаціях, переправах, флотиліях і тилових пунктах противника.",
+            "Для частини походів джерела дають точні дати й місця, для частини — лише загальний напрямок і результат, тому в подіях окремо позначено, де дані потребують обережного подання.",
         ],
+
         contentEn: [
-            "The Ottoman direction was one of the central parts of Ivan Sirko's military activity.",
-            "This block includes campaigns against Ochakiv, Islam-Kermen, Kyzykermen, Tiahynea, the Kamianets direction, and other fortified points connected with the Ottoman military system in the south.",
+            "After returning from exile, Sirko again became one of the main organizers of Zaporizhia's struggle against the Ottoman-Tatar threat.",
+            "In the 1670s, his actions were directed against Ochakiv, Islam-Kermen, Kyzykermen, Tavan, and against the supply lines of Ottoman and Tatar forces during the Chyhyryn campaigns.",
+            "In these events, Sirko acted as a raiding commander: striking fortresses, communications, crossings, flotillas, and rear enemy points.",
+            "For some campaigns, sources provide exact dates and places; for others, only the general direction and outcome are known, so the events mark where the data should be presented cautiously.",
         ],
-        image: "/images/military/ottoman-wars.jpg",
+
+        image: "/images/military/ottoman-wars.webp",
+
         events: [
             {
-                id: "ochakiv-campaign-1670-1671",
-                slug: "ochakiv-campaign-1670-1671",
+                id: "return-from-exile-1673",
+                slug: "return-from-exile-1673",
                 order: 1,
-                year: "1670–1671",
+                year: "1673",
+                dateUk: "1673 рік",
+                dateEn: "1673",
+
+                type: "political-military",
+                direction: "ottoman",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "high",
+
+                titleUk: "Повернення Сірка із заслання",
+                titleEn: "Sirko's Return from Exile",
+
+                locationUk: "Московія, Запорожжя",
+                locationEn: "Muscovy, Zaporizhia",
+
+                opponentsUk: [
+                    "Османська імперія",
+                    "Кримське ханство",
+                ],
+                opponentsEn: [
+                    "Ottoman Empire",
+                    "Crimean Khanate",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Не застосовується: це військово-політична подія, а не бойове зіткнення.",
+                forcesEn:
+                    "Not applicable: this was a military-political event, not a combat engagement.",
+
+                lossesUk: "Не застосовується.",
+                lossesEn: "Not applicable.",
+
+                resultUk:
+                    "Сірко повернувся до військово-політичної діяльності на Запорожжі в умовах нової османської загрози.",
+                resultEn:
+                    "Sirko returned to military-political activity in Zaporizhia under the conditions of a renewed Ottoman threat.",
+
+                summaryUk:
+                    "Після заслання Сірка повернули, бо загроза з боку Османської імперії та Кримського ханства вимагала досвідченого запорозького воєначальника.",
+
+                summaryEn:
+                    "After exile, Sirko was returned because the threat from the Ottoman Empire and the Crimean Khanate required an experienced Zaporizhian commander.",
+
+                courseUk: [
+                    "Сірко був засланий до Сибіру після конфлікту з московською владою.",
+                    "Однак ситуація на південному напрямку загострилася через османську активність.",
+                    "Запорожжю був потрібен досвідчений командир, який добре знав степову війну й турецько-татарські маршрути.",
+                    "Після повернення Сірко знову включився в боротьбу проти Османської імперії та Кримського ханства.",
+                ],
+
+                courseEn: [
+                    "Sirko had been exiled to Siberia after conflict with Muscovite authorities.",
+                    "However, the southern frontier became more dangerous because of Ottoman activity.",
+                    "Zaporizhia needed an experienced commander who knew steppe warfare and Ottoman-Tatar routes well.",
+                    "After returning, Sirko again joined the struggle against the Ottoman Empire and the Crimean Khanate.",
+                ],
+
+                significanceUk: [
+                    "Ця подія пояснює, чому після заслання Сірко знову став важливою військовою фігурою.",
+                    "Повернення відкрило його пізній період боротьби проти османсько-татарських сил.",
+                    "Подія не є битвою, але є важливою точкою переходу до наступних кампаній.",
+                ],
+
+                significanceEn: [
+                    "This event explains why Sirko again became an important military figure after exile.",
+                    "His return opened the late period of his struggle against Ottoman-Tatar forces.",
+                    "It is not a battle, but it is an important transition point toward the following campaigns.",
+                ],
+
+                historicalNoteUk:
+                    "Подія залишена в military-масиві як перехід до пізніх османських кампаній Сірка.",
+
+                historicalNoteEn:
+                    "The event is kept in the military dataset as a transition to Sirko's late Ottoman campaigns.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/return-from-exile-1673.webp",
+
+                sources: [
+                    "Енциклопедія історії України: Сірко Іван",
+                    "Юрій Мицик: Отаман Іван Сірко",
+                ],
+            },
+            {
+                id: "ochakiv-campaigns-1673",
+                slug: "ochakiv-campaigns-1673",
+                order: 2,
+                year: "1673",
+                dateUk: "1673 рік",
+                dateEn: "1673",
+
                 type: "campaign",
                 direction: "ottoman",
                 importance: "major",
                 resultType: "strategic-success",
-                confidence: "high",
-                titleUk: "Походи проти Очакова",
+                confidence: "medium",
+
+                titleUk: "Походи на Очаків",
                 titleEn: "Campaigns against Ochakiv",
-                locationUk: "Очаків, Нижнє Побужжя",
-                locationEn: "Ochakiv, Lower Buh region",
-                opponentsUk: ["Османська імперія", "турецькі гарнізони"],
-                opponentsEn: ["Ottoman Empire", "Turkish garrisons"],
+
+                locationUk: "Очаків, Нижнє Побужжя, Дніпровсько-Бузький лиман",
+                locationEn: "Ochakiv, Lower Buh region, Dnipro-Buh estuary",
+
+                opponentsUk: [
+                    "османські гарнізони",
+                    "турецько-татарські сили",
+                ],
+                opponentsEn: [
+                    "Ottoman garrisons",
+                    "Ottoman-Tatar forces",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна чисельність козацьких сил у походах 1673 року на Очаків у коротких джерелах не подана.",
+                forcesEn:
+                    "The exact strength of the Cossack forces in the 1673 Ochakiv campaigns is not given in short sources.",
+
+                lossesUk:
+                    "Точні втрати сторін не подані.",
+                lossesEn:
+                    "Exact losses of the sides are not given.",
+
                 resultUk:
-                    "Успішні дії проти османського укріплення на південному напрямку.",
+                    "Сірко здійснив кілька походів на Очаківський напрямок, чинячи тиск на важливий османський пункт біля виходу до Чорного моря.",
                 resultEn:
-                    "Successful actions against an Ottoman stronghold in the southern direction.",
+                    "Sirko conducted several campaigns in the Ochakiv direction, putting pressure on an important Ottoman point near the route to the Black Sea.",
+
                 summaryUk:
-                    "У 1670–1671 роках Сірко діяв проти турецьких укріплень, зокрема Очакова.",
+                    "У 1673 році Сірко, за Мициком, устиг очолити кілька вдалих походів на Очаків.",
+
                 summaryEn:
-                    "In 1670–1671, Sirko acted against Turkish strongholds, including Ochakiv.",
-                contentUk: [
-                    "Очаків був одним із важливих османських опорних пунктів на півдні, що контролював вихід до Чорного моря та степові комунікації.",
-                    "Дії Сірка проти Очакова демонструють його прагнення не лише обороняти Запорожжя, а й бити по ключових пунктах противника.",
-                    "Ця подія добре підходить для майбутньої окремої сторінки, тому що має чіткий напрям, противника, стратегічне значення та прив'язку до відомого укріплення.",
+                    "In 1673, according to Mytsyk, Sirko managed to lead several successful campaigns against Ochakiv.",
+
+                courseUk: [
+                    "Очаків був одним із ключових османських пунктів на південному напрямку.",
+                    "Фортеця контролювала простір Дніпровсько-Бузького лиману й була небезпечною для козацького виходу до Чорного моря.",
+                    "Після повернення із заслання Сірко знову розгорнув активні дії проти турецьких укріплень.",
+                    "У 1673 році він очолив кілька походів на Очаківський напрямок.",
+                    "Доступні короткі джерела не дають повної реконструкції кожного з цих походів, тому event подано як групу пов’язаних операцій.",
                 ],
-                contentEn: [
-                    "Ochakiv was one of the important Ottoman strongholds in the south, controlling access to the Black Sea and steppe communications.",
-                    "Sirko's actions against Ochakiv show his intention not only to defend Zaporizhia, but also to strike key enemy positions.",
-                    "This event is suitable for a future separate page because it has a clear direction, opponent, strategic meaning, and connection to a known fortress.",
+
+                courseEn: [
+                    "Ochakiv was one of the key Ottoman points in the southern direction.",
+                    "The fortress controlled the Dnipro-Buh estuary and threatened Cossack access to the Black Sea.",
+                    "After returning from exile, Sirko again launched active operations against Turkish fortifications.",
+                    "In 1673, he led several campaigns in the Ochakiv direction.",
+                    "Available short sources do not provide a full reconstruction of each campaign, so the event is presented as a group of related operations.",
                 ],
-                hasDetailPage: true,
-                image: "/images/military/ochakiv-campaign-1670-1671.jpg",
-                sources: [SOURCES.encyclopedia, SOURCES.museumDnipro],
+
+                significanceUk: [
+                    "Очаків був постійною ціллю запорозьких ударів через своє стратегічне положення.",
+                    "Походи 1673 року показують, що після заслання Сірко швидко повернувся до активної війни.",
+                    "Подію варто подавати як серію походів, а не одну точно реконструйовану битву.",
+                ],
+
+                significanceEn: [
+                    "Ochakiv was a constant target of Zaporizhian strikes because of its strategic position.",
+                    "The 1673 campaigns show that after exile Sirko quickly returned to active war.",
+                    "The event should be presented as a series of campaigns, not as one precisely reconstructed battle.",
+                ],
+
+                historicalNoteUk:
+                    "Мицик згадує кілька вдалих походів на Очаків у 1673 році, але без повної деталізації кожної окремої операції.",
+
+                historicalNoteEn:
+                    "Mytsyk mentions several successful campaigns against Ochakiv in 1673, but without full details of each separate operation.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/ochakiv-campaigns-1673.webp",
+
+                sources: [
+                    "Юрій Мицик: Отаман Іван Сірко",
+                    "Матеріали про боротьбу Івана Сірка з турецько-татарськими силами",
+                ],
             },
             {
-                id: "islam-kermen-campaign-1670-1671",
-                slug: "islam-kermen-campaign-1670-1671",
-                order: 2,
-                year: "1670–1671",
+                id: "islam-kermen-actions-1673",
+                slug: "islam-kermen-actions-1673",
+                order: 3,
+                year: "1673",
+                dateUk: "1673 рік",
+                dateEn: "1673",
+
                 type: "siege",
                 direction: "ottoman",
                 importance: "major",
                 resultType: "strategic-success",
-                confidence: "high",
+                confidence: "medium",
+
                 titleUk: "Дії проти Іслам-Кермена",
                 titleEn: "Actions against Islam-Kermen",
-                locationUk: "Іслам-Кермен, Нижнє Подніпров'я",
+
+                locationUk: "Іслам-Кермен, Нижнє Подніпров’я",
                 locationEn: "Islam-Kermen, Lower Dnipro region",
-                opponentsUk: ["Османська імперія", "татарські й турецькі сили"],
-                opponentsEn: ["Ottoman Empire", "Tatar and Turkish forces"],
+
+                opponentsUk: [
+                    "османський гарнізон",
+                    "турецько-татарські сили",
+                ],
+                opponentsEn: [
+                    "Ottoman garrison",
+                    "Ottoman-Tatar forces",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна чисельність козацьких сил не подана.",
+                forcesEn:
+                    "Exact Cossack strength is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
+
                 resultUk:
-                    "Удар по важливому укріпленню на Дніпровському напрямку.",
+                    "Сірко діяв проти важливого османського укріплення на Дніпровському напрямку.",
                 resultEn:
-                    "Strike against an important fortress in the Dnipro direction.",
+                    "Sirko acted against an important Ottoman stronghold in the Dnipro direction.",
+
                 summaryUk:
-                    "Іслам-Кермен був одним із ключових укріплених пунктів на південному напрямку, проти якого діяв Сірко.",
+                    "Іслам-Кермен був одним із ключових укріплених пунктів турецько-татарської системи на Нижньому Дніпрі.",
+
                 summaryEn:
-                    "Islam-Kermen was one of the key fortified points in the southern direction against which Sirko operated.",
-                contentUk: [
-                    "Іслам-Кермен контролював важливий простір у нижній течії Дніпра, тому був постійною загрозою для запорожців.",
-                    "Дії Сірка проти цього пункту входять до ширшої системи його боротьби з османсько-татарською присутністю на півдні.",
-                    "Для загального роуту цю подію варто показувати як один із вузлів османського напрямку, а пізніше її можна винести в single page.",
+                    "Islam-Kermen was one of the key fortified points of the Ottoman-Tatar system on the Lower Dnipro.",
+
+                courseUk: [
+                    "Іслам-Кермен контролював важливий простір у нижній течії Дніпра.",
+                    "Такі фортеці обмежували рух запорожців і створювали загрозу для козацьких чайок.",
+                    "Сірко неодноразово діяв проти османських пунктів на цьому напрямку.",
+                    "У доступних коротких джерелах Іслам-Кермен згадується як один із важливих об’єктів його антиосманських дій.",
+                    "Повної реконструкції облоги або штурму для цього епізоду в коротких джерелах немає.",
                 ],
-                contentEn: [
-                    "Islam-Kermen controlled an important area in the lower Dnipro region and therefore remained a constant threat to the Zaporozhians.",
-                    "Sirko's actions against this point were part of his broader struggle against Ottoman-Tatar presence in the south.",
-                    "For the general route, this event should be shown as one of the key nodes of the Ottoman direction, and later it can be developed into a single page.",
+
+                courseEn: [
+                    "Islam-Kermen controlled an important area in the lower Dnipro region.",
+                    "Such fortresses limited Zaporozhian movement and threatened Cossack chaikas.",
+                    "Sirko repeatedly acted against Ottoman points in this direction.",
+                    "In available short sources, Islam-Kermen is mentioned as one of the important targets of his anti-Ottoman actions.",
+                    "A full reconstruction of a siege or assault for this episode is not available in short sources.",
                 ],
-                hasDetailPage: true,
-                image: "/images/military/islam-kermen-campaign-1670-1671.jpg",
-                sources: [SOURCES.encyclopedia, SOURCES.museumDnipro],
-            },
-            {
-                id: "kyzykermen-actions",
-                slug: "kyzykermen-actions",
-                order: 3,
-                year: "1670-ті",
-                dateEn: "1670s",
-                type: "siege",
-                direction: "ottoman",
-                importance: "medium",
-                resultType: "strategic-success",
-                confidence: "medium",
-                titleUk: "Дії проти Кизикермена",
-                titleEn: "Actions against Kyzykermen",
-                locationUk: "Кизикермен, Нижнє Подніпров'я",
-                locationEn: "Kyzykermen, Lower Dnipro region",
-                opponentsUk: ["Османські й татарські сили"],
-                opponentsEn: ["Ottoman and Tatar forces"],
-                resultUk:
-                    "Тиск на систему османських укріплень у нижній течії Дніпра.",
-                resultEn:
-                    "Pressure on the system of Ottoman fortifications in the lower Dnipro region.",
-                summaryUk:
-                    "Кизикермен входив до групи південних укріплень, пов'язаних із османсько-татарським контролем над степом.",
-                summaryEn:
-                    "Kyzykermen belonged to the group of southern fortifications connected with Ottoman-Tatar control of the steppe.",
-                contentUk: [
-                    "У військовій біографії Сірка важливі не лише окремі великі битви, а й систематичний тиск на прикордонні укріплення.",
-                    "Кизикермен треба розглядати саме в цьому контексті: як частину боротьби за контроль над південними комунікаціями.",
+
+                significanceUk: [
+                    "Іслам-Кермен був одним із ключових вузлів османського контролю над Дніпровським низом.",
+                    "Дії проти нього вписуються в ширшу боротьбу за вихід запорожців до Чорного моря.",
+                    "Подія важлива для пояснення, чому Сірко постійно бив по фортецях нижнього Дніпра.",
                 ],
-                contentEn: [
-                    "In Sirko's military biography, not only large battles are important, but also systematic pressure on frontier fortifications.",
-                    "Kyzykermen should be understood in this context: as part of the struggle for control over southern communications.",
+
+                significanceEn: [
+                    "Islam-Kermen was one of the key nodes of Ottoman control over the lower Dnipro.",
+                    "Actions against it fit into the wider struggle for Zaporozhian access to the Black Sea.",
+                    "The event is important for explaining why Sirko constantly struck the fortresses of the lower Dnipro.",
                 ],
+
+                historicalNoteUk:
+                    "Подія має підтверджений напрямок і стратегічний сенс, але її не треба подавати як повністю реконструйовану битву без додаткових джерел.",
+
+                historicalNoteEn:
+                    "The event has a confirmed direction and strategic meaning, but should not be presented as a fully reconstructed battle without additional sources.",
+
                 hasDetailPage: false,
-                image: "/images/military/kyzykermen-actions.jpg",
-                sources: [SOURCES.sirkoOttomanTatar, SOURCES.museumDnipro],
+                image: "/images/military/events/islam-kermen-actions-1673.webp",
+
+                sources: [
+                    "Енциклопедія історії України: Сірко Іван",
+                    "Матеріали про боротьбу Івана Сірка з турецько-татарськими силами",
+                ],
             },
             {
-                id: "tiahynea-budjak-bilhorod",
-                slug: "tiahynea-budjak-bilhorod",
+                id: "chyhyryn-supply-disruption-1677-1678",
+                slug: "chyhyryn-supply-disruption-1677-1678",
                 order: 4,
-                year: "1670-ті",
-                dateEn: "1670s",
+                year: "1677–1678",
+                dateUk: "1677–1678 роки",
+                dateEn: "1677–1678",
+
                 type: "campaign",
                 direction: "ottoman",
-                importance: "medium",
+                importance: "major",
                 resultType: "strategic-success",
                 confidence: "medium",
-                titleUk: "Тягиня, Буджак і Білгородчина",
-                titleEn: "Tiahynea, Budjak, and Bilhorod Region",
-                locationUk: "Тягиня, Буджак, Білгородчина",
-                locationEn: "Tiahynea, Budjak, Bilhorod region",
-                opponentsUk: ["Османські сили", "татарські загони"],
-                opponentsEn: ["Ottoman forces", "Tatar detachments"],
+
+                titleUk: "Удари по постачанню під час Чигиринських походів",
+                titleEn: "Strikes against Supply Lines during the Chyhyryn Campaigns",
+
+                locationUk:
+                    "нижньодніпровський і степовий напрямки, комунікації турецько-татарських військ",
+                locationEn:
+                    "Lower Dnipro and steppe directions, communications of Ottoman-Tatar forces",
+
+                opponentsUk: [
+                    "Османська імперія",
+                    "Кримське ханство",
+                    "турецько-татарські війська",
+                ],
+                opponentsEn: [
+                    "Ottoman Empire",
+                    "Crimean Khanate",
+                    "Ottoman-Tatar forces",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "османські та татарські командири Чигиринських походів",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Ottoman and Tatar commanders of the Chyhyryn campaigns",
+                ],
+
+                forcesUk:
+                    "Точна чисельність запорозьких загонів Сірка в цих діях не подана.",
+                forcesEn:
+                    "Exact strength of Sirko's Zaporizhian detachments in these actions is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
+
                 resultUk:
-                    "Дії на південно-західному напрямку проти османсько-татарських сил.",
+                    "Запорожці під проводом Сірка дошкульними ударами перешкоджали постачанню турецьких і татарських військ під час Чигиринських походів.",
                 resultEn:
-                    "Operations in the southwestern direction against Ottoman-Tatar forces.",
+                    "The Zaporozhians under Sirko disrupted the supply of Ottoman and Tatar forces during the Chyhyryn campaigns with painful strikes.",
+
                 summaryUk:
-                    "У переліках військових дій Сірка згадуються Тягиня, Буджак і Білгородчина як напрямки його походів.",
+                    "Під час Чигиринських походів 1677–1678 років Сірко діяв не обов’язково біля самих мурів Чигирина, а насамперед по комунікаціях і постачанню ворога.",
+
                 summaryEn:
-                    "Lists of Sirko's military actions mention Tiahynea, Budjak, and the Bilhorod region as directions of his campaigns.",
-                contentUk: [
-                    "Цей блок краще подавати не як одну битву, а як південно-західний напрямок походів.",
-                    "Тут Сірко діяв проти османсько-татарського прикордоння, яке становило небезпеку для козацьких і українських земель.",
-                    "Подію треба додатково деталізувати, якщо в майбутньому буде знайдено точніші описи окремих сутичок.",
+                    "During the Chyhyryn campaigns of 1677–1678, Sirko acted not necessarily at the walls of Chyhyryn itself, but mainly against enemy communications and supply.",
+
+                courseUk: [
+                    "Чигиринські походи були великою війною Османської імперії, Московії та козацьких сил за стратегічно важливий Чигирин.",
+                    "Османські й татарські війська потребували постійного постачання степовими маршрутами.",
+                    "Запорожці під проводом Сірка завдавали ударів по цих маршрутах і тилових пунктах.",
+                    "Такі дії ускладнювали забезпечення турецько-татарських військ.",
+                    "Короткі джерела не подають точного списку кожної атаки, тому event подано як групу операцій проти постачання.",
                 ],
-                contentEn: [
-                    "This block is better presented not as a single battle, but as a southwestern campaign direction.",
-                    "Here Sirko acted against the Ottoman-Tatar frontier, which threatened Cossack and Ukrainian lands.",
-                    "The event should be further detailed if more precise descriptions of individual clashes are found in the future.",
+
+                courseEn: [
+                    "The Chyhyryn campaigns were a major war of the Ottoman Empire, Muscovy, and Cossack forces for strategically important Chyhyryn.",
+                    "Ottoman and Tatar armies needed constant supply through steppe routes.",
+                    "The Zaporozhians under Sirko struck these routes and rear points.",
+                    "Such actions complicated the supply of Ottoman-Tatar forces.",
+                    "Short sources do not provide an exact list of each attack, so the event is presented as a group of operations against supply lines.",
                 ],
+
+                significanceUk: [
+                    "Подія показує Сірка як командира рейдової війни проти логістики ворога.",
+                    "Його роль у Чигиринському контексті була не лише фронтальною, а й комунікаційною: бити по шляхах, запасах і тилу.",
+                    "Це важливий event для пояснення військової користі Запорожжя в великій війні 1677–1678 років.",
+                ],
+
+                significanceEn: [
+                    "The event shows Sirko as a commander of raiding warfare against enemy logistics.",
+                    "His role in the Chyhyryn context was not only frontal but also communicational: striking routes, supplies, and rear areas.",
+                    "This is an important event for explaining the military value of Zaporizhia in the major war of 1677–1678.",
+                ],
+
+                historicalNoteUk:
+                    "Подію треба подавати як серію рейдових дій проти постачання, а не як одну конкретну битву з точною датою.",
+
+                historicalNoteEn:
+                    "The event should be presented as a series of raiding actions against supply, not as one specific battle with an exact date.",
+
                 hasDetailPage: false,
-                image: "/images/military/tiahynea-budjak-bilhorod.jpg",
-                sources: [SOURCES.museumDnipro],
+                image: "/images/military/events/chyhyryn-supply-disruption-1677-1678.webp",
+
+                sources: [
+                    "Вікіпедія: Чигиринські походи",
+                    "Походи Івана Сірка: Чигиринські походи 1677–1678 років",
+                ],
             },
             {
-                id: "kamianets-direction",
-                slug: "kamianets-direction",
+                id: "dnipro-liman-turkish-squadron-1678",
+                slug: "dnipro-liman-turkish-squadron-1678",
                 order: 5,
-                year: "1670-ті",
-                dateEn: "1670s",
+                year: "1678",
+                dateUk: "1678 рік",
+                dateEn: "1678",
+
+                type: "battle",
+                direction: "ottoman",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Розгром турецької ескадри в Дніпровському лимані",
+                titleEn: "Defeat of the Turkish Squadron in the Dnipro Estuary",
+
+                locationUk: "Дніпровський лиман",
+                locationEn: "Dnipro estuary",
+
+                opponentsUk: [
+                    "турецька ескадра",
+                    "Османська імперія",
+                ],
+                opponentsEn: [
+                    "Turkish squadron",
+                    "Ottoman Empire",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна кількість козацьких чайок не подана; у джерелі згадано турецьку ескадру з 40 великих галер.",
+                forcesEn:
+                    "The exact number of Cossack chaikas is not given; the source mentions a Turkish squadron of 40 large galleys.",
+
+                lossesUk:
+                    "Точні втрати не подані; джерело говорить про розгром турецької ескадри.",
+                lossesEn:
+                    "Exact losses are not given; the source speaks of the defeat of the Turkish squadron.",
+
+                resultUk:
+                    "Козацька флотилія під проводом Сірка розгромила турецьку ескадру з 40 великих галер.",
+                resultEn:
+                    "The Cossack flotilla under Sirko defeated a Turkish squadron of 40 large galleys.",
+
+                summaryUk:
+                    "У 1678 році флотилія Сірка в Дніпровському лимані розгромила турецьку ескадру, яку джерело описує як 40 великих галер.",
+
+                summaryEn:
+                    "In 1678, Sirko's flotilla in the Dnipro estuary defeated a Turkish squadron described by the source as 40 large galleys.",
+
+                courseUk: [
+                    "Дніпровський лиман був ключовим простором для виходу запорожців у Чорне море.",
+                    "Турецька ескадра контролювала або загрожувала цьому району.",
+                    "Сірко використав козацьку флотилію для удару по османських морських силах.",
+                    "За джерельним викладом, було розгромлено турецьку ескадру з 40 великих галер.",
+                    "Докладний перебіг морського бою, кількість козацьких суден і точні втрати сторін не подані.",
+                ],
+
+                courseEn: [
+                    "The Dnipro estuary was a key area for Zaporozhian access to the Black Sea.",
+                    "The Turkish squadron controlled or threatened this area.",
+                    "Sirko used the Cossack flotilla to strike Ottoman naval forces.",
+                    "According to the source account, a Turkish squadron of 40 large galleys was defeated.",
+                    "The detailed course of the naval battle, the number of Cossack vessels, and exact losses are not given.",
+                ],
+
+                significanceUk: [
+                    "Подія показує морський вимір військової діяльності Сірка.",
+                    "Розгром ескадри в лимані мав значення для свободи дій запорожців на Дніпровсько-Чорноморському напрямку.",
+                    "Це один із найяскравіших епізодів боротьби Сірка проти османських сил у 1670-х роках.",
+                ],
+
+                significanceEn: [
+                    "The event shows the naval dimension of Sirko's military activity.",
+                    "The defeat of the squadron in the estuary mattered for the freedom of Zaporozhian action in the Dnipro-Black Sea direction.",
+                    "It is one of the most striking episodes of Sirko's struggle against Ottoman forces in the 1670s.",
+                ],
+
+                historicalNoteUk:
+                    "Цифра 40 великих галер подається за джерельним викладом і має бути відображена як така, без додаткових вигаданих деталей.",
+
+                historicalNoteEn:
+                    "The figure of 40 large galleys is taken from the source account and should be presented as such, without additional invented details.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/dnipro-liman-turkish-squadron-1678.webp",
+
+                sources: [
+                    "Запорізька Січ у другій половині XVII ст. Іван Сірко",
+                ],
+            },
+            {
+                id: "kyzykermen-tavan-campaign-1679",
+                slug: "kyzykermen-tavan-campaign-1679",
+                order: 6,
+                year: "1679",
+                dateUk: "початок 1679 року",
+                dateEn: "early 1679",
+
                 type: "campaign",
                 direction: "ottoman",
-                importance: "medium",
-                resultType: "strategic-success",
+                importance: "major",
+                resultType: "victory",
                 confidence: "medium",
-                titleUk: "Кам'янецький напрямок",
-                titleEn: "Kamianets Direction",
-                locationUk: "Кам'янецький напрямок",
-                locationEn: "Kamianets direction",
-                opponentsUk: ["Османська імперія", "союзні сили"],
-                opponentsEn: ["Ottoman Empire", "allied forces"],
+
+                titleUk: "Похід на Кизикермен і Тавань",
+                titleEn: "Campaign against Kyzykermen and Tavan",
+
+                locationUk: "Кизикермен, Тавань, Нижній Дніпро",
+                locationEn: "Kyzykermen, Tavan, Lower Dnipro",
+
+                opponentsUk: [
+                    "османські гарнізони",
+                    "татарські сили",
+                ],
+                opponentsEn: [
+                    "Ottoman garrisons",
+                    "Tatar forces",
+                ],
+
+                commandersUk: ["Іван Сірко"],
+                commandersEn: ["Ivan Sirko"],
+
+                forcesUk:
+                    "Точна чисельність козацького десанту не подана.",
+                forcesEn:
+                    "The exact strength of the Cossack landing force is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані; джерело повідомляє про зруйнування фортець.",
+                lossesEn:
+                    "Exact losses are not given; the source reports the destruction of the fortresses.",
+
                 resultUk:
-                    "Дії в контексті боротьби проти османського впливу на Правобережжі.",
+                    "Козацький десант під проводом Сірка розгромив і зруйнував турецькі й татарські фортеці на Дніпрі.",
                 resultEn:
-                    "Actions in the context of struggle against Ottoman influence on the Right Bank.",
+                    "The Cossack landing force under Sirko defeated and destroyed Turkish and Tatar fortresses on the Dnipro.",
+
                 summaryUk:
-                    "Кам'янецький напрямок пов'язаний із ширшим османським контекстом 1670-х років.",
+                    "На початку 1679 року запорожці під проводом Сірка рушили проти Кизикермена й Тавані, які перешкоджали виходу козацьких чайок у Чорне море.",
+
                 summaryEn:
-                    "The Kamianets direction is connected with the broader Ottoman context of the 1670s.",
-                contentUk: [
-                    "Після захоплення Кам'янця османський фактор став ще важливішим у політиці та війнах Правобережжя.",
-                    "Для Сірка цей напрямок був частиною загальної боротьби з османським просуванням і його союзниками.",
+                    "In early 1679, the Zaporozhians under Sirko moved against Kyzykermen and Tavan, which blocked the Cossack chaikas' access to the Black Sea.",
+
+                courseUk: [
+                    "Кизикермен і Тавань були важливими пунктами контролю над нижнім Дніпром.",
+                    "Ці фортеці перешкоджали виходу запорозьких чайок у Чорне море.",
+                    "На початку 1679 року Сірко очолив похід проти цих укріплень.",
+                    "Козацький десант атакував турецько-татарські пункти на Дніпрі.",
+                    "За джерелом, Кизикермен і Тавань були зруйновані.",
                 ],
-                contentEn: [
-                    "After the capture of Kamianets, the Ottoman factor became even more important in the politics and wars of the Right Bank.",
-                    "For Sirko, this direction was part of the broader struggle against Ottoman advance and its allies.",
+
+                courseEn: [
+                    "Kyzykermen and Tavan were important control points on the lower Dnipro.",
+                    "These fortresses blocked the Zaporozhian chaikas' access to the Black Sea.",
+                    "In early 1679, Sirko led a campaign against these fortifications.",
+                    "The Cossack landing force attacked Ottoman-Tatar points on the Dnipro.",
+                    "According to the source, Kyzykermen and Tavan were destroyed.",
                 ],
+
+                significanceUk: [
+                    "Похід мав стратегічне значення для свободи дій запорожців на Дніпрі.",
+                    "Зруйнування фортець послабило османсько-татарський контроль над нижньодніпровським напрямком.",
+                    "Це одна з ключових пізніх антиосманських операцій Сірка.",
+                ],
+
+                significanceEn: [
+                    "The campaign had strategic importance for the freedom of Zaporozhian action on the Dnipro.",
+                    "The destruction of the fortresses weakened Ottoman-Tatar control over the lower Dnipro direction.",
+                    "This is one of Sirko's key late anti-Ottoman operations.",
+                ],
+
+                historicalNoteUk:
+                    "Подія має чітко визначені об’єкти атаки й результат, але без точних цифр чисельності та втрат.",
+
+                historicalNoteEn:
+                    "The event has clearly defined targets and outcome, but no exact figures for strength and losses.",
+
                 hasDetailPage: false,
-                image: "/images/military/kamianets-direction.jpg",
-                sources: [SOURCES.museumDnipro],
+                image: "/images/military/events/kyzykermen-tavan-campaign-1679.webp",
+
+                sources: [
+                    "Походи Івана Сірка",
+                    "Запорізька Січ у другій половині XVII ст. Іван Сірко",
+                ],
             },
         ],
     },
