@@ -1,0 +1,1056 @@
+import {MilitaryCampaign} from "@/src/types/military";
+
+const SOURCES = {
+    encyclopedia: "Encyclopedia of Ukraine: Ivan Sirko",
+    museumDnipro: "Dnipropetrovsk National Historical Museum: Ivan Sirko",
+    sirkoOttomanTatar: "Боротьба Івана Сірка з турецько-татарськими ордами",
+    yavornytskyi: "Д. Яворницький: історія запорозьких козаків",
+};
+
+export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
+    {
+        id: "early-years",
+        slug: "early-years",
+        order: 1,
+        direction: "early-years",
+        titleUk: "Ранні військові роки",
+        titleEn: "Early Military Years",
+        shortTitleUk: "Ранні роки",
+        shortTitleEn: "Early years",
+        periodUk: "1648–1650-ті роки",
+        periodEn: "1648–1650s",
+        summaryUk:
+            "Початковий етап військової біографії Івана Сірка: участь у війнах доби Хмельниччини, формування його авторитету й перші походи на південному напрямку.",
+        summaryEn:
+            "The early stage of Ivan Sirko's military biography: participation in the wars of the Khmelnytsky era, the formation of his authority, and the first southern campaigns.",
+        contentUk: [
+            "Ранні військові роки Сірка найгірше документовані, однак саме цей період формує основу його подальшої слави.",
+            "У джерелах Сірко згадується як учасник козацько-польської війни 1648–1657 років, а наприкінці 1650-х — як діяч запорозького військового середовища, пов'язаний з походами проти татар у пониззі Дніпра та біля Перекопу.",
+        ],
+        contentEn: [
+            "Sirko's early military years are the least documented, yet this period formed the foundation of his later fame.",
+            "Sources mention Sirko as a participant in the Cossack-Polish War of 1648–1657 and, by the late 1650s, as a figure of the Zaporizhian military environment connected with campaigns against the Tatars in the lower Dnipro region and near Perekop.",
+        ],
+        image: "/images/military/early-years.jpg",
+        events: [
+            {
+                id: "cossack-polish-war-1648-1657",
+                slug: "cossack-polish-war-1648-1657",
+                order: 1,
+                year: "1648–1657",
+                type: "political-military",
+                direction: "early-years",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "high",
+                titleUk: "Участь у козацько-польській війні",
+                titleEn: "Participation in the Cossack-Polish War",
+                locationUk: "Українські землі Речі Посполитої",
+                locationEn: "Ukrainian lands of the Polish-Lithuanian Commonwealth",
+                opponentsUk: ["Річ Посполита"],
+                opponentsEn: ["Polish-Lithuanian Commonwealth"],
+                resultUk:
+                    "Сірко входить у військово-політичний простір козацької України.",
+                resultEn:
+                    "Sirko enters the military-political space of Cossack Ukraine.",
+                summaryUk:
+                    "Ранній етап військової діяльності Сірка пов'язаний із добою Хмельниччини та козацько-польською війною.",
+                summaryEn:
+                    "The early stage of Sirko's military activity is connected with the Khmelnytsky era and the Cossack-Polish War.",
+                contentUk: [
+                    "Участь Сірка в подіях козацько-польської війни не має такої деталізації, як його пізніші походи, однак вона важлива для розуміння формування його військового авторитету.",
+                    "Саме в цю добу козацьке військо перетворилося на головну політичну й військову силу українського простору, а майбутні запорозькі лідери отримували досвід великої війни.",
+                ],
+                contentEn: [
+                    "Sirko's participation in the events of the Cossack-Polish War is not documented in the same detail as his later campaigns, but it is important for understanding the formation of his military authority.",
+                    "During this era, the Cossack army became the main political and military force in Ukrainian lands, and future Zaporizhian leaders gained experience in large-scale warfare.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/cossack-polish-war-1648-1657.jpg",
+                sources: [SOURCES.encyclopedia],
+            },
+            {
+                id: "lower-dnipro-perekop-late-1650s",
+                slug: "lower-dnipro-perekop-late-1650s",
+                order: 2,
+                year: "кінець 1650-х",
+                dateEn: "late 1650s",
+                type: "campaign",
+                direction: "early-years",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Походи в пониззі Дніпра та біля Перекопу",
+                titleEn: "Campaigns in the Lower Dnipro and near Perekop",
+                locationUk: "Пониззя Дніпра, Перекопський напрямок",
+                locationEn: "Lower Dnipro region, Perekop direction",
+                opponentsUk: ["Кримські татари"],
+                opponentsEn: ["Crimean Tatars"],
+                resultUk:
+                    "Закріплення Сірка як степового воєначальника.",
+                resultEn:
+                    "Consolidation of Sirko's role as a steppe commander.",
+                summaryUk:
+                    "Наприкінці 1650-х Сірко згадується у зв'язку з походами проти татар у пониззі Дніпра та біля Перекопу.",
+                summaryEn:
+                    "In the late 1650s, Sirko is mentioned in connection with campaigns against the Tatars in the lower Dnipro region and near Perekop.",
+                contentUk: [
+                    "Південний напрямок став одним із головних у військовій біографії Сірка. Саме тут він діяв у просторі степової війни: рейди, переслідування, раптові удари, захист переправ і шляхів.",
+                    "Пізніша слава Сірка як ворога Кримського ханства значною мірою виростає з цього досвіду.",
+                ],
+                contentEn: [
+                    "The southern direction became one of the central parts of Sirko's military biography. Here he operated in the world of steppe warfare: raids, pursuit actions, sudden attacks, and defense of crossings and routes.",
+                    "Sirko's later fame as an enemy of the Crimean Khanate grew largely from this experience.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/lower-dnipro-perekop-late-1650s.jpg",
+                sources: [SOURCES.encyclopedia],
+            },
+        ],
+    },
+    {
+        id: "crimean-campaigns",
+        slug: "crimean-campaigns",
+        order: 2,
+        direction: "crimea",
+        titleUk: "Кримські походи",
+        titleEn: "Crimean Campaigns",
+        shortTitleUk: "Крим",
+        shortTitleEn: "Crimea",
+        periodUk: "1650–1670-ті роки",
+        periodEn: "1650s–1670s",
+        summaryUk:
+            "Один із головних напрямків військової діяльності Сірка: походи проти Кримського ханства, удари по татарських силах, Перекоп, Кафа, Бахчисарай і похід 1675 року.",
+        summaryEn:
+            "One of the main directions of Sirko's military activity: campaigns against the Crimean Khanate, strikes against Tatar forces, Perekop, Kaffa, Bakhchysarai, and the 1675 campaign.",
+        contentUk: [
+            "Кримський напрямок був для Сірка не випадковою серією походів, а тривалою лінією військової боротьби.",
+            "Ці кампанії поєднували рейди, удари по татарських силах, визволення невільників, дії біля Перекопу та походи вглиб Криму.",
+        ],
+        contentEn: [
+            "The Crimean direction was not an accidental series of raids for Sirko, but a long-term line of military struggle.",
+            "These campaigns combined raids, strikes against Tatar forces, liberation of captives, actions near Perekop, and advances deep into Crimea.",
+        ],
+        image: "/images/military/crimean-campaigns.jpg",
+        events: [
+            {
+                id: "crimean-campaigns-1668",
+                slug: "crimean-campaigns-1668",
+                order: 1,
+                year: "1668",
+                type: "campaign",
+                direction: "crimea",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+                titleUk: "Кримські походи 1668 року",
+                titleEn: "Crimean Campaigns of 1668",
+                locationUk: "Кримський напрямок, Кафа, Бахчисарай",
+                locationEn: "Crimean direction, Kaffa, Bakhchysarai",
+                opponentsUk: ["Кримське ханство"],
+                opponentsEn: ["Crimean Khanate"],
+                resultUk:
+                    "Успішні рейди, звільнення невільників, загроза ханській столиці.",
+                resultEn:
+                    "Successful raids, liberation of captives, and threat to the khan's capital.",
+                summaryUk:
+                    "У 1668 році Сірко здійснював активні дії проти Кримського ханства; джерела згадують походи до Кафи та загрозу Бахчисараю.",
+                summaryEn:
+                    "In 1668, Sirko conducted active operations against the Crimean Khanate; sources mention actions near Kaffa and a threat to Bakhchysarai.",
+                contentUk: [
+                    "Після подій на Слобожанщині Сірко повернувся до запорозького середовища і знову зосередився на боротьбі з татарськими силами.",
+                    "У матеріалах згадується похід, під час якого запорожці розгромили татарську орду біля Кафи, визволили значну кількість невільників і загрожували Бахчисараю.",
+                    "Цей блок подій важливий не лише як воєнна операція, а як показник того, що Сірко міг переносити бойові дії безпосередньо на територію противника.",
+                ],
+                contentEn: [
+                    "After the events in Sloboda Ukraine, Sirko returned to the Zaporizhian environment and again focused on the struggle against Tatar forces.",
+                    "Sources mention a campaign in which the Zaporozhians defeated a Tatar force near Kaffa, liberated many captives, and threatened Bakhchysarai.",
+                    "This block of events is important not only as a military operation, but also as evidence that Sirko could carry war directly into enemy territory.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/crimean-campaigns-1668.jpg",
+                sources: [SOURCES.sirkoOttomanTatar, SOURCES.encyclopedia],
+            },
+            {
+                id: "perekop-campaign-1675",
+                slug: "perekop-campaign-1675",
+                order: 2,
+                year: "1675",
+                dateUk: "вересень 1675 року",
+                dateEn: "September 1675",
+                type: "campaign",
+                direction: "crimea",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+                titleUk: "Похід на Перекоп",
+                titleEn: "Campaign against Perekop",
+                locationUk: "Перекоп, Кримський напрямок",
+                locationEn: "Perekop, Crimean direction",
+                opponentsUk: ["Кримське ханство"],
+                opponentsEn: ["Crimean Khanate"],
+                resultUk:
+                    "Успішний похід союзних сил під командуванням Сірка.",
+                resultEn:
+                    "Successful campaign of allied forces under Sirko's command.",
+                summaryUk:
+                    "Похід на Перекоп 1675 року належить до найвідоміших пізніх кримських кампаній Сірка.",
+                summaryEn:
+                    "The 1675 campaign against Perekop belongs to Sirko's best-known late Crimean campaigns.",
+                contentUk: [
+                    "У вересні 1675 року Сірко керував об'єднаними силами, до яких входили запорожці, союзні загони та козацькі підрозділи.",
+                    "Перекоп мав важливе стратегічне значення як ворота до Криму, тому дії на цьому напрямку були надзвичайно важливими для всієї степової війни.",
+                    "Похід демонструє здатність Сірка діяти не лише як ватажок запорожців, а як командир ширшого союзного угруповання.",
+                ],
+                contentEn: [
+                    "In September 1675, Sirko commanded allied forces that included Zaporozhians, allied detachments, and Cossack units.",
+                    "Perekop had major strategic importance as the gateway to Crimea, making operations in this direction extremely important for steppe warfare.",
+                    "The campaign demonstrates Sirko's ability to act not only as a Zaporizhian leader, but also as commander of a broader allied force.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/perekop-campaign-1675.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "crimea-gezlev-1675",
+                slug: "crimea-gezlev-1675",
+                order: 3,
+                year: "1675",
+                type: "raid",
+                direction: "crimea",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+                titleUk: "Похід у Крим і Гезлев",
+                titleEn: "Campaign into Crimea and Gezlev",
+                locationUk: "Крим, Гезлев",
+                locationEn: "Crimea, Gezlev",
+                opponentsUk: ["Кримське ханство"],
+                opponentsEn: ["Crimean Khanate"],
+                resultUk:
+                    "Розорення татарських поселень і удар по Гезлеву.",
+                resultEn:
+                    "Destruction of Tatar settlements and a strike against Gezlev.",
+                summaryUk:
+                    "У 1675 році Сірко здійснив масштабний кримський похід, під час якого козаки діяли вглиб Криму.",
+                summaryEn:
+                    "In 1675, Sirko carried out a major Crimean campaign in which the Cossacks operated deep inside Crimea.",
+                contentUk: [
+                    "Похід 1675 року часто подається як один із найсміливіших ударів Сірка по Криму.",
+                    "У джерелах згадується знищення татарських поселень і дії біля Гезлева. Цей похід мав не лише військовий, а й психологічний ефект: запорожці показали, що можуть загрожувати важливим центрам ханства.",
+                ],
+                contentEn: [
+                    "The 1675 campaign is often presented as one of Sirko's boldest strikes against Crimea.",
+                    "Sources mention the destruction of Tatar settlements and actions near Gezlev. The campaign had not only military but also psychological effect: the Zaporozhians showed that they could threaten important centers of the khanate.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/crimea-gezlev-1675.jpg",
+                sources: [SOURCES.sirkoOttomanTatar],
+            },
+        ],
+    },
+    {
+        id: "steppe-campaigns",
+        slug: "steppe-campaigns",
+        order: 3,
+        direction: "steppe",
+        titleUk: "Степові походи",
+        titleEn: "Steppe Campaigns",
+        shortTitleUk: "Степ",
+        shortTitleEn: "Steppe",
+        periodUk: "1660–1670-ті роки",
+        periodEn: "1660s–1670s",
+        summaryUk:
+            "Мобільні походи, рейди й бої на степових шляхах, зокрема на Муравському шляху, біля Бугу, Кальника, Іллінців та інших пунктів.",
+        summaryEn:
+            "Mobile campaigns, raids, and battles on the steppe routes, including the Muravsky Trail, the Buh, Kalnyk, Illintsi, and other areas.",
+        contentUk: [
+            "Степові походи Сірка були пов'язані з війною руху: швидкі переходи, засідки, переслідування татарських загонів і раптові удари.",
+            "Саме в таких діях особливо проявлялися знання степу, дисципліна запорожців і здатність Сірка діяти там, де ворог не очікував удару.",
+        ],
+        contentEn: [
+            "Sirko's steppe campaigns were connected with mobile warfare: rapid marches, ambushes, pursuit of Tatar detachments, and sudden strikes.",
+            "In such actions, his knowledge of the steppe, the discipline of the Zaporozhians, and his ability to strike where the enemy least expected were especially visible.",
+        ],
+        image: "/images/military/steppe-campaigns.jpg",
+        events: [
+            {
+                id: "bug-kalnyk-campaigns",
+                slug: "bug-kalnyk-campaigns",
+                order: 1,
+                year: "1670-ті",
+                dateEn: "1670s",
+                type: "campaign",
+                direction: "steppe",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Походи до Бугу й Кальника",
+                titleEn: "Campaigns toward the Buh and Kalnyk",
+                locationUk: "Буг, Кальник",
+                locationEn: "Buh, Kalnyk",
+                opponentsUk: ["Татарські загони", "союзні сили Османської імперії"],
+                opponentsEn: ["Tatar detachments", "Ottoman-allied forces"],
+                resultUk:
+                    "Активні дії на степовому напрямку та стримування противника.",
+                resultEn:
+                    "Active operations in the steppe direction and containment of enemy forces.",
+                summaryUk:
+                    "У джерелах згадуються походи Сірка до Бугу й Кальника як частина його степових операцій.",
+                summaryEn:
+                    "Sources mention Sirko's campaigns toward the Buh and Kalnyk as part of his steppe operations.",
+                contentUk: [
+                    "Походи до Бугу й Кальника належать до тих подій, які складно описати як одну окрему битву.",
+                    "Йдеться радше про військовий напрямок, у межах якого Сірко діяв проти татарських і союзних їм сил, контролював рух у степу та не давав противнику вільно розгортати набіги.",
+                ],
+                contentEn: [
+                    "The campaigns toward the Buh and Kalnyk are difficult to describe as a single battle.",
+                    "They are better understood as a military direction in which Sirko acted against Tatar and allied forces, controlled movement in the steppe, and prevented the enemy from freely conducting raids.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/bug-kalnyk-campaigns.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "illintsi-tatar-victory",
+                slug: "illintsi-tatar-victory",
+                order: 2,
+                year: "1670-ті",
+                dateEn: "1670s",
+                type: "battle",
+                direction: "steppe",
+                importance: "medium",
+                resultType: "victory",
+                confidence: "medium",
+                titleUk: "Перемога над татарами під Іллінцями",
+                titleEn: "Victory over the Tatars near Illintsi",
+                locationUk: "Іллінці",
+                locationEn: "Illintsi",
+                opponentsUk: ["Кримські татари"],
+                opponentsEn: ["Crimean Tatars"],
+                resultUk:
+                    "Перемога Сірка над татарськими силами.",
+                resultEn:
+                    "Sirko's victory over Tatar forces.",
+                summaryUk:
+                    "Одна з подій степового циклу, яку джерела згадують як перемогу Сірка над татарами під Іллінцями.",
+                summaryEn:
+                    "One of the events of the steppe cycle, mentioned by sources as Sirko's victory over the Tatars near Illintsi.",
+                contentUk: [
+                    "Бій під Іллінцями входить до групи подій, пов'язаних із протидією татарським силам на українських землях.",
+                    "Для майбутньої single page цю подію треба буде додатково перевірити за академічними джерелами, бо в коротких переліках вона часто згадується без детального опису.",
+                ],
+                contentEn: [
+                    "The battle near Illintsi belongs to a group of events connected with countering Tatar forces in Ukrainian lands.",
+                    "For a future single page, this event will need additional verification in academic sources, because short lists often mention it without detailed description.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/illintsi-tatar-victory.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "muravsky-trail-1673",
+                slug: "muravsky-trail-1673",
+                order: 3,
+                year: "1673",
+                dateUk: "вересень 1673 року",
+                dateEn: "September 1673",
+                type: "battle",
+                direction: "steppe",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+                titleUk: "Розгром татар на Муравському шляху",
+                titleEn: "Defeat of the Tatars on the Muravsky Trail",
+                locationUk: "Муравський шлях, район Покровського",
+                locationEn: "Muravsky Trail, Pokrovske area",
+                opponentsUk: ["Кримські татари"],
+                opponentsEn: ["Crimean Tatars"],
+                resultUk:
+                    "Розгром татарського загону та повернення Сірка на Січ.",
+                resultEn:
+                    "Defeat of a Tatar detachment and Sirko's return to the Sich.",
+                summaryUk:
+                    "У вересні 1673 року Сірко зустрів великий татарський загін на Муравському шляху й розгромив його.",
+                summaryEn:
+                    "In September 1673, Sirko encountered a large Tatar detachment on the Muravsky Trail and defeated it.",
+                contentUk: [
+                    "Муравський шлях був одним із важливих степових напрямків, яким рухалися татарські загони.",
+                    "Згадка про перемогу Сірка на цьому напрямку важлива для розуміння його ролі як полководця степової війни: він не лише ходив у Крим чи на фортеці, а й перехоплював противника на шляхах набігів.",
+                ],
+                contentEn: [
+                    "The Muravsky Trail was one of the important steppe routes used by Tatar detachments.",
+                    "The mention of Sirko's victory in this direction is important for understanding his role as a commander of steppe warfare: he not only marched into Crimea or against fortresses, but also intercepted the enemy on raiding routes.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/muravsky-trail-1673.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "three-day-steppe-battle",
+                slug: "three-day-steppe-battle",
+                order: 4,
+                year: "1673",
+                type: "battle",
+                direction: "steppe",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Триденний бій у степу",
+                titleEn: "Three-Day Battle in the Steppe",
+                locationUk: "Степовий район, точна локалізація потребує уточнення",
+                locationEn: "Steppe area, exact location requires clarification",
+                opponentsUk: ["Татарська орда"],
+                opponentsEn: ["Tatar horde"],
+                resultUk:
+                    "Сірко витримав оточення й змусив противника відступити.",
+                resultEn:
+                    "Sirko endured encirclement and forced the enemy to withdraw.",
+                summaryUk:
+                    "У джерелах згадується триденний бій у степу, коли татарські сили оточили Сірка, але не змогли його здолати.",
+                summaryEn:
+                    "Sources mention a three-day steppe battle in which Tatar forces surrounded Sirko but failed to defeat him.",
+                contentUk: [
+                    "Триденний бій у степу добре підходить для майбутньої окремої сторінки, якщо буде знайдено достатньо деталей у джерелах.",
+                    "Це одна з подій, яка підкреслює витривалість запорожців і здатність Сірка тримати оборону в умовах степового оточення.",
+                ],
+                contentEn: [
+                    "The three-day battle in the steppe would be suitable for a future separate page if enough details are found in sources.",
+                    "It is one of the events that emphasizes the endurance of the Zaporozhians and Sirko's ability to hold out under steppe encirclement.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/three-day-steppe-battle.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+        ],
+    },
+    {
+        id: "ruina-events",
+        slug: "ruina-events",
+        order: 4,
+        direction: "ruina",
+        titleUk: "Доба Руїни",
+        titleEn: "The Ruin",
+        shortTitleUk: "Руїна",
+        shortTitleEn: "Ruin",
+        periodUk: "1657–1670-ті роки",
+        periodEn: "1657–1670s",
+        summaryUk:
+            "Військово-політичні події Руїни, у яких Сірко діяв між гетьманськими угрупованнями, Московією, Річчю Посполитою, Дорошенком та запорозьким середовищем.",
+        summaryEn:
+            "Military-political events of the Ruin, where Sirko acted between Hetman factions, Muscovy, the Polish-Lithuanian Commonwealth, Doroshenko, and the Zaporizhian environment.",
+        contentUk: [
+            "Доба Руїни була для Сірка не лише періодом боїв, а й періодом складних політичних рішень.",
+            "Його військові дії часто були пов'язані з боротьбою між різними центрами влади та спробами зберегти автономію Запорожжя.",
+        ],
+        contentEn: [
+            "For Sirko, the Ruin was not only a period of battles, but also a period of difficult political decisions.",
+            "His military actions were often connected with the struggle between different centers of power and attempts to preserve Zaporizhian autonomy.",
+        ],
+        image: "/images/military/ruina-events.jpg",
+        events: [
+            {
+                id: "varenytsia-uprising-1664-1665",
+                slug: "varenytsia-uprising-1664-1665",
+                order: 1,
+                year: "1664–1665",
+                type: "political-military",
+                direction: "ruina",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "high",
+                titleUk: "Участь у повстанні Варениці",
+                titleEn: "Participation in Varenytsia's Uprising",
+                locationUk: "Правобережна Україна",
+                locationEn: "Right-Bank Ukraine",
+                opponentsUk: ["Сили Речі Посполитої", "союзні їм угруповання"],
+                opponentsEn: ["Polish-Lithuanian forces", "allied factions"],
+                resultUk:
+                    "Сірко діяв у контексті антипольського руху на Правобережжі.",
+                resultEn:
+                    "Sirko acted in the context of an anti-Polish movement on the Right Bank.",
+                summaryUk:
+                    "У 1664–1665 роках Сірко був пов'язаний із повстанням Варениці на Правобережній Україні.",
+                summaryEn:
+                    "In 1664–1665, Sirko was connected with Varenytsia's uprising in Right-Bank Ukraine.",
+                contentUk: [
+                    "Ця подія належить до складного військово-політичного контексту Руїни.",
+                    "Для Сірка вона важлива тим, що показує його участь не лише в антиосманських і антитатарських походах, а й у внутрішній боротьбі за напрям розвитку козацької України.",
+                ],
+                contentEn: [
+                    "This event belongs to the complex military-political context of the Ruin.",
+                    "For Sirko, it is important because it shows his participation not only in anti-Ottoman and anti-Tatar campaigns, but also in the internal struggle over the future direction of Cossack Ukraine.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/varenytsia-uprising-1664-1665.jpg",
+                sources: [SOURCES.encyclopedia],
+            },
+            {
+                id: "conflict-charnecki",
+                slug: "conflict-charnecki",
+                order: 2,
+                year: "1660-ті",
+                dateEn: "1660s",
+                type: "political-military",
+                direction: "ruina",
+                importance: "medium",
+                resultType: "unclear",
+                confidence: "medium",
+                titleUk: "Зіткнення із Чарнецьким",
+                titleEn: "Clash with Czarniecki",
+                locationUk: "Правобережна Україна",
+                locationEn: "Right-Bank Ukraine",
+                opponentsUk: ["Стефан Чарнецький", "польські сили"],
+                opponentsEn: ["Stefan Czarniecki", "Polish forces"],
+                resultUk:
+                    "Епізод військово-політичної боротьби доби Руїни.",
+                resultEn:
+                    "An episode of military-political struggle during the Ruin.",
+                summaryUk:
+                    "У переліках військових дій Сірка згадується зіткнення із Чарнецьким.",
+                summaryEn:
+                    "Lists of Sirko's military actions mention a clash with Czarniecki.",
+                contentUk: [
+                    "Ця подія потребує подальшого уточнення за джерелами, бо часто подається коротким пунктом без докладної реконструкції.",
+                    "У межах загального роуту її варто показувати як частину політично-військового контексту Руїни, а не як повністю окрему задокументовану битву.",
+                ],
+                contentEn: [
+                    "This event requires further clarification through sources, because it is often presented as a short item without detailed reconstruction.",
+                    "Within the general route, it should be shown as part of the military-political context of the Ruin rather than as a fully reconstructed separate battle.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/conflict-charnecki.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "doroshenko-conflict",
+                slug: "doroshenko-conflict",
+                order: 3,
+                year: "1660–1670-ті",
+                dateEn: "1660s–1670s",
+                type: "political-military",
+                direction: "ruina",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "medium",
+                titleUk: "Боротьба і союзи з Дорошенком",
+                titleEn: "Conflict and Alliances with Doroshenko",
+                locationUk: "Правобережжя, Запорожжя",
+                locationEn: "Right Bank, Zaporizhia",
+                opponentsUk: ["Петро Дорошенко", "його союзники", "змінні політичні сили"],
+                opponentsEn: ["Petro Doroshenko", "his allies", "shifting political forces"],
+                resultUk:
+                    "Складні військово-політичні відносини, що змінювалися залежно від обставин.",
+                resultEn:
+                    "Complex military-political relations that shifted depending on circumstances.",
+                summaryUk:
+                    "Відносини Сірка з Дорошенком не були простими: у джерелах згадуються і боротьба, і періоди взаємодії.",
+                summaryEn:
+                    "Sirko's relations with Doroshenko were complex: sources mention both conflict and periods of interaction.",
+                contentUk: [
+                    "Дорошенко був однією з ключових фігур доби Руїни, а Сірко діяв у політичному просторі, де союзи могли швидко змінюватися.",
+                    "Тому цю тему краще подавати не як одну битву, а як окремий військово-політичний напрям.",
+                ],
+                contentEn: [
+                    "Doroshenko was one of the key figures of the Ruin, while Sirko acted in a political space where alliances could change rapidly.",
+                    "Therefore, this subject is better presented not as one battle, but as a separate military-political direction.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/doroshenko-conflict.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+        ],
+    },
+    {
+        id: "ottoman-wars",
+        slug: "ottoman-wars",
+        order: 5,
+        direction: "ottoman",
+        titleUk: "Османські війни",
+        titleEn: "Ottoman Wars",
+        shortTitleUk: "Османи",
+        shortTitleEn: "Ottomans",
+        periodUk: "1660–1670-ті роки",
+        periodEn: "1660s–1670s",
+        summaryUk:
+            "Походи Сірка проти османських фортець, прикордонних укріплень і союзних сил Османської імперії.",
+        summaryEn:
+            "Sirko's campaigns against Ottoman fortresses, border strongholds, and allied forces of the Ottoman Empire.",
+        contentUk: [
+            "Османський напрямок був одним із центральних у військовій діяльності Івана Сірка.",
+            "До цього блоку належать походи на Очаків, Іслам-Кермен, Кизикермен, Тягиню, Кам'янецький напрямок та інші укріплені пункти, пов'язані з османською військовою системою на півдні.",
+        ],
+        contentEn: [
+            "The Ottoman direction was one of the central parts of Ivan Sirko's military activity.",
+            "This block includes campaigns against Ochakiv, Islam-Kermen, Kyzykermen, Tiahynea, the Kamianets direction, and other fortified points connected with the Ottoman military system in the south.",
+        ],
+        image: "/images/military/ottoman-wars.jpg",
+        events: [
+            {
+                id: "ochakiv-campaign-1670-1671",
+                slug: "ochakiv-campaign-1670-1671",
+                order: 1,
+                year: "1670–1671",
+                type: "campaign",
+                direction: "ottoman",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "high",
+                titleUk: "Походи проти Очакова",
+                titleEn: "Campaigns against Ochakiv",
+                locationUk: "Очаків, Нижнє Побужжя",
+                locationEn: "Ochakiv, Lower Buh region",
+                opponentsUk: ["Османська імперія", "турецькі гарнізони"],
+                opponentsEn: ["Ottoman Empire", "Turkish garrisons"],
+                resultUk:
+                    "Успішні дії проти османського укріплення на південному напрямку.",
+                resultEn:
+                    "Successful actions against an Ottoman stronghold in the southern direction.",
+                summaryUk:
+                    "У 1670–1671 роках Сірко діяв проти турецьких укріплень, зокрема Очакова.",
+                summaryEn:
+                    "In 1670–1671, Sirko acted against Turkish strongholds, including Ochakiv.",
+                contentUk: [
+                    "Очаків був одним із важливих османських опорних пунктів на півдні, що контролював вихід до Чорного моря та степові комунікації.",
+                    "Дії Сірка проти Очакова демонструють його прагнення не лише обороняти Запорожжя, а й бити по ключових пунктах противника.",
+                    "Ця подія добре підходить для майбутньої окремої сторінки, тому що має чіткий напрям, противника, стратегічне значення та прив'язку до відомого укріплення.",
+                ],
+                contentEn: [
+                    "Ochakiv was one of the important Ottoman strongholds in the south, controlling access to the Black Sea and steppe communications.",
+                    "Sirko's actions against Ochakiv show his intention not only to defend Zaporizhia, but also to strike key enemy positions.",
+                    "This event is suitable for a future separate page because it has a clear direction, opponent, strategic meaning, and connection to a known fortress.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/ochakiv-campaign-1670-1671.jpg",
+                sources: [SOURCES.encyclopedia, SOURCES.museumDnipro],
+            },
+            {
+                id: "islam-kermen-campaign-1670-1671",
+                slug: "islam-kermen-campaign-1670-1671",
+                order: 2,
+                year: "1670–1671",
+                type: "siege",
+                direction: "ottoman",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "high",
+                titleUk: "Дії проти Іслам-Кермена",
+                titleEn: "Actions against Islam-Kermen",
+                locationUk: "Іслам-Кермен, Нижнє Подніпров'я",
+                locationEn: "Islam-Kermen, Lower Dnipro region",
+                opponentsUk: ["Османська імперія", "татарські й турецькі сили"],
+                opponentsEn: ["Ottoman Empire", "Tatar and Turkish forces"],
+                resultUk:
+                    "Удар по важливому укріпленню на Дніпровському напрямку.",
+                resultEn:
+                    "Strike against an important fortress in the Dnipro direction.",
+                summaryUk:
+                    "Іслам-Кермен був одним із ключових укріплених пунктів на південному напрямку, проти якого діяв Сірко.",
+                summaryEn:
+                    "Islam-Kermen was one of the key fortified points in the southern direction against which Sirko operated.",
+                contentUk: [
+                    "Іслам-Кермен контролював важливий простір у нижній течії Дніпра, тому був постійною загрозою для запорожців.",
+                    "Дії Сірка проти цього пункту входять до ширшої системи його боротьби з османсько-татарською присутністю на півдні.",
+                    "Для загального роуту цю подію варто показувати як один із вузлів османського напрямку, а пізніше її можна винести в single page.",
+                ],
+                contentEn: [
+                    "Islam-Kermen controlled an important area in the lower Dnipro region and therefore remained a constant threat to the Zaporozhians.",
+                    "Sirko's actions against this point were part of his broader struggle against Ottoman-Tatar presence in the south.",
+                    "For the general route, this event should be shown as one of the key nodes of the Ottoman direction, and later it can be developed into a single page.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/islam-kermen-campaign-1670-1671.jpg",
+                sources: [SOURCES.encyclopedia, SOURCES.museumDnipro],
+            },
+            {
+                id: "kyzykermen-actions",
+                slug: "kyzykermen-actions",
+                order: 3,
+                year: "1670-ті",
+                dateEn: "1670s",
+                type: "siege",
+                direction: "ottoman",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Дії проти Кизикермена",
+                titleEn: "Actions against Kyzykermen",
+                locationUk: "Кизикермен, Нижнє Подніпров'я",
+                locationEn: "Kyzykermen, Lower Dnipro region",
+                opponentsUk: ["Османські й татарські сили"],
+                opponentsEn: ["Ottoman and Tatar forces"],
+                resultUk:
+                    "Тиск на систему османських укріплень у нижній течії Дніпра.",
+                resultEn:
+                    "Pressure on the system of Ottoman fortifications in the lower Dnipro region.",
+                summaryUk:
+                    "Кизикермен входив до групи південних укріплень, пов'язаних із османсько-татарським контролем над степом.",
+                summaryEn:
+                    "Kyzykermen belonged to the group of southern fortifications connected with Ottoman-Tatar control of the steppe.",
+                contentUk: [
+                    "У військовій біографії Сірка важливі не лише окремі великі битви, а й систематичний тиск на прикордонні укріплення.",
+                    "Кизикермен треба розглядати саме в цьому контексті: як частину боротьби за контроль над південними комунікаціями.",
+                ],
+                contentEn: [
+                    "In Sirko's military biography, not only large battles are important, but also systematic pressure on frontier fortifications.",
+                    "Kyzykermen should be understood in this context: as part of the struggle for control over southern communications.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/kyzykermen-actions.jpg",
+                sources: [SOURCES.sirkoOttomanTatar, SOURCES.museumDnipro],
+            },
+            {
+                id: "tiahynea-budjak-bilhorod",
+                slug: "tiahynea-budjak-bilhorod",
+                order: 4,
+                year: "1670-ті",
+                dateEn: "1670s",
+                type: "campaign",
+                direction: "ottoman",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Тягиня, Буджак і Білгородчина",
+                titleEn: "Tiahynea, Budjak, and Bilhorod Region",
+                locationUk: "Тягиня, Буджак, Білгородчина",
+                locationEn: "Tiahynea, Budjak, Bilhorod region",
+                opponentsUk: ["Османські сили", "татарські загони"],
+                opponentsEn: ["Ottoman forces", "Tatar detachments"],
+                resultUk:
+                    "Дії на південно-західному напрямку проти османсько-татарських сил.",
+                resultEn:
+                    "Operations in the southwestern direction against Ottoman-Tatar forces.",
+                summaryUk:
+                    "У переліках військових дій Сірка згадуються Тягиня, Буджак і Білгородчина як напрямки його походів.",
+                summaryEn:
+                    "Lists of Sirko's military actions mention Tiahynea, Budjak, and the Bilhorod region as directions of his campaigns.",
+                contentUk: [
+                    "Цей блок краще подавати не як одну битву, а як південно-західний напрямок походів.",
+                    "Тут Сірко діяв проти османсько-татарського прикордоння, яке становило небезпеку для козацьких і українських земель.",
+                    "Подію треба додатково деталізувати, якщо в майбутньому буде знайдено точніші описи окремих сутичок.",
+                ],
+                contentEn: [
+                    "This block is better presented not as a single battle, but as a southwestern campaign direction.",
+                    "Here Sirko acted against the Ottoman-Tatar frontier, which threatened Cossack and Ukrainian lands.",
+                    "The event should be further detailed if more precise descriptions of individual clashes are found in the future.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/tiahynea-budjak-bilhorod.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "kamianets-direction",
+                slug: "kamianets-direction",
+                order: 5,
+                year: "1670-ті",
+                dateEn: "1670s",
+                type: "campaign",
+                direction: "ottoman",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Кам'янецький напрямок",
+                titleEn: "Kamianets Direction",
+                locationUk: "Кам'янецький напрямок",
+                locationEn: "Kamianets direction",
+                opponentsUk: ["Османська імперія", "союзні сили"],
+                opponentsEn: ["Ottoman Empire", "allied forces"],
+                resultUk:
+                    "Дії в контексті боротьби проти османського впливу на Правобережжі.",
+                resultEn:
+                    "Actions in the context of struggle against Ottoman influence on the Right Bank.",
+                summaryUk:
+                    "Кам'янецький напрямок пов'язаний із ширшим османським контекстом 1670-х років.",
+                summaryEn:
+                    "The Kamianets direction is connected with the broader Ottoman context of the 1670s.",
+                contentUk: [
+                    "Після захоплення Кам'янця османський фактор став ще важливішим у політиці та війнах Правобережжя.",
+                    "Для Сірка цей напрямок був частиною загальної боротьби з османським просуванням і його союзниками.",
+                ],
+                contentEn: [
+                    "After the capture of Kamianets, the Ottoman factor became even more important in the politics and wars of the Right Bank.",
+                    "For Sirko, this direction was part of the broader struggle against Ottoman advance and its allies.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/kamianets-direction.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+        ],
+    },
+    {
+        id: "zaporizhian-defense",
+        slug: "zaporizhian-defense",
+        order: 6,
+        direction: "zaporizhia",
+        titleUk: "Оборона Запорожжя",
+        titleEn: "Defense of Zaporizhia",
+        shortTitleUk: "Запорожжя",
+        shortTitleEn: "Zaporizhia",
+        periodUk: "1660–1670-ті роки",
+        periodEn: "1660s–1670s",
+        summaryUk:
+            "Оборонні дії, контрудари, захист Січі та боротьба за безпеку запорозьких земель.",
+        summaryEn:
+            "Defensive actions, counterstrikes, protection of the Sich, and the struggle for the security of Zaporizhian lands.",
+        contentUk: [
+            "Сірко відомий не лише як організатор наступальних походів, а й як оборонець Запорожжя.",
+            "Цей напрямок об'єднує події, де головною метою було зупинити ворога, захистити Січ або перехопити нападників до того, як вони досягнуть козацьких земель.",
+        ],
+        contentEn: [
+            "Sirko is known not only as an organizer of offensive campaigns, but also as a defender of Zaporizhia.",
+            "This direction brings together events whose main goal was to stop the enemy, protect the Sich, or intercept raiders before they reached Cossack lands.",
+        ],
+        image: "/images/military/zaporizhian-defense.jpg",
+        events: [
+            {
+                id: "defense-against-tatar-raids",
+                slug: "defense-against-tatar-raids",
+                order: 1,
+                year: "1660–1670-ті",
+                dateEn: "1660s–1670s",
+                type: "defense",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Оборона від татарських набігів",
+                titleEn: "Defense against Tatar Raids",
+                locationUk: "Запорозькі землі, степові шляхи",
+                locationEn: "Zaporizhian lands, steppe routes",
+                opponentsUk: ["Кримські татари", "ногайські загони"],
+                opponentsEn: ["Crimean Tatars", "Nogai detachments"],
+                resultUk:
+                    "Стримування набігів і захист запорозького простору.",
+                resultEn:
+                    "Containment of raids and defense of the Zaporizhian space.",
+                summaryUk:
+                    "Боротьба Сірка з татарськими набігами була постійною складовою його військового шляху.",
+                summaryEn:
+                    "Sirko's struggle against Tatar raids was a constant part of his military path.",
+                contentUk: [
+                    "Не всі військові дії Сірка можна звести до окремих битв із точною датою.",
+                    "Велика частина його ролі як кошового отамана полягала у швидкій відповіді на загрози, перехопленні ворога та захисті запорозьких земель від набігів.",
+                ],
+                contentEn: [
+                    "Not all of Sirko's military actions can be reduced to separate battles with exact dates.",
+                    "A large part of his role as Kish Otaman consisted of rapid response to threats, interception of enemy forces, and defense of Zaporizhian lands against raids.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/defense-against-tatar-raids.jpg",
+                sources: [SOURCES.sirkoOttomanTatar, SOURCES.yavornytskyi],
+            },
+            {
+                id: "defense-of-the-sich",
+                slug: "defense-of-the-sich",
+                order: 2,
+                year: "1660–1670-ті",
+                dateEn: "1660s–1670s",
+                type: "defense",
+                direction: "zaporizhia",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Захист Запорозької Січі",
+                titleEn: "Defense of the Zaporizhian Sich",
+                locationUk: "Запорозька Січ",
+                locationEn: "Zaporizhian Sich",
+                opponentsUk: ["Кримське ханство", "Османські союзники"],
+                opponentsEn: ["Crimean Khanate", "Ottoman allies"],
+                resultUk:
+                    "Збереження військового центру запорожців.",
+                resultEn:
+                    "Preservation of the military center of the Zaporozhians.",
+                summaryUk:
+                    "Сірко як кошовий отаман був відповідальний за безпеку Січі та її військового простору.",
+                summaryEn:
+                    "As Kish Otaman, Sirko was responsible for the security of the Sich and its military space.",
+                contentUk: [
+                    "Оборона Січі була не лише воєнним завданням, а й питанням існування запорозького устрою.",
+                    "Саме тому дії Сірка треба розглядати не тільки як серію походів, а як системну боротьбу за безпеку й автономію Запорожжя.",
+                ],
+                contentEn: [
+                    "The defense of the Sich was not only a military task, but also a question of the existence of the Zaporizhian order.",
+                    "For this reason, Sirko's actions should be viewed not only as a series of campaigns, but as a systematic struggle for the security and autonomy of Zaporizhia.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/defense-of-the-sich.jpg",
+                sources: [SOURCES.yavornytskyi],
+            },
+            {
+                id: "counterstrikes-from-zaporizhia",
+                slug: "counterstrikes-from-zaporizhia",
+                order: 3,
+                year: "1660–1670-ті",
+                dateEn: "1660s–1670s",
+                type: "raid",
+                direction: "zaporizhia",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Контрудари із Запорожжя",
+                titleEn: "Counterstrikes from Zaporizhia",
+                locationUk: "Запорожжя, південний степ",
+                locationEn: "Zaporizhia, southern steppe",
+                opponentsUk: ["Татарські й турецькі сили"],
+                opponentsEn: ["Tatar and Turkish forces"],
+                resultUk:
+                    "Перенесення бойових дій на територію противника.",
+                resultEn:
+                    "Transfer of combat actions into enemy territory.",
+                summaryUk:
+                    "Запорожжя було не лише оборонним центром, а й базою для наступальних рейдів Сірка.",
+                summaryEn:
+                    "Zaporizhia was not only a defensive center, but also a base for Sirko's offensive raids.",
+                contentUk: [
+                    "Сірко часто діяв за логікою активної оборони: не чекати нападу, а завдавати удару першим.",
+                    "Саме тому оборона Запорожжя нерозривно пов'язана з рейдами, переслідуваннями й ударами по ворожих таборах.",
+                ],
+                contentEn: [
+                    "Sirko often acted according to the logic of active defense: not waiting for an attack, but striking first.",
+                    "That is why the defense of Zaporizhia is inseparably connected with raids, pursuit actions, and strikes against enemy camps.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/counterstrikes-from-zaporizhia.jpg",
+                sources: [SOURCES.sirkoOttomanTatar, SOURCES.yavornytskyi],
+            },
+        ],
+    },
+    {
+        id: "final-campaigns",
+        slug: "final-campaigns",
+        order: 7,
+        direction: "final-years",
+        titleUk: "Останні кампанії",
+        titleEn: "Final Campaigns",
+        shortTitleUk: "Останні роки",
+        shortTitleEn: "Final years",
+        periodUk: "1677–1680 роки",
+        periodEn: "1677–1680",
+        summaryUk:
+            "Пізній етап військової діяльності Сірка: Чигиринський контекст, дії проти турецько-татарських сил і останні походи перед смертю.",
+        summaryEn:
+            "The late stage of Sirko's military activity: the Chyhyryn context, actions against Ottoman-Tatar forces, and the final campaigns before his death.",
+        contentUk: [
+            "Навіть у пізні роки Сірко залишався активним військовим діячем.",
+            "Цей період пов'язаний із загостренням османського тиску, Чигиринськими подіями та останніми ударами запорожців проти ворога.",
+        ],
+        contentEn: [
+            "Even in his later years, Sirko remained an active military figure.",
+            "This period is connected with the intensification of Ottoman pressure, the Chyhyryn events, and the final strikes of the Zaporozhians against the enemy.",
+        ],
+        image: "/images/military/final-campaigns.jpg",
+        events: [
+            {
+                id: "chyhyryn-context-1677-1678",
+                slug: "chyhyryn-context-1677-1678",
+                order: 1,
+                year: "1677–1678",
+                type: "political-military",
+                direction: "final-years",
+                importance: "major",
+                resultType: "political-result",
+                confidence: "high",
+                titleUk: "Чигиринський контекст",
+                titleEn: "Chyhyryn Context",
+                locationUk: "Чигиринський напрямок, Правобережжя",
+                locationEn: "Chyhyryn direction, Right Bank",
+                opponentsUk: ["Османська імперія", "татарські сили"],
+                opponentsEn: ["Ottoman Empire", "Tatar forces"],
+                resultUk:
+                    "Участь Сірка в подіях, пов'язаних із боротьбою навколо Чигирина.",
+                resultEn:
+                    "Sirko's participation in events connected with the struggle around Chyhyryn.",
+                summaryUk:
+                    "У 1677–1678 роках Сірко згадується в контексті Чигиринських подій та боротьби проти османсько-татарського наступу.",
+                summaryEn:
+                    "In 1677–1678, Sirko is mentioned in the context of the Chyhyryn events and the struggle against the Ottoman-Tatar advance.",
+                contentUk: [
+                    "Чигиринські події стали одним із ключових епізодів протистояння Османської імперії, Московії, козацьких сил і гетьманських угруповань.",
+                    "Сірко діяв у цьому контексті як запорозький військовий лідер, для якого боротьба з турецько-татарською загрозою залишалася головним напрямком.",
+                ],
+                contentEn: [
+                    "The Chyhyryn events became one of the key episodes in the confrontation between the Ottoman Empire, Muscovy, Cossack forces, and Hetman factions.",
+                    "Sirko acted in this context as a Zaporizhian military leader for whom the struggle against the Ottoman-Tatar threat remained central.",
+                ],
+                hasDetailPage: true,
+                image: "/images/military/chyhyryn-context-1677-1678.jpg",
+                sources: [SOURCES.encyclopedia, SOURCES.museumDnipro],
+            },
+            {
+                id: "voloshchyna-campaign",
+                slug: "voloshchyna-campaign",
+                order: 2,
+                year: "1670-ті",
+                dateEn: "1670s",
+                type: "campaign",
+                direction: "final-years",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Похід у Волощину",
+                titleEn: "Campaign into Wallachia",
+                locationUk: "Волощина",
+                locationEn: "Wallachia",
+                opponentsUk: ["османські союзники", "місцеві сили"],
+                opponentsEn: ["Ottoman allies", "local forces"],
+                resultUk:
+                    "Дії на південно-західному напрямку в пізній період військової активності.",
+                resultEn:
+                    "Operations in the southwestern direction during the late period of military activity.",
+                summaryUk:
+                    "У переліках походів Сірка згадується похід у Волощину, який належить до пізнього етапу його військового шляху.",
+                summaryEn:
+                    "Lists of Sirko's campaigns mention a campaign into Wallachia, belonging to the late stage of his military path.",
+                contentUk: [
+                    "Похід у Волощину показує широту географії військових дій Сірка.",
+                    "Це не лише Крим чи Запорожжя, а ширший південно-західний простір, пов'язаний із османською політикою та її союзниками.",
+                    "Для повної single page цю подію потрібно буде додатково деталізувати за джерелами.",
+                ],
+                contentEn: [
+                    "The campaign into Wallachia shows the breadth of the geography of Sirko's military actions.",
+                    "It was not only Crimea or Zaporizhia, but a broader southwestern space connected with Ottoman policy and its allies.",
+                    "For a full single page, this event will need additional detail from sources.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/voloshchyna-campaign.jpg",
+                sources: [SOURCES.museumDnipro],
+            },
+            {
+                id: "final-anti-tatar-actions-1679",
+                slug: "final-anti-tatar-actions-1679",
+                order: 3,
+                year: "1679",
+                type: "campaign",
+                direction: "final-years",
+                importance: "medium",
+                resultType: "strategic-success",
+                confidence: "medium",
+                titleUk: "Останні дії проти татар",
+                titleEn: "Final Actions against the Tatars",
+                locationUk: "Південний степ, запорозький напрямок",
+                locationEn: "Southern steppe, Zaporizhian direction",
+                opponentsUk: ["Кримські татари"],
+                opponentsEn: ["Crimean Tatars"],
+                resultUk:
+                    "Продовження активної боротьби з татарськими силами напередодні смерті Сірка.",
+                resultEn:
+                    "Continuation of active struggle against Tatar forces shortly before Sirko's death.",
+                summaryUk:
+                    "У 1679 році Сірко ще згадується у зв'язку з активними діями проти татарських сил.",
+                summaryEn:
+                    "In 1679, Sirko is still mentioned in connection with active actions against Tatar forces.",
+                contentUk: [
+                    "Пізній етап життя Сірка не означав повного відходу від військової діяльності.",
+                    "Навіть напередодні смерті він залишався пов'язаний із боротьбою проти татарської загрози та обороною запорозького простору.",
+                ],
+                contentEn: [
+                    "The late stage of Sirko's life did not mean a complete withdrawal from military activity.",
+                    "Even shortly before his death, he remained connected with the struggle against the Tatar threat and the defense of the Zaporizhian space.",
+                ],
+                hasDetailPage: false,
+                image: "/images/military/final-anti-tatar-actions-1679.jpg",
+                sources: [SOURCES.encyclopedia, SOURCES.sirkoOttomanTatar],
+            },
+        ],
+    },
+];
