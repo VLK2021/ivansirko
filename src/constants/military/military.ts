@@ -3381,140 +3381,537 @@ export const MILITARY_CAMPAIGNS: MilitaryCampaign[] = [
         ],
     },
     {
-        id: "final-campaigns",
-        slug: "final-campaigns",
+        id: "final-years",
+        slug: "final-years",
         order: 7,
         direction: "final-years",
-        titleUk: "Останні кампанії",
-        titleEn: "Final Campaigns",
+
+        titleUk: "Останні роки",
+        titleEn: "Final Years",
+
         shortTitleUk: "Останні роки",
-        shortTitleEn: "Final years",
-        periodUk: "1677–1680 роки",
-        periodEn: "1677–1680",
+        shortTitleEn: "Final Years",
+
+        periodUk: "1676–1680",
+        periodEn: "1676–1680",
+
         summaryUk:
-            "Пізній етап військової діяльності Сірка: Чигиринський контекст, дії проти турецько-татарських сил і останні походи перед смертю.",
+            "Останній етап військової діяльності Івана Сірка: дипломатичні контакти з турецькими посланцями, участь у протидії турецько-татарським силам, останній похід 1680 року та смерть кошового отамана.",
+
         summaryEn:
-            "The late stage of Sirko's military activity: the Chyhyryn context, actions against Ottoman-Tatar forces, and the final campaigns before his death.",
+            "The final stage of Ivan Sirko's military activity: contacts with Ottoman envoys, resistance to Ottoman-Tatar forces, the last campaign of 1680, and the death of the Kish Otaman.",
+
         contentUk: [
-            "Навіть у пізні роки Сірко залишався активним військовим діячем.",
-            "Цей період пов'язаний із загостренням османського тиску, Чигиринськими подіями та останніми ударами запорожців проти ворога.",
+            "У другій половині 1670-х років Сірко залишався активним військовим керівником Запорожжя.",
+            "Джерела згадують його дії проти військ Османської імперії та Кримського ханства, участь запорожців у відсічі Чигиринським походам і останню воєнну акцію 1680 року.",
+            "Окремо важливими є події навколо турецьких посланців 1676 року, які показують роботу запорозької розвідки й полонених високого рангу.",
+            "1 серпня 1680 року Сірко помер на пасіці в Грушівці; його тіло перевезли до Чортомлицької Січі й поховали на військовому цвинтарі.",
         ],
+
         contentEn: [
-            "Even in his later years, Sirko remained an active military figure.",
-            "This period is connected with the intensification of Ottoman pressure, the Chyhyryn events, and the final strikes of the Zaporozhians against the enemy.",
+            "In the second half of the 1670s, Sirko remained an active military leader of Zaporizhia.",
+            "Sources mention his actions against Ottoman and Crimean Tatar forces, the Zaporozhians' role in resisting the Chyhyryn campaigns, and the last military action of 1680.",
+            "The events around the Ottoman envoys of 1676 are also important because they show Zaporizhian intelligence work and high-ranking captives.",
+            "On August 1, 1680, Sirko died at his apiary in Hrushivka; his body was transported to the Chortomlyk Sich and buried at the military cemetery.",
         ],
-        image: "/images/military/final-campaigns.jpg",
+
+        image: "/images/military/final-years.webp",
+
         events: [
             {
-                id: "chyhyryn-context-1677-1678",
-                slug: "chyhyryn-context-1677-1678",
+                id: "mustafa-aga-hapich-pasha-1676",
+                slug: "mustafa-aga-hapich-pasha-1676",
                 order: 1,
+                year: "1676",
+                dateUk: "1676 рік",
+                dateEn: "1676",
+
+                type: "political-military",
+                direction: "final-years",
+                importance: "medium",
+                resultType: "political-result",
+                confidence: "medium",
+
+                titleUk: "Турецькі посланці на Чортомлицькій Січі",
+                titleEn: "Ottoman Envoys at the Chortomlyk Sich",
+
+                locationUk: "Чортомлицька Січ",
+                locationEn: "Chortomlyk Sich",
+
+                opponentsUk: [
+                    "Османська імперія",
+                    "турецькі посланці",
+                ],
+                opponentsEn: [
+                    "Ottoman Empire",
+                    "Ottoman envoys",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "Мустафа-ага",
+                    "Хапіч-паша",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Mustafa Agha",
+                    "Hapich Pasha",
+                ],
+
+                forcesUk:
+                    "Не застосовується: це дипломатично-розвідувальний епізод, а не битва.",
+                forcesEn:
+                    "Not applicable: this was a diplomatic-intelligence episode, not a battle.",
+
+                lossesUk:
+                    "Не застосовується.",
+                lossesEn:
+                    "Not applicable.",
+
+                resultUk:
+                    "Сірко викрив справжню мету турецьких посланців і встановив, що вони розшукували не лише Мустафу-агу, а важливішого полоненого — Хапіч-пашу.",
+                resultEn:
+                    "Sirko uncovered the real purpose of the Ottoman envoys and established that they were looking not only for Mustafa Agha, but for a more important captive — Hapich Pasha.",
+
+                summaryUk:
+                    "У 1676 році на Чортомлицьку Січ прибули люди з Туреччини, нібито щоб викупити Мустафу-агу; Сірко запідозрив обман і через розвідку з’ясував, що насправді йшлося про Хапіч-пашу.",
+
+                summaryEn:
+                    "In 1676, people from Turkey arrived at the Chortomlyk Sich, allegedly to ransom Mustafa Agha; Sirko suspected deception and learned through intelligence that the real target was Hapich Pasha.",
+
+                courseUk: [
+                    "У 1676 році на Чортомлицьку Січ прибули посланці з Туреччини.",
+                    "Вони заявили, що хочуть знайти й викупити з полону Мустафу-агу.",
+                    "Сірко не повірив у повну щирість цієї місії.",
+                    "Він використав розвідку й дізнався, що посланці насправді шукали значно важливішу особу — Хапіч-пашу.",
+                    "За викладом джерела, Хапіч-паша приховував свій статус у полоні, щоб за нього не вимагали більшого викупу.",
+                ],
+
+                courseEn: [
+                    "In 1676, envoys from Turkey arrived at the Chortomlyk Sich.",
+                    "They claimed they wanted to find and ransom Mustafa Agha from captivity.",
+                    "Sirko did not fully believe the sincerity of this mission.",
+                    "He used intelligence and learned that the envoys were actually searching for a much more important person — Hapich Pasha.",
+                    "According to the source account, Hapich Pasha hid his status in captivity so that a larger ransom would not be demanded for him.",
+                ],
+
+                significanceUk: [
+                    "Подія показує роботу розвідки Сірка.",
+                    "Епізод не є битвою, але напряму пов’язаний із війною проти Османської імперії.",
+                    "Він демонструє, що Сірко контролював не лише бойові дії, а й полон, обміни та дипломатичні контакти.",
+                ],
+
+                significanceEn: [
+                    "The event shows Sirko's intelligence work.",
+                    "The episode is not a battle, but it is directly connected with the war against the Ottoman Empire.",
+                    "It demonstrates that Sirko controlled not only combat actions, but also captivity, exchanges, and diplomatic contacts.",
+                ],
+
+                historicalNoteUk:
+                    "Подія подана за історичним викладом про військову розвідку Сірка; її варто тримати як військово-політичний епізод, а не як бойову операцію.",
+
+                historicalNoteEn:
+                    "The event is presented according to a historical account of Sirko's military intelligence; it should be kept as a military-political episode, not as a combat operation.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/mustafa-aga-hapich-pasha-1676.webp",
+
+                sources: [
+                    "Сергій Тороп: Іван Сірко — складові військових успіхів",
+                ],
+            },
+            {
+                id: "chyhyryn-campaigns-support-1677-1678",
+                slug: "chyhyryn-campaigns-support-1677-1678",
+                order: 2,
                 year: "1677–1678",
+                dateUk: "1677–1678 роки",
+                dateEn: "1677–1678",
+
+                type: "campaign",
+                direction: "final-years",
+                importance: "major",
+                resultType: "strategic-success",
+                confidence: "medium",
+
+                titleUk: "Участь запорожців у відсічі Чигиринським походам",
+                titleEn: "Zaporozhian Participation in Resisting the Chyhyryn Campaigns",
+
+                locationUk: "Чигиринський напрямок, степові комунікації турецько-татарського війська",
+                locationEn: "Chyhyryn direction, steppe communications of the Ottoman-Tatar army",
+
+                opponentsUk: [
+                    "Османська імперія",
+                    "Кримське ханство",
+                    "турецько-татарські війська",
+                ],
+                opponentsEn: [
+                    "Ottoman Empire",
+                    "Crimean Khanate",
+                    "Ottoman-Tatar forces",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "запорозькі козаки",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Zaporozhian Cossacks",
+                ],
+
+                forcesUk:
+                    "Точна чисельність запорозьких загонів у цих діях не подана.",
+                forcesEn:
+                    "Exact strength of Zaporozhian detachments in these actions is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані.",
+                lossesEn:
+                    "Exact losses are not given.",
+
+                resultUk:
+                    "Запорожці брали участь у протидії другому Чигиринському походу турецько-татарського війська.",
+                resultEn:
+                    "The Zaporozhians took part in resisting the second Chyhyryn campaign of the Ottoman-Tatar army.",
+
+                summaryUk:
+                    "У 1677–1678 роках запорожці, пов’язані з Сірком, брали участь у відсічі Чигиринським походам турецько-татарського війська.",
+
+                summaryEn:
+                    "In 1677–1678, Zaporozhians connected with Sirko took part in resisting the Chyhyryn campaigns of the Ottoman-Tatar army.",
+
+                courseUk: [
+                    "Чигиринські походи стали великим етапом османського наступу на українські землі.",
+                    "Запорожці брали участь у протидії цим походам.",
+                    "Сірко діяв у ширшому контексті війни проти Османської імперії та Кримського ханства.",
+                    "Джерела згадують участь запорожців у відсічі другого Чигиринського походу.",
+                    "Детального переліку кожної операції Сірка в межах цього епізоду короткі джерела не подають.",
+                ],
+
+                courseEn: [
+                    "The Chyhyryn campaigns were a major stage of the Ottoman advance into Ukrainian lands.",
+                    "The Zaporozhians took part in resisting these campaigns.",
+                    "Sirko acted within the broader context of war against the Ottoman Empire and the Crimean Khanate.",
+                    "Sources mention Zaporozhian participation in resisting the second Chyhyryn campaign.",
+                    "Short sources do not provide a detailed list of each Sirko operation within this episode.",
+                ],
+
+                significanceUk: [
+                    "Подія пояснює роль Сірка й Запорожжя в загальноукраїнській війні проти Османської імперії.",
+                    "Вона показує, що пізня діяльність Сірка не зводилася лише до кримських рейдів.",
+                    "Цей event має бути в загальному military timeline як частина великої війни 1677–1678 років.",
+                ],
+
+                significanceEn: [
+                    "The event explains the role of Sirko and Zaporizhia in the broader Ukrainian war against the Ottoman Empire.",
+                    "It shows that Sirko's late activity was not limited only to Crimean raids.",
+                    "This event should be included in the general military timeline as part of the major war of 1677–1678.",
+                ],
+
+                historicalNoteUk:
+                    "Подія не є однією битвою під особистим командуванням Сірка, а відображає участь запорожців у ширшій Чигиринській кампанії.",
+
+                historicalNoteEn:
+                    "The event is not one battle personally commanded by Sirko, but reflects Zaporozhian participation in the broader Chyhyryn campaign.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/chyhyryn-campaigns-support-1677-1678.webp",
+
+                sources: [
+                    "Іван Сірко: яким ми його не знаємо",
+                    "Вікіпедія: Чигиринські походи",
+                ],
+            },
+            {
+                id: "last-military-campaign-1680",
+                slug: "last-military-campaign-1680",
+                order: 3,
+                year: "1680",
+                dateUk: "1680 рік",
+                dateEn: "1680",
+
+                type: "campaign",
+                direction: "final-years",
+                importance: "major",
+                resultType: "victory",
+                confidence: "medium",
+
+                titleUk: "Останній воєнний похід Сірка",
+                titleEn: "Sirko's Last Military Campaign",
+
+                locationUk: "південний степовий напрямок; точна локалізація в короткому джерелі не подана",
+                locationEn: "southern steppe direction; exact location is not given in the short source",
+
+                opponentsUk: [
+                    "турецько-татарські сили",
+                    "загони Ібрагіма-паші",
+                ],
+                opponentsEn: [
+                    "Ottoman-Tatar forces",
+                    "detachments of Ibrahim Pasha",
+                ],
+
+                commandersUk: [
+                    "Іван Сірко",
+                    "донські козаки",
+                    "калмики",
+                    "Ібрагім-паша",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                    "Don Cossacks",
+                    "Kalmyks",
+                    "Ibrahim Pasha",
+                ],
+
+                forcesUk:
+                    "Джерело згадує об’єднані сили запорожців, донських козаків і калмиків; точна чисельність не подана.",
+                forcesEn:
+                    "The source mentions united forces of Zaporozhians, Don Cossacks, and Kalmyks; exact strength is not given.",
+
+                lossesUk:
+                    "Точні втрати не подані; джерело говорить про нищівний удар по нападниках.",
+                lossesEn:
+                    "Exact losses are not given; the source speaks of a devastating blow against the attackers.",
+
+                resultUk:
+                    "Об’єднані сили запорожців, донців і калмиків завдали поразки загонам Ібрагіма-паші.",
+                resultEn:
+                    "The united forces of Zaporozhians, Don Cossacks, and Kalmyks defeated the detachments of Ibrahim Pasha.",
+
+                summaryUk:
+                    "Останньою воєнною акцією Сірка був похід 1680 року, перед яким він звернувся до донського козацтва із закликом до спільних дій.",
+
+                summaryEn:
+                    "Sirko's last military action was the campaign of 1680, before which he appealed to the Don Cossacks for joint action.",
+
+                courseUk: [
+                    "Напередодні останнього походу Сірко надіслав спеціальне звернення донському козацтву.",
+                    "Метою було організувати спільні дії проти турецько-татарських сил.",
+                    "Джерело згадує загони Ібрагіма-паші, які вдерлися на українські землі.",
+                    "Проти них виступили об’єднані сили запорожців, донських козаків і калмиків.",
+                    "Нападники зазнали нищівного удару.",
+                ],
+
+                courseEn: [
+                    "Before his last campaign, Sirko sent a special appeal to the Don Cossacks.",
+                    "The goal was to organize joint action against Ottoman-Tatar forces.",
+                    "The source mentions detachments of Ibrahim Pasha that invaded Ukrainian lands.",
+                    "They were opposed by united forces of Zaporozhians, Don Cossacks, and Kalmyks.",
+                    "The attackers suffered a devastating blow.",
+                ],
+
+                significanceUk: [
+                    "Це остання відома воєнна акція Сірка.",
+                    "Подія показує, що навіть у фінальний рік життя він залишався активним військовим керівником.",
+                    "Вона завершує бойовий шлях Сірка в military-роуті.",
+                ],
+
+                significanceEn: [
+                    "This is Sirko's last known military action.",
+                    "The event shows that even in the final year of his life he remained an active military leader.",
+                    "It closes Sirko's combat path in the military route.",
+                ],
+
+                historicalNoteUk:
+                    "Коротке джерело підтверджує сам факт останньої воєнної акції 1680 року та участь запорожців, донців і калмиків, але не подає повної карти бою, точної дати, чисельності та втрат.",
+
+                historicalNoteEn:
+                    "The short source confirms the fact of the last military action of 1680 and the participation of Zaporozhians, Don Cossacks, and Kalmyks, but does not provide a full battle map, exact date, strength, or losses.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/last-military-campaign-1680.webp",
+
+                sources: [
+                    "Іван Сірко: яким ми його не знаємо",
+                ],
+            },
+            {
+                id: "death-at-hrushivka-1680",
+                slug: "death-at-hrushivka-1680",
+                order: 4,
+                year: "1680",
+                dateUk: "1 серпня 1680 року",
+                dateEn: "August 1, 1680",
+
                 type: "political-military",
                 direction: "final-years",
                 importance: "major",
                 resultType: "political-result",
                 confidence: "high",
-                titleUk: "Чигиринський контекст",
-                titleEn: "Chyhyryn Context",
-                locationUk: "Чигиринський напрямок, Правобережжя",
-                locationEn: "Chyhyryn direction, Right Bank",
-                opponentsUk: ["Османська імперія", "татарські сили"],
-                opponentsEn: ["Ottoman Empire", "Tatar forces"],
+
+                titleUk: "Смерть Івана Сірка в Грушівці",
+                titleEn: "Death of Ivan Sirko in Hrushivka",
+
+                locationUk: "пасіка Грушівка, Запорожжя",
+                locationEn: "Hrushivka apiary, Zaporizhia",
+
+                opponentsUk: [],
+                opponentsEn: [],
+
+                commandersUk: [
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "Не застосовується.",
+                forcesEn:
+                    "Not applicable.",
+
+                lossesUk:
+                    "Помер Іван Сірко.",
+                lossesEn:
+                    "Ivan Sirko died.",
+
                 resultUk:
-                    "Участь Сірка в подіях, пов'язаних із боротьбою навколо Чигирина.",
+                    "Завершився військовий шлях одного з найвідоміших кошових отаманів Запорозької Січі.",
                 resultEn:
-                    "Sirko's participation in events connected with the struggle around Chyhyryn.",
+                    "The military path of one of the most famous Kish Otamans of the Zaporizhian Sich came to an end.",
+
                 summaryUk:
-                    "У 1677–1678 роках Сірко згадується в контексті Чигиринських подій та боротьби проти османсько-татарського наступу.",
+                    "1 серпня 1680 року Іван Сірко помер на своїй пасіці в Грушівці після певної хвороби.",
+
                 summaryEn:
-                    "In 1677–1678, Sirko is mentioned in the context of the Chyhyryn events and the struggle against the Ottoman-Tatar advance.",
-                contentUk: [
-                    "Чигиринські події стали одним із ключових епізодів протистояння Османської імперії, Московії, козацьких сил і гетьманських угруповань.",
-                    "Сірко діяв у цьому контексті як запорозький військовий лідер, для якого боротьба з турецько-татарською загрозою залишалася головним напрямком.",
+                    "On August 1, 1680, Ivan Sirko died at his apiary in Hrushivka after an illness.",
+
+                courseUk: [
+                    "Самійло Величко повідомляє, що Сірко помер 1 серпня 1680 року.",
+                    "Місцем смерті названо його пасіку в Грушівці.",
+                    "У джерельній традиції згадується, що перед смертю він певний час хворів.",
+                    "Смерть Сірка стала завершенням його багаторічної військової діяльності на Запорожжі.",
                 ],
-                contentEn: [
-                    "The Chyhyryn events became one of the key episodes in the confrontation between the Ottoman Empire, Muscovy, Cossack forces, and Hetman factions.",
-                    "Sirko acted in this context as a Zaporizhian military leader for whom the struggle against the Ottoman-Tatar threat remained central.",
+
+                courseEn: [
+                    "Samiilo Velychko reports that Sirko died on August 1, 1680.",
+                    "The place of death is given as his apiary in Hrushivka.",
+                    "The source tradition mentions that he had been ill for some time before his death.",
+                    "Sirko's death marked the end of his long military activity in Zaporizhia.",
                 ],
-                hasDetailPage: true,
-                image: "/images/military/chyhyryn-context-1677-1678.jpg",
-                sources: [SOURCES.encyclopedia, SOURCES.museumDnipro],
+
+                significanceUk: [
+                    "Це фінальна хронологічна точка військового шляху Сірка.",
+                    "Подія має чітку дату й місце в джерелах.",
+                    "Вона логічно завершує весь military timeline.",
+                ],
+
+                significanceEn: [
+                    "This is the final chronological point of Sirko's military path.",
+                    "The event has a clear date and place in sources.",
+                    "It logically closes the entire military timeline.",
+                ],
+
+                historicalNoteUk:
+                    "Дата 1 серпня 1680 року й місце Грушівка стабільно згадуються в історичних матеріалах; окремі джерела можуть подавати старий/новий стиль датування.",
+
+                historicalNoteEn:
+                    "The date August 1, 1680 and the place Hrushivka are consistently mentioned in historical materials; some sources may use old/new style dating.",
+
+                hasDetailPage: false,
+                image: "/images/military/events/death-at-hrushivka-1680.webp",
+
+                sources: [
+                    "В. Шконда: Тут похований кошовий отаман Іван Сірко",
+                    "Укрінформ: Неспокійний отаман",
+                    "Енциклопедія історії України: Сірко Іван",
+                ],
             },
             {
-                id: "voloshchyna-campaign",
-                slug: "voloshchyna-campaign",
-                order: 2,
-                year: "1670-ті",
-                dateEn: "1670s",
-                type: "campaign",
+                id: "burial-at-chortomlyk-sich-1680",
+                slug: "burial-at-chortomlyk-sich-1680",
+                order: 5,
+                year: "1680",
+                dateUk: "2 серпня 1680 року",
+                dateEn: "August 2, 1680",
+
+                type: "political-military",
                 direction: "final-years",
-                importance: "medium",
-                resultType: "strategic-success",
-                confidence: "medium",
-                titleUk: "Похід у Волощину",
-                titleEn: "Campaign into Wallachia",
-                locationUk: "Волощина",
-                locationEn: "Wallachia",
-                opponentsUk: ["османські союзники", "місцеві сили"],
-                opponentsEn: ["Ottoman allies", "local forces"],
+                importance: "major",
+                resultType: "political-result",
+                confidence: "high",
+
+                titleUk: "Поховання біля Чортомлицької Січі",
+                titleEn: "Burial near the Chortomlyk Sich",
+
+                locationUk: "військовий цвинтар Чортомлицької Січі",
+                locationEn: "military cemetery of the Chortomlyk Sich",
+
+                opponentsUk: [],
+                opponentsEn: [],
+
+                commandersUk: [
+                    "запорозькі козаки",
+                    "Іван Сірко",
+                ],
+                commandersEn: [
+                    "Zaporozhian Cossacks",
+                    "Ivan Sirko",
+                ],
+
+                forcesUk:
+                    "Не застосовується.",
+                forcesEn:
+                    "Not applicable.",
+
+                lossesUk:
+                    "Не застосовується.",
+                lossesEn:
+                    "Not applicable.",
+
                 resultUk:
-                    "Дії на південно-західному напрямку в пізній період військової активності.",
+                    "Тіло Сірка перевезли водою до Запорозької Січі й поховали на військовому цвинтарі з козацькими почестями.",
                 resultEn:
-                    "Operations in the southwestern direction during the late period of military activity.",
+                    "Sirko's body was transported by water to the Zaporizhian Sich and buried at the military cemetery with Cossack honors.",
+
                 summaryUk:
-                    "У переліках походів Сірка згадується похід у Волощину, який належить до пізнього етапу його військового шляху.",
+                    "Після смерті тіло Сірка перевезли до Чортомлицької Січі й поховали на військовому цвинтарі з гарматною та мушкетною салютацією.",
+
                 summaryEn:
-                    "Lists of Sirko's campaigns mention a campaign into Wallachia, belonging to the late stage of his military path.",
-                contentUk: [
-                    "Похід у Волощину показує широту географії військових дій Сірка.",
-                    "Це не лише Крим чи Запорожжя, а ширший південно-західний простір, пов'язаний із османською політикою та її союзниками.",
-                    "Для повної single page цю подію потрібно буде додатково деталізувати за джерелами.",
+                    "After his death, Sirko's body was taken to the Chortomlyk Sich and buried at the military cemetery with cannon and musket salutes.",
+
+                courseUk: [
+                    "Після смерті в Грушівці тіло Сірка перевезли водою до Запорозької Січі.",
+                    "Поховання відбулося на військовому цвинтарі Чортомлицької Січі.",
+                    "Літописна традиція згадує урочисті військові почесті.",
+                    "У джерелах прямо згадується гарматна й мушкетна салютація.",
                 ],
-                contentEn: [
-                    "The campaign into Wallachia shows the breadth of the geography of Sirko's military actions.",
-                    "It was not only Crimea or Zaporizhia, but a broader southwestern space connected with Ottoman policy and its allies.",
-                    "For a full single page, this event will need additional detail from sources.",
+
+                courseEn: [
+                    "After his death in Hrushivka, Sirko's body was transported by water to the Zaporizhian Sich.",
+                    "The burial took place at the military cemetery of the Chortomlyk Sich.",
+                    "The chronicle tradition mentions solemn military honors.",
+                    "Sources specifically mention cannon and musket salutes.",
                 ],
+
+                significanceUk: [
+                    "Поховання підкреслило особливий статус Сірка серед запорожців.",
+                    "Військові почесті показують, що його сприймали як одного з головних лідерів Січі.",
+                    "Це фінальна подія всього розділу Military.",
+                ],
+
+                significanceEn: [
+                    "The burial emphasized Sirko's special status among the Zaporozhians.",
+                    "The military honors show that he was perceived as one of the main leaders of the Sich.",
+                    "This is the final event of the entire Military section.",
+                ],
+
+                historicalNoteUk:
+                    "Поховання не є бойовою подією, але належить до military-роуту як завершення військового життя кошового отамана.",
+
+                historicalNoteEn:
+                    "The burial is not a combat event, but belongs to the military route as the conclusion of the Kish Otaman's military life.",
+
                 hasDetailPage: false,
-                image: "/images/military/voloshchyna-campaign.jpg",
-                sources: [SOURCES.museumDnipro],
-            },
-            {
-                id: "final-anti-tatar-actions-1679",
-                slug: "final-anti-tatar-actions-1679",
-                order: 3,
-                year: "1679",
-                type: "campaign",
-                direction: "final-years",
-                importance: "medium",
-                resultType: "strategic-success",
-                confidence: "medium",
-                titleUk: "Останні дії проти татар",
-                titleEn: "Final Actions against the Tatars",
-                locationUk: "Південний степ, запорозький напрямок",
-                locationEn: "Southern steppe, Zaporizhian direction",
-                opponentsUk: ["Кримські татари"],
-                opponentsEn: ["Crimean Tatars"],
-                resultUk:
-                    "Продовження активної боротьби з татарськими силами напередодні смерті Сірка.",
-                resultEn:
-                    "Continuation of active struggle against Tatar forces shortly before Sirko's death.",
-                summaryUk:
-                    "У 1679 році Сірко ще згадується у зв'язку з активними діями проти татарських сил.",
-                summaryEn:
-                    "In 1679, Sirko is still mentioned in connection with active actions against Tatar forces.",
-                contentUk: [
-                    "Пізній етап життя Сірка не означав повного відходу від військової діяльності.",
-                    "Навіть напередодні смерті він залишався пов'язаний із боротьбою проти татарської загрози та обороною запорозького простору.",
+                image: "/images/military/events/burial-at-chortomlyk-sich-1680.webp",
+
+                sources: [
+                    "В. Шконда: Тут похований кошовий отаман Іван Сірко",
+                    "Некрополістичні пам’ятки: могила Івана Сірка",
+                    "Укрінформ: Неспокійний отаман",
                 ],
-                contentEn: [
-                    "The late stage of Sirko's life did not mean a complete withdrawal from military activity.",
-                    "Even shortly before his death, he remained connected with the struggle against the Tatar threat and the defense of the Zaporizhian space.",
-                ],
-                hasDetailPage: false,
-                image: "/images/military/final-anti-tatar-actions-1679.jpg",
-                sources: [SOURCES.encyclopedia, SOURCES.sirkoOttomanTatar],
             },
         ],
     },
