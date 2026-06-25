@@ -12,7 +12,7 @@ export const TIMELINE_PREVIEW_EVENTS: TimelinePreviewEvent[] = [
 ];
 
 export const OVERVIEW_LINKS = {
-    timeline: "/timeline",
-    battles: "/military/battles",
-    campaigns: "/military/campaigns",
+    timeline: "/biography",
+    battles: "/military",
+    campaigns: "/military",
 } as const;
