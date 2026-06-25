@@ -94,7 +94,7 @@ const uk = {
         mapLegends: {
             map: {
                 title: "Мапа походів та битв",
-                action: "Дослідити карту",
+                // action: "Дослідити карту",
             },
             legends: {
                 title: "Факти та легенди",

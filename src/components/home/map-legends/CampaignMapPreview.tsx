@@ -48,14 +48,14 @@ export const CampaignMapPreview = ({locale}: CampaignMapPreviewProps) => {
                         {locale.title}
                     </h3>
 
-                    <MotionLink
-                        href="/campaigns-map"
-                        whileHover={{scale: 1.04}}
-                        whileTap={{scale: 0.98}}
-                        className="inline-flex min-h-11 items-center justify-center border border-[rgba(74,34,10,0.72)] bg-[linear-gradient(180deg,#8f4518_0%,#4f2109_100%)] px-8 font-serif text-sm font-black uppercase tracking-[0.1em] text-[var(--sirko-gold-pale)] shadow-[0_12px_24px_rgba(55,24,7,0.32)] transition duration-300 hover:brightness-110 hover:shadow-[0_0_26px_rgba(196,147,54,0.25)]"
-                    >
-                        {locale.action}
-                    </MotionLink>
+                    {/*<MotionLink*/}
+                    {/*    href="/campaigns-map"*/}
+                    {/*    whileHover={{scale: 1.04}}*/}
+                    {/*    whileTap={{scale: 0.98}}*/}
+                    {/*    className="inline-flex min-h-11 items-center justify-center border border-[rgba(74,34,10,0.72)] bg-[linear-gradient(180deg,#8f4518_0%,#4f2109_100%)] px-8 font-serif text-sm font-black uppercase tracking-[0.1em] text-[var(--sirko-gold-pale)] shadow-[0_12px_24px_rgba(55,24,7,0.32)] transition duration-300 hover:brightness-110 hover:shadow-[0_0_26px_rgba(196,147,54,0.25)]"*/}
+                    {/*>*/}
+                    {/*    {locale.action}*/}
+                    {/*</MotionLink>*/}
                 </div>
             </div>
         </ParchmentCard>

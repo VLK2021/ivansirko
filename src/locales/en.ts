@@ -94,7 +94,7 @@ const en = {
         mapLegends: {
             map: {
                 title: "Map of campaigns and battles",
-                action: "Explore map",
+                // action: "Explore map",
             },
             legends: {
                 title: "Facts and legends",
