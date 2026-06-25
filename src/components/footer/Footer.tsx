@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import {useLanguage} from "@/src/context";
 
-const TELEGRAM_URL = "https://t.me/YOUR_TELEGRAM";
+const TELEGRAM_URL = "https://t.me/kvm20232023";
 
 export const Footer = () => {
     const {locale} = useLanguage();
@@ -60,7 +60,7 @@ export const Footer = () => {
                         href={TELEGRAM_URL}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="mt-2 inline-block font-serif text-sm font-black uppercase tracking-[0.16em] text-[var(--sirko-bronze)] transition hover:text-[var(--sirko-gold-pale)]"
+                        className="mt-4 inline-flex items-center justify-center rounded-full border border-[var(--sirko-bronze)] bg-[var(--sirko-bronze)] px-8 py-3 font-serif text-sm font-black uppercase tracking-[0.18em] text-[var(--sirko-wood-950)] shadow-[0_0_34px_rgba(196,147,54,0.28)] transition hover:border-[var(--sirko-gold-pale)] hover:bg-[var(--sirko-gold-pale)] hover:text-[var(--sirko-wood-950)]"
                     >
                         {locale.footer.telegram}
                     </Link>
