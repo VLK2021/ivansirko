@@ -150,7 +150,6 @@ const en = {
         rights: "All rights reserved.",
         links: {
             biography: "Biography",
-            battles: "Battles",
             campaigns: "Campaigns",
             gallery: "Gallery",
         },

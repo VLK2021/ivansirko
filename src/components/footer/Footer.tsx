@@ -34,11 +34,7 @@ export const Footer = () => {
                             {locale.footer.links.biography}
                         </Link>
 
-                        <Link href="/military/battles" className="transition hover:text-[var(--sirko-gold-pale)]">
-                            {locale.footer.links.battles}
-                        </Link>
-
-                        <Link href="/military/campaigns" className="transition hover:text-[var(--sirko-gold-pale)]">
+                        <Link href="/military" className="transition hover:text-[var(--sirko-gold-pale)]">
                             {locale.footer.links.campaigns}
                         </Link>
 

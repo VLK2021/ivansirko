@@ -150,7 +150,6 @@ const uk = {
         rights: "Усі права захищені.",
         links: {
             biography: "Біографія",
-            battles: "Битви",
             campaigns: "Походи",
             gallery: "Галерея",
         },
