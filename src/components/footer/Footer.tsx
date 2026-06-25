@@ -50,7 +50,7 @@ export const Footer = () => {
                     </p>
 
                     <p className="mt-4 font-serif text-base leading-7 text-[rgba(255,232,176,0.72)]">
-                        {locale.footer.developedBy}{" "}
+                        {locale.footer.developedBy}:{" "}
                         <span className="font-black text-[var(--sirko-gold-pale)]">
                             {locale.footer.developerName}
                         </span>
