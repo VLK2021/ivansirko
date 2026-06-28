@@ -11,14 +11,14 @@ export const SiteShell = ({children}: SiteShellProps) => {
     return (
         <div className="sirko-page relative flex min-h-screen flex-col overflow-hidden">
             <div className="fixed left-0 top-0 z-50 w-full">
-                <Header />
+                <Header/>
             </div>
 
             <main className="relative z-10 flex-1 pt-[76px]">
                 {children}
             </main>
 
-            <Footer />
+            <Footer/>
         </div>
     );
 };
