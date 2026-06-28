@@ -2,6 +2,7 @@ const en = {
     header: {
         logoTitle: "Ivan Sirko",
         logoSubtitle: "Historical Experience",
+        menu: "Menu",
 
         nav: {
             home: "Home",

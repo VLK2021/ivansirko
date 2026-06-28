@@ -2,6 +2,7 @@ const uk = {
     header: {
         logoTitle: "Іван Сірко",
         logoSubtitle: "Історичний досвід",
+        menu: "Меню",
 
         nav: {
             home: "Головна",

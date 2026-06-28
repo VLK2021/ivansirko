@@ -9,7 +9,7 @@ export const HeaderNav = () => {
     const {locale} = useLanguage();
 
     return (
-        <nav className="hidden items-center gap-2 xl:flex">
+        <nav className="flex items-center gap-2">
             {HEADER_NAV_ITEMS.map((item) => (
                 <HeaderNavLink
                     key={item.href}
